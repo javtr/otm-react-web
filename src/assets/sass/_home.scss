@@ -1,0 +1,16 @@
+.card-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--card {
+    max-width: 645px;
+    max-height: 600px;
+  }
+}

@@ -1,0 +1,41 @@
+@import "./mixins";
+
+.navbar {
+  position: absolute;
+  top: 0;
+  height: 100px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: rgba($color: #00ffc8, $alpha: 0.3);
+
+  &__container {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 40px;
+
+    img {
+
+      width: 100%;
+    }
+  }
+
+  &__links {
+    margin-right: 100px;
+    margin-top: 50px;
+    :nth-child(n) {
+      padding: 10px;
+    }
+  }
+
+  @include breakpoint-up(small) {
+  }
+}

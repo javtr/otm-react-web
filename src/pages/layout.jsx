@@ -4,7 +4,7 @@ import NavBar from '../components/pure/navBar';
 
 export default function layout() {
   return (
-    <div className='layout'>layout
+    <div className='layout'>
     <NavBar></NavBar>
     <Outlet/>
     </div>

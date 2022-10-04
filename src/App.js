@@ -14,7 +14,7 @@ class App extends Component {
 
       <Routes>
         <Route path='/' element={<Layout></Layout>}>
-          <Route index element={<Home></Home>}></Route>
+          {/* <Route index element={<Home></Home>}></Route> */}
 
 
         </Route>

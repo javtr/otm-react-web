@@ -6,18 +6,17 @@ const NavBar = () => {
   const [sideBar, setSideBar] = useState("sideBarInit");
 
   function turnSideBar() {
-    if (sideBar == "sideBarInit") 
-    {
+    if (sideBar == "sideBarInit") {
       setSideBar("sideBarOn");
-    } 
-    else if (sideBar == "sideBarOn") 
-    {
+    } else if (sideBar == "sideBarOn") {
       setSideBar("sideBarOff");
-    } 
-    else if (sideBar == "sideBarOff")
-    {
+    } else if (sideBar == "sideBarOff") {
       setSideBar("sideBarOn");
     }
+  }
+
+  function turnOffSideBar() {
+    setSideBar("sideBarOff");
   }
 
   return (
@@ -28,31 +27,63 @@ const NavBar = () => {
         </div>
 
         <div className="navbar__links">
-          <Link className="Link" to="/">
+          <Link to="/">
             OTM
           </Link>
-          <Link className="Link" to="/">
+          <Link to="/">
             Features
           </Link>
-          <Link className="Link" to="/">
+          <Link to="/">
             Buy
           </Link>
-          <Link className="Link" to="/">
+          <Link to="/">
             Example
           </Link>
-          <Link className="Link" to="/">
+          <Link to="/">
             Contact
           </Link>
         </div>
 
-        <div className="navbar__burguer" onClick={turnSideBar}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+
       </div>
 
-      <div className={sideBar}></div>
+      <div className="navbar__burguer" onClick={turnSideBar}>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+
+
+      <div className={sideBar}>
+        <div className="st1" onClick={turnOffSideBar}>
+          <div className="st2"></div>
+          <div className="st3"></div>
+        </div>
+
+
+        <div className="sideBarLinks">
+          <Link to="/">
+            OTM
+          </Link>
+          <Link to="/">
+            Features
+          </Link>
+          <Link to="/">
+            Buy
+          </Link>
+          <Link to="/">
+            Example
+          </Link>
+          <Link to="/">
+            Contact
+          </Link>
+        </div>
+
+
+      </div>
+
+
+
     </div>
   );
 };

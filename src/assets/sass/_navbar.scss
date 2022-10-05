@@ -5,6 +5,7 @@
   top: 0;
   height: 100px;
   width: 100%;
+  font-size: 17px;
 
   display: flex;
   justify-content: center;
@@ -18,24 +19,102 @@
   }
 
   &__img {
-    width: 100px;
+    width: 130px;
     margin-left: 100px;
     margin-top: 40px;
 
     img {
-
       width: 100%;
+    }
+
+    @include breakpoint-down(small) {
+      margin-left: 25px;
+
+
     }
   }
 
   &__links {
-    margin-right: 100px;
     margin-top: 50px;
+    margin-right: 100px;
     :nth-child(n) {
       padding: 10px;
     }
+
+    @include breakpoint-down(small) {
+      display: none;
+    }
   }
 
-  @include breakpoint-up(small) {
+  &__burguer {
+    @include breakpoint-down(small) {
+      z-index: 1000;
+
+      margin-top: 38px;
+      margin-right: 25px;
+
+      :nth-child(n) {
+        background-color: azure;
+        height: 5px;
+        width: 35px;
+        margin: 5px;
+      }
+
+
+    }
   }
+}
+
+
+.sideBarOn {
+  position: absolute;
+  top: 10px;
+  width: 90%;
+  height: 500px;
+  background-color: aqua;
+
+  margin-left: 0%;
+
+  animation-duration: 1s;
+  animation-name: slideIn;
+}
+
+
+@keyframes slideIn 
+{
+    from{
+        margin-left: 200%;
+    }
+
+    to{
+        margin-left: 0%;
+    }
+}
+
+.sideBarOff {
+  position: absolute;
+  top: 10px;
+  width: 90%;
+  height: 500px;
+  background-color: aqua;
+
+  margin-left: 200%;
+
+  animation-duration: 1s;
+  animation-name: slideOut;
+}
+
+@keyframes slideOut 
+{
+    from{
+        margin-left: 0%;
+    }
+
+    to{
+        margin-left: 200%;
+    }
+}
+
+.sideBarInit {
+  margin-left: 0%;
 }

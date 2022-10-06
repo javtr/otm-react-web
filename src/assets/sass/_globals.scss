@@ -1,3 +1,37 @@
-body{
-    background-color: #04001A;
+@import "./mixins";
+
+body {
+  background-color: #04001a;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%; //necesario
+    width: 100%; //necesario
+    background-image: url("../img/background01.svg");
+    background-repeat: no-repeat;
+    background-position: 56% 0;
+    transform: rotate(-24deg);
+    scale: 181%;
+    left: 160px;
+    top: 320px;
+    opacity: 0.3;
+
+
+
+    @include breakpoint-up(small) {
+      left: 240px;
+      top: 434px;
+    }
+
+    @include breakpoint-up(medium) {
+      left: 166px;
+      top: 500px;
+    }
+
+    @include breakpoint-up(large) {
+      left: 166px;
+      top: 300px;
+    }
+  }
 }

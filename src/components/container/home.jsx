@@ -8,13 +8,13 @@ import Features from './features';
 
 const Home = () => {
     return (
-        <div>
+        <div className='body-home'>
         <Hero></Hero>
-        <Whatis></Whatis>
+        {/* <Whatis></Whatis>
         <Features></Features>
         <Advantages></Advantages>
         <BuyButton></BuyButton>
-        <Footer></Footer>
+        <Footer></Footer> */}
         </div>
     );
 }

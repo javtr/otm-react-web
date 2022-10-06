@@ -14,3 +14,33 @@
     max-height: 600px;
   }
 }
+
+.body-home {
+  position: relative;
+  top: 100px;
+}
+
+// hero ------------------------------------------
+
+.hero {
+}
+
+.hero__container {
+  display: flex;
+}
+
+.hero__img {
+  width: 50%;
+  // height: 200px;
+
+  img{
+    width: 100%;
+  }
+
+}
+
+.hero__text {
+  width: 50%;
+  height: 200px;
+  color: aliceblue;
+}

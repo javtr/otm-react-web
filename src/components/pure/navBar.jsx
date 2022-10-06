@@ -27,32 +27,19 @@ const NavBar = () => {
         </div>
 
         <div className="navbar__links">
-          <Link to="/">
-            OTM
-          </Link>
-          <Link to="/">
-            Features
-          </Link>
-          <Link to="/">
-            Buy
-          </Link>
-          <Link to="/">
-            Example
-          </Link>
-          <Link to="/">
-            Contact
-          </Link>
+          <Link to="/">OTM</Link>
+          <Link to="/">Features</Link>
+          <Link to="/">Buy</Link>
+          <Link to="/">Example</Link>
+          <Link to="/">Contact</Link>
         </div>
-
-
       </div>
 
       <div className="navbar__burguer" onClick={turnSideBar}>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-
 
       <div className={sideBar}>
         <div className="st1" onClick={turnOffSideBar}>
@@ -60,30 +47,14 @@ const NavBar = () => {
           <div className="st3"></div>
         </div>
 
-
         <div className="sideBarLinks">
-          <Link to="/">
-            OTM
-          </Link>
-          <Link to="/">
-            Features
-          </Link>
-          <Link to="/">
-            Buy
-          </Link>
-          <Link to="/">
-            Example
-          </Link>
-          <Link to="/">
-            Contact
-          </Link>
+          <Link to="/">OTM</Link>
+          <Link to="/">Features</Link>
+          <Link to="/">Buy</Link>
+          <Link to="/">Example</Link>
+          <Link to="/">Contact</Link>
         </div>
-
-
       </div>
-
-
-
     </div>
   );
 };

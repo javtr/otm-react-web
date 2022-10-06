@@ -19,8 +19,9 @@
 
   &__img {
     width: 130px;
-    margin-left: 50px;
-    margin-top: 40px;
+    margin-left: 33px;
+    margin-top: 22px;
+    z-index: 1000;
 
     img {
       width: 100%;
@@ -48,7 +49,7 @@
   &__burguer {
     @include breakpoint-down(small) {
 
-      margin-top: 38px;
+      margin-top: 20px;
       margin-right: 25px;
 
       :nth-child(n) {
@@ -68,7 +69,11 @@
   top: 10px;
   width: 90%;
   height: 500px;
-  background-color: rgb(17, 17, 17);
+  background-color: #04001A;
+  border-radius: 18px;
+
+
+
 
   // closeButton -------
   .st1 {
@@ -105,8 +110,11 @@
   & .sideBarLinks {
     display: flex;
     flex-direction: column;
+    font-size: 30px;
+    font-weight: bold;
 
-    margin: 30px;
+    margin-top: 83px;
+    margin-left: 35px;
 
     & a {
       margin: 12px 0px;
@@ -161,3 +169,5 @@
     display: none;
   }
 }
+
+

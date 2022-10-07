@@ -22,25 +22,97 @@
 
 // hero ------------------------------------------
 
-.hero {
-}
-
 .hero__container {
   display: flex;
+
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 25px;
+
+  @include breakpoint-up(small) {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0px;
+  }
 }
 
 .hero__img {
-  width: 50%;
-  // height: 200px;
+  width: 100%;
+  margin: 10px;
 
-  img{
-    width: 100%;
+  @include breakpoint-up(small) {
+    width: 50%;
+    margin: 0px;
   }
 
+  img {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .hero__text {
-  width: 50%;
-  height: 200px;
-  color: aliceblue;
+  color: $light;
+  margin-left: 25px;
+  width: 90%;
+
+  @include breakpoint-up(small) {
+    margin-left: 50px;
+    width: 50%;
+  }
+
+  @include breakpoint-up(large) {
+    margin-left: 100px;
+    width: 50%;
+  }
+
+  &--title {
+    margin-bottom: 45px;
+
+    @include breakpoint-up(small) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &--subTitle {
+    margin-bottom: 35px;
+
+    @include breakpoint-up(small) {
+      margin-bottom: 75px;
+    }
+  }
+}
+
+// what ------------------------------------------
+
+.what {
+  &__title {
+    text-align: center;
+  }
+
+  &__subTitle2 {
+    text-align: center;
+  }
+
+  &__imagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    & img {
+      width: 90%;
+    }
+  }
+
+  &__video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    & iframe {
+      width: 90%;
+      height: 48vw;
+      border-radius: 15px;
+    }
+  }
 }

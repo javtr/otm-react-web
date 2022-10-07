@@ -3,12 +3,20 @@
 .navbar {
   position: absolute;
   top: 0;
-  height: 100px;
+  height:  80px;
   width: 100%;
-  font-size: 17px;
+  font-size: $txt-small;
 
   display: flex;
   justify-content: center;
+
+  background-color: $back;
+  z-index: 988;
+
+  @include breakpoint-up(small) {
+    height: 100px;
+  }
+
 
 
   &__container {
@@ -19,7 +27,7 @@
 
   &__img {
     width: 130px;
-    margin-left: 33px;
+    margin-left: 25px;
     margin-top: 22px;
     z-index: 1000;
 
@@ -27,18 +35,18 @@
       width: 100%;
     }
 
-    @include breakpoint-down(small) {
-      margin-left: 25px;
+    @include breakpoint-up(small) {
+      margin-left: 33px;
     }
   }
 
   &__links {
-    margin-top: 50px;
+    margin-top: 35px;
     margin-right: 50px;
 
     :nth-child(n) {
       padding: 10px;
-      color: aliceblue;
+      color: $light;
     }
 
     @include breakpoint-down(small) {
@@ -53,7 +61,7 @@
       margin-right: 25px;
 
       :nth-child(n) {
-        background-color: azure;
+        background-color: $light;
         height: 5px;
         width: 35px;
         margin: 5px;
@@ -67,10 +75,11 @@
 .sideBarOn, .sideBarOff {
   position: absolute;
   top: 10px;
-  width: 90%;
+  width: 95%;
   height: 500px;
-  background-color: #04001A;
+  background-color: $back;
   border-radius: 18px;
+  z-index: 999;
 
 
 
@@ -95,7 +104,7 @@
     width: 35px;
     margin: 5px;
 
-    background-color: rgb(255, 255, 255);
+    background-color: $light;
   }
 
   .st2 {
@@ -118,7 +127,7 @@
 
     & a {
       margin: 12px 0px;
-      color: aliceblue;
+      color:$light;
 
     }
   }

@@ -1,7 +1,7 @@
 @import "./mixins";
 
 body {
-  background-color: #04001a;
+  background-color: $back;
 
   &::before {
     content: "";
@@ -16,8 +16,6 @@ body {
     left: 160px;
     top: 320px;
     opacity: 0.3;
-
-
 
     @include breakpoint-up(small) {
       left: 240px;
@@ -34,4 +32,46 @@ body {
       top: 300px;
     }
   }
+}
+
+.global__btp {
+  width: 190px;
+  height: 50px;
+
+  border-top-left-radius: 25px 25px;
+  border-top-right-radius: 25px 25px;
+  border-bottom-left-radius: 25px 25px;
+  border-bottom-right-radius: 25px 25px;
+
+  background-color: $primary;
+  color: $back;
+  font-size:  $txt-small;
+}
+
+.global__tx-lg {
+  font-size: $txt-large-sm;
+  font-weight: bold;
+  line-height: 1;
+  color: $light;
+
+  @include breakpoint-up(small) {
+    font-size: $txt-large;
+  }
+
+}
+
+.global__tx-md {
+  font-size: $txt-medium;
+  font-weight: normal;
+  line-height: 1;
+  color: $gray;
+  
+}
+
+.global__tx-sm {
+  font-size: $txt-small;
+  font-weight: normal;
+  line-height: 1;
+  color: $gray;
+  
 }

@@ -48,6 +48,7 @@ body {
   font-size:  $txt-small;
 }
 
+
 .global__tx-lg {
   font-size: $txt-large-sm;
   font-weight: bold;
@@ -59,6 +60,20 @@ body {
   }
 
 }
+
+.global__tx-mdl {
+  font-size: $txt-large-smh2;
+  font-weight: bold;
+  line-height: 1;
+  color: $light;
+
+  @include breakpoint-up(small) {
+    font-size: $txt-large;
+  }
+
+}
+
+
 
 .global__tx-md {
   font-size: $txt-medium;

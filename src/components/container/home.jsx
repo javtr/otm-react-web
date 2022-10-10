@@ -10,8 +10,8 @@ const Home = () => {
     return (
         <div className='body-home'>
         <Hero></Hero>
-        <Whatis></Whatis>
-        {/* <Features></Features> */}
+        {/* <Whatis></Whatis> */}
+        <Features></Features>
         {/* <Advantages></Advantages> */}
         {/* <BuyButton></BuyButton> */}
         {/* <Footer></Footer> */}

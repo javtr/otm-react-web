@@ -22,6 +22,13 @@
 
 // hero ------------------------------------------
 
+
+.hero{
+
+margin: 0 auto;
+max-width: ($mx-w*1.2);
+
+
 .hero__container {
   display: flex;
 
@@ -83,51 +90,127 @@
   }
 }
 
+}
 // what ------------------------------------------
 
 .what {
+  max-width: $mx-w;
+  margin-top: 90px;
+  width: 100%;
+  margin: 0 auto;
 
-  margin-top: 133px;
+    @include breakpoint-up(medium) {
+      margin-top: 150px;
+    }
 
-
-
-
-  &__title {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  &__subTitle {
-    text-align: left;
-    margin: 0 18px;
-    margin-bottom: 56px;
-  }
+    @include breakpoint-up(large) {
+      margin-top: 150px;
+    }
 
 
-  &__subTitle2 {
-    text-align: center;
-    margin: 0 18px;
-  }
+    &__container {
+      margin: 0 20px;
 
-  &__imagen {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+      @include breakpoint-up(medium) {
+        margin: 0 40px;
+      }
+  
+      @include breakpoint-up(large) {
+        margin: 0 10%;
+      }
 
-    & img {
-      width: 90%;
+    }
+
+
+    &__title {
+      text-align: center;
+      margin-bottom: 20px;
+
+      @include breakpoint-up(medium) {
+        margin-bottom: 25px;
+      }
+
+      @include breakpoint-up(large) {
+        margin-bottom: 30px;
+      }
+
+    }
+
+    &__subTitle {
+      text-align: left;
+      margin-bottom: 56px;
+
+      @include breakpoint-up(medium) {
+        text-align: center;
+        margin-bottom: 65px;
+      }
+
+      @include breakpoint-up(large) {
+        margin-bottom: 90px;
+      }
+
+    }
+
+    &__subTitle2 {
+      text-align: center;
+      margin-bottom: 50px;
+
+      @include breakpoint-up(medium) {
+        margin-bottom: 60px;
+      }
+
+      @include breakpoint-up(large) {
+        margin-bottom: 90px;
+      }      
+    }
+
+    &__imagen {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      @include breakpoint-up(medium) {
+        margin-bottom: 25px;
+      }
+
+      @include breakpoint-up(large) {
+        margin-bottom: 60px;
+      }  
+
+      & img {
+        width: 100%;
+        border-radius: 15px;
+      }
+    }
+
+    &__video {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 24px;
+
+
+
+      @include breakpoint-up(medium) {
+        margin-bottom: 30px;
+      }
+
+      @include breakpoint-up(large) {
+        margin-bottom: 35px;
+      }
+
+      & iframe {
+        width: 100%;
+        height: 48vw;
+        border-radius: 15px;
+
+
+        @include breakpoint-up(large) {
+          height: 660px;
+        }
+
+
+      }
     }
   }
-
-  &__video {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-    & iframe {
-      width: 90%;
-      height: 48vw;
-      border-radius: 15px;
-    }
-  }
-}

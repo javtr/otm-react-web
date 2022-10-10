@@ -1,14 +1,16 @@
-import { Modal } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import Feature from "../pure/feature";
 import ModalFeature from "../pure/modalFeature";
+import { FeaturesData } from "../../assets/info/featuresData.js";
 
 export default function Features() {
   const [abierto, setAbierto] = useState(false);
+  const [featureIndex, setFeatureIndex] = useState(0);
 
   useEffect(() => {}, []);
 
-  function abrirModal() {
+  function abrirModal(index) {
+    setFeatureIndex(index);
     setAbierto(true);
   }
 
@@ -17,12 +19,16 @@ export default function Features() {
   }
 
   return (
-    <div className="card-component">
-      Features
-      <div onClick={() => abrirModal()}>
-        <Feature></Feature>
-      </div>
-        <ModalFeature abierto={abierto} cerrar={cerrarModal}></ModalFeature>
+    <div className="features">
+      {FeaturesData.map((feature, index) => (
+
+         <div key={index} className="features__container" onClick={()=>{abrirModal(index)}}>
+          <Feature feature={feature}></Feature>
+        </div>
+
+      ))}
+
+      <ModalFeature abierto={abierto} cerrar={cerrarModal} index={featureIndex}></ModalFeature>
     </div>
   );
 }

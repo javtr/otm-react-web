@@ -12,11 +12,26 @@ export default function Features() {
   function abrirModal(index) {
     setFeatureIndex(index);
     setAbierto(true);
+    disableScroll();
   }
 
   function cerrarModal() {
     setAbierto(false);
+    enableScroll();
   }
+
+
+  function disableScroll() {
+    document.body.classList.add("stop-scrolling");
+}
+
+function enableScroll() {
+    document.body.classList.remove("stop-scrolling");
+}
+
+
+
+
 
   return (
     <div className="features">

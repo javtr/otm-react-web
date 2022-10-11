@@ -13,7 +13,9 @@ export default function Hero() {
             Easily analyze the buying and selling strength of the futures
             market.
           </div>
+
           <button className="global__btp hero__text--button">Read more</button>
+        
         </div>
 
         <div className="hero__img">

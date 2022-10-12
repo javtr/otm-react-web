@@ -1,44 +1,38 @@
 export const FeaturesData = [
   {
-    imgUrl: "https://picsum.photos/720/480",
-    title: "Indicador 1",
+    imgUrl: "./indicatorIcon.svg",
+    title: "OTM Delta Swing",
     modalData: {
-      imgUrl: "https://picsum.photos/720/480",
-      title: "Modal 1",
+      imgUrl: "./ind_01.gif",
+      title: "OTM Delta Swing",
 
-      title2: "title2 ",
+      title2: "Volume information by waves",
       paragraph2:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit tortor vestibulum, nostra cum velit nulla morbi semper eu fringilla, leo et facilisis sem cubilia malesuada potenti proin. Sodales montes rhoncus magnis ",
-      title3: "title3",
+        "Identify the strength of an impulse or pullback. ",
+      title3: "Exhaustion signals",
       paragraph3:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit tortor vestibulum, nostra",
-      title4: "title4 ",
+        "Display buy or sell signals. ",
+      title4: "Non-resulting effort signals",
       paragraph4:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit tortor vestibulum, nostra cum velit nulla morbi semper eu fringilla, leo et facilisis sem cubilia malesuada potenti proin. Sodales montes rhoncus magnis dis nec fringilla quam, feugiat penatibus odio ligula sagittis tellus, vel donec neque natoque in dui. Eros imperdiet ",
-      title5: "title5",
-      paragraph5:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit tortor vestibulum, nostra cum velit nulla morbi semper eu fringilla, leo et facilisis sem cubilia malesuada potenti proin. Sodales montes rhoncus magnis dis nec fringilla quam, feugiat penatibus odio ligula sagittis tellus",
+        "Detect high volume moves with no price result. ",
     },
   },
   {
-    imgUrl: "https://picsum.photos/720/480",
-    title: "Indicador 2",
+    imgUrl: "./indicatorIcon.svg",
+    title: "OTM Delta Swing",
     modalData: {
-      imgUrl: "https://picsum.photos/720/480",
-      title: "Modal 2",
+      imgUrl: "./ind_01.gif",
+      title: "OTM Delta Swing",
 
-      title2: "title2 ",
+      title2: "Volume information by waves",
       paragraph2:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit tortor vestibulum, nostra cum velit nulla morbi semper eu fringilla, leo et facilisis sem cubilia malesuada potenti proin. Sodales montes rhoncus ",
-      title3: "title3",
+        "Identify the strength of an impulse or pullback. ",
+      title3: "Exhaustion signals",
       paragraph3:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit tortor vestibulum, nostra cum velit nulla morbi semper eu fringilla, leo et facilisis sem cubilia malesuada potenti proin. Sodales montes rhoncus magnis dis nec fringilla quam, feugiat penatibus odio ligula sagittis tellus, ve",
-      title4: "title4 ",
+        "Display buy or sell signals. ",
+      title4: "Non-resulting effort signals",
       paragraph4:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit tortor vestibulum, nostra cum velit nulla morbi semper eu fringilla, leo et facilisis sem cubilia malesuada potenti proin. Sodales montes rhoncus magnis dis nec fringilla quam, feugiat penatibus odio ligula sa",
-      title5: "title5",
-      paragraph5:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit tortor vestibulum, nostra cum velit nulla morbi semper eu fringilla, leo et facilisis sem cubilia malesuada potenti proin. Sodales montes rhoncus magnis dis ne",
-    },
-  },
+        "Detect high volume moves with no price result. ",
+          },
+  }
 ];

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Card from "./card";
 import Modal from "./modal";
 
 

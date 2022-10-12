@@ -20,30 +20,37 @@ export default function Features() {
     enableScroll();
   }
 
-
   function disableScroll() {
     document.body.classList.add("stop-scrolling");
-}
+  }
 
-function enableScroll() {
+  function enableScroll() {
     document.body.classList.remove("stop-scrolling");
-}
-
-
-
-
+  }
 
   return (
     <div className="features">
-      {FeaturesData.map((feature, index) => (
+      <div className="features__container">
 
-         <div key={index} className="features__container" onClick={()=>{abrirModal(index)}}>
-          <Feature feature={feature}></Feature>
-        </div>
+        {FeaturesData.map((feature, index) => (
+          <div
+            key={index}
+            className="features__container--feature"
+            onClick={() => {
+              abrirModal(index);
+            }}
+          >
+            <Feature feature={feature} index={index}></Feature>
+          </div>
+        ))}
 
-      ))}
+      </div>
 
-      <ModalFeature abierto={abierto} cerrar={cerrarModal} index={featureIndex}></ModalFeature>
+      <ModalFeature
+        abierto={abierto}
+        cerrar={cerrarModal}
+        index={featureIndex}
+      ></ModalFeature>
     </div>
   );
 }

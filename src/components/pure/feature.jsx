@@ -1,17 +1,15 @@
-import React, { useState,useEffect } from "react";
-import Card2 from "./card";
+import React, { useState, useEffect } from "react";
+const images = require.context("../../assets/img", true);
 
-export default function Feature({feature}) {
-
-  useEffect(() => {
-  
-  }, []);
-
+export default function Feature({ feature, index }) {
+  useEffect(() => {}, []);
 
   return (
-    <div className="features__container--feature">
-      <Card2 feature={feature}>
-      </Card2>
+    <div key={index} className="feature">
+      <div className="feature__image">
+        <img src={images(feature.imgUrl)}></img>
+      </div>
+      <div className="feature__title">{feature.title}</div>
     </div>
   );
 }

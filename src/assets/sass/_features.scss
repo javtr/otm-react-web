@@ -1,14 +1,37 @@
 .features {
-  width: 500px;
-  margin: 0 auto;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &--feature {
+      width: 100%;
+    }
+  }
 }
 
-.card {
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    width: 64%;
+    margin: 27px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    color: $light;
+  }
 }
 
+// modal
 .modal {
   position: absolute;
   top: 0;
@@ -28,20 +51,25 @@
     @include breakpoint-up(small) {
       transform: translateY(-$nav-h);
     }
-
   }
 
   &--card {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 95%;
+    // width: 95%;
+    width: $modal-w-sm;
     max-height: 100%;
     background-color: $back;
-    border-radius: $modal-br-sm ;
+    border-radius: $modal-br-sm;
 
     @include breakpoint-up(small) {
-      width: 80%;
+      width: $modal-w-md;
+      max-height: 90%;
+    }
+
+    @include breakpoint-up(medium) {
+      width: $modal-w-lg;
       max-height: 90%;
     }
 
@@ -70,7 +98,6 @@
       top: 5px;
       left: 5px;
 
-
       display: flex;
       justify-content: center;
 
@@ -85,70 +112,71 @@
 
     &--img {
       overflow: hidden;
-      height: 25vh;
+      height: $modal-w-sm * 0.56;
       border-radius: $modal-br-sm $modal-br-sm 0 0;
-      
+
+      @include breakpoint-up(small) {
+        height: $modal-w-md * 0.56;
+      }
+
+      @include breakpoint-up(medium) {
+        height: $modal-w-lg * 0.56;
+      }
+
       img {
         width: 100%;
       }
     }
 
     &--containerText {
-      margin: 15px;
-      // height: 70%;
-      // position: relative;
+      margin: 10px;
 
       @include breakpoint-up(small) {
         margin: 25px;
       }
-
-
-
-
     }
 
     &--title {
       color: $light;
+      font-size: $txt-small;
       font-weight: bold;
       text-align: center;
-      margin-top: 10px 0;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      line-height: 1;
 
       @include breakpoint-up(small) {
-        margin-top: 20px 0;
-        font-size: $txt-medium;
-
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: $txt-small;
       }
-
-
     }
 
     &--subTitle {
       text-align: left;
+      font-size: $txt-xsmall;
       color: $light;
+      font-weight: bold;
+      line-height: 1;
       margin-bottom: 5px;
 
       @include breakpoint-up(small) {
         margin-bottom: 15px;
-        font-size: $txt-small;
-
-      }      
+        font-size: $txt-xsmall;
+      }
     }
 
     &--text {
       text-align: left;
       font-size: $txt-xxsmall;
+      line-height: 1;
       margin-bottom: 15px;
+      color: $gray;
 
       @include breakpoint-up(small) {
         margin-bottom: 25px;
-        font-size: $txt-small;
-        
-      }    
-
+        font-size: $txt-xxsmall;
+      }
     }
-
-
   }
 }
-
-

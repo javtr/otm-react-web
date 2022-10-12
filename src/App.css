@@ -461,11 +461,6 @@ body::before {
   }
 }
 
-.features {
-  width: 500px;
-  margin: 0 auto;
-}
-
 .card {
   width: 100px;
   height: 100px;

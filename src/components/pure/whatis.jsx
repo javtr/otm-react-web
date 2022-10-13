@@ -4,7 +4,7 @@ import whatImg2 from "../../assets/img/otm_02.png";
 
 export default function Whatis() {
   return (
-    <div className="what">
+    <div className="what  global__cont">
       <div className="what__container">
         <h2 className="global__tx-mdl  what__title">What is OTM?</h2>
         <h4 className="global__tx-sm  what__subTitle">

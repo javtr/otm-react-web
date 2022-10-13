@@ -1,13 +1,27 @@
 .features {
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__subTitle {
+    margin-bottom: 56px;
+  }
+
   &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+
+    @include breakpoint-up(small) {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
     &--feature {
       width: 100%;
+
+      @include breakpoint-up(small) {
+        width: 50%;
+      }
+
     }
   }
 }
@@ -17,12 +31,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 
   &__image {
     width: 64%;
     margin: 27px;
+
     img {
       width: 100%;
+    }
+
+    @include breakpoint-up(small) {
+      width: 70%;
+
+
     }
   }
 

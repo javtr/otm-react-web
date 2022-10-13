@@ -3,16 +3,16 @@ import BuyButton from '../pure/buyButton';
 import Footer from '../pure/footer';
 import Hero from '../pure/hero'
 import Whatis from '../pure/whatis';
-import Advantages from './advantages';
+import Advantages from '../pure/advantage';
 import Features from './features';
 
 const Home = () => {
     return (
         <div className='body-home'>
-        <Hero></Hero>
+        {/* <Hero></Hero> */}
         {/* <Whatis></Whatis> */}
         <Features></Features>
-        {/* <Advantages></Advantages> */}
+        <Advantages></Advantages>
         {/* <BuyButton></BuyButton> */}
         {/* <Footer></Footer> */}
         </div>

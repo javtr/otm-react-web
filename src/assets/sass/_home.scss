@@ -22,195 +22,258 @@
 
 // hero ------------------------------------------
 
+.hero {
+  margin: 0 auto;
+  max-width: ($mx-w * 1.2);
 
-.hero{
+  .hero__container {
+    display: flex;
 
-margin: 0 auto;
-max-width: ($mx-w*1.2);
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 25px;
 
-
-.hero__container {
-  display: flex;
-
-  flex-direction: column;
-  align-items: baseline;
-  margin-top: 25px;
-
-  @include breakpoint-up(small) {
-    flex-direction: row;
-    align-items: center;
-    margin-top: 0px;
-  }
-}
-
-.hero__img {
-  width: 100%;
-  margin: 10px;
-
-  @include breakpoint-up(small) {
-    width: 50%;
-    margin: 0px;
+    @include breakpoint-up(small) {
+      flex-direction: row;
+      align-items: center;
+      margin-top: 0px;
+    }
   }
 
-  img {
+  .hero__img {
+    width: 100%;
+    margin: 10px;
+
+    @include breakpoint-up(small) {
+      width: 50%;
+      margin: 0px;
+    }
+
+    img {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  .hero__text {
+    color: $light;
+    margin-left: 25px;
     width: 90%;
-    margin: 0 auto;
-  }
-}
-
-.hero__text {
-  color: $light;
-  margin-left: 25px;
-  width: 90%;
-
-  @include breakpoint-up(small) {
-    margin-left: 50px;
-    width: 50%;
-  }
-
-  @include breakpoint-up(large) {
-    margin-left: 100px;
-    width: 50%;
-  }
-
-  &--title {
-    margin-bottom: 45px;
 
     @include breakpoint-up(small) {
-      margin-bottom: 50px;
+      margin-left: 50px;
+      width: 50%;
+    }
+
+    @include breakpoint-up(large) {
+      margin-left: 100px;
+      width: 50%;
+    }
+
+    &--title {
+      margin-bottom: 45px;
+
+      @include breakpoint-up(small) {
+        margin-bottom: 50px;
+      }
+    }
+
+    &--subTitle {
+      margin-bottom: 35px;
+
+      @include breakpoint-up(small) {
+        margin-bottom: 75px;
+      }
     }
   }
-
-  &--subTitle {
-    margin-bottom: 35px;
-
-    @include breakpoint-up(small) {
-      margin-bottom: 75px;
-    }
-  }
-}
-
 }
 // what ------------------------------------------
 
 .what {
-  max-width: $mx-w;
-  margin-top: 90px;
-  width: 100%;
-  margin: 0 auto;
+  &__container {
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
 
     @include breakpoint-up(medium) {
-      margin-top: 150px;
+      margin-bottom: 25px;
     }
 
     @include breakpoint-up(large) {
-      margin-top: 150px;
+      margin-bottom: 30px;
     }
+  }
 
+  &__subTitle {
+    text-align: left;
+    margin-bottom: 56px;
 
-    &__container {
-      margin: 0 20px;
-
-      @include breakpoint-up(medium) {
-        margin: 0 40px;
-      }
-  
-      @include breakpoint-up(large) {
-        margin: 0 10%;
-      }
-
-    }
-
-
-    &__title {
+    @include breakpoint-up(medium) {
       text-align: center;
-      margin-bottom: 20px;
-
-      @include breakpoint-up(medium) {
-        margin-bottom: 25px;
-      }
-
-      @include breakpoint-up(large) {
-        margin-bottom: 30px;
-      }
-
+      margin-bottom: 65px;
     }
 
-    &__subTitle {
-      text-align: left;
-      margin-bottom: 56px;
+    @include breakpoint-up(large) {
+      margin-bottom: 90px;
+    }
+  }
 
-      @include breakpoint-up(medium) {
-        text-align: center;
-        margin-bottom: 65px;
-      }
+  &__subTitle2 {
+    text-align: center;
+    margin-bottom: 50px;
 
-      @include breakpoint-up(large) {
-        margin-bottom: 90px;
-      }
-
+    @include breakpoint-up(medium) {
+      margin-bottom: 60px;
     }
 
-    &__subTitle2 {
-      text-align: center;
-      margin-bottom: 50px;
+    @include breakpoint-up(large) {
+      margin-bottom: 90px;
+    }
+  }
 
-      @include breakpoint-up(medium) {
-        margin-bottom: 60px;
-      }
+  &__imagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 
-      @include breakpoint-up(large) {
-        margin-bottom: 90px;
-      }      
+    @include breakpoint-up(medium) {
+      margin-bottom: 25px;
     }
 
-    &__imagen {
+    @include breakpoint-up(large) {
+      margin-bottom: 60px;
+    }
+
+    & img {
       width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
+      border-radius: 15px;
+    }
+  }
 
-      @include breakpoint-up(medium) {
-        margin-bottom: 25px;
-      }
+  &__video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 24px;
 
-      @include breakpoint-up(large) {
-        margin-bottom: 60px;
-      }  
-
-      & img {
-        width: 100%;
-        border-radius: 15px;
-      }
+    @include breakpoint-up(medium) {
+      margin-bottom: 30px;
     }
 
-    &__video {
-      display: flex;
-      justify-content: center;
+    @include breakpoint-up(large) {
+      margin-bottom: 35px;
+    }
+
+    & iframe {
       width: 100%;
-      margin-bottom: 24px;
-
-
-
-      @include breakpoint-up(medium) {
-        margin-bottom: 30px;
-      }
+      height: 48vw;
+      border-radius: 15px;
 
       @include breakpoint-up(large) {
-        margin-bottom: 35px;
-      }
-
-      & iframe {
-        width: 100%;
-        height: 48vw;
-        border-radius: 15px;
-
-
-        @include breakpoint-up(large) {
-          height: 660px;
-        }
-
-
+        height: 660px;
       }
     }
   }
+}
+
+// Advantages -------------------------------------
+
+.advantages {
+  &__title {
+    font-size: $txt-large-smh2;
+    font-weight: bold;
+    line-height: 1;
+    color: $light;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include breakpoint-up(small) {
+      font-size: $txt-large;
+      margin: 35px 0;
+    }
+  }
+
+  &__subTitle {
+    font-size: $txt-small;
+    font-weight: normal;
+    line-height: 1;
+    color: $gray;
+
+    margin-bottom: 56px;
+
+    @include breakpoint-up(small) {
+      font-size: $txt-medium;
+    }
+  }
+
+  &__container {
+  }
+
+  &__advantage {
+    @include breakpoint-up(small) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--img {
+      width: 60%;
+      margin: 0 auto;
+
+      @include breakpoint-up(small) {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+      }
+
+      img {
+        filter: invert(1);
+
+        @include breakpoint-up(small) {
+          width: 80%;
+        }
+      }
+    }
+
+    &--text {
+      @include breakpoint-up(small) {
+        width: 50%;
+        padding: 0 20px;
+      }
+
+      h2 {
+        font-size: $txt-small;
+        font-weight: bold;
+        line-height: 1;
+        color: $light;
+        margin-bottom: 20px;
+        text-align: left;
+
+        @include breakpoint-up(small) {
+          font-size: $txt-large-smh2;
+        }
+      }
+      h4 {
+        font-size: $txt-xsmall;
+        font-weight: normal;
+        line-height: 1;
+        color: $gray;
+        margin-bottom: 50px;
+
+        @include breakpoint-up(small) {
+          font-size: $txt-small;
+        }
+      }
+    }
+  }
+}
+
+.flex-row-rev {
+  @include breakpoint-up(small) {
+    flex-direction: row-reverse;
+  }
+}

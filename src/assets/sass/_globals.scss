@@ -108,3 +108,20 @@ body {
   color: $gray;
   
 }
+
+
+.global__cont {
+  max-width: $mx-w;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 50px;
+  
+  @include breakpoint-up(medium) {
+    padding: 0 60px;
+    padding-top: 150px;
+  }
+
+  @include breakpoint-up(large) {
+    padding: 0 10%;
+  }  
+}

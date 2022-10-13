@@ -29,8 +29,13 @@ export default function Features() {
   }
 
   return (
-    <div className="features">
+    <div className="features global__cont">
+
+<h2 className="global__tx-mdl features__title">Features</h2>
+        <h3 className="global__tx-sm features__subTitle">The indicators designed for NinjaTrader 8 provide the information needed to easily identify high probability patterns.</h3>
+
       <div className="features__container">
+
 
         {FeaturesData.map((feature, index) => (
           <div

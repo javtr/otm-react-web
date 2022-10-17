@@ -277,3 +277,124 @@
     flex-direction: row-reverse;
   }
 }
+
+// Button -----------------------------------------------------------------
+
+.buybutton {
+  &__title {
+    font-size: $txt-large-smh2;
+    font-weight: bold;
+    line-height: 1;
+    color: $light;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include breakpoint-up(small) {
+      font-size: $txt-large;
+      margin: 35px 0;
+    }
+  }
+
+  &__subTitle {
+    font-size: $txt-small;
+    font-weight: normal;
+    line-height: 1;
+    color: $gray;
+
+    margin-bottom: 56px;
+
+    @include breakpoint-up(small) {
+      font-size: $txt-medium;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    & button {
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    & img {
+      width: 100%;
+
+      @include breakpoint-up(small) {
+        width: 80%;
+      }
+    }
+  }
+}
+
+// Footer ----------------------------------------------------
+
+.footer {
+  position: relative;
+  bottom: -$nav-h;
+
+
+  &__linea {
+    height: 1px;
+    background-color: #3e3e3e;
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    font-size: $txt-xxsmall;
+    font-weight: normal;
+    line-height: 1;
+    color: $gray;
+    text-align: justify;
+
+    margin-bottom: 47px;
+
+
+    @include breakpoint-up(small) {
+      font-size: $txt-xsmall;
+    }
+
+  }
+
+  &__subTitle {
+    font-size: $txt-small;
+    font-weight: bold;
+    line-height: 1;
+    color: $gray;
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    @include breakpoint-up(small) {
+      font-size: $txt-medium;
+    }
+
+  }
+
+  &__mail {
+    font-size: $txt-xsmall;
+    font-weight: normal;
+    line-height: 1;
+    color: $gray;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 54px;
+
+
+  }
+
+  &__rights {
+    font-size: $txt-xsmall;
+    font-weight: normal;
+    line-height: 1;
+    color: $gray;
+    text-align: center;
+    padding-bottom: 50px;
+    
+  }
+}

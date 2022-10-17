@@ -9,11 +9,11 @@ import Features from './features';
 const Home = () => {
     return (
         <div className='body-home'>
-        {/* <Hero></Hero> */}
-        {/* <Whatis></Whatis> */}
+        <Hero></Hero>
+        <Whatis></Whatis>
         <Features></Features>
         <Advantages></Advantages>
-        {/* <BuyButton></BuyButton> */}
+        <BuyButton></BuyButton>
         {/* <Footer></Footer> */}
         </div>
     );

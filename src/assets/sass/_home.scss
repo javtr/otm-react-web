@@ -345,6 +345,31 @@
     margin-bottom: 28px;
   }
 
+
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint-up(small) {
+      flex-direction: row;
+      align-items: baseline;
+      
+    }
+  }
+
+  &__textContainer{
+    padding: 10px;
+
+    @include breakpoint-up(small) {
+      width: 70%;
+    }
+  }
+
+
+
   &__text {
     font-size: $txt-xxsmall;
     font-weight: normal;
@@ -357,9 +382,19 @@
 
     @include breakpoint-up(small) {
       font-size: $txt-xsmall;
+      margin-bottom: 0;
     }
 
   }
+
+
+  &__mailContainer{
+
+    @include breakpoint-up(small) {
+      width: 30%;
+    }
+  }
+  
 
   &__subTitle {
     font-size: $txt-small;

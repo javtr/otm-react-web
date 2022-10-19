@@ -338,16 +338,13 @@
   position: relative;
   bottom: -$nav-h;
 
-
   &__linea {
     height: 1px;
     background-color: #3e3e3e;
     margin-bottom: 28px;
   }
 
-
-
-  &__container{
+  &__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -356,19 +353,16 @@
     @include breakpoint-up(small) {
       flex-direction: row;
       align-items: baseline;
-      
     }
   }
 
-  &__textContainer{
+  &__textContainer {
     padding: 10px;
 
     @include breakpoint-up(small) {
       width: 70%;
     }
   }
-
-
 
   &__text {
     font-size: $txt-xxsmall;
@@ -379,22 +373,17 @@
 
     margin-bottom: 47px;
 
-
     @include breakpoint-up(small) {
       font-size: $txt-xsmall;
       margin-bottom: 0;
     }
-
   }
 
-
-  &__mailContainer{
-
+  &__mailContainer {
     @include breakpoint-up(small) {
       width: 30%;
     }
   }
-  
 
   &__subTitle {
     font-size: $txt-small;
@@ -408,7 +397,6 @@
     @include breakpoint-up(small) {
       font-size: $txt-medium;
     }
-
   }
 
   &__mail {
@@ -419,8 +407,6 @@
     text-decoration: underline;
     text-align: center;
     margin-bottom: 54px;
-
-
   }
 
   &__rights {
@@ -430,6 +416,5 @@
     color: $gray;
     text-align: center;
     padding-bottom: 50px;
-    
   }
 }

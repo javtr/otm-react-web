@@ -1,0 +1,35 @@
+.featPage {
+    color: aliceblue;
+//   &__cont {
+    
+//     &--side {
+//     }
+
+//     &--card {
+//     }
+//   }
+
+  &__aside {
+    margin-left: 35px;
+
+
+
+    &--title{
+        color: $light;
+        font-size: $txt-large-smh2;
+        margin: 30px 0;
+
+    }
+
+    &--item{
+        color: $gray;
+        font-size: $txt-medium;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        
+    }    
+
+  }
+}

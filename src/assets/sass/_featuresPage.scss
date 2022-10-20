@@ -1,35 +1,114 @@
 .featPage {
-    color: aliceblue;
-//   &__cont {
-    
-//     &--side {
-//     }
-
-//     &--card {
-//     }
-//   }
-
-  &__aside {
-    margin-left: 35px;
 
 
+  @include breakpoint-up(medium) {
+    padding-top: 60px;
+  }
 
-    &--title{
-        color: $light;
-        font-size: $txt-large-smh2;
-        margin: 30px 0;
+  &__cont {
+
+
+    @include breakpoint-up(medium) {
+      display: flex;
+      justify-content: center;
 
     }
 
-    &--item{
-        color: $gray;
-        font-size: $txt-medium;
-        margin-left: 10px;
-        margin-bottom: 20px;
-        cursor: pointer;
+  }
+  
 
-        
+  &__aside {
+    margin-left: 20px;
+
+    @include breakpoint-up(medium) {
+      margin-left: 0px;
+      width: 30%;
+      padding-right: 15px;
+    }
+    &--title1 {
+      color: $light;
+      font-size: $txt-large-smh2;
+      margin-bottom: 30px;
+    }
+
+    &--title2 {
+      color: $light;
+      font-size: $txt-large-smh2;
+      margin: 30px 0;
     }    
 
+    &--item {
+      color: $gray;
+      font-size: $txt-medium;
+      margin-left: 10px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
   }
+
+  &__dyncard {
+    background-color:$backLight;
+    border-radius: 45px;
+    margin-top: 60px;
+
+    @include breakpoint-up(medium) {
+      margin-top:0px;
+    }
+
+    &--card {
+      padding-bottom: 90px;
+      max-width: 600px;
+      
+      &--img {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 0;
+
+        img {
+
+          width: 100%;
+          border-radius: 45px 45px 0 0;
+        }
+      }
+
+      &--tit {
+        font-size: $txt-large-smh2;
+        font-weight: bold;
+        line-height: 1;
+        color: $light;
+        text-align: center;
+        margin-top:50px;
+        margin-bottom: 40px;
+
+
+      }
+
+      &--sub {
+        font-size: $txt-small;
+        font-weight: bold;
+        line-height: 1;
+        color: $light;
+        margin: 0 15px;
+        margin-bottom: 30px;
+      }
+
+      &--txt {
+        font-size: $txt-small;
+        font-weight: normal;
+        line-height: 1.5;
+        color: $gray;
+        text-align: left;
+        margin: 0 15px;
+        margin-bottom: 50px;
+
+      }
+    }
+  }
+
+.feat_buyButton{
+  margin-bottom: 0px;
+}
+
+
 }

@@ -20,7 +20,8 @@ body {
   
 
   &::before {
-    content: "";
+    display: none;
+    // content: "";
     position: absolute;
     height: 100%; //necesario
     width: 100%; //necesario
@@ -123,5 +124,6 @@ body {
 
   @include breakpoint-up(large) {
     padding: 0 10%;
+    padding-top: 150px;
   }  
 }

@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import Layout from './pages/layout';
 import Home from './pages/home';
 import FeaturesPage from './pages/featuresPage';
+import BuyPage from './pages/buyPage';
 
 
 
@@ -15,10 +16,11 @@ class App extends Component {
       <div className="App">
 
       <Routes>
+
         <Route path='/' element={<Layout></Layout>}>
           <Route index element={<Home></Home>}></Route>
           <Route path='features' element={<FeaturesPage></FeaturesPage>}></Route>
-
+          <Route path='buy' element={<BuyPage></BuyPage>}></Route>
         </Route>
       </Routes>
 

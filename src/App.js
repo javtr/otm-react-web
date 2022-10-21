@@ -6,6 +6,7 @@ import Layout from './pages/layout';
 import Home from './pages/home';
 import FeaturesPage from './pages/featuresPage';
 import BuyPage from './pages/buyPage';
+import ExamplePage from './pages/examplePage';
 
 
 
@@ -21,6 +22,7 @@ class App extends Component {
           <Route index element={<Home></Home>}></Route>
           <Route path='features' element={<FeaturesPage></FeaturesPage>}></Route>
           <Route path='buy' element={<BuyPage></BuyPage>}></Route>
+          <Route path='example' element={<ExamplePage></ExamplePage>}></Route>
         </Route>
       </Routes>
 

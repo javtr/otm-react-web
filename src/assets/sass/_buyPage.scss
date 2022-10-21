@@ -1,0 +1,265 @@
+.buyPrimario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__titulo {
+    font-size: $txt-large-smh2;
+    font-weight: bold;
+    line-height: 1;
+    color: $light;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  &__subTitulo {
+    font-size: $txt-medium;
+    font-weight: normal;
+    line-height: 1.5;
+    color: $gray;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  &__card {
+    color: $light;
+    background-color: $backLight;
+    max-width: 600px;
+    position: relative;
+    top: 0;
+    // margin: 0 25px;
+    border-radius: $buy-br-sm;
+    width: 100%;
+
+    @include breakpoint-up(large) {
+      max-width: 700px;
+    }
+
+    &--img {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 255, 182, 0.7) 0%,
+        rgba(105, 0, 255, 0.7) 100%
+      );
+      border-radius: $buy-br-sm $buy-br-sm 0 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &--imgSec {
+      display: flex;
+      justify-content: center;
+      border-radius: $buy-br-sm $buy-br-sm 0 0;
+
+      img {
+        border-radius: $buy-br-sm $buy-br-sm 0 0;
+        width: 100%;
+      }
+    }
+
+    &--tit {
+      font-size: $txt-large-smh2;
+      font-weight: bold;
+      line-height: 1;
+      color: $light;
+      text-align: center;
+      margin-bottom: 45px;
+      margin-top: 35px;
+    }
+
+    &--itm {
+      font-size: $txt-medium2;
+      font-weight: normal;
+      line-height: 1;
+      color: $gray;
+      text-align: left;
+      position: relative;
+      margin-bottom: 13px;
+      margin-left: 10%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 30px;
+        width: 8px;
+        background-color: $secundary;
+        margin-left: -15px;
+        top: -3px;
+        opacity: 0.75;
+      }
+    }
+
+    &--price {
+      font-size: $txt-medium3;
+      font-weight: bold;
+      line-height: 1;
+      color: $light;
+      text-align: center;
+      margin: 50px 0;
+
+      div {
+        display: inline;
+        font-size: $txt-medium3;
+        font-weight: normal;
+        font-style: italic;
+        line-height: 1;
+        color: $gray;
+        text-align: center;
+      }
+    }
+
+    &--button {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.buySecundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__titulo {
+    font-size: $txt-large-smh2;
+    font-weight: bold;
+    line-height: 1;
+    color: $light;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  &__subTitulo {
+    font-size: $txt-medium;
+    font-weight: normal;
+    line-height: 1.5;
+    color: $gray;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      justify-content: center;
+  
+    }
+
+  }
+
+
+
+  &__card {
+    color: $light;
+    background-color: $backLight;
+    max-width: 600px;
+    position: relative;
+    top: 0;
+    margin: 20px;
+    border-radius: $buy-br-sm;
+    width: 75%;
+    min-width: 275px;
+
+
+    @include breakpoint-up(medium) {
+      width: 30%;
+    }    
+
+    @include breakpoint-up(large) {
+      max-width: 700px;
+    }
+
+    &--img {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 255, 182, 0.7) 0%,
+        rgba(105, 0, 255, 0.7) 100%
+      );
+      border-radius: $buy-br-sm $buy-br-sm 0 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &--imgSec {
+      display: flex;
+      justify-content: center;
+      border-radius: $buy-br-sm $buy-br-sm 0 0;
+
+      img {
+        border-radius: $buy-br-sm $buy-br-sm 0 0;
+        width: 100%;
+      }
+    }
+
+    &--tit {
+      font-size: $txt-large-smh2;
+      font-weight: bold;
+      line-height: 1;
+      color: $light;
+      text-align: center;
+      margin-bottom: 45px;
+      margin-top: 35px;
+    }
+
+    &--itm {
+      font-size: $txt-medium2;
+      font-weight: normal;
+      line-height: 1;
+      color: $gray;
+      text-align: left;
+      position: relative;
+      margin-bottom: 13px;
+      margin-left: 10%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 30px;
+        width: 8px;
+        background-color: $secundary;
+        margin-left: -15px;
+        top: -3px;
+        opacity: 0.75;
+      }
+    }
+
+    &--price {
+      font-size: $txt-medium3;
+      font-weight: bold;
+      line-height: 1;
+      color: $light;
+      text-align: center;
+      margin: 50px 0;
+
+      div {
+        display: inline;
+        font-size: $txt-medium3;
+        font-weight: normal;
+        font-style: italic;
+        line-height: 1;
+        color: $gray;
+        text-align: center;
+      }
+    }
+
+    &--button {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+  }
+}

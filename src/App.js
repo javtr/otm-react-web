@@ -7,6 +7,7 @@ import Home from './pages/home';
 import FeaturesPage from './pages/featuresPage';
 import BuyPage from './pages/buyPage';
 import ExamplePage from './pages/examplePage';
+import ContactForm from './components/pure/form/contactForm';
 
 
 
@@ -23,6 +24,7 @@ class App extends Component {
           <Route path='features' element={<FeaturesPage></FeaturesPage>}></Route>
           <Route path='buy' element={<BuyPage></BuyPage>}></Route>
           <Route path='example' element={<ExamplePage></ExamplePage>}></Route>
+          <Route path='contact' element={<ContactForm></ContactForm>}></Route>
         </Route>
       </Routes>
 

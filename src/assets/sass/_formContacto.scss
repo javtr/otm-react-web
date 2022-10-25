@@ -1,0 +1,62 @@
+.formContact {
+  color: rgb(255, 255, 255);
+  background-color: $backLight;
+  border-radius: 45px;
+  width: 80%;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin-top: 60px;
+
+  &__title {
+    font-size: $txt-large-smh2;
+    font-weight: bold;
+    line-height: 1;
+    color: $light;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
+  &__campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: $txt-medium;
+      font-weight: normal;
+      line-height: 1;
+      color: $light;
+      margin-bottom: 20px;
+      text-align: left;
+      width: 85%;
+    }
+
+    input {
+      background-color: $backLight;
+      width: 80%;
+      padding: 15px;
+      color: $gray;
+      border: 1px solid $secundaryDark;
+      border-radius: 15px;
+      margin-bottom: 50px;
+    }
+
+    textarea {
+      background-color: $backLight;
+      padding: 15px;
+      width: 80%;
+      color: $gray;
+      border: 1px solid $secundaryDark;
+      border-radius: 15px;
+      margin-bottom: 50px;
+      resize: vertical;
+    }
+  }
+
+  &__boton {
+    display: flex;
+    justify-content: center;
+    button {
+    }
+  }
+}

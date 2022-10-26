@@ -2,10 +2,12 @@
   color: rgb(255, 255, 255);
   background-color: $backLight;
   border-radius: 45px;
-  width: 80%;
+  margin: 0 auto;
+  width: 90%;
   padding-top: 60px;
   padding-bottom: 30px;
-  margin-top: 60px;
+  margin-top: 70px;
+  max-width: 800px;
 
   &__title {
     font-size: $txt-large-smh2;
@@ -32,8 +34,8 @@
     }
 
     input {
-      background-color: $backLight;
-      width: 80%;
+      background-color: $backExLight;
+      width: 85%;
       padding: 15px;
       color: $gray;
       border: 1px solid $secundaryDark;
@@ -41,22 +43,72 @@
       margin-bottom: 50px;
     }
 
+    input:focus {
+      border: 1px solid $secundaryLight;
+    }
+
     textarea {
-      background-color: $backLight;
+      background-color: $backExLight;
       padding: 15px;
-      width: 80%;
+      width: 85%;
       color: $gray;
       border: 1px solid $secundaryDark;
       border-radius: 15px;
       margin-bottom: 50px;
       resize: vertical;
+      height: 140px;
+
+      @include breakpoint-up(medium) {
+        height: 180px;
+      }
+
+      @include breakpoint-up(large) {
+        height: 220px;
+      }
     }
+
+    textarea:focus {
+      border: 1px solid $secundaryLight;
+    }
+  }
+
+  &__recaptcha {
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 35px;
+    width: 85%;
+    
+    iframe {
+
+
+      @include breakpoint-up(medium) {
+
+      border: 2px solid $secundaryDark;
+      }
+
+
+
+    }
+
+
+
+
+
   }
 
   &__boton {
     display: flex;
     justify-content: center;
+
     button {
+      width: 85%;
+      height: 50px;
+
+      border-radius: $borde-btn-form;
+
+      background-color: $primary;
+      color: $back;
+      font-size: $txt-small;
     }
   }
 }

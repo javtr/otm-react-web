@@ -1,16 +1,26 @@
-import React from "react";
-import { useForm, useFieldArray, Controller } from "react-hook-form";
+import React,{useState} from "react";
+import { useForm } from "react-hook-form";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactForm() {
   const { register, control, handleSubmit, watch } = useForm();
+  const [captcha, setCaptcha] = useState(null);
 
   function registerSubmit(data) {
+    console.log(window.innerHeight);
+    if(captcha){
     console.log(data);
+    }
   }
+
+  function onChange(value) {
+    setCaptcha(true)
+  }
+
 
   return (
     <div>
-      <div className="formContact  global__cont">
+      <div className="formContact ">
         <h2 className="formContact__title">Contact us</h2>
 
         <form onSubmit={handleSubmit(registerSubmit)}>
@@ -29,10 +39,17 @@ export default function ContactForm() {
             <textarea {...register("message")} placeholder="message" />
           </div>
 
+          <div className="formContact__recaptcha">
+            <ReCAPTCHA sitekey="6Ldy4bUiAAAAAH9ZiMjWguQIIigWl8LafZI38GKm" 
+            onChange={onChange} 
+            size= {window.innerWidth<640? "compact" : "normal"} 
+
+            theme="dark"
+            />
+          </div>
+
           <div className="formContact__boton">
-            <button className="global__btp" type="submit">
-              Submit
-            </button>
+            <button type="submit">Submit</button>
           </div>
         </form>
       </div>

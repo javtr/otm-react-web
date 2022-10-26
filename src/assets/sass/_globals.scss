@@ -54,13 +54,13 @@ body {
 }
 
 .global__btp {
-  width: 190px;
+  width: 80%;
   height: 50px;
 
-  border-top-left-radius: 25px 25px;
-  border-top-right-radius: 25px 25px;
-  border-bottom-left-radius: 25px 25px;
-  border-bottom-right-radius: 25px 25px;
+  border-top-left-radius: $borde-btn-form $borde-btn-form;
+  border-top-right-radius: $borde-btn-form $borde-btn-form;
+  border-bottom-left-radius: $borde-btn-form $borde-btn-form;
+  border-bottom-right-radius: $borde-btn-form $borde-btn-form;
 
   background-color: $primary;
   color: $back;

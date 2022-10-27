@@ -55,6 +55,9 @@ const NavBar = () => {
           <Link to="contact">Contact</Link>
         </div>
       </div>
+
+
+      
     </div>
   );
 };

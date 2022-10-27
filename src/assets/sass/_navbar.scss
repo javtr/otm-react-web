@@ -55,6 +55,10 @@
   }
 
   &__burguer {
+    position: absolute;
+    right: 23px;
+
+
     @include breakpoint-down(small) {
 
       margin-top: 20px;

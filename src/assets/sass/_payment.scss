@@ -4,24 +4,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 37px;
-
 
   &__logo {
     width: 90%;
     margin-bottom: 37px;
     img {
       width: 160px;
-
     }
   }
 }
 
 .CardOrder {
-    color: white;
-    background-color: $backLight;
-    width: 90%;
-    border-radius: 10px;
+  color: $light;
+  background-color: $backLight;
+  width: 90%;
+  border-radius: 10px;
+  margin-bottom: 37px;
 
   &__box {
     height: 70px;
@@ -29,7 +27,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;
-    
+
     &--title {
       position: absolute;
       bottom: 10px;
@@ -45,8 +43,7 @@
       right: 15px;
       font-size: $txt-xsmall;
       font-weight: normal;
-      color: $back;      
-
+      color: $back;
     }
   }
 
@@ -54,22 +51,18 @@
     padding: 0 15px;
     padding-top: 50px;
 
-
     &--product {
       display: flex;
       flex-direction: column;
 
-
-
       &--item {
-        >p{
+        > p {
           font-size: $txt-medium;
           font-weight: normal;
-          color: $light; 
-          margin-bottom: 18px; 
-
+          color: $light;
+          margin-bottom: 18px;
         }
-        div{
+        div {
           height: 50px;
           background-color: $backExLight;
           border: 1px solid $secundaryDark;
@@ -78,39 +71,117 @@
           align-items: center;
           padding: 0 7px;
           margin-bottom: 35px;
-
         }
-
       }
 
       &--price {
         width: 50%;
       }
-
     }
 
-    hr{
-        height: 1px;
-        background-color: $secundaryDark;
-        margin-top: 25px;
-        margin-bottom: 35px;
-
+    hr {
+      height: 1px;
+      background-color: $secundaryDark;
+      margin-top: 25px;
+      margin-bottom: 35px;
     }
 
-    h4{
+    h4 {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       font-size: $txt-medium;
       font-weight: normal;
-      color: $light; 
-      margin-bottom: 30px;    
+      color: $light;
+      margin-bottom: 30px;
 
-      p{
+      p {
         margin-left: 5px;
       }
+    }
+  }
+}
 
+.payment {
+  max-width: $mx-w;
+  margin-bottom: 37px;
+  color: $light;
+  background-color: $backLight;
+  width: 90%;
+  border-radius: 10px;
+  padding: 30px 0;
+
+  h3 {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column-reverse;
+
+    &--logo {
+      padding: 0 15px;
+      &--img {
+        img {
+        }
+      }
+      &--text {
+        p {
+        }
+      }
     }
 
+    &--buttons {
+      padding: 0 15px;
 
+      &--title {
+        position: relative;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        hr {
+          position: absolute;
+          height: 1px;
+          width: 100%;
+          background-color: $secundaryDark;
+          top: 8px;
+        }
+        h4 {
+          position: absolute;
+          background-color: $backLight;
+          padding: 0 10px;
+
+        }
+      }
+
+      &--btnTeach{
+        display: flex;
+        justify-content: center;
+
+        button{
+          width: 90%;
+          height: 50px;
+          background-color: $primary;
+          margin: 0 auto;
+          border-radius: 10px;
+          font-size: $txt-medium2;
+          font-style: italic;
+          color: $light;
+
+
+        }
+
+
+      }
+
+
+      &--paypal {
+      }
+
+      p {
+      }
+    }
   }
 }

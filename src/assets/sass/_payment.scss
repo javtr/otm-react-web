@@ -1,0 +1,116 @@
+.orderPage {
+  max-width: $mx-w;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 37px;
+
+
+  &__logo {
+    width: 90%;
+    margin-bottom: 37px;
+    img {
+      width: 160px;
+
+    }
+  }
+}
+
+.CardOrder {
+    color: white;
+    background-color: $backLight;
+    width: 90%;
+    border-radius: 10px;
+
+  &__box {
+    height: 70px;
+    background-color: $primary;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    
+    &--title {
+      position: absolute;
+      bottom: 10px;
+      left: 15px;
+      font-size: $txt-medium;
+      font-weight: bold;
+      color: $back;
+    }
+
+    &--date {
+      position: absolute;
+      bottom: 10px;
+      right: 15px;
+      font-size: $txt-xsmall;
+      font-weight: normal;
+      color: $back;      
+
+    }
+  }
+
+  &__content {
+    padding: 0 15px;
+    padding-top: 50px;
+
+
+    &--product {
+      display: flex;
+      flex-direction: column;
+
+
+
+      &--item {
+        >p{
+          font-size: $txt-medium;
+          font-weight: normal;
+          color: $light; 
+          margin-bottom: 18px; 
+
+        }
+        div{
+          height: 50px;
+          background-color: $backExLight;
+          border: 1px solid $secundaryDark;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          padding: 0 7px;
+          margin-bottom: 35px;
+
+        }
+
+      }
+
+      &--price {
+        width: 50%;
+      }
+
+    }
+
+    hr{
+        height: 1px;
+        background-color: $secundaryDark;
+        margin-top: 25px;
+        margin-bottom: 35px;
+
+    }
+
+    h4{
+      display: flex;
+      justify-content: end;
+      font-size: $txt-medium;
+      font-weight: normal;
+      color: $light; 
+      margin-bottom: 30px;    
+
+      p{
+        margin-left: 5px;
+      }
+
+    }
+
+
+  }
+}

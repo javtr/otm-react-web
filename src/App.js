@@ -9,6 +9,7 @@ import BuyPage from './pages/buyPage';
 import ExamplePage from './pages/examplePage';
 import ContactForm from './components/pure/form/contactForm';
 import CompPrueba from './components/pure/form/compPrueba';
+import Order from './pages/order';
 
 
 
@@ -28,6 +29,8 @@ class App extends Component {
           <Route path='contact' element={<ContactForm></ContactForm>}></Route>
           <Route path='contact2' element={<CompPrueba></CompPrueba>}></Route>
         </Route>
+        <Route path='/order/:id' element={<Order></Order>}></Route>
+        
       </Routes>
 
 

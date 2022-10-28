@@ -15,16 +15,16 @@ export default function ContactForm() {
 
     // if (captcha) {
 
-    emailjs
-      .send("service_ldxbl2a", "template_4hokf8f", formData, "eIgtXFdKWTCe8NiPY")
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .send("service_ldxbl2a", "template_4hokf8f", formData, "eIgtXFdKWTCe8NiPY")
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
 
         
     // }
@@ -39,7 +39,7 @@ export default function ContactForm() {
       <div className="formContact ">
         <h2 className="formContact__title">Contact us</h2>
 
-        <form ref={form}  onSubmit={handleSubmit(sendEmail)}>
+        <form  onSubmit={handleSubmit(sendEmail)}>
           <div className="formContact__campo">
             <h3>Name:</h3>
             <input {...register("name")} placeholder="name" type="text" />
@@ -55,14 +55,14 @@ export default function ContactForm() {
             <textarea {...register("message")} placeholder="message" />
           </div>
 
-          {/* <div className="formContact__recaptcha">
+          <div className="formContact__recaptcha">
             <ReCAPTCHA
               sitekey="6Ldy4bUiAAAAAH9ZiMjWguQIIigWl8LafZI38GKm"
               onChange={onChange}
               size={window.innerWidth < 640 ? "compact" : "normal"}
               theme="dark"
             />
-          </div> */}
+          </div>
 
 
 

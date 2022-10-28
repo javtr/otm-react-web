@@ -1,29 +1,9 @@
 import React from "react";
 import BuySecundario from "../pure/buySecundario";
+import { Products } from "../../assets/info/products";
 
 export default function BuySecundarioCont() {
-  const datosProductos = [
-    {
-      img: "./ds_mini.png",
-      tit: "Delta Swing",
-      pre: "288",
-    },
-    {
-      img: "./ds_mini.png",
-      tit: "Delta Swing",
-      pre: "288",
-    },
-    {
-      img: "./ds_mini.png",
-      tit: "Delta Swing",
-      pre: "288",
-    },
-    {
-      img: "./ds_mini.png",
-      tit: "Delta Swing",
-      pre: "288",
-    },
-  ];
+
 
   return (
     <div className="buySecundario global__cont">
@@ -33,8 +13,11 @@ export default function BuySecundarioCont() {
       </p>
 
       <div className="buySecundario__container">
-        {datosProductos.map((prod, index) => (
-          <BuySecundario key={index} prod={prod}></BuySecundario>
+        {Products.map((prod, index) => (
+          index>0?
+          <BuySecundario key={index} prod={prod} id={index}></BuySecundario>
+          :
+          ""
         ))}
       </div>
 

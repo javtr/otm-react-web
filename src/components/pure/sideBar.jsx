@@ -1,5 +1,5 @@
 import React, { useContext,createContext } from "react";
-import UserContext from "../context/userContext";
+import UserContext from "../../context/userContext";
 
 const SideBar = () => {
 

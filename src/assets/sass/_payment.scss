@@ -4,8 +4,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 
   &__logo {
+    max-width: 1000px;
+
     width: 90%;
     margin-bottom: 37px;
     img {
@@ -15,6 +18,7 @@
 }
 
 .CardOrder {
+  max-width: 1000px;
   color: $light;
   background-color: $backLight;
   width: 90%;
@@ -28,6 +32,10 @@
     border-top-right-radius: 10px;
     position: relative;
 
+    @include breakpoint-up(medium) {
+      height: 140px;
+    }
+
     &--title {
       position: absolute;
       bottom: 10px;
@@ -35,6 +43,11 @@
       font-size: $txt-medium;
       font-weight: bold;
       color: $back;
+
+      @include breakpoint-up(medium) {
+        font-size: $txt-large-smh2;
+      }
+
     }
 
     &--date {
@@ -44,6 +57,11 @@
       font-size: $txt-xsmall;
       font-weight: normal;
       color: $back;
+
+      @include breakpoint-up(medium) {
+        font-size: $txt-medium2;
+      }      
+
     }
   }
 
@@ -51,11 +69,24 @@
     padding: 0 15px;
     padding-top: 50px;
 
+    @include breakpoint-up(medium) {
+      padding-top: 90px;
+    }
+
     &--product {
       display: flex;
       flex-direction: column;
 
+      @include breakpoint-up(medium) {
+        flex-direction: row;
+        flex: auto;
+      }
+
       &--item {
+        @include breakpoint-up(medium) {
+          padding: 0px 20px;
+        }
+
         > p {
           font-size: $txt-medium;
           font-weight: normal;
@@ -71,11 +102,31 @@
           align-items: center;
           padding: 0 7px;
           margin-bottom: 35px;
+
+          @include breakpoint-up(medium) {
+            margin-bottom: 0px;
+            padding: 0 16px;
+          }
         }
       }
 
-      &--price {
+      &--it {
+        @include breakpoint-up(medium) {
+          width: 40%;
+        }
+      }
+
+      &--lc {
+        @include breakpoint-up(medium) {
+          width: 40%;
+        }
+      }
+      &--pr {
         width: 50%;
+
+        @include breakpoint-up(medium) {
+          width: 20%;
+        }
       }
     }
 
@@ -84,6 +135,14 @@
       background-color: $secundaryDark;
       margin-top: 25px;
       margin-bottom: 35px;
+
+      @include breakpoint-up(medium) {
+        margin: 0 auto;
+        width: 96%;
+        margin-top: 90px;
+        margin-bottom: 55px;
+
+      }
     }
 
     h4 {
@@ -97,12 +156,16 @@
       p {
         margin-left: 5px;
       }
+
+      @include breakpoint-up(medium) {
+        margin-bottom: 55px;
+      }
     }
   }
 }
 
 .payment {
-  max-width: $mx-w;
+  max-width: 1000px;
   margin-bottom: 37px;
   color: $light;
   background-color: $backLight;
@@ -110,23 +173,62 @@
   border-radius: 10px;
   padding: 30px 0;
 
+  @include breakpoint-up(medium) {
+  }
+
   h3 {
     text-align: center;
     margin-bottom: 60px;
+    font-size: $txt-medium2;
+
+    @include breakpoint-up(medium) {
+      font-size: $txt-medium3;
+    }
   }
 
   &__content {
     display: flex;
     flex-direction: column-reverse;
 
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      align-items: start;
+
+
+    }
+
     &--logo {
       padding: 0 15px;
+
+      @include breakpoint-up(medium) {
+        width: 50%;
+        padding: 0 25px;
+      }
+
+      hr {
+        height: 1px;
+        width: 100%;
+        background-color: $secundaryDark;
+        top: 13px;
+
+        @include breakpoint-up(medium) {
+          display: none;
+        }
+      }
+
       &--img {
+        margin: 20px 0;
         img {
+          width: 100%;
         }
       }
       &--text {
         p {
+          color: $light;
+          font-style: italic;
+          font-size: $txt-xsmall;
+          line-height: 1.3;
+          margin-bottom: 20px;
         }
       }
     }
@@ -134,53 +236,61 @@
     &--buttons {
       padding: 0 15px;
 
+      @include breakpoint-up(medium) {
+        width: 50%;
+        padding: 0 25px;
+      }
+
       &--title {
         position: relative;
         height: 30px;
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 33px;
 
         hr {
           position: absolute;
           height: 1px;
           width: 100%;
           background-color: $secundaryDark;
-          top: 8px;
+          top: 13px;
         }
         h4 {
           position: absolute;
           background-color: $backLight;
           padding: 0 10px;
-
+          font-size: $txt-medium2;
         }
       }
 
-      &--btnTeach{
+      &--btnTeach {
         display: flex;
         justify-content: center;
 
-        button{
-          width: 90%;
+        button {
+          width: 100%;
           height: 50px;
-          background-color: $primary;
+          background-color: $teachable;
           margin: 0 auto;
           border-radius: 10px;
-          font-size: $txt-medium2;
+          font-size: $txt-medium;
           font-style: italic;
+          font-weight: bold;
           color: $light;
-
-
+          margin-bottom: 15px;
         }
-
-
       }
 
-
       &--paypal {
+        margin-bottom: 70px;
       }
 
       p {
+        color: $teachable;
+        text-align: center;
+        margin-bottom: 80px;
+        font-style: italic;
+       
       }
     }
   }

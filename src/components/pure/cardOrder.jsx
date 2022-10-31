@@ -8,20 +8,20 @@ export default function CardOrder({ productId }) {
   return (
     <div className="CardOrder">
       <div className="CardOrder__box">
-        <h2 className="CardOrder__box--title">Order Payment</h2>
+        <h2 className="CardOrder__box--title">Payment Order</h2>
         <p className="CardOrder__box--date">{todayDate}</p>
       </div>
       <div className="CardOrder__content">
         <div className="CardOrder__content--product">
-          <div className="CardOrder__content--product--item">
+          <div className="CardOrder__content--product--item CardOrder__content--product--it">
             <p>Item</p>
             <div>{Products[productId].product}</div>
           </div>
-          <div className="CardOrder__content--product--item">
+          <div className="CardOrder__content--product--item CardOrder__content--product--lc">
             <p>Licence</p>
             <div>Lifetime</div>
           </div>
-          <div className="CardOrder__content--product--item CardOrder__content--product--price">
+          <div className="CardOrder__content--product--item CardOrder__content--product--pr">
             <p>Price</p>
             <div>
               <p>$ </p> {Products[productId].price}

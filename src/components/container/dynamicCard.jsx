@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { IndicatorsData } from "../../assets/info/IndicatorsData";
 const images = require.context("../../assets/img", true);
 import CardGenerator from "../pure/cardGenerator";
-import UserContext from "../context/userContext";
+import UserContext from "../../context/userContext";
 
 const DynamicCard = () => {
   const { card, setCard } = useContext(UserContext);

@@ -1,0 +1,210 @@
+.formLicenceLabel {
+  color: rgb(255, 255, 255);
+  background-color: $secundaryLight;
+  border-radius: 45px;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 50px;
+  max-width: 800px;
+
+  text-align: center;
+  font-size: $txt-medium;
+  font-weight: bold;
+  padding: 20px;
+
+  @include breakpoint-up(medium) {
+    margin-top: 85px;
+    padding: 40px;
+  }
+}
+
+.formLicence {
+  color: rgb(255, 255, 255);
+  background-color: $backLight;
+  border-radius: 45px;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin-top: 37px;
+  margin-bottom: 70px;
+  max-width: 800px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include breakpoint-up(medium) {
+    margin-top: 70px;
+  }
+
+  &__title {
+    font-size: $txt-large-smh2;
+    font-weight: bold;
+    line-height: 1;
+    color: $light;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__subTitle {
+    font-size: $txt-xsmall;
+    font-weight: normal;
+    line-height: 1;
+    color: $lightGray;
+    margin-bottom: 42px;
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+      margin-bottom: 70px;
+    }
+  }
+
+
+
+
+
+  &__numeration {
+    font-size: $txt-small;
+    font-weight: normal;
+    line-height: 1;
+    color: $light;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: left;
+    width: 90%;
+
+    @include breakpoint-up(medium) {
+      font-size: $txt-medium;
+    }
+
+    &--end {
+      margin-bottom: 40px;
+
+      @include breakpoint-up(medium) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &__clarif {
+    font-size: $txt-xxsmall;
+    font-weight: normal;
+    line-height: 1;
+    color: $lightGray;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    text-align: left;
+    width: 90%;
+
+    @include breakpoint-up(medium) {
+      font-size: $txt-medium;
+    }
+  }
+
+
+  &__idImage {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    img {
+      width: 100%;
+    }
+  }
+  &__caption {
+    width: 90%;
+    margin: 0 auto;
+    font-size: $txt-xxsmall;
+    font-weight: normal;
+    line-height: 1;
+    color: $lightGray;
+    margin-bottom: 42px;
+    text-align: left;
+
+    @include breakpoint-up(medium) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: $txt-medium;
+      font-weight: normal;
+      line-height: 1;
+      color: $light;
+      margin-bottom: 20px;
+      text-align: left;
+      width: 90%;
+    }
+
+    input {
+      background-color: $backExLight;
+      width: 90%;
+      padding: 15px;
+      color: $gray;
+      border: 1px solid $secundaryDark;
+      border-radius: 15px;
+      margin-bottom: 50px;
+    }
+
+    input:focus {
+      border: 1px solid $secundaryLight;
+    }
+
+    textarea {
+      background-color: $backExLight;
+      padding: 15px;
+      width: 90%;
+      color: $gray;
+      border: 1px solid $secundaryDark;
+      border-radius: 15px;
+      margin-bottom: 50px;
+      resize: vertical;
+      height: 140px;
+
+      @include breakpoint-up(medium) {
+        height: 180px;
+      }
+
+      @include breakpoint-up(large) {
+        height: 220px;
+      }
+    }
+
+    textarea:focus {
+      border: 1px solid $secundaryLight;
+    }
+  }
+
+  &__recaptcha {
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 35px;
+    width: 90%;
+
+    iframe {
+      @include breakpoint-up(medium) {
+        border: 2px solid $secundaryDark;
+      }
+    }
+  }
+
+  &__boton {
+    display: flex;
+    justify-content: center;
+
+    button {
+      width: 90%;
+      height: 50px;
+
+      border-radius: $borde-btn-form;
+
+      background-color: $primary;
+      color: $back;
+      font-size: $txt-small;
+    }
+  }
+}

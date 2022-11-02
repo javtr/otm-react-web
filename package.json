@@ -18,6 +18,8 @@
     "react-router-dom": "6.4.1",
     "react-scripts": "5.0.1"
   },
+
+  "homepage": "http://otmtest234.000webhostapp.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

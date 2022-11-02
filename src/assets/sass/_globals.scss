@@ -2,12 +2,12 @@
 
 
 .scrollable-place {
-  height: 2000px;
+  // height: 2000px;
 }
 
 .stop-scrolling {
-  height: 100%;
-  overflow-y: hidden;
+  // height: 100%;
+  // overflow-y: hidden;
 }
 
 
@@ -56,12 +56,15 @@ body {
 .global__btp {
   width: 80%;
   height: 50px;
+  max-width: 180px;
 
-  border-top-left-radius: $borde-btn-form $borde-btn-form;
-  border-top-right-radius: $borde-btn-form $borde-btn-form;
-  border-bottom-left-radius: $borde-btn-form $borde-btn-form;
-  border-bottom-right-radius: $borde-btn-form $borde-btn-form;
+  // border-top-left-radius: $borde-btn-form $borde-btn-form;
+  // border-top-right-radius: $borde-btn-form $borde-btn-form;
+  // border-bottom-left-radius: $borde-btn-form $borde-btn-form;
+  // border-bottom-right-radius: $borde-btn-form $borde-btn-form;
 
+  border-radius: 25px;  
+  
   background-color: $primary;
   color: $back;
   font-size:  $txt-small;

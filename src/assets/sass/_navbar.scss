@@ -13,7 +13,7 @@
   background-color: $back;
   z-index: 988;
 
-  @include breakpoint-up(small) {
+  @include breakpoint-up(medium) {
     height: 100px;
   }
 
@@ -35,7 +35,7 @@
       width: 100%;
     }
 
-    @include breakpoint-up(small) {
+    @include breakpoint-up(medium) {
       margin-left: 33px;
     }
   }
@@ -49,7 +49,7 @@
       color: $light;
     }
 
-    @include breakpoint-down(small) {
+    @include breakpoint-down(medium) {
       display: none;
     }
   }
@@ -59,7 +59,7 @@
     right: 23px;
 
 
-    @include breakpoint-down(small) {
+    @include breakpoint-down(medium) {
 
       margin-top: 20px;
       margin-right: 25px;
@@ -143,11 +143,13 @@
 .sideBarOn {
   margin-left: 0%;
   animation-name: slideIn;
+  transform: translateX(50%);
 }
 
 .sideBarOff {
   margin-left: 200%;
   animation-name: slideOut;
+  transform: translateX(50%);
 }
 
 

@@ -31,6 +31,8 @@ class App extends Component {
         <Route path='/order/:id' element={<Order></Order>}></Route>
         <Route path='/licence' element={<LicenceForm></LicenceForm>}></Route>
 
+        {/* <Route path='/features' element={<FeaturesPage></FeaturesPage>}></Route> */}
+
 
       </Routes>
 

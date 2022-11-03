@@ -192,7 +192,7 @@
     margin-bottom: 20px;
     text-align: center;
 
-    @include breakpoint-up(small) {
+    @include breakpoint-up(medium) {
       font-size: $txt-large;
       margin: 35px 0;
     }
@@ -206,7 +206,7 @@
 
     margin-bottom: 56px;
 
-    @include breakpoint-up(small) {
+    @include breakpoint-up(medium) {
       font-size: $txt-medium;
     }
   }
@@ -215,7 +215,9 @@
   }
 
   &__advantage {
-    @include breakpoint-up(small) {
+
+
+    @include breakpoint-up(medium) {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -225,7 +227,7 @@
       width: 60%;
       margin: 0 auto;
 
-      @include breakpoint-up(small) {
+      @include breakpoint-up(medium) {
         width: 50%;
         display: flex;
         justify-content: center;
@@ -235,14 +237,14 @@
       img {
         filter: invert(1);
 
-        @include breakpoint-up(small) {
+        @include breakpoint-up(medium) {
           width: 80%;
         }
       }
     }
 
     &--text {
-      @include breakpoint-up(small) {
+      @include breakpoint-up(medium) {
         width: 50%;
         padding: 0 20px;
       }
@@ -255,7 +257,7 @@
         margin-bottom: 20px;
         text-align: left;
 
-        @include breakpoint-up(small) {
+        @include breakpoint-up(medium) {
           font-size: $txt-large-smh2;
         }
       }
@@ -266,7 +268,7 @@
         color: $gray;
         margin-bottom: 50px;
 
-        @include breakpoint-up(small) {
+        @include breakpoint-up(medium) {
           font-size: $txt-small;
         }
       }
@@ -275,7 +277,7 @@
 }
 
 .flex-row-rev {
-  @include breakpoint-up(small) {
+  @include breakpoint-up(medium) {
     flex-direction: row-reverse;
   }
 }
@@ -291,7 +293,7 @@
     margin-bottom: 20px;
     text-align: center;
 
-    @include breakpoint-up(small) {
+    @include breakpoint-up(medium) {
       font-size: $txt-large;
       margin: 35px 0;
     }
@@ -305,7 +307,7 @@
 
     margin-bottom: 56px;
 
-    @include breakpoint-up(small) {
+    @include breakpoint-up(medium) {
       font-size: $txt-medium;
     }
   }
@@ -327,7 +329,7 @@
     & img {
       width: 100%;
 
-      @include breakpoint-up(small) {
+      @include breakpoint-up(medium) {
         width: 80%;
       }
     }

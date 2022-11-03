@@ -10,7 +10,7 @@
 
   &__container {
 
-    @include breakpoint-up(small) {
+    @include breakpoint-up(medium) {
       display: flex;
       flex-wrap: wrap;
     }
@@ -18,7 +18,7 @@
     &--feature {
       width: 100%;
 
-      @include breakpoint-up(small) {
+      @include breakpoint-up(medium) {
         width: 50%;
       }
 
@@ -41,7 +41,7 @@
       width: 100%;
     }
 
-    @include breakpoint-up(small) {
+    @include breakpoint-up(medium) {
       width: 70%;
 
 
@@ -70,7 +70,7 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
 
-    @include breakpoint-up(small) {
+    @include breakpoint-up(medium) {
       // transform: translateY(-$nav-h);
     }
   }
@@ -85,7 +85,7 @@
     background-color: $back;
     border-radius: $modal-br-sm;
 
-    @include breakpoint-up(small) {
+    @include breakpoint-up(medium) {
       width: $modal-w-md;
       max-height: 90%;
     }
@@ -137,7 +137,7 @@
       height: $modal-w-sm * 0.56;
       border-radius: $modal-br-sm $modal-br-sm 0 0;
 
-      @include breakpoint-up(small) {
+      @include breakpoint-up(medium) {
         height: $modal-w-md * 0.56;
       }
 
@@ -153,7 +153,7 @@
     &--containerText {
       margin: 10px;
 
-      @include breakpoint-up(small) {
+      @include breakpoint-up(medium) {
         margin: 25px;
       }
     }
@@ -167,7 +167,7 @@
       margin-bottom: 10px;
       line-height: 1;
 
-      @include breakpoint-up(small) {
+      @include breakpoint-up(medium) {
         margin-top: 20px;
         margin-bottom: 10px;
         font-size: $txt-small;
@@ -182,7 +182,7 @@
       line-height: 1;
       margin-bottom: 5px;
 
-      @include breakpoint-up(small) {
+      @include breakpoint-up(medium) {
         margin-bottom: 15px;
         font-size: $txt-xsmall;
       }
@@ -195,7 +195,7 @@
       margin-bottom: 15px;
       color: $gray;
 
-      @include breakpoint-up(small) {
+      @include breakpoint-up(medium) {
         margin-bottom: 25px;
         font-size: $txt-xxsmall;
       }

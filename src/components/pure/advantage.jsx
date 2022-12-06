@@ -1,13 +1,31 @@
-import React from "react";
-import adv1 from '../../assets/img/advantage1.svg'
+import React, { useState, useEffect, useContext } from "react";
+import adv1 from '../../assets/img/advantage1.svg';
+import { textEn, textEs } from "../../assets/text/advantage.js";
+import LanguageContext from "../../context/langContext.js";
 
 export default function Advantage() {
+  const { lang, setLang } = useContext(LanguageContext);
+  const [text, setText] = useState({});
+
+  useEffect(() => {
+    if (lang == "en") {
+      setText(textEn);
+    } else if (lang == "es") {
+      setText(textEs);
+    } else {
+      setText(textEn);
+    }
+  }, [lang]);
+
+
+
+
   return (
+
     <div className="advantages global__cont">
-      <h2 className="advantages__title">Advantagen</h2>
+      <h2 className="advantages__title">{text.tit}</h2>
       <h2 className="advantages__subTitle">
-        OTM Software will help you achieve operational consistency in your
-        trading this way:
+      {text.sub}
       </h2>
 
       <div className="advantages__container">
@@ -16,12 +34,9 @@ export default function Advantage() {
             <img src={adv1}></img>
           </div>
           <div className="advantages__advantage--text">
-            <h2>Multiple confirmations</h2>
+            <h2>{text.tit1}</h2>
             <h4>
-              Increase your success rate by confirming your decisions through
-              OTM specific indicators With this information, you will never be
-              clueless or blind in the market again. With this information, you
-              will never again be distrustful or blind in the market
+              {text.p1}
             </h4>
           </div>
         </div>
@@ -31,11 +46,9 @@ export default function Advantage() {
             <img src={adv1}></img>
           </div>
           <div className="advantages__advantage--text">
-            <h2>Easy to read</h2>
+            <h2>{text.tit2}</h2>
             <h4>
-              Look at the interaction between buyers and sellers in a simplified
-              way. The indicators will allow you to focus only on the most
-              relevant movements and volumes.
+            {text.p2}
             </h4>
           </div>
         </div>
@@ -45,11 +58,9 @@ export default function Advantage() {
             <img src={adv1}></img>
           </div>
           <div className="advantages__advantage--text">
-            <h2>Objective positions</h2>
+            <h2>{text.tit3}</h2>
             <h4>
-              Organize the requirements of your setups in an objective and
-              consistent manner. You can use our high probability trading guide.
-              There is no need to reinvent the wheel.
+            {text.p3}
             </h4>
           </div>
         </div>

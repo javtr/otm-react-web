@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import BuySecundario from "../pure/buySecundario";
 import { Products } from "../../assets/info/products";
+import { textEn, textEs } from "../../assets/text/buySecundario.js";
+import LanguageContext from "../../context/langContext.js";
 
 export default function BuySecundarioCont() {
+  const { lang, setLang } = useContext(LanguageContext);
+  const [text, setText] = useState({});
+
+  useEffect(() => {
+    if (lang == "en") {
+      setText(textEn);
+    } else if (lang == "es") {
+      setText(textEs);
+    } else {
+      setText(textEn);
+    }
+  }, [lang]);
 
 
   return (
     <div className="buySecundario global__cont">
-      <h2 className="buySecundario__titulo">Want a particular indicator?</h2>
+      <h2 className="buySecundario__titulo">{text.tit}</h2>
       <p className="buySecundario__subTitulo">
-      You can get any OTM indicator individually 
+      {text.sub} 
       </p>
 
       <div className="buySecundario__container">

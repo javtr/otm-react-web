@@ -1,13 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Feature from "../pure/feature";
 import ModalFeature from "../pure/modalFeature";
-import { FeaturesData } from "../../assets/info/featuresData.js";
+import { FeaturesDataEn } from "../../assets/info/featuresData.js";
+import { textEn, textEs } from "../../assets/text/features.js";
+import LanguageContext from "../../context/langContext.js";
 
 export default function Features() {
   const [abierto, setAbierto] = useState(false);
   const [featureIndex, setFeatureIndex] = useState(0);
+  const { lang, setLang } = useContext(LanguageContext);
+  const [text, setText] = useState({});
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (lang == "en") {
+      setText(textEn);
+    } else if (lang == "es") {
+      setText(textEs);
+    } else {
+      setText(textEn);
+    }
+  }, [lang]);
 
   function abrirModal(index) {
     setFeatureIndex(index);
@@ -30,14 +42,11 @@ export default function Features() {
 
   return (
     <div className="features global__cont">
-
-<h2 className="global__tx-mdl features__title">Features</h2>
-        <h3 className="global__tx-sm features__subTitle">The indicators designed for NinjaTrader 8 provide the information needed to easily identify high probability patterns.</h3>
+      <h2 className="global__tx-mdl features__title">{text.tit}</h2>
+      <h3 className="global__tx-sm features__subTitle">{text.sub}</h3>
 
       <div className="features__container">
-
-
-        {FeaturesData.map((feature, index) => (
+        {FeaturesDataEn.map((feature, index) => (
           <div
             key={index}
             className="features__container--feature"
@@ -48,7 +57,6 @@ export default function Features() {
             <Feature feature={feature} index={index}></Feature>
           </div>
         ))}
-
       </div>
 
       <ModalFeature

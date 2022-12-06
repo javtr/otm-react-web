@@ -1,25 +1,39 @@
-import React, { useContext,createContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import UserContext from "../../context/userContext";
+import { textEn, textEs } from "../../assets/text/featuresPage.js";
+import LanguageContext from "../../context/langContext.js";
 
 const SideBar = () => {
-
   const { card, setCard } = useContext(UserContext);
+  const { lang, setLang } = useContext(LanguageContext);
+  const [text, setText] = useState({});
+
+  useEffect(() => {
+    if (lang == "en") {
+      setText(textEn);
+    } else if (lang == "es") {
+      setText(textEs);
+    } else {
+      setText(textEn);
+    }
+  }, [lang]);
+
 
   return (
     <div className="featPage__aside">
-      <h2 className="featPage__aside--title1">General</h2>
-      <div className="featPage__aside--item">System features</div>
-      <div className="featPage__aside--item">Installation</div>
-      <h2 className="featPage__aside--title2">Indicators</h2>
+      <h2 className="featPage__aside--title1">{text.tit1}</h2>
+      <div className="featPage__aside--item">{text.item1_1}</div>
+      <div className="featPage__aside--item">{text.item1_2}</div>
+      <h2 className="featPage__aside--title2">{text.tit2}</h2>
       <div onClick={()=>setCard(0)} className="featPage__aside--item">
-        Swing
+      {text.item2_1}
       </div>
-      <div onClick={()=>setCard(1)} className="featPage__aside--item">Micro</div>
-      <div className="featPage__aside--item">Cumulative</div>
-      <div className="featPage__aside--item">Bar</div>
-      <div className="featPage__aside--item">Profile</div>
-      <div className="featPage__aside--item">Vwap</div>
-      <div className="featPage__aside--item">Timmer</div>
+      <div onClick={()=>setCard(1)} className="featPage__aside--item">{text.item2_2}</div>
+      <div className="featPage__aside--item">{text.item2_3}</div>
+      <div className="featPage__aside--item">{text.item2_4}</div>
+      <div className="featPage__aside--item">{text.item2_5}</div>
+      <div className="featPage__aside--item">{text.item2_6}</div>
+      <div className="featPage__aside--item">{text.item2_7}</div>
     </div>
   );
 };

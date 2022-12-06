@@ -1,12 +1,26 @@
-import React, { useState  } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useForm } from "react-hook-form";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from 'emailjs-com';
-
+import { textEn, textEs } from "../../../assets/text/contact.js";
+import LanguageContext from "../../../context/langContext.js";
 
 export default function ContactForm() {
   const { register, control, handleSubmit, watch } = useForm();
   const [captcha, setCaptcha] = useState(null);
+  const { lang, setLang } = useContext(LanguageContext);
+  const [text, setText] = useState(textEn);
+
+  useEffect(() => {
+    if (lang == "en") {
+      setText(textEn);
+    } else if (lang == "es") {
+      setText(textEs);
+    } else {
+      setText(textEn);
+    }
+  }, [lang]);
+
 
   const sendEmail = (formData) => {
 
@@ -37,22 +51,22 @@ export default function ContactForm() {
   return (
     <div>
       <div className="formContact ">
-        <h2 className="formContact__title">Contact us</h2>
+        <h2 className="formContact__title">{text.tit}</h2>
 
         <form  onSubmit={handleSubmit(sendEmail)}>
           <div className="formContact__campo">
-            <h3>Name:</h3>
-            <input {...register("name")} placeholder="name" type="text" />
+            <h3>{text.name}:</h3>
+            <input {...register("name")} placeholder={text.nameE} type="text" />
           </div>
 
           <div className="formContact__campo">
-            <h3>Email:</h3>
-            <input {...register("email")} placeholder="email" type="text" />
+            <h3>{text.email}:</h3>
+            <input {...register("email")} placeholder={text.emailE} type="text" />
           </div>
 
           <div className="formContact__campo">
-            <h3>Message:</h3>
-            <textarea {...register("message")} placeholder="message" />
+            <h3>{text.message}:</h3>
+            <textarea {...register("message")} placeholder={text.messageE} />
           </div>
 
           <div className="formContact__recaptcha">
@@ -67,7 +81,7 @@ export default function ContactForm() {
 
 
           <div className="formContact__boton">
-            <button type="submit">Submit</button>
+            <button type="submit">{text.btn}</button>
           </div>
         </form>
       </div>

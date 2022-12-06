@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 const images = require.context("../../assets/img", true);
 import { useNavigate } from "react-router-dom";
 import { Products } from "../../assets/info/products";
+import { textEn, textEs } from "../../assets/text/buyPrimario.js";
+import LanguageContext from "../../context/langContext.js";
 
 
 const BuyPrimario = () => {
+  const { lang, setLang } = useContext(LanguageContext);
+  const [text, setText] = useState({});
+
+  useEffect(() => {
+    if (lang == "en") {
+      setText(textEn);
+    } else if (lang == "es") {
+      setText(textEs);
+    } else {
+      setText(textEn);
+    }
+  }, [lang]);
+
+
   const navigate = useNavigate();
 
   function toOrder() {
@@ -13,9 +29,9 @@ const BuyPrimario = () => {
 
   return (
     <div className="buyPrimario  global__cont">
-      <h2 className="buyPrimario__titulo">SAVE 50% WITH OTM PACK</h2>
+      <h2 className="buyPrimario__titulo">{text.tit}</h2>
       <p className="buyPrimario__subTitulo">
-        You can save by purchasing the complete OTM indicator package
+      {text.sub}
       </p>
       <div className="buyPrimario__card">
         <div className="buyPrimario__card--img">
@@ -34,7 +50,7 @@ const BuyPrimario = () => {
         </h3>
         <div className="buyPrimario__card--button ">
           <button onClick={() => toOrder()} className="global__btp">
-            Buy now
+          {text.btn}
           </button>
         </div>
       </div>

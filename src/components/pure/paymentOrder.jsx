@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import ReactDOM from "react-dom";
 const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
 import { Products } from "../../assets/info/products";
 import paypalImg from "../../assets/img/pay.png"
+import { textEn, textEs } from "../../assets/text/payment.js";
+import LanguageContext from "../../context/langContext.js";
+
+
 
 export default function PaymentOrder({ productId }) {
+  const { lang, setLang } = useContext(LanguageContext);
+  const [text, setText] = useState(textEn);
+
+  useEffect(() => {
+    if (lang == "en") {
+      setText(textEn);
+    } else if (lang == "es") {
+      setText(textEs);
+    } else {
+      setText(textEn);
+    }
+  }, [lang]);
+
+
+
+  
   const style = {
     layout: "vertical",
     color: "blue"
@@ -28,7 +48,7 @@ export default function PaymentOrder({ productId }) {
 
   return (
     <div className="payment">
-      <h3>Payment methods</h3>
+      <h3>{text.tit}</h3>
       <div className="payment__content">
 
 
@@ -42,12 +62,10 @@ export default function PaymentOrder({ productId }) {
           </div>
           <div className="payment__content--logo--text">
             <p>
-              Pay by debit or credit card without the need to create a Paypal
-              account.
+            {text.text1}
             </p>
             <p>
-              All transactions are done securely through Paypal or Teachable
-              platforms.
+            {text.text2}
             </p>
           </div>
         </div>

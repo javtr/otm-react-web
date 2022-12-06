@@ -1,18 +1,35 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { textEn, textEs } from "../../assets/text/buyLanding.js";
+import LanguageContext from "../../context/langContext.js";
+
 
 const BuyButtonFeat = () => {
+  const { lang, setLang } = useContext(LanguageContext);
+  const [text, setText] = useState({});
+
+  useEffect(() => {
+    if (lang == "en") {
+      setText(textEn);
+    } else if (lang == "es") {
+      setText(textEs);
+    } else {
+      setText(textEn);
+    }
+  }, [lang]);
+
+
+
+
   return (
     <div className="buybutton global__cont">
       <div className="buybutton__title">
-        {" "}
-        Trade simple and smart using OTM indicators!
+      {text.tit}
       </div>
       <div className="buybutton__subTitle">
-        {" "}
-        Are you ready to take your trading to the next level?
+      {text.sub}
       </div>
       <div className="buybutton__button feat_buyButton">
-        <button className="global__btp">Buy now</button>
+        <button className="global__btp">{text.btn}</button>
       </div>
     </div>
   );

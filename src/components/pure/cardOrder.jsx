@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Products } from "../../assets/info/products";
+import { textEn, textEs } from "../../assets/text/payment.js";
+import LanguageContext from "../../context/langContext.js";
+
+
+
 
 export default function CardOrder({ productId }) {
-
   const todayDate = new Date().toISOString().slice(0, 10);
+  const { lang, setLang } = useContext(LanguageContext);
+  const [text, setText] = useState(textEn);
+
+  useEffect(() => {
+    if (lang == "en") {
+      setText(textEn);
+    } else if (lang == "es") {
+      setText(textEs);
+    } else {
+      setText(textEn);
+    }
+  }, [lang]);
+
+
 
   return (
     <div className="CardOrder">
       <div className="CardOrder__box">
-        <h2 className="CardOrder__box--title">Payment Order</h2>
+        <h2 className="CardOrder__box--title">{text.order}</h2>
         <p className="CardOrder__box--date">{todayDate}</p>
       </div>
       <div className="CardOrder__content">

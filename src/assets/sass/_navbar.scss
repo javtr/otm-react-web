@@ -143,13 +143,13 @@
 .sideBarOn {
   margin-left: 0%;
   animation-name: slideIn;
-  transform: translateX(50%);
+  transform: translateX(0%);
 }
 
 .sideBarOff {
   margin-left: 200%;
   animation-name: slideOut;
-  transform: translateX(50%);
+  transform: translateX(0%);
 }
 
 

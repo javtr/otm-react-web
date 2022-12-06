@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/logoW.svg";
+import LanguageContext from "../../context/langContext.js";
 
 const NavBar = () => {
   const [sideBar, setSideBar] = useState("sideBarInit");
+  const { lang, setLang } = useContext(LanguageContext);
 
   function turnSideBar() {
     if (sideBar == "sideBarInit") {
@@ -19,10 +21,30 @@ const NavBar = () => {
     setSideBar("sideBarOff");
   }
 
+  function switchLanguage() {
+    const lang = localStorage.getItem("lang");
+
+    if (lang == "es") {
+      localStorage.setItem("lang", "en");
+      setLang("en");
+    } else if (lang == "en") {
+      localStorage.setItem("lang", "es");
+      setLang("es");
+    } else {
+      localStorage.setItem("lang", "en");
+      setLang("en");
+    }
+  }
+
   return (
     <div className="navbar">
       <div className="navbar__container">
-        <div className="navbar__img">
+        <div
+          className="navbar__img"
+          onClick={() => {
+            switchLanguage();
+          }}
+        >
           <img src={logo} alt="Logo" />
         </div>
 
@@ -55,9 +77,6 @@ const NavBar = () => {
           <Link to="contact">Contact</Link>
         </div>
       </div>
-
-
-      
     </div>
   );
 };

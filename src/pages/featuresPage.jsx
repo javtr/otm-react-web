@@ -8,7 +8,6 @@ import UserContext from "../context/userContext";
 
 const FeaturesPage = () => {
   const [card, setCard] = useState(0);
-
   const value = useMemo(() => ({ card, setCard }), [card]);
 
   return (

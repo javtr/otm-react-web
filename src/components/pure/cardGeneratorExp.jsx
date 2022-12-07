@@ -2,13 +2,27 @@ import React from "react";
 const images = require.context("../../assets/img", true);
 
 const CardGeneratorExp = ({ i, data }) => {
-
+  
   function retornoElementos() {
     switch (i.slice(0, 3)) {
       case "img":
         return (
           <div className="examplePage__dyncard--card--img">
             <img src={images(data)}></img>
+          </div>
+        );
+
+      case "imi":
+        return (
+          <div className="examplePage__dyncard--card--imi">
+            <img src={images(data)}></img>
+          </div>
+        );
+
+      case "dat":
+        return (
+          <div className="examplePage__dyncard--card--dat">
+            <p>{data}</p>
           </div>
         );
 

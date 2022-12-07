@@ -5,6 +5,7 @@ const CardGenerator = ({ i, data }) => {
 
   function retornoElementos() {
     switch (i.slice(0, 3)) {
+
       case "img":
         return (
           <div className="featPage__dyncard--card--img">
@@ -32,6 +33,13 @@ const CardGenerator = ({ i, data }) => {
             <h4>{data}</h4>
           </div>
         );
+
+        case "imi":
+          return (
+            <div className="featPage__dyncard--card--imi">
+              <img src={images(data)}></img>
+            </div>
+          );
 
       default:
         return <div></div>;

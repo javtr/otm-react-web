@@ -28,7 +28,7 @@
         background-color:$backLight;
         border-radius: 45px;
             
-        padding-bottom: 90px;
+        padding-bottom: 50px;
         max-width: 800px;     
         margin-bottom: 90px;   
 
@@ -44,8 +44,37 @@
             width: 100%;
             border-radius: 45px 45px 0 0;
           }        
+      }
+
+      &--imi {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+
+
+        img {
+
+            width: 100%;
+          }        
+      }
+
+
+      &--dat {
+        font-size: $txt-xsmall;
+        font-weight: normal;
+        font-style: italic;
+        line-height: 1;
+        color: $gray;
+        text-align: right;
+        margin-top:10px;
+        margin-right:10px;
+        margin-bottom: 20px;
 
       }
+
+
 
       &--tit {
         font-size: $txt-large-smh2;

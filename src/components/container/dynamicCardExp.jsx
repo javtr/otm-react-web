@@ -21,11 +21,11 @@ const DynamicCardExp = () => {
   return (
     <div className="examplePage__dyncard">
       {text.map((indi, index) => (
-        <div className="examplePage__dyncard--card">
+        <div key={index} className="examplePage__dyncard--card">
           {Object.keys(indi).map((key, index) => {
             return (
               <CardGeneratorExp
-                key={key}
+                key={index}
                 i={key}
                 data={indi[key]}
               ></CardGeneratorExp>

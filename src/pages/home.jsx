@@ -6,6 +6,7 @@ import Whatis from "../components/pure/whatis";
 import Advantages from "../components/pure/advantage";
 import Features from "../components/container/features";
 
+
 const Home = () => {
   return (
     <div className="body-home">

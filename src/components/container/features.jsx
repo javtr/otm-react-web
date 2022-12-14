@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext, useCallback } from "react";
 import Feature from "../pure/feature";
 import ModalFeature from "../pure/modalFeature";
 import { FeaturesDataEn } from "../../assets/info/featuresData.js";
@@ -21,6 +21,8 @@ export default function Features() {
     }
   }, [lang]);
 
+
+
   function abrirModal(index) {
     setFeatureIndex(index);
     setAbierto(true);
@@ -41,11 +43,11 @@ export default function Features() {
   }
 
   return (
-    <div className="features global__cont">
+    <div className="features global__cont" >
       <h2 className="global__tx-mdl features__title">{text.tit}</h2>
       <h3 className="global__tx-sm features__subTitle">{text.sub}</h3>
 
-      <div className="features__container">
+      <div className="features__container ">
         {FeaturesDataEn.map((feature, index) => (
           <div
             key={index}

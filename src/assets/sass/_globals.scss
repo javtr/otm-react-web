@@ -1,6 +1,5 @@
 @import "./mixins";
 
-
 .scrollable-place {
   // height: 2000px;
 }
@@ -10,14 +9,8 @@
   // overflow-y: hidden;
 }
 
-
-
 body {
   background-color: $back;
-
-
-
-  
 
   &::before {
     display: none;
@@ -28,7 +21,6 @@ body {
     // background-image: url("../img/logo_ninja.png");
     background-repeat: no-repeat;
     background-position: 56% 0;
-
 
     transform: rotate(-24deg);
     scale: 181%;
@@ -58,14 +50,12 @@ body {
   height: 50px;
   max-width: 180px;
 
+  border-radius: 25px;
 
-  border-radius: 25px;  
-  
   background-color: $primary;
   color: $back;
-  font-size:  $txt-small;
+  font-size: $txt-small;
 }
-
 
 .global__tx-lg {
   font-size: $txt-large-sm;
@@ -76,7 +66,6 @@ body {
   @include breakpoint-up(medium) {
     font-size: $txt-large;
   }
-
 }
 
 .global__tx-mdl {
@@ -88,17 +77,13 @@ body {
   @include breakpoint-up(medium) {
     font-size: $txt-large;
   }
-
 }
-
-
 
 .global__tx-md {
   font-size: $txt-medium;
   font-weight: normal;
   line-height: 1;
   color: $gray;
-  
 }
 
 .global__tx-sm {
@@ -106,16 +91,14 @@ body {
   font-weight: normal;
   line-height: 1;
   color: $gray;
-  
 }
-
 
 .global__cont {
   max-width: $mx-w;
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 50px;
-  
+
   @include breakpoint-up(medium) {
     padding: 0 60px;
     padding-top: 70px;
@@ -124,5 +107,18 @@ body {
   @include breakpoint-up(large) {
     padding: 0 10%;
     padding-top: 150px;
-  }  
+  }
+}
+
+.gl-goTop {
+  color: $primary;
+  font-size: 30px;
+
+  &--cont {
+    background-color: rgb(43, 43, 43) !important;
+    box-shadow: 0 0px 7px 7px rgba(1, 1, 1, 0.5) !important;
+    padding: 5px !important;
+    width: 50 !important;
+    height: 50 !important;
+  }
 }

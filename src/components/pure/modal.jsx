@@ -12,6 +12,21 @@ export default function Modal({ cerrar, index }) {
   const [text, setText] = useState([]);
   const [isloading, setIsloading] = useState(true);
 
+
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.keyCode === 27)
+      cerrar();
+    };
+    window.addEventListener('keydown', handleEsc);
+
+    return () => {
+      window.removeEventListener('keydown', handleEsc);
+    };
+  }, []);
+
+
+
   useEffect(() => {
     if (lang == "en") {
       setText(FeaturesDataEn);
@@ -24,12 +39,13 @@ export default function Modal({ cerrar, index }) {
     setIsloading(false);
   }, [lang]);
 
+
   return (
     <>
       {!isloading ? (
-        <div className="modal">
-          <div className="modal--container" onClick={cerrar}>
-            <div className="modal--card" onClick={(e) => e.stopPropagation()}>
+        <div className="modal"  >
+          <div className="modal--container"  onClick={cerrar}>
+            <div className="modal--card"  onClick={(e) => e.stopPropagation()}>
               <div className="modal--card--containerImg">
                 <div className="modal--card--close" onClick={cerrar}>
                   <img src={CloseImg}></img>

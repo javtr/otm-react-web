@@ -12,6 +12,7 @@ import Order from "./pages/order";
 import LicenceForm from "./components/pure/form/licenceForm";
 import LanguageContext from "../src/context/langContext";
 
+
 export default function App() {
   const [lang, setLang] = useState("");
   const value = useMemo(() => ({ lang, setLang }), [lang]);

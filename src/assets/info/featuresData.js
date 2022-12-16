@@ -1,6 +1,6 @@
 export const FeaturesDataEn = [
   {
-    imgUrl: "./indicatorIcon.svg",
+    imgUrl: "./swing_icon.png",
     title: "OTM Delta Swing",
 
     modalData: {
@@ -23,7 +23,7 @@ export const FeaturesDataEn = [
     },
   },
   {
-    imgUrl: "./indicatorIcon.svg",
+    imgUrl: "./micro_icon.png",
     title: "OTM Delta Micro",
     modalData: {
       imgUrl: "./ind_02.gif",
@@ -43,7 +43,7 @@ export const FeaturesDataEn = [
           },
   },
   {
-    imgUrl: "./indicatorIcon.svg",
+    imgUrl: "./cumulative_icon.png",
     title: "OTM Delta Cumulative",
     modalData: {
       imgUrl: "./ind_03.gif",
@@ -58,7 +58,7 @@ export const FeaturesDataEn = [
           },
   },
   {
-    imgUrl: "./indicatorIcon.svg",
+    imgUrl: "./delta_icon.png",
     title: "OTM Delta Bar",
     modalData: {
       imgUrl: "./ind_04.gif",
@@ -76,7 +76,7 @@ export const FeaturesDataEn = [
           },
   },
   {
-    imgUrl: "./indicatorIcon.svg",
+    imgUrl: "./profile_icon.png",
     title: "OTM Volume Profile",
     modalData: {
       imgUrl: "./ind_05.gif",
@@ -94,7 +94,7 @@ export const FeaturesDataEn = [
           },
   },
   {
-    imgUrl: "./indicatorIcon.svg",
+    imgUrl: "./vwap_icon.png",
     title: "OTM VWAP",
     modalData: {
       imgUrl: "./ind_01.gif",
@@ -117,7 +117,7 @@ export const FeaturesDataEn = [
 
 export const FeaturesDataEs = [
   {
-    imgUrl: "./indicatorIcon.svg",
+    imgUrl: "./swing_icon.png",
     title: "OTM Delta Swing",
 
     modalData: {
@@ -140,7 +140,7 @@ export const FeaturesDataEs = [
     },
   },
   {
-    imgUrl: "./indicatorIcon.svg",
+    imgUrl: "./micro_icon.png",
     title: "OTM Delta Micro",
     modalData: {
       imgUrl: "./ind_02.gif",
@@ -160,7 +160,7 @@ export const FeaturesDataEs = [
           },
   },
   {
-    imgUrl: "./indicatorIcon.svg",
+    imgUrl: "./cumulative_icon.png",
     title: "OTM Delta Cumulative",
     modalData: {
       imgUrl: "./ind_03.gif",
@@ -175,7 +175,7 @@ export const FeaturesDataEs = [
           },
   },
   {
-    imgUrl: "./indicatorIcon.svg",
+    imgUrl: "./delta_icon.png",
     title: "OTM Delta Bar",
     modalData: {
       imgUrl: "./ind_04.gif",
@@ -193,7 +193,7 @@ export const FeaturesDataEs = [
           },
   },
   {
-    imgUrl: "./indicatorIcon.svg",
+    imgUrl: "./profile_icon.png",
     title: "OTM Volume Profile",
     modalData: {
       imgUrl: "./ind_05.gif",
@@ -211,7 +211,7 @@ export const FeaturesDataEs = [
           },
   },
   {
-    imgUrl: "./indicatorIcon.svg",
+    imgUrl: "./vwap_icon.png",
     title: "OTM VWAP",
     modalData: {
       imgUrl: "./ind_01.gif",

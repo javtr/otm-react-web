@@ -235,7 +235,6 @@
       }
 
       img {
-        filter: invert(1);
 
         @include breakpoint-up(medium) {
           width: 80%;

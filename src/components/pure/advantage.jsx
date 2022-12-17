@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
-import adv1 from '../../assets/img/advantage1.svg';
+import adv1 from '../../assets/img/adv_01.png';
+import adv2 from '../../assets/img/adv_02.png';
+import adv3 from '../../assets/img/adv_03.png';
 import { textEn, textEs } from "../../assets/text/advantage.js";
 import LanguageContext from "../../context/langContext.js";
 
@@ -43,7 +45,7 @@ export default function Advantage() {
 
         <div className="advantages__advantage flex-row-rev">
           <div className="advantages__advantage--img">
-            <img src={adv1}></img>
+            <img src={adv2}></img>
           </div>
           <div className="advantages__advantage--text">
             <h2>{text.tit2}</h2>
@@ -55,7 +57,7 @@ export default function Advantage() {
 
         <div className="advantages__advantage">
           <div className="advantages__advantage--img">
-            <img src={adv1}></img>
+            <img src={adv3}></img>
           </div>
           <div className="advantages__advantage--text">
             <h2>{text.tit3}</h2>

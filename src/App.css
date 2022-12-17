@@ -100,6 +100,18 @@ body::before {
   }
 }
 
+.gl-goTop {
+  color: rgb(97, 255, 189);
+  font-size: 30px;
+}
+.gl-goTop--cont {
+  background-color: rgb(43, 43, 43) !important;
+  box-shadow: 0 0px 7px 7px rgba(1, 1, 1, 0.5) !important;
+  padding: 5px !important;
+  width: 50 !important;
+  height: 50 !important;
+}
+
 .navbar {
   position: relative;
   top: 0;
@@ -217,14 +229,14 @@ body::before {
   margin-left: 0%;
   -webkit-animation-name: slideIn;
           animation-name: slideIn;
-  transform: translateX(50%);
+  transform: translateX(0%);
 }
 
 .sideBarOff {
   margin-left: 200%;
   -webkit-animation-name: slideOut;
           animation-name: slideOut;
-  transform: translateX(50%);
+  transform: translateX(0%);
 }
 
 @-webkit-keyframes slideIn {
@@ -488,9 +500,6 @@ body::before {
     padding: 0 20px;
   }
 }
-.advantages__advantage--img img {
-  filter: invert(1);
-}
 @media (min-width: 48em) {
   .advantages__advantage--img img {
     width: 80%;
@@ -628,6 +637,7 @@ body::before {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 .modal--container {
   position: fixed;
@@ -758,6 +768,7 @@ body::before {
 
 @media (min-width: 48em) {
   .featPage {
+    padding: 0 30px;
     padding-top: 60px;
   }
 }
@@ -774,7 +785,7 @@ body::before {
   .featPage__aside {
     margin-left: 0px;
     width: 30%;
-    padding-right: 15px;
+    padding-right: 20px;
   }
 }
 .featPage__aside--title1 {
@@ -784,7 +795,7 @@ body::before {
 }
 .featPage__aside--title2 {
   color: rgb(244, 244, 244);
-  font-size: 40px;
+  font-size: 35px;
   margin: 30px 0;
 }
 .featPage__aside--item {
@@ -817,6 +828,16 @@ body::before {
 .featPage__dyncard--card--img img {
   width: 100%;
   border-radius: 45px 45px 0 0;
+}
+.featPage__dyncard--card--imi {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  margin-bottom: 20px;
+}
+.featPage__dyncard--card--imi img {
+  width: 90%;
 }
 .featPage__dyncard--card--tit {
   font-size: 40px;
@@ -1186,7 +1207,7 @@ body::before {
 .examplePage__dyncard--card {
   background-color: rgb(21, 19, 43);
   border-radius: 45px;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
   max-width: 800px;
   margin-bottom: 90px;
 }
@@ -1199,6 +1220,27 @@ body::before {
 .examplePage__dyncard--card--img img {
   width: 100%;
   border-radius: 45px 45px 0 0;
+}
+.examplePage__dyncard--card--imi {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  margin-bottom: 20px;
+}
+.examplePage__dyncard--card--imi img {
+  width: 100%;
+}
+.examplePage__dyncard--card--dat {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1;
+  color: rgb(172, 172, 181);
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 .examplePage__dyncard--card--tit {
   font-size: 40px;

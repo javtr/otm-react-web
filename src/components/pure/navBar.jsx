@@ -2,6 +2,8 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/logoW.svg";
 import LanguageContext from "../../context/langContext.js";
+import spImg from "../../assets/img/sp.png"
+import enImg from "../../assets/img/en.png"
 
 const NavBar = () => {
   const [sideBar, setSideBar] = useState("sideBarInit");
@@ -48,6 +50,21 @@ const NavBar = () => {
           <img src={logo} alt="Logo" />
         </div>
 
+        <div
+          className="navbar__lang"
+          onClick={() => {
+            switchLanguage();
+          }}
+          style={
+            lang=="en" ?
+              {
+                backgroundImage: `url(${enImg})`
+              } :
+              {
+                backgroundImage: `url(${spImg})`
+              }
+          }
+        ></div>
         <div className="navbar__links">
           <Link to="/">OTM</Link>
           <Link to="features">Features</Link>

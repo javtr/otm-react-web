@@ -3,7 +3,7 @@
 .navbar {
   position: relative;
   top: 0;
-  height:  80px;
+  height: 80px;
   width: 100%;
   font-size: $txt-small;
 
@@ -17,12 +17,34 @@
     height: 100px;
   }
 
+  &__lang {
+    position: absolute;
+    right: 102px;
+    top: 23px;
+    color: White;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
 
+
+    @include breakpoint-up(medium) {
+      right: 448px;
+      top: 30px;
+
+    }
+
+
+  }
 
   &__container {
     display: flex;
     width: 1200px;
     justify-content: space-between;
+    position: relative;
   }
 
   &__img {
@@ -58,9 +80,7 @@
     position: absolute;
     right: 23px;
 
-
     @include breakpoint-down(medium) {
-
       margin-top: 20px;
       margin-right: 25px;
 
@@ -74,9 +94,8 @@
   }
 }
 
-
-
-.sideBarOn, .sideBarOff {
+.sideBarOn,
+.sideBarOff {
   position: absolute;
   top: 10px;
   width: 95%;
@@ -84,9 +103,6 @@
   background-color: $back;
   border-radius: 18px;
   z-index: 999;
-
-
-
 
   // closeButton -------
   .st1 {
@@ -131,8 +147,7 @@
 
     & a {
       margin: 12px 0px;
-      color:$light;
-
+      color: $light;
     }
   }
   // ----------------
@@ -152,7 +167,6 @@
   transform: translateX(0%);
 }
 
-
 @keyframes slideIn {
   from {
     margin-left: 200%;
@@ -163,7 +177,6 @@
   }
 }
 
-
 @keyframes slideOut {
   from {
     margin-left: 0%;
@@ -172,7 +185,6 @@
     margin-left: 200%;
   }
 }
-
 
 .sideBarInit {
   margin-left: 0%;
@@ -184,5 +196,3 @@
     display: none;
   }
 }
-
-

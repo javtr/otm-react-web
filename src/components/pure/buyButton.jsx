@@ -2,11 +2,13 @@ import React, { useState, useEffect, useContext } from "react";
 import logoNinja from "../../assets/img/logo_ninja.png";
 import { textEn, textEs } from "../../assets/text/buyLanding.js";
 import LanguageContext from "../../context/langContext.js";
+import { useNavigate } from "react-router-dom";
 
 
 export default function BuyButton() {
   const { lang, setLang } = useContext(LanguageContext);
   const [text, setText] = useState({});
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (lang == "en") {
@@ -31,7 +33,9 @@ export default function BuyButton() {
         {text.sub}
         </div>
         <div className="buybutton__button">
-          <button className="global__btp">{text.btn}</button>
+          <button className="global__btp"
+          onClick={()=>navigate('/buy')}
+          >{text.btn}</button>
         </div>
         <div className="buybutton__img">
           <img src={logoNinja}></img>

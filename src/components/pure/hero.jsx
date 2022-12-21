@@ -3,7 +3,7 @@ import mockup from "../../assets/img/mockup.png";
 import { textEn, textEs } from "../../assets/text/hero.js";
 import LanguageContext from "../../context/langContext.js";
 
-export default function Hero() {
+export default function Hero({scroll}) {
   const { lang, setLang } = useContext(LanguageContext);
   const [text, setText] = useState(textEn);
 
@@ -26,7 +26,10 @@ export default function Hero() {
           <div className="global__tx-lg hero__text--title">{text.tit1}</div>
           <div className="global__tx-md hero__text--subTitle">{text.subt}</div>
 
-          <button className="global__btp hero__text--button">
+          <button className="global__btp hero__text--button"
+          onClick={()=>scroll()}
+          // onClick={()=>{console.log("holaa")}}
+          >
             {text.buttMore}
           </button>
         </div>

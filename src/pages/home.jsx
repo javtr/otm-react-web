@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import BuyButton from "../components/pure/buyButton";
 import Footer from "../components/pure/footer";
 import Hero from "../components/pure/hero";
@@ -8,11 +8,18 @@ import Features from "../components/container/features";
 
 
 const Home = () => {
+  const myRef = useRef(null)
+
+  const executeScroll = () => myRef.current.scrollIntoView()   
+  // const executeScroll = () => {console.log("chau");};   
+
+
+
   return (
     <div className="body-home">
-      <Hero></Hero>
-      <Whatis></Whatis>
-      <Features></Features>
+      <Hero scroll={executeScroll}></Hero>
+      <Whatis refProp={myRef}></Whatis>
+      <Features ></Features>
       <Advantages></Advantages>
       <BuyButton></BuyButton>
       {/* <Footer></Footer> */}

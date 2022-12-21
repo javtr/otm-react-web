@@ -13,6 +13,26 @@ export default function ContactForm() {
   const [text, setText] = useState(textEn);
   const [arrVar, setArrVar] = useState([]);
 
+  //variables de mail
+  let service = "service_u7dxswc";
+  let template = "template_3zmbih3";
+  let emailKey = "jK2fWXiud23YR9y0X";
+
+  //variables del captcha
+
+  // localhost
+  // let captchakey = "6LePq5gjAAAAAOxxb4VD45X50p94esRZjr5o9bwc";
+
+  // otm oficial 
+  // let captchakey = "6LckQzYbAAAAACchRcTZ-T4RcoEBkDTAQtVLQpzH";
+
+  // onRender
+  let captchakey = "6LchrpgjAAAAAKCvPP5dY0ihEP5d3JP-tifmgaT2";
+
+
+
+
+
   useEffect(() => {
     obtainFeatures();
   }, []);
@@ -62,21 +82,29 @@ export default function ContactForm() {
 
     if (filtro) {
 
-      // if (captcha) {
 
-      // emailjs
-      //   .send("service_ldxbl2a", "template_4hokf8f", formData, "eIgtXFdKWTCe8NiPY")
-      //   .then(
-      //     (result) => {
-      //       console.log(result.text);
-      //     },
-      //     (error) => {
-      //       console.log(error.text);
-      //     }
-      //   );
-      // }
 
-      console.log("enviar email");
+
+      if (captcha) {
+
+      emailjs
+        .send(service, template, formData, emailKey)
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("envio exitoso");
+          },
+          (error) => {
+            console.log(error.text);
+            console.log("falla envio de mail");
+          }
+        );
+
+
+      }
+      else{
+        console.log("falla el captcha");
+      }
     }
   }
 
@@ -107,7 +135,7 @@ export default function ContactForm() {
 
           <div className="formContact__recaptcha">
             <ReCAPTCHA
-              sitekey="6Ldy4bUiAAAAAH9ZiMjWguQIIigWl8LafZI38GKm"
+              sitekey={captchakey}
               onChange={onChange}
               size={window.innerWidth < 640 ? "compact" : "normal"}
               theme="dark"

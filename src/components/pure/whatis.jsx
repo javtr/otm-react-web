@@ -4,7 +4,7 @@ import whatImg2 from "../../assets/img/otm_02.png";
 import LanguageContext from "../../context/langContext.js";
 import { textEn, textEs } from "../../assets/text/whatIs";
 
-export default function Whatis() {
+export default function Whatis({refProp}) {
   const { lang, setLang } = useContext(LanguageContext);
   const [text, setText] = useState({});
 
@@ -19,7 +19,7 @@ export default function Whatis() {
   }, [lang]);
 
   return (
-    <div className="what  global__cont">
+    <div ref={refProp} className="what  global__cont">
       <div className="what__container">
         <h2 className="global__tx-mdl  what__title">{text.what}</h2>
         <h4 className="global__tx-sm  what__subTitle">{text.sub}</h4>

@@ -1,11 +1,14 @@
 import React, { useState, useEffect, useContext } from "react";
 import { textEn, textEs } from "../../assets/text/buyLanding.js";
 import LanguageContext from "../../context/langContext.js";
+import { useNavigate } from "react-router-dom";
 
 
 const BuyButtonFeat = () => {
   const { lang, setLang } = useContext(LanguageContext);
   const [text, setText] = useState({});
+  const navigate = useNavigate();
+
 
   useEffect(() => {
     if (lang == "en") {
@@ -29,7 +32,9 @@ const BuyButtonFeat = () => {
       {text.sub}
       </div>
       <div className="buybutton__button feat_buyButton">
-        <button className="global__btp">{text.btn}</button>
+        <button className="global__btp"
+        onClick={()=>navigate('/buy')}
+        >{text.btn}</button>
       </div>
     </div>
   );

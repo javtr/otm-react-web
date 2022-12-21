@@ -4,10 +4,14 @@ import logo from "../../assets/img/logoW.svg";
 import LanguageContext from "../../context/langContext.js";
 import spImg from "../../assets/img/sp.png"
 import enImg from "../../assets/img/en.png"
+import { useNavigate } from "react-router-dom";
+
 
 const NavBar = () => {
   const [sideBar, setSideBar] = useState("sideBarInit");
   const { lang, setLang } = useContext(LanguageContext);
+  const navigate = useNavigate();
+
 
   function turnSideBar() {
     if (sideBar == "sideBarInit") {
@@ -43,9 +47,7 @@ const NavBar = () => {
       <div className="navbar__container">
         <div
           className="navbar__img"
-          onClick={() => {
-            switchLanguage();
-          }}
+          onClick={()=>navigate('/')}
         >
           <img src={logo} alt="Logo" />
         </div>

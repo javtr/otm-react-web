@@ -7,9 +7,9 @@ export default function ModalFeature({ abierto, cerrar,index }) {
     <div >
       {abierto ? (
 
-        <div className="modal-card" >
+      
           <Modal cerrar={cerrar} index={index}></Modal>
-        </div>
+       
 
       ) : (
        null

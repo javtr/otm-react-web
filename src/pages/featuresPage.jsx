@@ -8,6 +8,13 @@ const FeaturesPage = () => {
   const [card, setCard] = useState(0);
   const value = useMemo(() => ({ card, setCard }), [card]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+
+
+  }, []);
+
+
   return (
     <UserContext.Provider value={value}>
       <div className="featPage  global__cont">

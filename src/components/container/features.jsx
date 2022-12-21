@@ -43,7 +43,7 @@ export default function Features() {
   }
 
   return (
-    <div className="features global__cont" >
+    <div  className="features global__cont" >
       <h2 className="global__tx-mdl features__title">{text.tit}</h2>
       <h3 className="global__tx-sm features__subTitle">{text.sub}</h3>
 

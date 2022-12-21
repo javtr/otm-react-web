@@ -214,7 +214,7 @@ export const FeaturesDataEs = [
     imgUrl: "./vwap_icon.png",
     title: "OTM VWAP",
     modalData: {
-      imgUrl: "./ind_01.gif",
+      imgUrl: "./ind_06.gif",
       title: "OTM VWAP",
 
       title2: "Volume information by waves",

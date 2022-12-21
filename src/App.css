@@ -128,10 +128,30 @@ body::before {
     height: 100px;
   }
 }
+.navbar__lang {
+  position: absolute;
+  right: 102px;
+  top: 23px;
+  color: White;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-size: 45px;
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: 0px;
+}
+@media (min-width: 48em) {
+  .navbar__lang {
+    right: 448px;
+    top: 30px;
+  }
+}
 .navbar__container {
   display: flex;
   width: 1200px;
   justify-content: space-between;
+  position: relative;
 }
 .navbar__img {
   width: 130px;
@@ -177,7 +197,8 @@ body::before {
   }
 }
 
-.sideBarOn, .sideBarOff {
+.sideBarOn,
+.sideBarOff {
   position: absolute;
   top: 10px;
   width: 95%;
@@ -188,7 +209,8 @@ body::before {
   -webkit-animation-duration: 750ms;
           animation-duration: 750ms;
 }
-.sideBarOn .st1, .sideBarOff .st1 {
+.sideBarOn .st1,
+.sideBarOff .st1 {
   position: absolute;
   top: 8px;
   right: 10px;
@@ -196,7 +218,8 @@ body::before {
   width: 35px;
 }
 .sideBarOn .st2,
-.sideBarOn .st3, .sideBarOff .st2,
+.sideBarOn .st3,
+.sideBarOff .st2,
 .sideBarOff .st3 {
   position: absolute;
   top: 10px;
@@ -206,13 +229,16 @@ body::before {
   margin: 5px;
   background-color: rgb(244, 244, 244);
 }
-.sideBarOn .st2, .sideBarOff .st2 {
+.sideBarOn .st2,
+.sideBarOff .st2 {
   rotate: 45deg;
 }
-.sideBarOn .st3, .sideBarOff .st3 {
+.sideBarOn .st3,
+.sideBarOff .st3 {
   rotate: -45deg;
 }
-.sideBarOn .sideBarLinks, .sideBarOff .sideBarLinks {
+.sideBarOn .sideBarLinks,
+.sideBarOff .sideBarLinks {
   display: flex;
   flex-direction: column;
   font-size: 30px;
@@ -220,7 +246,8 @@ body::before {
   margin-top: 83px;
   margin-left: 35px;
 }
-.sideBarOn .sideBarLinks a, .sideBarOff .sideBarLinks a {
+.sideBarOn .sideBarLinks a,
+.sideBarOff .sideBarLinks a {
   margin: 12px 0px;
   color: rgb(244, 244, 244);
 }
@@ -481,16 +508,35 @@ body::before {
     font-size: 20px;
   }
 }
+.advantages__advantage {
+  padding: 0 20px;
+}
 @media (min-width: 48em) {
   .advantages__advantage {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+  }
+}
+.advantages__advantage--mobileTitle {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  color: rgb(244, 244, 244);
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (min-width: 48em) {
+  .advantages__advantage--mobileTitle {
+    display: none;
   }
 }
 .advantages__advantage--img {
   width: 60%;
   margin: 0 auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 @media (min-width: 48em) {
   .advantages__advantage--img {
@@ -499,6 +545,9 @@ body::before {
     justify-content: center;
     padding: 0 20px;
   }
+}
+.advantages__advantage--img img {
+  width: 100%;
 }
 @media (min-width: 48em) {
   .advantages__advantage--img img {
@@ -517,11 +566,17 @@ body::before {
   line-height: 1;
   color: rgb(244, 244, 244);
   margin-bottom: 20px;
-  text-align: left;
+  text-align: center;
+}
+@media (max-width: 47.9375em) {
+  .advantages__advantage--text h2 {
+    display: none;
+  }
 }
 @media (min-width: 48em) {
   .advantages__advantage--text h2 {
     font-size: 40px;
+    text-align: left;
   }
 }
 .advantages__advantage--text h4 {
@@ -633,139 +688,6 @@ body::before {
   color: rgb(244, 244, 244);
 }
 
-.modal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-.modal--container {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-.modal--card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  max-height: 100%;
-  background-color: rgb(4, 0, 28);
-  border-radius: 17px;
-}
-@media (min-width: 48em) {
-  .modal--card {
-    width: 450px;
-    max-height: 90%;
-  }
-}
-@media (min-width: 48em) {
-  .modal--card {
-    width: 550px;
-    max-height: 90%;
-  }
-}
-.modal--card--close {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background-color: rgb(244, 244, 244);
-  opacity: 0.7;
-  border-radius: 50%;
-  padding: 2px;
-  line-height: 0;
-}
-.modal--card--close img {
-  width: 25px;
-  opacity: 1;
-}
-.modal--card--button {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  display: flex;
-  justify-content: center;
-}
-.modal--card--button button {
-  text-align: center;
-  font-size: 16px;
-  width: 100px;
-  height: 25px;
-}
-.modal--card--img {
-  overflow: hidden;
-  height: 168px;
-  border-radius: 17px 17px 0 0;
-}
-@media (min-width: 48em) {
-  .modal--card--img {
-    height: 252px;
-  }
-}
-@media (min-width: 48em) {
-  .modal--card--img {
-    height: 308px;
-  }
-}
-.modal--card--img img {
-  width: 100%;
-}
-.modal--card--containerText {
-  margin: 10px;
-}
-@media (min-width: 48em) {
-  .modal--card--containerText {
-    margin: 25px;
-  }
-}
-.modal--card--title {
-  color: rgb(244, 244, 244);
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  line-height: 1;
-}
-@media (min-width: 48em) {
-  .modal--card--title {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-}
-.modal--card--subTitle {
-  text-align: left;
-  font-size: 16px;
-  color: rgb(244, 244, 244);
-  font-weight: bold;
-  line-height: 1;
-  margin-bottom: 5px;
-}
-@media (min-width: 48em) {
-  .modal--card--subTitle {
-    margin-bottom: 15px;
-    font-size: 16px;
-  }
-}
-.modal--card--text {
-  text-align: left;
-  font-size: 14px;
-  line-height: 1;
-  margin-bottom: 15px;
-  color: rgb(172, 172, 181);
-}
-@media (min-width: 48em) {
-  .modal--card--text {
-    margin-bottom: 25px;
-    font-size: 14px;
-  }
-}
-
 @media (min-width: 48em) {
   .featPage {
     padding: 0 30px;
@@ -867,6 +789,141 @@ body::before {
 }
 .featPage .feat_buyButton {
   margin-bottom: 0px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal--container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal--card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: rgb(4, 0, 28);
+  border-radius: 17px;
+}
+@media (min-width: 48em) {
+  .modal--card {
+    width: 550px;
+  }
+}
+@media (min-width: 48em) {
+  .modal--card {
+    width: 550px;
+  }
+}
+.modal--card--close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgb(244, 244, 244);
+  opacity: 0.7;
+  border-radius: 50%;
+  padding: 2px;
+  line-height: 0;
+}
+.modal--card--close img {
+  width: 25px;
+  opacity: 1;
+}
+.modal--card--button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: flex;
+  justify-content: center;
+}
+.modal--card--button button {
+  text-align: center;
+  font-size: 16px;
+  width: 100px;
+  height: 25px;
+}
+.modal--card--img {
+  overflow: hidden;
+  height: 168px;
+  border-radius: 17px 17px 0 0;
+}
+@media (min-width: 48em) {
+  .modal--card--img {
+    height: 252px;
+  }
+}
+@media (min-width: 48em) {
+  .modal--card--img {
+    height: 308px;
+  }
+}
+.modal--card--img img {
+  width: 100%;
+}
+.modal--card--containerText {
+  margin: 10px;
+}
+@media (min-width: 48em) {
+  .modal--card--containerText {
+    margin: 25px;
+  }
+}
+.modal--card--title {
+  color: rgb(244, 244, 244);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+@media (min-width: 48em) {
+  .modal--card--title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}
+.modal--card--subTitle {
+  text-align: left;
+  font-size: 16px;
+  color: rgb(244, 244, 244);
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+@media (min-width: 48em) {
+  .modal--card--subTitle {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+}
+.modal--card--text {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 15px;
+  color: rgb(172, 172, 181);
+}
+@media (min-width: 48em) {
+  .modal--card--text {
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
 }
 
 .footer {

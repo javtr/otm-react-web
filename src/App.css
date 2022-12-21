@@ -1326,6 +1326,44 @@ body::before {
   margin-bottom: 50px;
 }
 
+.mensaje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 800px;
+  height: 90px;
+  margin: 0 auto;
+  border-radius: 45px;
+  margin-top: 32px;
+  margin-bottom: 44px;
+  padding: 0 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+@media (min-width: 48em) {
+  .mensaje {
+    font-size: 16px;
+    padding: 26px 23px;
+  }
+}
+@media (min-width: 80em) {
+  .mensaje {
+    font-size: 16px;
+    padding: 34px 23px;
+  }
+}
+
+.mensajeFail {
+  color: rgb(235, 235, 235);
+  background-color: #e90089;
+}
+
+.mensajeSucces {
+  color: rgb(32, 32, 32);
+  background-color: rgb(97, 255, 189);
+}
+
 .formContact {
   color: rgb(255, 255, 255);
   background-color: rgb(21, 19, 43);
@@ -1334,7 +1372,6 @@ body::before {
   width: 90%;
   padding-top: 60px;
   padding-bottom: 30px;
-  margin-top: 70px;
   max-width: 800px;
 }
 .formContact__title {

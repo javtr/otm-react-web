@@ -12,11 +12,19 @@ export default function ContactForm() {
   const { lang, setLang } = useContext(LanguageContext);
   const [text, setText] = useState(textEn);
   const [arrVar, setArrVar] = useState([]);
+  const [mailState, setMailState] = useState("none");
 
-  //variables de mail
-  let service = "service_u7dxswc";
-  let template = "template_3zmbih3";
-  let emailKey = "jK2fWXiud23YR9y0X";
+  //variables de oficial
+  // let service = "service_u7dxswc";
+  // let template = "template_3zmbih3";
+  // let emailKey = "jK2fWXiud23YR9y0X";
+
+  //variables de test
+  let service = "service_ldxbl2a";
+  let template = "template_4hokf8f";
+  let emailKey = "eIgtXFdKWTCe8NiPY";
+
+  // let emailKey = "eIgtXFdKWTC";
 
   //variables del captcha
 
@@ -93,10 +101,12 @@ export default function ContactForm() {
           (result) => {
             console.log(result.text);
             console.log("envio exitoso");
+            setMailState("succes");
           },
           (error) => {
             console.log(error.text);
             console.log("falla envio de mail");
+            setMailState("fail");
           }
         );
 
@@ -114,6 +124,19 @@ export default function ContactForm() {
 
   return (
     <div>
+
+{
+  mailState!="none"?
+    <div className={
+      mailState=="fail"?
+      "mensaje mensajeFail"
+      :
+      "mensaje mensajeSucces"
+      }>{mailState=="fail"? text.fail:text.succes}</div>
+    :
+    <></>
+
+}
       <div className="formContact ">
         <h2 className="formContact__title">{text.tit}</h2>
 
@@ -141,7 +164,6 @@ export default function ContactForm() {
               theme="dark"
             />
           </div>
-
 
 
           <div className="formContact__boton">

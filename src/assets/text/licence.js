@@ -20,6 +20,10 @@ export const textEn = {
   text2: "If you have any questions please do not hesitate to contact us:",
   text3: "info@otmtrading.com",
   text4: "WhatsApp support (+57 311 3006826)",
+  fail:"The message could not be sent, if the problem persists contact info@otmtrading.com",
+  succes:"The message was successfully sent",
+
+
 };
 
 export const textEs = {
@@ -44,4 +48,7 @@ export const textEs = {
   text2: "Si tienes cualquier inquietud no dudes en contactarnos:",
   text3: "info@otmtrading.com",
   text4: "WhatsApp de soporte (+57 311 3006826)",
+  fail:"El mensaje no pudo ser enviado, si el problema persiste comunicarse con info@otmtrading.com",
+  succes:"El mensaje fue enviado exitosamente",
+
 };

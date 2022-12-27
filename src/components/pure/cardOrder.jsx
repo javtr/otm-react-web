@@ -4,8 +4,6 @@ import { textEn, textEs } from "../../assets/text/payment.js";
 import LanguageContext from "../../context/langContext.js";
 
 
-
-
 export default function CardOrder({ productId }) {
   const todayDate = new Date().toISOString().slice(0, 10);
   const { lang, setLang } = useContext(LanguageContext);

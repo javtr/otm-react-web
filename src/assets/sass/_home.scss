@@ -3,86 +3,68 @@
   flex-direction: column;
   align-items: center;
 }
-
 .modal__features {
   display: flex;
   justify-content: center;
   align-items: center;
-
   &--card {
     max-width: 645px;
     max-height: 600px;
   }
 }
-
 // .body-home {
 //   position: relative;
 //   top: 100px;
 // }
-
 // hero ------------------------------------------
-
 .hero {
   margin: 0 auto;
   max-width: ($mx-w * 1.2);
-
   .hero__container {
     display: flex;
-
     flex-direction: column;
     align-items: baseline;
     margin-top: 25px;
-
     @include breakpoint-up(medium) {
       flex-direction: row;
       align-items: center;
       margin-top: 0px;
     }
   }
-
   .hero__img {
     width: 100%;
     margin: 10px;
     margin-top: 60px;
-
     @include breakpoint-up(medium) {
       width: 50%;
       margin: 0px;
     }
-
     img {
       width: 90%;
       margin: 0 auto;
     }
   }
-
   .hero__text {
     color: $light;
     margin-left: 25px;
     width: 90%;
-
     @include breakpoint-up(medium) {
       margin-left: 50px;
       width: 50%;
     }
-
     @include breakpoint-up(large) {
       margin-left: 100px;
       width: 50%;
     }
-
     &--title {
       margin-bottom: 45px;
       margin-top: 70px;
-
       @include breakpoint-up(medium) {
         margin-bottom: 50px;
       }
     }
-
     &--subTitle {
       margin-bottom: 35px;
-
       @include breakpoint-up(medium) {
         margin-bottom: 75px;
       }
@@ -90,99 +72,78 @@
   }
 }
 // what ------------------------------------------
-
 .what {
   &__container {
   }
-
   &__title {
     text-align: center;
     margin-bottom: 20px;
-
     @include breakpoint-up(medium) {
       margin-bottom: 25px;
     }
-
     @include breakpoint-up(large) {
       margin-bottom: 30px;
     }
   }
-
   &__subTitle {
     text-align: left;
     margin-bottom: 56px;
-
     @include breakpoint-up(medium) {
       text-align: center;
       margin-bottom: 65px;
     }
-
     @include breakpoint-up(large) {
       margin-bottom: 90px;
     }
   }
-
   &__subTitle2 {
     text-align: center;
     margin-bottom: 50px;
-
     @include breakpoint-up(medium) {
       margin-bottom: 60px;
     }
-
     @include breakpoint-up(large) {
       margin-bottom: 90px;
     }
   }
-
   &__imagen {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-
     @include breakpoint-up(medium) {
       margin-bottom: 25px;
     }
-
     @include breakpoint-up(large) {
       margin-bottom: 60px;
     }
-
     & img {
       width: 100%;
       border-radius: 15px;
     }
   }
-
   &__video {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-bottom: 24px;
-
     @include breakpoint-up(medium) {
       margin-bottom: 30px;
     }
-
     @include breakpoint-up(large) {
       margin-bottom: 35px;
     }
-
     & iframe {
       width: 100%;
       height: 48vw;
       border-radius: 15px;
-
       @include breakpoint-up(large) {
         height: 660px;
       }
     }
   }
 }
-
 // Advantages -------------------------------------
-
 .advantages {
   &__title {
     font-size: $txt-large-smh2;
@@ -203,79 +164,74 @@
     font-weight: normal;
     line-height: 1;
     color: $gray;
-
     margin-bottom: 56px;
-
     @include breakpoint-up(medium) {
       font-size: $txt-medium;
     }
   }
 
+  // ---------
   &__container {
     display: flex;
-    justify-content: center;
-  }
-
-  &__advantage {
-    // padding: 0 20px;
-    border: 1px solid white;
-    margin: 0 10px;
-    border-radius: 40px;
+    flex-direction: column;
+    align-items: center;
 
     @include breakpoint-up(medium) {
-      display: flex;
+      flex-direction: row;
       justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__advantage {
+    border: 1px solid $gray;
+    border-radius: 40px;
+    max-width: 370px;
+    padding: 15px;
+    margin-bottom: 25px;
 
-      // padding: 0;
+    @include breakpoint-up(medium) {
       width: 33%;
-      padding: 30px;
+      padding: 15px;
+      flex: 1 0 auto;
+      min-height: 720px;
+      margin: 5px;
+      max-width: 500px;
+
     }
 
-    &--mobileTitle {
-      font-size: $txt-small;
-      font-weight: bold;
-      line-height: 1;
-      color: $light;
-      margin-bottom: 20px;
-      text-align: center;
+    @include breakpoint-up(large) {
+      padding: 30px;
+      min-height: 690px;
+      margin: 10px;
 
-      @include breakpoint-up(medium) {
-        display: none;
-      }
     }
 
     &--img {
-      width: 60%;
+      width: 100%;
       margin: 0 auto;
       margin-bottom: 25px;
       margin-top: 25px;
+      display: flex;
+      justify-content: center;
 
       @include breakpoint-up(medium) {
         display: flex;
         justify-content: center;
-        height: 20%;
-        width: 20%;
+        margin-bottom: 50px;
       }
 
       img {
-        width: 100%;
+        width: 60%;
 
         @include breakpoint-up(medium) {
-          height: 100%;
-          width: 100%;
         }
       }
     }
 
     &--text {
-
-
       @include breakpoint-up(medium) {
         height: 80%;
         width: 100%;
-        // padding: 0 20px;
       }
 
       h2 {
@@ -286,22 +242,23 @@
         margin-bottom: 20px;
         text-align: center;
 
-        @include breakpoint-down(medium) {
-          display: none;
+        @include breakpoint-up(medium) {
+          font-size: $txt-medium2;
+          text-align: center;
+          width: 100%;
         }
 
-        @include breakpoint-up(medium) {
+        @include breakpoint-up(large) {
           font-size: $txt-large-smh2;
-          text-align: center;
         }
       }
+
       h4 {
         font-size: $txt-xsmall;
         font-weight: normal;
-        line-height: 1;
+        line-height: 1.5;
         color: $gray;
         margin-bottom: 50px;
-
         @include breakpoint-up(medium) {
           font-size: $txt-small;
         }
@@ -309,15 +266,12 @@
     }
   }
 }
-
 // .flex-row-rev {
 //   @include breakpoint-up(medium) {
 //     flex-direction: row-reverse;
 //   }
 // }
-
 // Button -----------------------------------------------------------------
-
 .buybutton {
   &__title {
     font-size: $txt-large-smh2;
@@ -326,43 +280,34 @@
     color: $light;
     margin-bottom: 20px;
     text-align: center;
-
     @include breakpoint-up(medium) {
       font-size: $txt-large;
       margin: 35px 0;
     }
   }
-
   &__subTitle {
     font-size: $txt-small;
     font-weight: normal;
     line-height: 1;
     color: $gray;
-
     margin-bottom: 56px;
-
     @include breakpoint-up(medium) {
       font-size: $txt-medium;
     }
   }
-
   &__button {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
-
     & button {
     }
   }
-
   &__img {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-
     & img {
       width: 100%;
-
       @include breakpoint-up(medium) {
         width: 80%;
       }

@@ -4,9 +4,12 @@ import adv2 from '../../assets/img/adv_02.png';
 import adv3 from '../../assets/img/adv_03.png';
 import { textEn, textEs } from "../../assets/text/advantage.js";
 import LanguageContext from "../../context/langContext.js";
+
 export default function Advantage() {
+
   const { lang, setLang } = useContext(LanguageContext);
   const [text, setText] = useState({});
+
   useEffect(() => {
     if (lang == "en") {
       setText(textEn);
@@ -16,6 +19,7 @@ export default function Advantage() {
       setText(textEn);
     }
   }, [lang]);
+  
   return (
     <div className="advantages global__cont">
       <h2 className="advantages__title">{text.tit}</h2>
@@ -24,7 +28,6 @@ export default function Advantage() {
       </h2>
       <div className="advantages__container">
         <div className="advantages__advantage">
-          <h2 className="advantages__advantage--mobileTitle">{text.tit1}</h2>
           <div className="advantages__advantage--img">
             <img src={adv1}></img>
           </div>
@@ -35,8 +38,7 @@ export default function Advantage() {
             </h4>
           </div>
         </div>
-        <div className="advantages__advantage flex-row-rev">
-          <h2 className="advantages__advantage--mobileTitle">{text.tit2}</h2>
+        <div className="advantages__advantage">
           <div className="advantages__advantage--img">
             <img src={adv2}></img>
           </div>
@@ -48,7 +50,6 @@ export default function Advantage() {
           </div>
         </div>
         <div className="advantages__advantage">
-          <h2 className="advantages__advantage--mobileTitle">{text.tit3}</h2>
           <div className="advantages__advantage--img">
             <img src={adv3}></img>
           </div>

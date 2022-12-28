@@ -26,9 +26,8 @@ export default function Hero({scroll}) {
           <div className="global__tx-lg hero__text--title">{text.tit1}</div>
           <div className="global__tx-md hero__text--subTitle">{text.subt}</div>
 
-          <button className="global__btp hero__text--button"
+          <button className="global__btp hero__text--button btn-trans-pry"
           onClick={()=>scroll()}
-          // onClick={()=>{console.log("holaa")}}
           >
             {text.buttMore}
           </button>

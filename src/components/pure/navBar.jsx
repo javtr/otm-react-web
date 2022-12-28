@@ -68,11 +68,11 @@ const NavBar = () => {
           }
         ></div>
         <div className="navbar__links">
-          <Link to="/">OTM</Link>
-          <Link to="features">Features</Link>
-          <Link to="buy">Buy</Link>
-          <Link to="example">Example</Link>
-          <Link to="contact">Contact</Link>
+          <Link className="link-before" to="/">OTM</Link>
+          <Link className="link-before" to="features">Features</Link>
+          <Link className="link-before" to="buy">Buy</Link>
+          <Link className="link-before" to="example">Example</Link>
+          <Link className="link-before" to="contact">Contact</Link>
         </div>
       </div>
 
@@ -89,11 +89,11 @@ const NavBar = () => {
         </div>
 
         <div className="sideBarLinks">
-          <Link to="/">OTM</Link>
-          <Link to="features">Features</Link>
-          <Link to="buy">Buy</Link>
-          <Link to="example">Example</Link>
-          <Link to="contact">Contact</Link>
+        <Link className="link-before" to="/">OTM</Link>
+          <Link className="link-before" to="features">Features</Link>
+          <Link className="link-before" to="buy">Buy</Link>
+          <Link className="link-before" to="example">Example</Link>
+          <Link className="link-before" to="contact">Contact</Link>
         </div>
       </div>
     </div>

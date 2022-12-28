@@ -182,8 +182,9 @@
       align-items: flex-start;
     }
   }
+
   &__advantage {
-    border: 1px solid $gray;
+    border: 1px solid $darkGray;
     border-radius: 40px;
     max-width: 370px;
     padding: 15px;
@@ -196,14 +197,12 @@
       min-height: 720px;
       margin: 5px;
       max-width: 500px;
-
     }
 
     @include breakpoint-up(large) {
       padding: 30px;
       min-height: 690px;
       margin: 10px;
-
     }
 
     &--img {
@@ -264,13 +263,39 @@
         }
       }
     }
+
+    //advantage animation
+
+    transition: 0.3s ease-out;
+
+    &:hover {
+      transform: scale(1.025);
+      border: 3px solid $gray;
+      background-color: $backLitLight;
+
+	    animation-duration: 1.5s;
+	    animation-name: key1;
+	    animation-iteration-count: infinite;
+	    animation-timing-function: cubic-bezier(.08,.6,.69,1);
+
+    }
+
+    @keyframes key1 {
+      from {
+        border: 3px solid $darkGray;
+      }
+      50%{
+        border: 3px solid $primary;
+      }
+      to {
+        border: 3px solid $darkGray;
+      }
+    }
+
+
   }
 }
-// .flex-row-rev {
-//   @include breakpoint-up(medium) {
-//     flex-direction: row-reverse;
-//   }
-// }
+
 // Button -----------------------------------------------------------------
 .buybutton {
   &__title {

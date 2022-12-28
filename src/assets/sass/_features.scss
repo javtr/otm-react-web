@@ -8,9 +8,7 @@
     margin-bottom: 56px;
   }
 
-
   &__container {
-
     @include breakpoint-up(medium) {
       display: flex;
       flex-wrap: wrap;
@@ -22,7 +20,6 @@
       @include breakpoint-up(medium) {
         width: 50%;
       }
-
     }
   }
 }
@@ -44,14 +41,33 @@
 
     @include breakpoint-up(medium) {
       width: 70%;
-
-
     }
   }
 
   &__title {
     color: $light;
   }
+
+  &:hover{
+    animation-duration: 1.5s;
+    animation-name: anim1;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.08,.6,.69,1);
+  }
+
+
 }
 
+@keyframes anim1 {
+  from {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
 
+
+  to {
+    transform: scale(1);
+  }
+}

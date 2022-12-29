@@ -34,7 +34,7 @@ const BuySecundario = ({ prod,id }) => {
           $ {prod.price} <div>lifetime</div>{" "}
         </h3>
         <div className="buySecundario__card--button ">
-          <button onClick={() => toOrder()}  className="global__btp">{text.btn}</button>
+          <button onClick={() => toOrder()}  className="global__btp btn-trans-pry">{text.btn}</button>
         </div>
       </div>
   );

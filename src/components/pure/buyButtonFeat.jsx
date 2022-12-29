@@ -32,7 +32,7 @@ const BuyButtonFeat = () => {
       {text.sub}
       </div>
       <div className="buybutton__button feat_buyButton">
-        <button className="global__btp"
+        <button className="global__btp btn-trans-pry"
         onClick={()=>navigate('/buy')}
         >{text.btn}</button>
       </div>

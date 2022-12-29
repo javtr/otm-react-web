@@ -100,15 +100,18 @@ export const FeaturesDataEn = [
       imgUrl: "./ind_01.gif",
       title: "OTM VWAP",
 
-      title2: "Volume information by waves",
+      title2: "Price and volume",
       paragraph2:
-        "Identify the strength of an impulse or pullback. ",
-      title3: "Exhaustion signals",
+        "Easily visualize the relationship between price and volume",
+      
+        title3: "Improved level of operations",
       paragraph3:
-        "Display buy or sell signals. ",
-      title4: "Non-resulting effort signals",
+        "Obtain the best price level for your buying and selling operations.",
+      
+        title4: "Multiple vwap in a single indicator",
       paragraph4:
-        "Detect high volume moves with no price result. ",
+        "Use different vwap periods on the same chart. You can set up daily, weekly and monthly periods simultaneously."
+        
           },
   }
 
@@ -214,18 +217,21 @@ export const FeaturesDataEs = [
     imgUrl: "./vwap_icon.png",
     title: "OTM VWAP",
     modalData: {
-      imgUrl: "./ind_06.gif",
+      imgUrl: "./ind_01.gif",
       title: "OTM VWAP",
 
-      title2: "Volume information by waves",
+      title2: "Precio y volumen",
       paragraph2:
-        "Identify the strength of an impulse or pullback. ",
-      title3: "Exhaustion signals",
+        "Visualice con facilidad la relación entre el precio y el volumen",
+      
+        title3: "Mejor nivel de operaciones",
       paragraph3:
-        "Display buy or sell signals. ",
-      title4: "Non-resulting effort signals",
+        "Obtenga el mejor nivel de precios para realizar sus operaciones de compra y venta",
+      
+        title4: "Múltiples vwap en un solo indicador",
       paragraph4:
-        "Detect high volume moves with no price result. ",
+        "Utilice diferentes periodos de vwap en el mismo gráfico. Puede configurar simultáneamente periodos diarios, semanales y mensuales"
+        
           },
   }
 

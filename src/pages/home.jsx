@@ -5,6 +5,7 @@ import Hero from "../components/pure/hero";
 import Whatis from "../components/pure/whatis";
 import Advantages from "../components/pure/advantage";
 import Features from "../components/container/features";
+import TestimonyCont from "../components/container/testimonyCont";
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
       <Whatis refProp={myRef}></Whatis>
       <Features ></Features>
       <Advantages></Advantages>
+      <TestimonyCont></TestimonyCont>
       <BuyButton></BuyButton>
       {/* <Footer></Footer> */}
     </div>

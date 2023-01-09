@@ -66,6 +66,7 @@ export default function Features() {
         cerrar={cerrarModal}
         index={featureIndex}
       ></ModalFeature>
+      
     </div>
   );
 }

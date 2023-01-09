@@ -6,11 +6,8 @@ export default function ModalFeature({ abierto, cerrar,index }) {
   return (
     <div >
       {abierto ? (
-
-      
           <Modal cerrar={cerrar} index={index}></Modal>
-       
-
+      
       ) : (
        null
       )}

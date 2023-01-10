@@ -5,11 +5,8 @@ export default function FeatureTest({ review }) {
   useEffect(() => {}, []);
 
   return (
-    <div className="feature">
-      <div className="feature__image">
+    <div className="testimony__container--image">
         <img src={images(review.imgUrl)}></img>
-      </div>
-      {/* <div className="feature__title">{review.title}</div> */}
     </div>
   );
 }

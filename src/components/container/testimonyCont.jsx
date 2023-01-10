@@ -6,6 +6,7 @@ import ModalReviewCont from '../pure/modalReviewCont';
 import Testimony from '../pure/testimony';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import ModalReview from '../pure/modalReview';
 
 
 export default function TestimonyCont() {
@@ -17,19 +18,19 @@ export default function TestimonyCont() {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      breakpoint: { max: 1000000, min: 1280 },
+      items: 3
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 1280, min: 768 },
       items: 3
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 768, min: 375 },
       items: 2
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 375, min: 0 },
       items: 1
     }
   };
@@ -70,13 +71,15 @@ export default function TestimonyCont() {
 
 
   return (
-    <div>
+    <div className='testimony global__cont'>
+
+      <h2 className='testimony__title'>User Reviews</h2>
+
+
       {content.length > 0 ?
         <Carousel responsive={responsive}>
-
           <div key={0}
             onClick={() => {
-
               abrirModal(0);
             }}
           >
@@ -84,7 +87,6 @@ export default function TestimonyCont() {
             >
             </FeatureTest>
           </div>
-
 
           <div key={1}
             onClick={() => {
@@ -96,7 +98,6 @@ export default function TestimonyCont() {
             </FeatureTest>
           </div>
 
-
           <div key={2}
             onClick={() => {
               abrirModal(2);
@@ -107,19 +108,29 @@ export default function TestimonyCont() {
             </FeatureTest>
           </div>
 
-
-
         </Carousel>
         :
         <></>
       }
 
 
-       <ModalReviewCont
-        index={indexContent}
-        abierto={abierto}
-        cerrar={cerrarModal}
-       ></ModalReviewCont>
+
+
+
+      {abierto ? (
+          <ModalReview cerrar={cerrarModal} index={indexContent}></ModalReview>
+      ) : (
+       null
+      )}
+
+
+      {/* <ModalReviewCont
+      index={indexContent}
+      abierto={abierto}
+      cerrar={cerrarModal}
+      ></ModalReviewCont> */}
+
+
 
     </div>
   )

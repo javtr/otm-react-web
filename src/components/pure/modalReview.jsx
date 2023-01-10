@@ -1,14 +1,18 @@
 import React, { useState, useEffect, useContext } from "react";
 import CloseImg from "../../assets/img/icons8-close.svg";
-const images = require.context("../../assets/img", true);
 import LanguageContext from "../../context/langContext.js";
 import { useNavigate } from "react-router-dom";
+import { ReviewsDataEn, ReviewsDataEs } from "../../assets/info/reviewsData";
+const vid = require.context("../../assets/video", true);
+
 
 export default function ModalReview({ cerrar, index }) {
   const { lang, setLang } = useContext(LanguageContext);
   const [text, setText] = useState([]);
   const [isloading, setIsloading] = useState(true);
   const navigate = useNavigate();
+  const [content, setContent] = useState([]);
+
 
   useEffect(() => {
     const handleEsc = (event) => {
@@ -23,29 +27,45 @@ export default function ModalReview({ cerrar, index }) {
   }, []);
 
 
+  useEffect(() => {
+    if (lang == "en") {
+      setContent(ReviewsDataEn);
+    } else if (lang == "es") {
+      setContent(ReviewsDataEs);
+    } else {
+      setContent(ReviewsDataEn);
+    }
+  }, [lang]);
+
+
+  if (content.length == 0) {
+    return (
+      <></>
+    )
+  }
+
+
   return (
     <>
-        <div className="modal" onClick={cerrar} >
-              <div className="modal--card" onClick={(e) => e.stopPropagation()}>
-                <div className="modal--card--containerImg">
-                  <div className="modal--card--close" onClick={cerrar}>
-                    <img src={CloseImg}></img>
-                  </div>
-
-                    <iframe
-                        src="https://www.youtube.com/embed/4V2KlR4u4HQ"
-                        title="OTM"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-                        allowFullScreen
-                      ></iframe>
+      <div className="testimony__modal" onClick={cerrar} >
+        <div className="testimony__modal--card" onClick={(e) => e.stopPropagation()}>
+            <div className="testimony__modal--card--close" onClick={cerrar}>
+              <img src={CloseImg}></img>
+            </div>
 
 
-                </div>
+            <iframe
+              src={vid(content[index].video)}
+              title="OTM"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+              allowFullScreen
+              className="testimony__modal--card--video"
+            ></iframe>
+
+          </div>
 
 
-              </div>
-        </div>
+      </div>
     </>
   );
 }

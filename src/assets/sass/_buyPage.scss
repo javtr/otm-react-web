@@ -27,7 +27,6 @@
     max-width: 600px;
     position: relative;
     top: 0;
-    // margin: 0 25px;
     border-radius: $buy-br-sm;
     width: 100%;
 
@@ -102,17 +101,32 @@
         height:15px;
         border-radius: 8px;
 
-        // transform: rotate(90deg);
-        // top:-3px;
-        // left: -8px;
-
         background-color: $primary;
-        // transform: scale(1.2)
       }
-
-
-
     }
+
+    &--priceTotal {
+      font-size: $txt-medium2;
+      font-weight: bold;
+      line-height: 1;
+      color: $light;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+
+      text-decoration:line-through;
+
+      div {
+        display: inline;
+        font-size: $txt-medium;
+        font-weight: normal;
+        font-style: italic;
+        line-height: 1;
+        color: $gray;
+        text-align: center;
+      }
+    }
+
 
     &--price {
       font-size: $txt-medium3;
@@ -120,7 +134,9 @@
       line-height: 1;
       color: $light;
       text-align: center;
-      margin: 50px 0;
+      margin-bottom: 50px;
+
+
 
       div {
         display: inline;
@@ -132,6 +148,9 @@
         text-align: center;
       }
     }
+
+
+
 
     &--button {
       display: flex;
@@ -193,7 +212,7 @@
 
 
     @include breakpoint-up(medium) {
-      width: 30%;
+      width: 25%;
     }    
 
     @include breakpoint-up(large) {

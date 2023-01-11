@@ -75,8 +75,39 @@ export const IndicatorsDataEn = [
     txt3: "Do you want to go back a few bars and analyze the volume profile? Do not worry, this profile will be recreated in real time. ",
   },
   {
+    img: "./instalation_mockup.jpg",
+    tit: "Installation and setup manuals",
+    txt0: "Installing OTM is very easy, follow the instructions in the installation manual.",
+    txt1: "You can also learn more about each of the indicators in the configuration manual.",
+    lnk0: ["https://drive.google.com/drive/u/3/folders/1ae7eANS0PX__QVRiicnNJ6rg0E5ekjFC","Download manual"],
+  },
+  {
     img: "./ind_06.gif",
-    tit: "Installation",
+    tit: "Frequently Asked Questions",
+    txt0: "Have you ever wondered why the price consolidates more at some price levels than others? This is because some levels are preferred by large institutions so the price stays longer there, generating consolidations. While in the less preferred zones, the price moves vertically and faster. By using OTM Volume Profile you can easily determine this: ",
+    sub1: "Most traded levels",
+    imi1: "./ind_06.gif",
+    txt1: "Price levels where the price will consolidate, by Identifying the volume control center (VPOC) (2). Besides, two objective support and resistance levels such as the value area low (VAL) and high (VAH), (1). ",
+    sub2: "Less traded levels",
+    txt2: "Identify the least traded price levels of the session (low volume levels). These levels allow to detect possible big movements (3). ",
+    sub3: "Dynamic volume profile",
+    txt3: "Do you want to go back a few bars and analyze the volume profile? Do not worry, this profile will be recreated in real time. ",
+  },
+  {
+    img: "./ind_06.gif",
+    tit: "System use",
+    txt0: "Have you ever wondered why the price consolidates more at some price levels than others? This is because some levels are preferred by large institutions so the price stays longer there, generating consolidations. While in the less preferred zones, the price moves vertically and faster. By using OTM Volume Profile you can easily determine this: ",
+    sub1: "Most traded levels",
+    imi1: "./ind_06.gif",
+    txt1: "Price levels where the price will consolidate, by Identifying the volume control center (VPOC) (2). Besides, two objective support and resistance levels such as the value area low (VAL) and high (VAH), (1). ",
+    sub2: "Less traded levels",
+    txt2: "Identify the least traded price levels of the session (low volume levels). These levels allow to detect possible big movements (3). ",
+    sub3: "Dynamic volume profile",
+    txt3: "Do you want to go back a few bars and analyze the volume profile? Do not worry, this profile will be recreated in real time. ",
+  },
+  {
+    img: "./ind_06.gif",
+    tit: "Signals",
     txt0: "Have you ever wondered why the price consolidates more at some price levels than others? This is because some levels are preferred by large institutions so the price stays longer there, generating consolidations. While in the less preferred zones, the price moves vertically and faster. By using OTM Volume Profile you can easily determine this: ",
     sub1: "Most traded levels",
     imi1: "./ind_06.gif",
@@ -87,6 +118,9 @@ export const IndicatorsDataEn = [
     txt3: "Do you want to go back a few bars and analyze the volume profile? Do not worry, this profile will be recreated in real time. ",
   },
 
+
+
+  
 
 
 ];
@@ -168,8 +202,40 @@ export const IndicatorsDataEs = [
     txt3: "Do you want to go back a few bars and analyze the volume profile? Do not worry, this profile will be recreated in real time. ",
   },
   {
+    img: "./instalation_mockup.jpg",
+    tit: "Manuales de instalación y configuración",
+    txt0: "Instalar OTM es muy fácil, sigue las instrucciones que están en el manual de instalación.",
+    txt1: "Así mismo conoce a fondo cada uno de los indicadores en el manual de configuración.",
+    lnk0: ["https://drive.google.com/drive/u/3/folders/1ae7eANS0PX__QVRiicnNJ6rg0E5ekjFC","Descargar manual"],
+    
+  },
+  {
     img: "./ind_06.gif",
-    tit: "instalacion",
+    tit: "Preguntas frecuentes",
+    txt0: "Have you ever wondered why the price consolidates more at some price levels than others? This is because some levels are preferred by large institutions so the price stays longer there, generating consolidations. While in the less preferred zones, the price moves vertically and faster. By using OTM Volume Profile you can easily determine this: ",
+    sub1: "Most traded levels",
+    imi1: "./ind_06.gif",
+    txt1: "Price levels where the price will consolidate, by Identifying the volume control center (VPOC) (2). Besides, two objective support and resistance levels such as the value area low (VAL) and high (VAH), (1). ",
+    sub2: "Less traded levels",
+    txt2: "Identify the least traded price levels of the session (low volume levels). These levels allow to detect possible big movements (3). ",
+    sub3: "Dynamic volume profile",
+    txt3: "Do you want to go back a few bars and analyze the volume profile? Do not worry, this profile will be recreated in real time. ",
+  },
+  {
+    img: "./ind_06.gif",
+    tit: "Uso del sistema",
+    txt0: "Have you ever wondered why the price consolidates more at some price levels than others? This is because some levels are preferred by large institutions so the price stays longer there, generating consolidations. While in the less preferred zones, the price moves vertically and faster. By using OTM Volume Profile you can easily determine this: ",
+    sub1: "Most traded levels",
+    imi1: "./ind_06.gif",
+    txt1: "Price levels where the price will consolidate, by Identifying the volume control center (VPOC) (2). Besides, two objective support and resistance levels such as the value area low (VAL) and high (VAH), (1). ",
+    sub2: "Less traded levels",
+    txt2: "Identify the least traded price levels of the session (low volume levels). These levels allow to detect possible big movements (3). ",
+    sub3: "Dynamic volume profile",
+    txt3: "Do you want to go back a few bars and analyze the volume profile? Do not worry, this profile will be recreated in real time. ",
+  },
+  {
+    img: "./ind_06.gif",
+    tit: "Señales",
     txt0: "Have you ever wondered why the price consolidates more at some price levels than others? This is because some levels are preferred by large institutions so the price stays longer there, generating consolidations. While in the less preferred zones, the price moves vertically and faster. By using OTM Volume Profile you can easily determine this: ",
     sub1: "Most traded levels",
     imi1: "./ind_06.gif",

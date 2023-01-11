@@ -45,9 +45,16 @@ const BuyPrimario = () => {
         <div className="buyPrimario__card--itm">Profile</div>
         <div className="buyPrimario__card--itm">Vwap</div>
         <div className="buyPrimario__card--itm">Timmer</div>
+
+        <h3 className="buyPrimario__card--priceTotal">
+          $ {Products[0].total} <div>total</div>{" "}
+        </h3>
+
         <h3 className="buyPrimario__card--price">
           $ {Products[0].price} <div>lifetime</div>{" "}
         </h3>
+
+
         <div className="buyPrimario__card--button ">
           <button onClick={() => toOrder()} className="global__btp btn-trans-pry">
           {text.btn}

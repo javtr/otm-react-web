@@ -34,12 +34,20 @@ const CardGenerator = ({ i, data }) => {
           </div>
         );
 
-        case "imi":
-          return (
-            <div className="featPage__dyncard--card--imi">
-              <img src={images(data)}></img>
-            </div>
-          );
+      case "imi":
+        return (
+          <div className="featPage__dyncard--card--imi">
+            <img src={images(data)}></img>
+          </div>
+        );
+
+      case "lnk":
+        return (
+          <div className="featPage__dyncard--card--link">
+            <a href={data[0]} target="_blank">{data[1]}</a>
+          </div>
+        );
+
 
       default:
         return <div></div>;

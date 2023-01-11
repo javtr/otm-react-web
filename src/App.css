@@ -133,7 +133,25 @@ body::before {
   transition: width 0.3s ease;
 }
 .link-before:hover:before {
-  width: 100%;
+  width: 80%;
+}
+
+.item-trans {
+  transition: 0.4s ease;
+}
+.item-trans:hover {
+  transform: scale(1.15) translateX(20px);
+  color: rgb(244, 244, 244);
+}
+@media (min-width: 48em) {
+  .item-trans:hover {
+    transform: scale(1.15) translateX(10px);
+  }
+}
+@media (min-width: 80em) {
+  .item-trans:hover {
+    transform: scale(1.15) translateX(23px);
+  }
 }
 
 .navbar {
@@ -167,7 +185,7 @@ body::before {
 }
 @media (min-width: 48em) {
   .navbar__lang {
-    right: 448px;
+    right: 17px;
     top: 30px;
   }
 }
@@ -545,11 +563,12 @@ body::before {
   }
 }
 .advantages__advantage {
-  border: 1px solid rgb(172, 172, 181);
+  border: 1px solid rgb(90, 90, 90);
   border-radius: 40px;
   max-width: 370px;
   padding: 15px;
   margin-bottom: 25px;
+  transition: 0.3s ease-out;
 }
 @media (min-width: 48em) {
   .advantages__advantage {
@@ -622,6 +641,41 @@ body::before {
 @media (min-width: 48em) {
   .advantages__advantage--text h4 {
     font-size: 18px;
+  }
+}
+.advantages__advantage:hover {
+  transform: scale(1.025);
+  border: 3px solid rgb(172, 172, 181);
+  background-color: rgb(10, 0, 66);
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: key1;
+          animation-name: key1;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.08, 0.6, 0.69, 1);
+          animation-timing-function: cubic-bezier(0.08, 0.6, 0.69, 1);
+}
+@-webkit-keyframes key1 {
+  from {
+    border: 3px solid rgb(90, 90, 90);
+  }
+  50% {
+    border: 3px solid rgb(97, 255, 189);
+  }
+  to {
+    border: 3px solid rgb(90, 90, 90);
+  }
+}
+@keyframes key1 {
+  from {
+    border: 3px solid rgb(90, 90, 90);
+  }
+  50% {
+    border: 3px solid rgb(97, 255, 189);
+  }
+  to {
+    border: 3px solid rgb(90, 90, 90);
   }
 }
 
@@ -714,7 +768,40 @@ body::before {
 .feature__title {
   color: rgb(244, 244, 244);
 }
+.feature:hover {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: anim1;
+          animation-name: anim1;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.08, 0.6, 0.69, 1);
+          animation-timing-function: cubic-bezier(0.08, 0.6, 0.69, 1);
+}
 
+@-webkit-keyframes anim1 {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes anim1 {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 @media (min-width: 48em) {
   .featPage {
     padding: 0 30px;
@@ -813,6 +900,24 @@ body::before {
   text-align: left;
   margin: 0 15px;
   margin-bottom: 50px;
+}
+.featPage__dyncard--card--link {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0 15px;
+  margin-bottom: 50px;
+}
+.featPage__dyncard--card--link a {
+  color: rgb(244, 244, 244);
+  border: 1px solid rgb(172, 172, 181);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-style: italic;
+}
+.featPage__dyncard--card--link a:hover {
+  font-weight: bold;
 }
 .featPage .feat_buyButton {
   margin-bottom: 0px;
@@ -1119,6 +1224,35 @@ body::before {
   margin-left: -15px;
   top: -3px;
   opacity: 0.75;
+  transition: 0.1s ease;
+}
+.buyPrimario__card--itm:hover:before {
+  transform: rotate(90deg);
+  top: 6px;
+  left: -3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  background-color: rgb(97, 255, 189);
+}
+.buyPrimario__card--priceTotal {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1;
+  color: rgb(244, 244, 244);
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-decoration: line-through;
+}
+.buyPrimario__card--priceTotal div {
+  display: inline;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1;
+  color: rgb(172, 172, 181);
+  text-align: center;
 }
 .buyPrimario__card--price {
   font-size: 35px;
@@ -1126,7 +1260,7 @@ body::before {
   line-height: 1;
   color: rgb(244, 244, 244);
   text-align: center;
-  margin: 50px 0;
+  margin-bottom: 50px;
 }
 .buyPrimario__card--price div {
   display: inline;
@@ -1189,7 +1323,7 @@ body::before {
 }
 @media (min-width: 48em) {
   .buySecundario__card {
-    width: 30%;
+    width: 25%;
   }
 }
 @media (min-width: 80em) {
@@ -1428,7 +1562,7 @@ body::before {
   width: 85%;
   padding: 15px;
   color: rgb(172, 172, 181);
-  border: 1px solid #423aa0;
+  border: 1px solid #15113b;
   border-radius: 15px;
   margin-bottom: 50px;
 }
@@ -1440,7 +1574,7 @@ body::before {
   padding: 15px;
   width: 85%;
   color: rgb(172, 172, 181);
-  border: 1px solid #423aa0;
+  border: 1px solid #15113b;
   border-radius: 15px;
   margin-bottom: 50px;
   resize: vertical;
@@ -1467,7 +1601,7 @@ body::before {
 }
 @media (min-width: 48em) {
   .formContact__recaptcha iframe {
-    border: 2px solid #423aa0;
+    border: 2px solid #15113b;
   }
 }
 .formContact__boton {
@@ -1624,7 +1758,7 @@ body::before {
   width: 90%;
   padding: 15px;
   color: rgb(172, 172, 181);
-  border: 1px solid #423aa0;
+  border: 1px solid #15113b;
   border-radius: 15px;
   margin-bottom: 50px;
 }
@@ -1636,7 +1770,7 @@ body::before {
   padding: 15px;
   width: 90%;
   color: rgb(172, 172, 181);
-  border: 1px solid #423aa0;
+  border: 1px solid #15113b;
   border-radius: 15px;
   margin-bottom: 50px;
   resize: vertical;
@@ -1663,7 +1797,7 @@ body::before {
 }
 @media (min-width: 48em) {
   .formLicence__recaptcha iframe {
-    border: 2px solid #423aa0;
+    border: 2px solid #15113b;
   }
 }
 .formLicence__boton {
@@ -1775,7 +1909,7 @@ body::before {
 .CardOrder__content--product--item div {
   height: 50px;
   background-color: rgb(26, 24, 53);
-  border: 1px solid #423aa0;
+  border: 1px solid #15113b;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -1808,7 +1942,7 @@ body::before {
 }
 .CardOrder__content hr {
   height: 1px;
-  background-color: #423aa0;
+  background-color: #15113b;
   margin-top: 25px;
   margin-bottom: 35px;
 }
@@ -1878,7 +2012,7 @@ body::before {
 .payment__content--logo hr {
   height: 1px;
   width: 100%;
-  background-color: #423aa0;
+  background-color: #15113b;
   top: 13px;
 }
 @media (min-width: 48em) {
@@ -1919,7 +2053,7 @@ body::before {
   position: absolute;
   height: 1px;
   width: 100%;
-  background-color: #423aa0;
+  background-color: #15113b;
   top: 13px;
 }
 .payment__content--buttons--title h4 {
@@ -1952,4 +2086,115 @@ body::before {
   text-align: center;
   margin-bottom: 80px;
   font-style: italic;
+}
+
+.testimony {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 23.4375em) {
+  .testimony {
+    margin-bottom: 60px;
+  }
+}
+.testimony__title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  color: rgb(244, 244, 244);
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 48em) {
+  .testimony__title {
+    font-size: 60px;
+    margin: 35px 0;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 80em) {
+  .testimony__title {
+    margin-bottom: 100px;
+  }
+}
+.testimony__container {
+  display: flex;
+}
+.testimony__container--image {
+  width: 85%;
+  margin: 0 auto;
+}
+.testimony__container--image img {
+  width: 100%;
+}
+.testimony__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.testimony__modal--container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.testimony__modal--card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 180px;
+  background-color: rgb(4, 0, 28);
+  border-radius: 17px;
+}
+@media (min-width: 48em) {
+  .testimony__modal--card {
+    width: 480px;
+    height: 270px;
+  }
+}
+@media (min-width: 48em) {
+  .testimony__modal--card {
+    width: 600px;
+    height: 340px;
+  }
+}
+.testimony__modal--card--close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgb(244, 244, 244);
+  opacity: 0.7;
+  border-radius: 50%;
+  padding: 2px;
+  line-height: 0;
+}
+.testimony__modal--card--close img {
+  width: 25px;
+  opacity: 1;
+}
+.testimony__modal--card--video {
+  width: 320px;
+  height: 180px;
+}
+@media (min-width: 48em) {
+  .testimony__modal--card--video {
+    width: 480px;
+    height: 270px;
+  }
+}
+@media (min-width: 48em) {
+  .testimony__modal--card--video {
+    width: 600px;
+    height: 340px;
+  }
 }/*# sourceMappingURL=App.css.map */

@@ -1,24 +1,15 @@
 .featPage {
-
-
   @include breakpoint-up(medium) {
     padding: 0 30px;
     padding-top: 60px;
-
-
   }
 
   &__cont {
-
-
     @include breakpoint-up(medium) {
       display: flex;
       justify-content: center;
-
     }
-
   }
-  
 
   &__aside {
     margin-left: 20px;
@@ -38,7 +29,7 @@
       color: $light;
       font-size: $txt-medium3;
       margin: 30px 0;
-    }    
+    }
 
     &--item {
       color: $gray;
@@ -50,18 +41,18 @@
   }
 
   &__dyncard {
-    background-color:$backLight;
+    background-color: $backLight;
     border-radius: 45px;
     margin-top: 60px;
 
     @include breakpoint-up(medium) {
-      margin-top:0px;
+      margin-top: 0px;
     }
 
     &--card {
       padding-bottom: 90px;
       max-width: 700px;
-      
+
       &--img {
         display: flex;
         justify-content: center;
@@ -69,7 +60,6 @@
         top: 0;
 
         img {
-
           width: 100%;
           border-radius: 45px 45px 0 0;
         }
@@ -83,12 +73,10 @@
         margin-bottom: 20px;
 
         img {
-
           width: 90%;
           // border-radius: 45px 45px 0 0;
         }
       }
-
 
       &--tit {
         font-size: $txt-large-smh2;
@@ -96,10 +84,8 @@
         line-height: 1;
         color: $light;
         text-align: center;
-        margin-top:50px;
+        margin-top: 50px;
         margin-bottom: 40px;
-
-
       }
 
       &--sub {
@@ -119,14 +105,33 @@
         text-align: left;
         margin: 0 15px;
         margin-bottom: 50px;
+      }
 
+      &--link {
+        font-size: $txt-small;
+        font-weight: normal;
+        line-height: 1.5;
+        text-align: left;
+        margin: 0 15px;
+        margin-bottom: 50px;
+
+        a {
+          color: $light;
+          border: 1px solid $gray;
+          padding: 10px 20px;
+
+          border-radius: 10px;
+          font-style: italic;
+
+          &:hover {
+            font-weight: bold;
+          }
+        }
       }
     }
   }
 
-.feat_buyButton{
-  margin-bottom: 0px;
-}
-
-
+  .feat_buyButton {
+    margin-bottom: 0px;
+  }
 }

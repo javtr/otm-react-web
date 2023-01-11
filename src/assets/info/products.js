@@ -8,27 +8,27 @@ export const Products = [
   {
     product: "swing",
     price: 288,
-    img: "./ds_mini.png",
+    img: "./swing_icon.png",
   },
   {
     product: "micro",
     price: 288,
-    img: "./ds_mini.png",
+    img: "./micro_icon.png",
   },
   {
     product: "profile",
     price: 192,
-    img: "./ds_mini.png",
+    img: "./profile_icon.png",
   },
   {
     product: "cumulative",
     price: 192,
-    img: "./ds_mini.png",
+    img: "./cumulative_icon.png",
   },
   {
     product: "vwap",
     price: 192,
-    img: "./ds_mini.png",
+    img: "./vwap_icon.png",
   },
 
 

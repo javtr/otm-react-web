@@ -18,14 +18,14 @@ export default function App() {
   const value = useMemo(() => ({ lang, setLang }), [lang]);
 
   useEffect(() => {
-    const langStorage = localStorage.getItem("lang");
+    const langStorage = localStorage.getItem("otm_lang");
 
     if (langStorage == "en") {
       setLang("en");
     } else if (langStorage == "es") {
       setLang("es");
     } else {
-      localStorage.setItem("lang", lang);
+      localStorage.setItem("otm_lang", lang);
     }
   }, []);
 

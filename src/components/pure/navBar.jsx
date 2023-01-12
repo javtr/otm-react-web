@@ -31,18 +31,18 @@ const NavBar = () => {
   }
 
   function switchLanguage() {
-    const lang = localStorage.getItem("lang");
+    const lang = localStorage.getItem("otm_lang");
 
     if (lang == "es") {
-      localStorage.setItem("lang", "en");
+      localStorage.setItem("otm_lang", "en");
       setLang("en");
       setContent(textEn);
     } else if (lang == "en") {
-      localStorage.setItem("lang", "es");
+      localStorage.setItem("otm_lang", "es");
       setLang("es");
       setContent(textEs);
     } else {
-      localStorage.setItem("lang", "en");
+      localStorage.setItem("otm_lang", "en");
       setLang("en");
       setContent(textEn);
     }

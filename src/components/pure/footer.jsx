@@ -1,4 +1,8 @@
 import React from "react";
+import youtube from "../../assets/img/youtube.png";
+import telegram from "../../assets/img/telegrama.png";
+
+
 
 export default function Footer() {
   return (
@@ -21,6 +25,15 @@ export default function Footer() {
         <div className="footer__mailContainer">
           <h4 className="footer__subTitle">OTM Objective Method</h4>
           <p className="footer__mail">info@otmtrading.com</p>
+
+          <div className="footer__iconCont" >
+            <a href="https://example.com" target="_blank">
+              <img src={youtube}></img>
+            </a>
+            <a href="https://example.com" target="_blank">
+              <img src={telegram}></img>
+            </a>
+          </div>
           <p className="footer__rights">© OTM Trading 2022</p>
         </div>
       </div>

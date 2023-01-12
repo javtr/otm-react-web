@@ -172,13 +172,13 @@ body::before {
 }
 .navbar__lang {
   position: absolute;
-  right: 102px;
+  right: 85px;
   top: 23px;
   color: White;
   width: 30px;
   height: 30px;
   border-radius: 15px;
-  background-size: 45px;
+  background-size: 30px;
   background-repeat: no-repeat;
   background-position-x: 0px;
   background-position-y: 0px;
@@ -187,6 +187,7 @@ body::before {
   .navbar__lang {
     right: 17px;
     top: 30px;
+    right: 102px;
   }
 }
 .navbar__container {
@@ -199,7 +200,6 @@ body::before {
   width: 130px;
   margin-left: 25px;
   margin-top: 22px;
-  z-index: 1000;
 }
 .navbar__img img {
   width: 100%;
@@ -229,7 +229,7 @@ body::before {
 @media (max-width: 47.9375em) {
   .navbar__burguer {
     margin-top: 20px;
-    margin-right: 25px;
+    margin-right: 10px;
   }
   .navbar__burguer :nth-child(n) {
     background-color: rgb(244, 244, 244);
@@ -245,7 +245,7 @@ body::before {
   top: 10px;
   width: 95%;
   height: 500px;
-  background-color: rgb(4, 0, 28);
+  background-color: #15113b;
   border-radius: 18px;
   z-index: 999;
   -webkit-animation-duration: 750ms;

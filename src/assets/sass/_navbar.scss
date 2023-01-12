@@ -19,7 +19,7 @@
 
   &__lang {
     position: absolute;
-    right: 102px;
+    right: 85px;
     top: 23px;
     color: White;
     width: 30px;
@@ -34,6 +34,8 @@
     @include breakpoint-up(medium) {
       right: 17px;
       top: 30px;
+      right: 102px;
+      
 
     }
 
@@ -51,7 +53,7 @@
     width: 130px;
     margin-left: 25px;
     margin-top: 22px;
-    z-index: 1000;
+    // z-index: 1000;
 
     img {
       width: 100%;
@@ -82,7 +84,7 @@
 
     @include breakpoint-down(medium) {
       margin-top: 20px;
-      margin-right: 25px;
+      margin-right: 10px;
 
       :nth-child(n) {
         background-color: $light;
@@ -94,13 +96,15 @@
   }
 }
 
+
+
 .sideBarOn,
 .sideBarOff {
   position: absolute;
   top: 10px;
   width: 95%;
   height: 500px;
-  background-color: $back;
+  background-color: $secundaryDark;
   border-radius: 18px;
   z-index: 999;
 

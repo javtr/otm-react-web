@@ -4,22 +4,16 @@ export const FeaturesDataEn = [
     title: "OTM Delta Swing",
 
     modalData: {
-
       imgUrl: "./ind_01.gif",
       title: "OTM Delta Swing",
 
       title2: "Volume information by waves",
       paragraph2:
-        "Identify the strength of an impulse or pullback. ",
-      
-      title3: "Exhaustion signals",
+        "Compare the strength of a pullback to its initial impulse, this will allow you to better filter your entries.",
+
+      title3: "Opportunity signals for entry",
       paragraph3:
-        "Display buy or sell signals. ",
-      
-      title4: "Non-resulting effort signals",
-      paragraph4:
-        "Detect high volume moves with no price result. ",
-        
+        "Visualize signals of potential buying or selling opportunities. ",
     },
   },
   {
@@ -29,18 +23,15 @@ export const FeaturesDataEn = [
       imgUrl: "./ind_02.gif",
       title: "OTM Delta Micro",
 
-      title2: "Institutional volumes",
-      paragraph2:
-        "Efortlessly identify large purchase or sale volumes.",
-      title3: "Consecutive Bar System",
-      paragraph3:
-        "Get the buying or selling strength of consecutive bars toward the same direction.",
+      title2: "Observe large imbalances in the delta",
+      paragraph2: "If you want to go long, you need to see large green boxes (buys) from the MicroDelta, and small red boxes (sells) from the MicroDelta. In short, it would be the opposite.",
       
-      title4: "Reference thresholds",
-      paragraph4:
-        "Only focus on the most relevant volumes.",
-        
-          },
+      title3: "Reference thresholds",
+      paragraph3:
+        "Only pay attention to the most relevant delta boxes using the reference thresholds.",
+
+
+    },
   },
   {
     imgUrl: "./cumulative_icon.png",
@@ -49,13 +40,11 @@ export const FeaturesDataEn = [
       imgUrl: "./ind_03.gif",
       title: "OTM Delta Cumulative",
 
-      title2: "Buyer or seller histogram",
-      paragraph2:
-        "Confirm buying or selling pressure.",
-      title3: "Buyer or seller climax",
-      paragraph3:
-        "Identify buying or selling excesses (climax).",
-          },
+      title2: "Buy or sell momentum histogram",
+      paragraph2: "This histogram allows you to visualize when there is momentum of buying or selling, always enter with momentum when going with the trend.",
+      title3: "Detect exhaustion in buyer or seller momentum",
+      paragraph3: "Use exhaustion to exit your entries or manage them objectively.",
+    },
   },
   {
     imgUrl: "./delta_icon.png",
@@ -64,16 +53,15 @@ export const FeaturesDataEn = [
       imgUrl: "./ind_04.gif",
       title: "OTM Delta Bar",
 
-      title2: "Detailed information",
-      paragraph2:
-        "Get the Delta volume information for each bar.",
-      title3: "Divergences",
+      title2: "Buyer or seller force per bar",
+      paragraph2: "Get detailed information on the positive or negative delta value of the bars",
+      title3: "Volume + Delta",
       paragraph3:
-        "A signal lets you know when a bar is not consistent with the delta.",
-      title4: "Reference Thresholds",
+        "View traditional volume bars with color and intensity according to the delta value within the same bar.",
+      title4: "Accumulated delta in candles",
       paragraph4:
-        "Identify large buying or selling volumes for each candlestick.",
-          },
+        "Observe a histogram of the entire Japanese candle session of the delta, use this to detect potential exhaustion and changes in direction.",
+    },
   },
   {
     imgUrl: "./profile_icon.png",
@@ -82,16 +70,11 @@ export const FeaturesDataEn = [
       imgUrl: "./ind_05.gif",
       title: "OTM Volume Profile",
 
-      title2: "Most traded levels",
-      paragraph2:
-        "Detect price levels where the market will consolidate.",
-      title3: "Less traded levels",
-      paragraph3:
-        "Anticipate low volume levels that trigger large movements.",
-      title4: "Dynamic Volume Profile",
-      paragraph4:
-        "Rebuild market movements as if you were in real time.",
-          },
+      title2: "Auction information",
+      paragraph2: "Get real-time information about the type of day that is being generated, bullish, bearish, or neutral.",
+      title3: "Dynamic volume profile",
+      paragraph3: "Recreate market movements as if you were in real-time.",
+    },
   },
   {
     imgUrl: "./vwap_icon.png",
@@ -100,23 +83,16 @@ export const FeaturesDataEn = [
       imgUrl: "./ind_01.gif",
       title: "OTM VWAP",
 
-      title2: "Price and volume",
-      paragraph2:
-        "Easily visualize the relationship between price and volume",
-      
-        title3: "Improved level of operations",
+      title2: "Long and Short Indicator",
+      paragraph2: "VWAP is the best volume-based tool for separating when to buy and when to sell; if the price is above, you're in a long zone, if the price is below, you're in a short zone.",
+
+      title3: "VWAP Deviations",
       paragraph3:
-        "Obtain the best price level for your buying and selling operations.",
-      
-        title4: "Multiple vwap in a single indicator",
-      paragraph4:
-        "Use different vwap periods on the same chart. You can set up daily, weekly and monthly periods simultaneously."
-        
-          },
-  }
+        "If the price is extending, you can measure through VWAP deviations how far or close it is to its central level and make better decisions.",
 
+    },
+  },
 ];
-
 
 export const FeaturesDataEs = [
   {
@@ -124,22 +100,16 @@ export const FeaturesDataEs = [
     title: "OTM Delta Swing",
 
     modalData: {
-
       imgUrl: "./ind_01.gif",
       title: "OTM Delta Swing",
 
       title2: "Información de volumen por ondas",
       paragraph2:
-        "Identifique la fuerza que tiene un impulso o un retroceso.",
-      
-      title3: "Señales de agotamiento",
+        "Compare la fuerza que tiene un retroceso respecto a su impulso inicial, así podrá filtrar mejor sus entradas.",
+
+      title3: "Señales de oportunidad de entrada",
       paragraph3:
-        "Visualice señales de compra o venta.",
-      
-      title4: "Señales de esfuerzo no resultado",
-      paragraph4:
-        "Detecte movimientos con alto volumen sin resultado en el precio.",
-        
+        "Visualice señales de posibles oportunidades de compra o venta.",
     },
   },
   {
@@ -149,18 +119,15 @@ export const FeaturesDataEs = [
       imgUrl: "./ind_02.gif",
       title: "OTM Delta Micro",
 
-      title2: "Volúmenes institucionales",
-      paragraph2:
-        "Visualice fácilmente grandes volúmenes de compra o venta.",
-      title3: "Sistema de barras consecutivas",
-      paragraph3:
-        "Obtenga la fuerza de compra o venta de barras consecutivas del mismo sentido.",
+      title2: "Observe grandes desequilibrios en el delta",
+      paragraph2: "Si quiere ir largo necesita ver cajas grandes verdes (compras) del MicroDelta, y cajas pequeñas del MicroDelta rojas (ventas). En corto sería lo contrario.",
       
-      title4: "Umbrales de referencia",
-      paragraph4:
-        "Fíjese únicamente en los volúmenes más relevantes.",
-        
-          },
+      title3: "Umbrales de referencia",
+      paragraph3:
+        "Fíjese únicamente las cajas delta más relevantes usando los umbrales de referencia.",
+
+
+    },
   },
   {
     imgUrl: "./cumulative_icon.png",
@@ -169,13 +136,13 @@ export const FeaturesDataEs = [
       imgUrl: "./ind_03.gif",
       title: "OTM Delta Cumulative",
 
-      title2: "Histograma comprador o vendedor",
-      paragraph2:
-        "Confirme la presión compradora o vendedora.",
-      title3: "Clímax comprador o vendedor",
-      paragraph3:
-        "Identifique los excesos de compra o venta (clímax).",
-          },
+      title2: "Histograma de momentum de compras o ventas",
+      paragraph2: "Este histograma le permite visualizar cuando hay momentum de compras o ventas, ingrese siempre con momentum cuando vaya a favor de la tendencia.",
+
+      title3: "Detecte agotamiento en el momentum comprador o vendedor",
+      paragraph3: "Utilice los agotamientos para salir de sus entradas o gestionarlas objetivamente.",
+
+    },
   },
   {
     imgUrl: "./delta_icon.png",
@@ -184,16 +151,15 @@ export const FeaturesDataEs = [
       imgUrl: "./ind_04.gif",
       title: "OTM Delta Bar",
 
-      title2: "Información detallada",
-      paragraph2:
-        "Obtenga la información del volumen Delta de cada barra.",
-      title3: "Divergencias",
+      title2: "Fuerza compradora o vendedora por barra",
+      paragraph2: "Obtenga información detallada del valor del delta positivo o negativo de las barras.",
+      title3: "Volumen + Delta",
       paragraph3:
-        "Mediante una señal podrá saber cuando una barra no es coherente con el delta.",
-      title4: "Umbrales de referencia",
+        "Visualice las barras de volumen tradicional con el color e intensidad de acuerdo al valor del delta dentro de la misma barra.",
+      title4: "Delta acumulado en velas",
       paragraph4:
-        "Identifique grandes volúmenes de compra o venta por cada vela.",
-          },
+        "Observe un histograma de toda la sesión de velas japonesas del delta, usa este para detectar posibles agotamientos y cambios de dirección.",
+    },
   },
   {
     imgUrl: "./profile_icon.png",
@@ -202,16 +168,13 @@ export const FeaturesDataEs = [
       imgUrl: "./ind_05.gif",
       title: "OTM Volume Profile",
 
-      title2: "Niveles más negociados",
+      title2: "Información de la subasta",
       paragraph2:
-        "Detecte niveles de precio donde el mercado tendrá consolidaciones.",
-      title3: "Niveles menos negociados",
+        "Obtenga información del tipo de día que se está generando en tiempo real, día alcista, bajista o neutral.",
+      title3: "Perfil de volumen dinámico",
       paragraph3:
-        "Anticipe niveles de bajo volumen que desencadenan grandes movimientos.",
-      title4: "Perfil de volumen dinámico",
-      paragraph4:
         "Recree los movimientos del mercado como si estuviera en tiempo real.",
-          },
+    },
   },
   {
     imgUrl: "./vwap_icon.png",
@@ -220,19 +183,14 @@ export const FeaturesDataEs = [
       imgUrl: "./ind_01.gif",
       title: "OTM VWAP",
 
-      title2: "Precio y volumen",
+      title2: "Indicador de los largos y cortos",
       paragraph2:
-        "Visualice con facilidad la relación entre el precio y el volumen",
-      
-        title3: "Mejor nivel de operaciones",
-      paragraph3:
-        "Obtenga el mejor nivel de precios para realizar sus operaciones de compra y venta",
-      
-        title4: "Múltiples vwap en un solo indicador",
-      paragraph4:
-        "Utilice diferentes periodos de vwap en el mismo gráfico. Puede configurar simultáneamente periodos diarios, semanales y mensuales"
-        
-          },
-  }
+        "El VWAP es la mejor herramienta basada en el volumen para separar cuando comprar y cuando vender; si el precio está por encima, estás en zona de largos, si el precio está por debajo, estás en zona de cortos.",
 
+      title3: "Desviaciones del VWAP",
+      paragraph3:
+        "Si el precio se extiende puedes medir mediante las desviaciones del VWAP que tan lejos o cerca se encuentra de su nivel central y tomar mejores decisiones.",
+
+    },
+  },
 ];

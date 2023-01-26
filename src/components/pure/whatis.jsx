@@ -3,6 +3,7 @@ import whatImg1 from "../../assets/img/otm_01.png";
 import whatImg2 from "../../assets/img/otm_02.png";
 import LanguageContext from "../../context/langContext.js";
 import { textEn, textEs } from "../../assets/text/whatIs";
+import performace_01 from "../../assets/img/performance_01.gif"
 
 export default function Whatis({refProp}) {
   const { lang, setLang } = useContext(LanguageContext);
@@ -36,12 +37,13 @@ export default function Whatis({refProp}) {
         <h4 className="global__tx-sm what__subTitle2">{text.tit}</h4>
 
         <div className="what__imagen">
-          <img src={whatImg1}></img>
+          <img src={performace_01}></img>
         </div>
 
-        <div className="what__imagen">
+        {/* <div className="what__imagen">
           <img src={whatImg2}></img>
-        </div>
+        </div> */}
+
       </div>
     </div>
   );

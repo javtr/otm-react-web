@@ -4,7 +4,7 @@ export const FeaturesDataEn = [
     title: "OTM Delta Swing",
 
     modalData: {
-      imgUrl: "./ind_01.gif",
+      imgUrl: "./indicators/OTM_SWING.gif",
       title: "OTM Delta Swing",
 
       title2: "Volume information by waves",
@@ -20,7 +20,7 @@ export const FeaturesDataEn = [
     imgUrl: "./micro_icon.png",
     title: "OTM Delta Micro",
     modalData: {
-      imgUrl: "./ind_02.gif",
+      imgUrl: "./indicators/OTM_MICRO.gif",
       title: "OTM Delta Micro",
 
       title2: "Observe large imbalances in the delta",
@@ -37,7 +37,7 @@ export const FeaturesDataEn = [
     imgUrl: "./cumulative_icon.png",
     title: "OTM Delta Cumulative",
     modalData: {
-      imgUrl: "./ind_03.gif",
+      imgUrl: "./indicators/OTM_CUMULATIVE.gif",
       title: "OTM Delta Cumulative",
 
       title2: "Buy or sell momentum histogram",
@@ -50,7 +50,7 @@ export const FeaturesDataEn = [
     imgUrl: "./delta_icon.png",
     title: "OTM Delta Bar",
     modalData: {
-      imgUrl: "./ind_04.gif",
+      imgUrl: "./indicators/OTM_DELTA_BAR.gif",
       title: "OTM Delta Bar",
 
       title2: "Buyer or seller force per bar",
@@ -67,7 +67,7 @@ export const FeaturesDataEn = [
     imgUrl: "./profile_icon.png",
     title: "OTM Volume Profile",
     modalData: {
-      imgUrl: "./ind_05.gif",
+      imgUrl: "./indicators/OTM_PROFILE.gif",
       title: "OTM Volume Profile",
 
       title2: "Auction information",
@@ -80,7 +80,7 @@ export const FeaturesDataEn = [
     imgUrl: "./vwap_icon.png",
     title: "OTM VWAP",
     modalData: {
-      imgUrl: "./ind_01.gif",
+      imgUrl: "./indicators/OTM_VWAP.gif",
       title: "OTM VWAP",
 
       title2: "Long and Short Indicator",
@@ -100,7 +100,7 @@ export const FeaturesDataEs = [
     title: "OTM Delta Swing",
 
     modalData: {
-      imgUrl: "./ind_01.gif",
+      imgUrl: "./indicators/OTM_SWING.gif",
       title: "OTM Delta Swing",
 
       title2: "Información de volumen por ondas",
@@ -116,7 +116,7 @@ export const FeaturesDataEs = [
     imgUrl: "./micro_icon.png",
     title: "OTM Delta Micro",
     modalData: {
-      imgUrl: "./ind_02.gif",
+      imgUrl: "./indicators/OTM_MICRO.gif",
       title: "OTM Delta Micro",
 
       title2: "Observe grandes desequilibrios en el delta",
@@ -133,7 +133,7 @@ export const FeaturesDataEs = [
     imgUrl: "./cumulative_icon.png",
     title: "OTM Delta Cumulative",
     modalData: {
-      imgUrl: "./ind_03.gif",
+      imgUrl: "./indicators/OTM_CUMULATIVE.gif",
       title: "OTM Delta Cumulative",
 
       title2: "Histograma de momentum de compras o ventas",
@@ -148,7 +148,7 @@ export const FeaturesDataEs = [
     imgUrl: "./delta_icon.png",
     title: "OTM Delta Bar",
     modalData: {
-      imgUrl: "./ind_04.gif",
+      imgUrl: "./indicators/OTM_DELTA_BAR.gif",
       title: "OTM Delta Bar",
 
       title2: "Fuerza compradora o vendedora por barra",
@@ -165,7 +165,7 @@ export const FeaturesDataEs = [
     imgUrl: "./profile_icon.png",
     title: "OTM Volume Profile",
     modalData: {
-      imgUrl: "./ind_05.gif",
+      imgUrl: "./indicators/OTM_PROFILE.gif",
       title: "OTM Volume Profile",
 
       title2: "Información de la subasta",
@@ -180,7 +180,7 @@ export const FeaturesDataEs = [
     imgUrl: "./vwap_icon.png",
     title: "OTM VWAP",
     modalData: {
-      imgUrl: "./ind_01.gif",
+      imgUrl: "./indicators/OTM_VWAP.gif",
       title: "OTM VWAP",
 
       title2: "Indicador de los largos y cortos",

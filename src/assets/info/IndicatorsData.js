@@ -1,6 +1,6 @@
 export const IndicatorsDataEn = [
   {
-    img: "./ind_01.gif",
+    img: "./indicators/OTM_SWING.gif",
     tit: "OTM Delta Swing",
     txt0: "Have you ever wondered if you can measure the strength of price movements? It is possible with Delta Swing! This indicator allows you to numerically see the volume and delta of price movements. You can easily identify the strength of a pullback or momentum (2). OTM will help you read the information as follows: ",
     sub1: "Exhaustion signals",
@@ -11,7 +11,7 @@ export const IndicatorsDataEn = [
     txt3: "Delta divergences occur when the delta is not consistent with the price direction. If the price is rising it is normal to have positive delta, sometimes divergences occur and the delta is negative. When this occurs a dotted box will appear as an informative signal (3). Get an in-depth understanding of the OTM Delta Swing buy and sell signals. ",
   },
   {
-    img: "./ind_02.gif",
+    img: "./indicators/OTM_MICRO.gif",
     tit: "OTM Delta Micro",
     txt0: "A reliable movement is characterized by consecutive candles and constant volume, however it is important to know its buying or selling strength (delta), since the price action can deceive us. Delta Micro allows you to group the delta by consecutive movements, i.e. candlesticks towards the same direction (1). In this way you will be able to differentiate consistent movements from non-consistent ones. Simple visual identification is vital to avoid missing good trades. Some options offered by this indicator are: ",
     sub1: "Institutional volumes.",
@@ -20,14 +20,14 @@ export const IndicatorsDataEn = [
     txt2: "Graphically filter delta volume values to only focus on the most relevant movements (2).",
   },
   {
-    img: "./ind_03.gif",
+    img: "./indicators/OTM_CUMULATIVE.gif",
     tit: "OTM Delta Cumulative",
     txt0: "When is a trend exhausted? Is the price overbought or oversold? Delta Cumulative provides information about the buying or selling pressure in a delta histogram. There, we can observe when a trend is stable or shows a transition in the opposite direction (2). ",
     sub1: "Buying or selling climax",
     txt1: "Excessive buying or selling volume can be a sign of a possible change in direction. By filtering the high values you can identify excessive buying or selling (climax) (1). ",
   },
   {
-    img: "./ind_04.gif",
+    img: "./indicators/OTM_DELTA_BAR.gif",
     tit: "OTM Delta Bar",
     txt0: "Obtain each bar's delta volumen information in real time, as well as the máximum and mínimum values (1).",
     sub1: "Divergences:",
@@ -36,7 +36,7 @@ export const IndicatorsDataEn = [
     txt2: "Do not look at the information on each bar, visually filter the highest volumes to pay attention to them (3).",
   },
   {
-    img: "./ind_05.gif",
+    img: "./indicators/OTM_PROFILE.gif",
     tit: "OTM Volume Profile",
     txt0: "Have you ever wondered why the price consolidates more at some price levels than others? This is because some levels are preferred by large institutions so the price stays longer there, generating consolidations. While in the less preferred zones, the price moves vertically and faster. By using OTM Volume Profile you can easily determine this: ",
     sub1: "Most traded levels",
@@ -47,7 +47,7 @@ export const IndicatorsDataEn = [
     txt3: "Do you want to go back a few bars and analyze the volume profile? Do not worry, this profile will be recreated in real time. ",
   },
   {
-    img: "./ind_06.gif",
+    img: "./indicators/OTM_VWAP.gif",
     tit: "OTM VWAP",
     txt0: "Have you ever wondered why the price consolidates more at some price levels than others? This is because some levels are preferred by large institutions so the price stays longer there, generating consolidations. While in the less preferred zones, the price moves vertically and faster. By using OTM Volume Profile you can easily determine this: ",
     sub1: "Most traded levels",
@@ -127,7 +127,7 @@ export const IndicatorsDataEn = [
 
 export const IndicatorsDataEs = [
   {
-    img: "./ind_01.gif",
+    img: "./indicators/OTM_SWING.gif",
     tit: "OTM Delta Swing",
     txt0: "Alguna vez se ha preguntado, ¿Cómo puede medir la fuerza de los movimientos del precio?. Es posible con Delta Swing. Este indicador le permite ver numéricamente el volumen y delta de los movimientos del precio. Fácilmente identificará la fuerza que tiene un retroceso o un impulso (2). OTM le ayudará a leer la información de la siguiente manera:",
     sub1: "Señales de agotamiento",
@@ -138,7 +138,7 @@ export const IndicatorsDataEs = [
     txt3: "Las divergencias delta se producen cuando el delta no es coherente con la dirección del precio. Si el precio sube lo normal es tener delta positivo, en ocasiones se producen anomalías y el delta es negativo. Cuando ocurre esto aparecerá una caja punteada como señal informativa (3). Entienda a profundidad las señales de compra y venta de OTM Delta Swing.",
   },
   {
-    img: "./ind_02.gif",
+    img: "./indicators/OTM_MICRO.gif",
     tit: "OTM Delta Micro",
     txt0: "Un movimiento confiable se caracteriza por tener velas consecutivas y volumen constante, sin embargo es importante conocer su fuerza compradora o vendedora (delta). Delta Micro le permite agrupar el delta por movimientos consecutivos, es decir, velas del mismo sentido (1). De esta manera podrá diferenciar los movimientos consistentes de los no consistentes. La identificación visual simple es vital para no perder buenas operaciones, por eso algunas opciones que ofrece este indicador son: ",
     sub1: "Volúmenes institucionales",
@@ -147,14 +147,14 @@ export const IndicatorsDataEs = [
     txt2: "Filtre de manera gráfica los valores de volumen delta para fijarse únicamente en los movimientos más relevantes (2). Conozca estrategias usando OTM Delta Micro; Estrategia de Giros Estrategia de continuaciones. ",
   },
   {
-    img: "./ind_03.gif",
+    img: "./indicators/OTM_CUMULATIVE.gif",
     tit: "OTM Delta Cumulative",
     txt0: "¿Cuándo una tendencia se ha agotado?. ¿El precio está sobrecomprado o sobrevendido?. Delta Cumulative ofrece la información de la presión compradora o vendedora en un histograma delta. Allí podemos observar cuando una tendencia es estable o presenta una transición en el sentido opuesto (2). ",
     sub1: "Clímax comprador o vendedor",
     txt1: "El excesivo volumen comprador o vendedor puede ser una señal de un posible cambio de dirección. Filtrando los valores altos podrá identificar excesos de compra o venta (clímax) (1)",
   },
   {
-    img: "./ind_04.gif",
+    img: "./indicators/OTM_DELTA_BAR.gif",
     tit: "OTM Delta Bar",
     txt0: "Obtenga la información del volumen Delta de cada barra en tiempo real, a su vez podrá observará los valores máximos y mínimos (1).",
     sub1: "Divergencias:",
@@ -163,7 +163,7 @@ export const IndicatorsDataEs = [
     txt2: "No debe estar viendo la información delta de cada barra, filtre visualmente los volúmenes más altos para prestar atención en ellos (3)",
   },
   {
-    img: "./ind_05.gif",
+    img: "./indicators/OTM_PROFILE.gif",
     tit: "OTM Volume Profile",
     txt0: "Se ha preguntado, ¿por qué el precio se consolida más en algunos niveles de precio que en otros?. Esto ocurre porque hay niveles preferidos por las grandes instituciones y el precio pasa mucho tiempo allí y se consolida, y en otros menos preferidos el precio avanza más rápido y vertical. Mediante OTM Volume Profile podrá determinar esto fácilmente: ",
     sub1: "Niveles más negociados",
@@ -174,7 +174,7 @@ export const IndicatorsDataEs = [
     txt3: "¿Quiere devolverse unas barras y analizar el perfil de volumen?, no se preocupe, este perfil se recreará como si estuviera en tiempo real",
   },
   {
-    img: "./ind_06.gif",
+    img: "./indicators/OTM_VWAP.gif",
     tit: "OTM VWAP",
     txt0: "Have you ever wondered why the price consolidates more at some price levels than others? This is because some levels are preferred by large institutions so the price stays longer there, generating consolidations. While in the less preferred zones, the price moves vertically and faster. By using OTM Volume Profile you can easily determine this: ",
     sub1: "Most traded levels",

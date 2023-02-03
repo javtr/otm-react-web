@@ -1,0 +1,272 @@
+.blogPage {
+  max-width: $mx-w;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 50px;
+
+  @include breakpoint-up(medium) {
+    padding: 0 60px;
+    padding-top: 70px;
+  }
+
+  @include breakpoint-up(large) {
+    // padding: 0 10%;
+    padding-top: 150px;
+  }
+
+  &__title{
+    font-size: $txt-large-smh2;
+    font-weight: bold;
+    line-height: 1;
+    color: $light;
+    text-align: left;
+    margin-bottom: 40px;
+
+    @include breakpoint-up(medium) {
+      padding: 0 30px;
+    }
+  }
+
+  &__container{
+
+    display: flex;
+    flex-direction:column;
+
+    @include breakpoint-up(medium) {
+      flex-direction:row;
+    }
+
+
+  }
+
+
+
+  &__cards {
+    @include breakpoint-up(medium) {
+      width: 70%;
+      padding: 10px;
+    }
+
+    &--card {
+      background-color: $backLight;
+      border-radius: 45px;
+      margin-bottom: 60px;
+
+      &--img {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 0;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 45px 45px 0 0;
+        }
+      }
+
+      &--tit {
+        font-size: $txt-large-smh2;
+        font-weight: bold;
+        line-height: 1;
+        color: $light;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 40px;
+
+        &:hover {
+          cursor: pointer;
+          color: $primary;
+        }
+
+        @include breakpoint-up(medium) {
+          padding: 0 30px;
+        }
+      }
+
+      &--sub {
+        font-size: $txt-small;
+        font-weight: bold;
+        line-height: 1;
+        color: $light;
+        margin: 0 15px;
+        margin-bottom: 30px;
+      }
+
+      &--txt {
+        font-size: $txt-small;
+        font-weight: normal;
+        line-height: 1.5;
+        color: $gray;
+        text-align: left;
+
+        @include breakpoint-up(medium) {
+          padding: 0 30px 30px 30px;
+        }
+      }
+
+      &--link {
+        font-size: $txt-small;
+        font-weight: normal;
+        line-height: 1.5;
+        text-align: left;
+        margin: 0 15px;
+        margin-bottom: 50px;
+
+        a {
+          color: $light;
+          border: 1px solid $gray;
+          padding: 10px 20px;
+
+          border-radius: 10px;
+          font-style: italic;
+
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  &__aside {
+    width: 100%;
+    height: 200px;
+  background-color: rgba(95, 158, 160, 0.175);
+    border-radius: 30px;
+    border: 1px solid black;
+    margin-top: 15px;
+
+    @include breakpoint-up(medium) {
+      width: 200px;
+      height: 600px;
+  
+      width: 30%;
+      margin-left: 10px;
+    }
+
+    @include breakpoint-up(large) {
+      margin-left: 25px;
+    }    
+  }
+}
+
+.blogArt {
+  max-width: $mx-w;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 50px;
+
+  @include breakpoint-up(medium) {
+    padding: 0 60px;
+    padding-top: 70px;
+    display: flex;
+  }
+
+  @include breakpoint-up(large) {
+    padding: 0 10%;
+    padding-top: 150px;
+  }
+
+  &__card {
+    @include breakpoint-up(medium) {
+      width: 95%;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: $backLight;
+      border-radius: 45px;
+      margin-bottom: 60px;
+    }
+
+    &--img {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 45px 45px 0 0;
+      }
+    }
+
+    &--tit {
+      font-size: $txt-large-smh2;
+      font-weight: bold;
+      line-height: 1;
+      color: $light;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 40px;
+
+      &:hover {
+        cursor: pointer;
+        color: $primary;
+      }
+
+      @include breakpoint-up(medium) {
+        padding: 0 30px;
+      }
+    }
+
+    &--sub {
+      font-size: $txt-small;
+      font-weight: bold;
+      line-height: 1;
+      color: $light;
+      margin: 0 15px;
+      margin-bottom: 30px;
+    }
+
+    &--txt {
+      font-size: $txt-small;
+      font-weight: normal;
+      line-height: 1.5;
+      color: $gray;
+      text-align: left;
+
+      @include breakpoint-up(medium) {
+        padding: 0 30px 30px 30px;
+      }
+    }
+
+    &--link {
+      font-size: $txt-small;
+      font-weight: normal;
+      line-height: 1.5;
+      text-align: left;
+      margin: 0 15px;
+      margin-bottom: 50px;
+
+      a {
+        color: $light;
+        border: 1px solid $gray;
+        padding: 10px 20px;
+
+        border-radius: 10px;
+        font-style: italic;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  &__aside {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(95, 158, 160, 0.492);
+
+    @include breakpoint-up(medium) {
+      width: 30%;
+    }
+  }
+}

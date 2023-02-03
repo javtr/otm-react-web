@@ -11,7 +11,8 @@ import ContactForm from "./components/pure/form/contactForm";
 import Order from "./pages/order";
 import LicenceForm from "./components/pure/form/licenceForm";
 import LanguageContext from "../src/context/langContext";
-
+import Blog from "./pages/blog";
+import BlogCont from "./components/container/blogCont";
 
 export default function App() {
   const [lang, setLang] = useState("");
@@ -39,14 +40,14 @@ export default function App() {
               path="features"
               element={<FeaturesPage></FeaturesPage>}
             ></Route>
+            <Route path="blog" element={<Blog></Blog>}></Route>
+            <Route path="blog/:title" element={<BlogCont></BlogCont>}></Route>
             <Route path="buy" element={<BuyPage></BuyPage>}></Route>
             <Route path="example" element={<ExamplePage></ExamplePage>}></Route>
             <Route path="contact" element={<ContactForm></ContactForm>}></Route>
           </Route>
           <Route path="/order/:id" element={<Order></Order>}></Route>
           <Route path="/licence" element={<LicenceForm></LicenceForm>}></Route>
-
-          {/* <Route path='/features' element={<FeaturesPage></FeaturesPage>}></Route> */}
         </Routes>
       </div>
     </LanguageContext.Provider>

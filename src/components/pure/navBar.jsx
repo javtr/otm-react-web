@@ -48,7 +48,6 @@ const NavBar = () => {
     }
   }
 
-  console.log(content);
 
   return (
     <div className="navbar">

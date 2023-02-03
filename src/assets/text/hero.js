@@ -5,7 +5,6 @@ export const textEn =
     buttMore: "Read more"
   };
 
-
 export const textEs =
   {
     tit1: "Software para el analisis de volumen y delta",

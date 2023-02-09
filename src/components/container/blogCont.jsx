@@ -12,8 +12,8 @@ export default function BlogCont() {
   let titleArt = params.title;
 
   useEffect(() => {
-    titleArt = titleArt.replaceAll("-", " ");
-    setIndexArt(text.findIndex((obj) => obj.titp == titleArt));
+    setIndexArt(text.findIndex((obj) => obj.url == titleArt));
+    
   }, []);
 
   useEffect(() => {

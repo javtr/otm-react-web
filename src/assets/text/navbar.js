@@ -5,6 +5,7 @@ export const textEn =
     link3:"Pricing",
     link4:"Results",
     link5:"Contact us",
+    link6:"Blog",
 
   };
 
@@ -16,4 +17,5 @@ export const textEs =
     link3:"Precios",
     link4:"Resultados",
     link5:"Contactanos",
+    link6:"Blog",
   };

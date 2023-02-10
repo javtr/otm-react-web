@@ -7,14 +7,13 @@
 //dat(fecha),byt(by otm team),key(keyword para miniatura),lnk(ancla)
 //dot(texto con punto),dtl(texto con punto y link)
 
-
 export const BlogDataEs = [
   {
     imgp: "./blog/art1_min.png",
     titp: "Quantower connects with the KuCoin crypto exchange",
     url: "quantower-connects-with-the-kucoin-crypto-exchange",
     txtp: "After a bit of rest during the New Year holidays, our team began to develop functions for you actively. As a result, we've prepared new Local closing orders, updated the DOM Surface panel, and some more cool features. Let's dive inside this new version release.",
-    keyp: ["integration", "kucoin"],
+    keys: ["integration", "kucoin"],
     datp: "07/02/2022",
     imgb: "./blog/art1_big.png",
     bytb: "OTM Team",
@@ -34,7 +33,7 @@ export const BlogDataEs = [
     titp: "Local SL/TP orders plus major DOM Surface update",
     url: "local-sltp-orders-plus-major-dom-surface-update",
     txtp: "We are happy to announce a partnership with a popular crypto exchange - KuCoin - bringing the data and trading for over 630 coins with 1,100+ trading pairs. Let’s find out some details about this integration",
-    keyp: ["integration", "kucoin"],
+    keys: ["integration", "kucoin"],
     datp: "23/03/2022",
     imgb: "./blog/art2_big.png",
     bytb: "OTM Team",
@@ -67,8 +66,8 @@ export const BlogDataEn = [
     titp: "Quantower connects with the KuCoin crypto exchange",
     url: "quantower-connects-with-the-kucoin-crypto-exchange",
     txtp: "After a bit of rest during the New Year holidays, our team began to develop functions for you actively. As a result, we've prepared new Local closing orders, updated the DOM Surface panel, and some more cool features. Let's dive inside this new version release.",
-    keyp: ["integration", "kucoin"],
     datp: "07/02/2022",
+    keyp: ["integration", "kucoin"],
     imgb: "./blog/art1_big.png",
     bytb: "OTM Team",
     subb1:
@@ -87,8 +86,8 @@ export const BlogDataEn = [
     titp: "Local SL/TP orders plus major DOM Surface update",
     url: "local-sltp-orders-plus-major-dom-surface-update",
     txtp: "We are happy to announce a partnership with a popular crypto exchange - KuCoin - bringing the data and trading for over 630 coins with 1,100+ trading pairs. Let’s find out some details about this integration",
-    keyp: ["integration", "kucoin"],
     datp: "23/03/2022",
+    keyp: ["integration", "kucoin"],
 
     imgb: "./blog/art2_big.png",
     bytb: "OTM Team",
@@ -107,8 +106,9 @@ export const BlogDataEn = [
       "Quantower provides this functionality using the Orders placing strategy feature, meaning that all of the Local orders are solely handled on the platform side (literally 'on your machine'). Such behavior leads to some important notices and limitations that users should understand before use of Local closing orders:",
 
     dtlb_1: [
-      "We insist that you read, practice, <link>and understand how the Local<link> closing orders work before using them for live trading. You can also watch this brief video manual",
-      "https://link.co/es-us",
+      "We insist that you read, practice, <link>and understand how the Local</link> closing orders work before using them for live trading. <link>You can also</link> watch this brief video manual",
+      "https://youtube.com",
+      "https://link.co",
     ],
 
     dotb_2: "Local orders exist and are managed on the platform side only.",
@@ -119,7 +119,7 @@ export const BlogDataEn = [
     iinb_2: "./blog/art2_int.png",
 
     txlb_1: [
-      "One of the requests from our <link>trading community <link>was to show the trades volumes on a separate scale. Now you can enable volume display from the context menu as well as select one of the four types of view: Combined, Overlay, Mirror, & Delta. More about these types read in our documentation.",
+      "One of the requests from our <link>trading community </link>was to show the trades volumes on a separate scale. Now you can enable volume display from the context menu as well as select one of the four types of view: Combined, Overlay, Mirror, & Delta. More about these types read in our documentation.",
       "https://link.co/es-us",
     ],
   },

@@ -1,36 +1,55 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End reset styles */
 body {
   background-color: rgb(4, 0, 28);
-}
-body::before {
-  display: none;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: 56% 0;
-  transform: rotate(-24deg);
-  scale: 181%;
-  left: 160px;
-  top: 320px;
-  opacity: 0.3;
-}
-@media (min-width: 48em) {
-  body::before {
-    left: 240px;
-    top: 434px;
-  }
-}
-@media (min-width: 48em) {
-  body::before {
-    left: 166px;
-    top: 500px;
-  }
-}
-@media (min-width: 80em) {
-  body::before {
-    left: 166px;
-    top: 300px;
-  }
 }
 
 .global__btp {
@@ -248,8 +267,7 @@ body::before {
   background-color: #15113b;
   border-radius: 18px;
   z-index: 999;
-  -webkit-animation-duration: 750ms;
-          animation-duration: 750ms;
+  animation-duration: 750ms;
 }
 .sideBarOn .st1,
 .sideBarOff .st1 {
@@ -296,25 +314,14 @@ body::before {
 
 .sideBarOn {
   margin-left: 0%;
-  -webkit-animation-name: slideIn;
-          animation-name: slideIn;
+  animation-name: slideIn;
   transform: translateX(0%);
 }
 
 .sideBarOff {
   margin-left: 200%;
-  -webkit-animation-name: slideOut;
-          animation-name: slideOut;
+  animation-name: slideOut;
   transform: translateX(0%);
-}
-
-@-webkit-keyframes slideIn {
-  from {
-    margin-left: 200%;
-  }
-  to {
-    margin-left: 0%;
-  }
 }
 
 @keyframes slideIn {
@@ -323,14 +330,6 @@ body::before {
   }
   to {
     margin-left: 0%;
-  }
-}
-@-webkit-keyframes slideOut {
-  from {
-    margin-left: 0%;
-  }
-  to {
-    margin-left: 200%;
   }
 }
 @keyframes slideOut {
@@ -647,25 +646,10 @@ body::before {
   transform: scale(1.025);
   border: 3px solid rgb(172, 172, 181);
   background-color: rgb(10, 0, 66);
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-name: key1;
-          animation-name: key1;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: cubic-bezier(0.08, 0.6, 0.69, 1);
-          animation-timing-function: cubic-bezier(0.08, 0.6, 0.69, 1);
-}
-@-webkit-keyframes key1 {
-  from {
-    border: 3px solid rgb(90, 90, 90);
-  }
-  50% {
-    border: 3px solid rgb(97, 255, 189);
-  }
-  to {
-    border: 3px solid rgb(90, 90, 90);
-  }
+  animation-duration: 1.5s;
+  animation-name: key1;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.08, 0.6, 0.69, 1);
 }
 @keyframes key1 {
   from {
@@ -790,26 +774,10 @@ body::before {
   color: rgb(244, 244, 244);
 }
 .feature:hover {
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-name: anim1;
-          animation-name: anim1;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: cubic-bezier(0.08, 0.6, 0.69, 1);
-          animation-timing-function: cubic-bezier(0.08, 0.6, 0.69, 1);
-}
-
-@-webkit-keyframes anim1 {
-  from {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  to {
-    transform: scale(1);
-  }
+  animation-duration: 1.5s;
+  animation-name: anim1;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.08, 0.6, 0.69, 1);
 }
 
 @keyframes anim1 {
@@ -2280,6 +2248,7 @@ body::before {
 .blogPage__cards--card {
   background-color: rgb(21, 19, 43);
   border-radius: 45px;
+  padding-bottom: 20px;
   margin-bottom: 60px;
 }
 .blogPage__cards--card--img {
@@ -2350,6 +2319,24 @@ body::before {
 }
 .blogPage__cards--card--link a:hover {
   font-weight: bold;
+}
+.blogPage__cards--card--key {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgb(172, 172, 181);
+  text-align: left;
+  padding: 0 30px;
+  cursor: pointer;
+}
+.blogPage__cards--card--key a {
+  display: inline;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 3px;
+  color: rgb(172, 172, 181);
+  border: 1px solid rgb(172, 172, 181);
+  border-radius: 15px;
 }
 .blogPage__aside {
   width: 100%;
@@ -2448,14 +2435,25 @@ body::before {
   width: 100%;
   border-radius: 45px 45px 0 0;
 }
+.blogArt__card--imgInt {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.blogArt__card--imgInt img {
+  width: 80%;
+}
 .blogArt__card--tit {
   font-size: 40px;
   font-weight: bold;
   line-height: 1;
   color: rgb(244, 244, 244);
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 40px;
+  margin-top: 35px;
+  margin-bottom: 30px;
 }
 .blogArt__card--tit:hover {
   cursor: pointer;
@@ -2468,11 +2466,17 @@ body::before {
 }
 .blogArt__card--sub {
   font-size: 18px;
-  font-weight: bold;
-  line-height: 1;
-  color: rgb(244, 244, 244);
-  margin: 0 15px;
-  margin-bottom: 30px;
+  line-height: 1.3;
+  color: rgb(172, 172, 181);
+  text-align: left;
+}
+.blogArt__card--sub > * {
+  font-weight: 600;
+}
+@media (min-width: 48em) {
+  .blogArt__card--sub {
+    padding: 0 30px 10px 30px;
+  }
 }
 .blogArt__card--txt {
   font-size: 18px;
@@ -2483,6 +2487,69 @@ body::before {
 }
 @media (min-width: 48em) {
   .blogArt__card--txt {
+    padding: 0 30px 30px 30px;
+  }
+}
+.blogArt__card--txtLink {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgb(172, 172, 181);
+  text-align: left;
+}
+@media (min-width: 48em) {
+  .blogArt__card--txtLink {
+    padding: 0 30px 30px 30px;
+  }
+}
+.blogArt__card--txtLink a {
+  color: rgb(97, 255, 189);
+}
+.blogArt__card--dot {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgb(172, 172, 181);
+  text-align: left;
+  display: list-item; /* This has to be "list-item"                                          */
+  margin-left: calc(30px + 1em);
+}
+@media (min-width: 48em) {
+  .blogArt__card--dot {
+    padding: 0 30px 30px 0px;
+  }
+}
+.blogArt__card--dotLink {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgb(172, 172, 181);
+  text-align: left;
+  display: list-item; /* This has to be "list-item"                                          */
+  margin-left: calc(30px + 1em);
+}
+@media (min-width: 48em) {
+  .blogArt__card--dotLink {
+    padding: 0 30px 30px 0px;
+  }
+}
+.blogArt__card--dotLink a {
+  color: rgb(97, 255, 189);
+}
+.blogArt__card--by {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgb(172, 172, 181);
+  text-align: left;
+  margin-top: 10px;
+}
+.blogArt__card--by a {
+  color: rgb(97, 255, 189);
+  text-decoration: underline;
+}
+@media (min-width: 48em) {
+  .blogArt__card--by {
     padding: 0 30px 30px 30px;
   }
 }

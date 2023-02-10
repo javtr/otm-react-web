@@ -13,7 +13,6 @@ export default function BlogCont() {
 
   useEffect(() => {
     setIndexArt(text.findIndex((obj) => obj.url == titleArt));
-    
   }, []);
 
   useEffect(() => {
@@ -33,17 +32,16 @@ export default function BlogCont() {
 
   return (
     <>
-      {text[indexArt]!=null ? (
+      {text[indexArt] != null ? (
         <div className="blogArt">
           <div className="blogArt__card">
             {Object.keys(text[indexArt]).map((key, index) => {
               return (
                 <BlogCardsGenerator
                   key={index}
-                    i={key}
-                    data={text[indexArt][key]}
-                  //   navegateTo={navegateTo}
-                  //   indexCard={i}
+                  index={index}
+                  i={key}
+                  data={text[indexArt][key]}
                 ></BlogCardsGenerator>
               );
             })}

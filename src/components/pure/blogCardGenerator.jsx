@@ -1,5 +1,6 @@
 import React from "react";
 const images = require.context("../../assets/img", true);
+import { Link } from "react-router-dom";
 
 export const BlogCardsPrevGenerator = ({ i, data, navegateTo, indexCard }) => {
   function retornoElementos() {
@@ -46,13 +47,35 @@ export const BlogCardsPrevGenerator = ({ i, data, navegateTo, indexCard }) => {
             </a>
           </div>
         );
+
+      case "keyp":
+        let result = [];
+        {
+          data.map((key, index) => {
+            result.push(
+                <a>{key}</a>
+            );
+          });
+        }
+
+        return (
+          <div className="blogPage__cards--card--key">
+            {result}
+          </div>
+        );
     }
   }
 
   return retornoElementos();
 };
 
-export const BlogCardsGenerator = ({ i, data, navegateTo, indexCard }) => {
+export const BlogCardsGenerator = ({
+  i,
+  data,
+  navegateTo,
+  indexCard,
+  index,
+}) => {
   function retornoElementos() {
     switch (i.slice(0, 4)) {
       case "imgb":
@@ -95,7 +118,9 @@ export const BlogCardsGenerator = ({ i, data, navegateTo, indexCard }) => {
       case "bytb":
         return (
           <div className="blogArt__card--by">
-            <p>{data}</p>
+            <p>
+              by <Link to="/">{data}</Link>
+            </p>
           </div>
         );
 
@@ -116,23 +141,37 @@ export const BlogCardsGenerator = ({ i, data, navegateTo, indexCard }) => {
         );
 
       case "dtlb":
-        return <div className="blogArt__card--dotLink">{txtLink(data)}</div>;
+        return (
+          <div className="blogArt__card--dotLink">{txtLink(data, index)}</div>
+        );
     }
   }
 
   return retornoElementos();
 };
 
-function txtLink(data) {
-  const Textparts = data[0].split("<link>");
+function txtLink(data, index) {
+  let parts = data[0].split("<");
+  let result = [];
+  let indexLink = 1;
 
-  return (
-    <p>
-      {Textparts[0]}
-      <a target="_blank" href={data[1]}>
-        {Textparts[1]}
-      </a>
-      {Textparts[2]}
-    </p>
-  );
+  for (let i = 0; i < parts.length; i++) {
+    if (parts[i].startsWith("/")) {
+      result.push(parts[i].substring(parts[i].indexOf(">") + 1));
+    } else {
+      let tagEndIndex = parts[i].indexOf(">");
+      if (tagEndIndex !== -1) {
+        result.push(
+          <a key={index + i} target="_blank" href={data[indexLink]}>
+            {parts[i].substring(tagEndIndex + 1)}
+          </a>
+        );
+        indexLink++;
+      } else {
+        result.push(parts[i]);
+      }
+    }
+  }
+
+  return <p>{result}</p>;
 }

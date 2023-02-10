@@ -33,19 +33,19 @@ export default function Blog() {
       <div className="blogPage__container">
         <div className="blogPage__cards">
           {text.map((card, i) => (
-            <div className="blogPage__cards--card" key={i}>
-              {Object.keys(card).map((key, index) => {
-                return (
-                  <BlogCardsPrevGenerator
-                    key={index}
-                    i={key}
-                    data={card[key]}
-                    navegateTo={navegateTo}
-                    indexCard={i}
-                  ></BlogCardsPrevGenerator>
-                );
-              })}
-            </div>
+              <div className="blogPage__cards--card" key={i}>
+                {Object.keys(card).map((key, index) => {
+                  return (
+                    <BlogCardsPrevGenerator
+                      key={index}
+                      i={key}
+                      data={card[key]}
+                      navegateTo={navegateTo}
+                      indexCard={i}
+                    ></BlogCardsPrevGenerator>
+                  );
+                })}
+              </div>
           ))}
         </div>
         <div className="blogPage__aside">

@@ -2,9 +2,13 @@ import React from "react";
 const images = require.context("../../assets/img", true);
 import { Link } from "react-router-dom";
 
+
+// generador de previos
 export const BlogCardsPrevGenerator = ({ i, data, navegateTo, indexCard }) => {
   function retornoElementos() {
+
     switch (i.slice(0, 4)) {
+
       case "imgp":
         return (
           <div
@@ -48,27 +52,26 @@ export const BlogCardsPrevGenerator = ({ i, data, navegateTo, indexCard }) => {
           </div>
         );
 
-      case "keyp":
+      case "key_":
         let result = [];
         {
-          data.map((key, index) => {
+          for (const key in data) {
             result.push(
-                <a>{key}</a>
+              <a href={data[key]} key={key}>
+                {key}
+              </a>
             );
-          });
+          }
         }
 
-        return (
-          <div className="blogPage__cards--card--key">
-            {result}
-          </div>
-        );
+        return <div className="blogPage__cards--card--key">{result}</div>;
     }
   }
 
   return retornoElementos();
 };
 
+// generador del blog
 export const BlogCardsGenerator = ({
   i,
   data,
@@ -144,11 +147,26 @@ export const BlogCardsGenerator = ({
         return (
           <div className="blogArt__card--dotLink">{txtLink(data, index)}</div>
         );
+
+      case "key_":
+        let result = [];
+        {
+          for (const key in data) {
+            result.push(
+              <a href={data[key]} key={key}>
+                {key}
+              </a>
+            );
+          }
+        }
+
+        return <div className="blogPage__cards--card--key">{result}</div>;
     }
   }
 
   return retornoElementos();
 };
+
 
 function txtLink(data, index) {
   let parts = data[0].split("<");
@@ -175,3 +193,47 @@ function txtLink(data, index) {
 
   return <p>{result}</p>;
 }
+
+
+// generador de minuaturas previos dentro del blog
+
+
+export const BlogMiniatureGenerator = ({
+  i,
+  data,
+  navegateTo,
+  indexCard,
+  index,
+}) => {
+  function retornoElementos() {
+    switch (i.slice(0, 4)) {
+
+      case "imgp":
+        return (
+          <div
+            className="blogMin__cont--card--img"
+            onClick={() => navegateTo(indexCard)}
+          >
+            <img src={images(data)}></img>
+          </div>
+        );
+
+        case "titp":
+          return (
+            <div
+              className="blogMin__cont--card--tit"
+              onClick={() => navegateTo(indexCard)}
+            >
+              <h3>{data}</h3>
+            </div>
+          );
+
+
+
+
+    }
+  }
+
+  return retornoElementos();
+};
+

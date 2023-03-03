@@ -181,7 +181,7 @@ export const IndicatorsDataEs = [
     linkTit: "Así usamos OTM Trading",
     url: "asi-usamos-otm-trading",
     
-    imgb: "./ind_06.gif",
+    imgb: "./features/operativa-crudo-es.gif",
     titb_1: "Así usamos OTM Trading",
     txtb0: "OTM Trading es una herramienta que te ayuda a tener información sobre la oferta y la demanda de manera clara y sencilla. Para aprovecharlo al máximo, lo mejor es que todos los indicadores se sincronicen y muestren la misma información en el momento de tomar una decisión de compra o venta.",
     txtb1: "En el ejemplo anterior, hicimos una operación de compra en el Crudo (CL) y ¡nos fue genial! ganamos $360 dólares.",
@@ -207,17 +207,26 @@ export const IndicatorsDataEs = [
 
   //Explicación Indicadores
   {
-    img: "./indicators/OTM_SWING.gif",
-    tit: "OTM Delta Swing",
     linkTit: "OTM Delta Swing",
     url: "otm-delta-swing",
-    txt0: "Have you ever wondered if you can measure the strength of price movements? It is possible with Delta Swing! This indicator allows you to numerically see the volume and delta of price movements. You can easily identify the strength of a pullback or momentum (2). OTM will help you read the information as follows: ",
-    sub1: "Exhaustion signals",
-    txt1: "Our algorithms will read information from buyers and sellers, if there is an imbalance it will provide a buying or selling signal (1).",
-    sub2: "Effort/ no result signals",
-    txt2: "When there is too much volume and the price does not make any movement, it is a sign of institutional activity, the effort/ no result signal will appear every time this happens (1).",
-    sub3: "Delta divergences signals",
-    txt3: "Delta divergences occur when the delta is not consistent with the price direction. If the price is rising it is normal to have positive delta, sometimes divergences occur and the delta is negative. When this occurs a dotted box will appear as an informative signal (3). Get an in-depth understanding of the OTM Delta Swing buy and sell signals. ",
+
+    imgb: "./features/otm-delta-swing.jpg",
+    titb_1: "OTM Delta Swing",
+
+    txtb0: "Este indicador te proporciona información valiosa acerca de los movimientos de las ondas del precio:",
+
+    txmb1: "1. Información de volumen y delta: con esta información puedes evaluar si es adecuado o no tomar una posición, ya que puedes ver directamente la fuerza de cada onda.",
+
+    txmb2: "2. Señales informativas: los algoritmos de OTM Delta Swing detectan anomalías, lo que significa que te permiten detectar eventos fuera de lo normal y así tener una ventaja en el mercado. El algoritmo detecta 3 tipos de anomalías y nos muestra una señal informativa al final de la onda.",
+
+    txtb0: "Te recomiendo ver el siguiente video sobre las señales y los tipos de anomalías que detecta OTM Delta Swing para que puedas entenderlo mejor y obtener el máximo provecho:    ",
+    
+
+    lnkb1:["https://www.quantower.com/blog","OTM Delta Swing"]
+
+
+
+
   },
   {
     img: "./indicators/OTM_MICRO.gif",

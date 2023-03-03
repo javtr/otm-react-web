@@ -50,7 +50,6 @@ export const BlogDataEs = [
 
 
 
-
     imgb: "./blog/art2_big.png",
     bytb: "OTM Team",
 

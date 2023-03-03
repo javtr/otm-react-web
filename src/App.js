@@ -40,6 +40,12 @@ export default function App() {
               path="features"
               element={<FeaturesPage></FeaturesPage>}
             ></Route>
+
+            <Route
+              path="features/:title"
+              element={<FeaturesPage></FeaturesPage>}
+            ></Route>
+
             <Route path="blog" element={<Blog></Blog>}></Route>
             <Route path="blog/:title" element={<BlogCont></BlogCont>}></Route>
             <Route path="buy" element={<BuyPage></BuyPage>}></Route>

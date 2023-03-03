@@ -1,0 +1,196 @@
+.feature {
+  @include breakpoint-up(medium) {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: $backLight;
+    border-radius: 45px;
+    margin-bottom: 60px;
+  }
+
+  &--img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 45px 45px 0 0;
+    }
+  }
+
+  &--imgInt {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  &--tit {
+    font-size: $txt-large-smh2;
+    font-weight: bold;
+    line-height: 1;
+    color: $light;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 30px;
+
+    &:hover {
+      cursor: pointer;
+      color: $primary;
+    }
+
+    @include breakpoint-up(medium) {
+      padding: 0 30px;
+    }
+  }
+
+  &--sub {
+    font-size: $txt-small;
+    line-height: 1.3;
+    color: $gray;
+    text-align: left;
+
+    & > * {
+      font-weight: 600;
+    }
+
+    @include breakpoint-up(medium) {
+      padding: 0 30px 10px 30px;
+    }
+  }
+
+  &--txt {
+    font-size: $txt-small;
+    font-weight: normal;
+    line-height: 1.5;
+    color: $gray;
+    text-align: left;
+
+    @include breakpoint-up(medium) {
+      padding: 0 30px 30px 30px;
+    }
+  }
+
+  &--txtMargin {
+    font-size: $txt-small;
+    font-weight: normal;
+    line-height: 1.5;
+    color: $gray;
+    text-align: left;
+    margin-left: 10px;
+
+    @include breakpoint-up(medium) {
+      padding: 0 30px 30px 30px;
+      margin-left: 20px;
+    }
+  }
+
+  &--txtLink {
+    font-size: $txt-small;
+    font-weight: normal;
+    line-height: 1.5;
+    color: $gray;
+    text-align: left;
+
+    @include breakpoint-up(medium) {
+      padding: 0 30px 30px 30px;
+    }
+
+    & a {
+      color: $primary;
+    }
+  }
+
+  &--dot {
+    font-size: $txt-small;
+    font-weight: normal;
+    line-height: 1.5;
+    color: $gray;
+    text-align: left;
+
+    display: list-item; /* This has to be "list-item"                                          */
+    margin-left: calc(30px + 1em);
+
+    @include breakpoint-up(medium) {
+      padding: 0 30px 30px 0px;
+    }
+  }
+
+  &--dotLink {
+    font-size: $txt-small;
+    font-weight: normal;
+    line-height: 1.5;
+    color: $gray;
+    text-align: left;
+
+    display: list-item; /* This has to be "list-item"                                          */
+    margin-left: calc(30px + 1em);
+
+    @include breakpoint-up(medium) {
+      padding: 0 30px 30px 0px;
+    }
+
+    & a {
+      color: $primary;
+    }
+  }
+
+  &--by {
+    & a {
+      color: $primary;
+      text-decoration: underline;
+    }
+
+    font-size: $txt-small;
+    font-weight: normal;
+    line-height: 1.5;
+    color: $gray;
+    text-align: left;
+    margin-top: 10px;
+
+    @include breakpoint-up(medium) {
+      padding: 0 30px 30px 30px;
+    }
+  }
+
+  &--link {
+    font-size: $txt-small;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+    margin: 25px 0;
+
+    a {
+      background-color: $primary;
+      color: $back;   
+      padding: 10px 70px;
+      border-radius: 25px;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__aside {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(95, 158, 160, 0.492);
+
+    @include breakpoint-up(medium) {
+      width: 30%;
+    }
+  }
+}

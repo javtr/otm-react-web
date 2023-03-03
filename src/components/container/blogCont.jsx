@@ -47,8 +47,6 @@ export default function BlogCont() {
   }
 
   function navegateTo(index) {
-    let title = text[index]["url"];
-    // navigate(title);
     navigate(`/blog/${text[index]["url"]}`);
     window.location.reload(true);
   }

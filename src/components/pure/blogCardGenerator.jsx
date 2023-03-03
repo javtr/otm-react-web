@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 
 // generador de previos
 export const BlogCardsPrevGenerator = ({ i, data, navegateTo, indexCard }) => {
+  
   function retornoElementos() {
 
     switch (i.slice(0, 4)) {
+
 
       case "imgp":
         return (
@@ -65,6 +67,9 @@ export const BlogCardsPrevGenerator = ({ i, data, navegateTo, indexCard }) => {
         }
 
         return <div className="blogPage__cards--card--key">{result}</div>;
+
+
+
     }
   }
 

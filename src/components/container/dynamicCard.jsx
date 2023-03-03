@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { IndicatorsDataEn, IndicatorsDataEs } from "../../assets/info/IndicatorsData";
 const images = require.context("../../assets/img", true);
-import CardGenerator from "../pure/cardGenerator";
+import {CardGenerator} from "../pure/cardGenerator";
 import UserContext from "../../context/userContext";
 import { textEn, textEs } from "../../assets/text/hero.js";
 import LanguageContext from "../../context/langContext.js";
@@ -27,6 +27,7 @@ const DynamicCard = () => {
   return (
     <div className="featPage__dyncard">
       <div className="featPage__dyncard--card">
+      
         {Object.keys(text[card]).map((key, index) => {
           return (
             <CardGenerator

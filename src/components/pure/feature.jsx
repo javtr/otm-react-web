@@ -16,7 +16,7 @@ export default function Feature({ feature, index }) {
 
       <div className="feature__icons">
         <div onClick={(e) => e.stopPropagation() } className="feature__icons--image">
-          <img onClick={()=>{console.log("hola")}} src={next}></img>
+          <img onClick={()=>{}} src={next}></img>
         </div>
         <div className="feature__icons--image">
           <img src={magnif}></img>

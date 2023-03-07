@@ -54,7 +54,7 @@ export const CardGenerator = ({
           </div>
         );
 
-        //texto
+        //texto con margen
         case "txmb":
         return (
           <div className="feature--txtMargin">
@@ -62,12 +62,18 @@ export const CardGenerator = ({
           </div>
         );
 
+        //texto con margen junto
+        case "tmnb":
+        return (
+          <div className="feature--txtMarginNext">
+            <p>{data}</p>
+          </div>
+        );        
+
 
         //texto con link
         case "txlb":
         return <div className="feature--txtLink">{txtLink(data)}</div>;
-
-
 
 
         //by team

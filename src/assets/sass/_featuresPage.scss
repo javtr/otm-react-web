@@ -32,6 +32,7 @@
     }
 
     &--item {
+      display: block;
       color: $gray;
       font-size: $txt-medium;
       margin-left: 10px;

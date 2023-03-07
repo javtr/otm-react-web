@@ -354,74 +354,212 @@ export const IndicatorsDataEs = [
 
     lnkb1:["https://www.quantower.com/blog","OTM Graphic Bar Timer"]  
   },
-
   {
-    img: "./instalation_mockup.jpg",
-    tit: "Installation and setup manuals",
-    linkTit: "Installation",
-    url: "installation",
-    txt0: "Installing OTM is very easy, follow the instructions in the installation manual.",
-    txt1: "You can also learn more about each of the indicators in the configuration manual.",
-    lnk0: [
-      "https://drive.google.com/drive/u/3/folders/1ae7eANS0PX__QVRiicnNJ6rg0E5ekjFC",
-      "Download manual",
-    ],
+    linkTit: "Momentum",
+    url: "estrategia-momentum",
+
+    imgb: "./features/momentum.png",
+    titb_1: "(Momentum) a favor de la tendencia",
+
+    txtb0: "En lo posible debes ir a favor de la tendencia, aquí te digo cuáles son los requisitos de una entrada a favor de tendencia:",
+
+    txmb1: "1. El VWAP a favor del movimiento: si el precio está por encima del VWAP debemos tomar posiciones de compra esperando el retroceso al VWAP y si el precio está por debajo debemos tomar posiciones de venta. Podemos usar el VWAP principal, o las desviaciones como soporte o resistencia. ",
+
+    txmb2: "2. Momentum en el MicroDelta: Si estamos en un mercado alcista y observamos una gran 'caja verde' en el MicroDelta, esto indica una gran cantidad de compras agresivas. Este es un buen momento para evaluar una posición de compra en el mercado. Por otro lado, si vemos una gran 'caja roja' en el MicroDelta en un mercado bajista, esto indica ventas agresivas, lo que significa que existe un momentum bajista. ",
+
+
+    txmb3: "3.  Respuesta débil en el retroceso: si tuvimos un gran momentum de compras (gran caja verde), lo que queremos es que el retroceso tenga mucho menos volumen que movimiento de impulso inicial.",
+
+    txmb4: "4. Delta acumulado a favor: en un movimiento alcista nos confirma que tenemos una presión constante de compras y hace que nuestra posición en largo tenga mayor probabilidad.    ",
+
+    txmb5: "5. Zona de bajo volumen (Low Volume Area): luego del avance del precio debes esperar el retroceso en la zona de bajo volumen que deja el perfil de volumen, esto te brinda una zona clara de entrada donde puedes apoyar tu posición. ",    
+
+    txtb1: "Espero que esto te haya ayudado a entender mejor los requisitos de entrada a favor de tendencia. ¡Si quieres aprender más, no dudes en hacer clic en el botón de abajo para seguir aprendiendo! ",
+
+    lnkb1:["https://www.quantower.com/blog","Estrategia Momentum"]  
   },
 
   {
-    img: "./instalation_mockup.jpg",
-    tit: "Installation and setup manuals",
-    linkTit: "Installation",
-    url: "installation",
-    txt0: "Installing OTM is very easy, follow the instructions in the installation manual.",
-    txt1: "You can also learn more about each of the indicators in the configuration manual.",
-    lnk0: [
-      "https://drive.google.com/drive/u/3/folders/1ae7eANS0PX__QVRiicnNJ6rg0E5ekjFC",
-      "Download manual",
-    ],
+    linkTit: "Reversals",
+    url: "estrategia-reversals",
+
+    imgb: "./features/reversal.png",
+    titb_1: "(Reversals) en contra de tendencia",
+
+    txtb0: "Las entradas de giros, o contra tendencia son un poco más difíciles, pero si tienes los siguientes requisitos tienes mayor probabilidad de acertar en tus operaciones:    ",
+
+    txmb1: "1. Nivel objetivo de soporte o resistencia: el precio no suele cambiar de dirección sin encontrar un nivel clave. En este ejemplo, el precio se sostiene sobre el IBL (Initial Balance Low), que es el nivel mínimo que deja la sesión americana en su primera hora.",
+
+    txmb2: "2. Oferta decreciente: necesitamos ver que cada vez hay menos cantidad de ventas en el MicroDelta, lo que indica que la oferta está disminuyendo.    ",
+
+
+    txmb3: "3. Divergencia de compras: otra señal importante de que el precio podría estar a punto de cambiar de dirección es si hay cajas de divergencias. Esto significa que el precio está bajando, pero el delta no es negativo, es positivo, lo que representa una actividad compradora importante.    ",
+
+    txmb4: "4. Divergencia en el delta acumulado sesional: también necesitamos confirmar que existe una divergencia entre el precio y el delta acumulado por sesión. Esto significa que el delta está creciendo y el precio sigue lateral.    ",
+
+    txmb5: "5. Delta acumulado positivo (divergencia): finalmente, el histograma delta también debe ser positivo y opuesto al movimiento del precio, lo que nos confirma que hay una anomalía.",    
+
+    txtb1: "Si se cumplen estos requisitos, es posible que se esté produciendo un cambio de tendencia y podríamos considerar entrar en una posición de compra. Aprende más en el video que preparamos para ti sobre esta Estrategia.  ",
+
+    lnkb1:["https://www.quantower.com/blog","Estrategia Reversals"]  
   },
 
   //¿Listo? Revisa esto para comenzar
   {
-    img: "./ind_06.gif",
-    tit: "Frequently Asked Questions",
-    linkTit: "F.A.Q",
-    url: "frequently-asked-questions",
-    txt0: "Have you ever wondered why the price consolidates more at some price levels than others? This is because some levels are preferred by large institutions so the price stays longer there, generating consolidations. While in the less preferred zones, the price moves vertically and faster. By using OTM Volume Profile you can easily determine this: ",
-    sub1: "Most traded levels",
-    imi1: "./ind_06.gif",
-    txt1: "Price levels where the price will consolidate, by Identifying the volume control center (VPOC) (2). Besides, two objective support and resistance levels such as the value area low (VAL) and high (VAH), (1). ",
-    sub2: "Less traded levels",
-    txt2: "Identify the least traded price levels of the session (low volume levels). These levels allow to detect possible big movements (3). ",
-    sub3: "Dynamic volume profile",
-    txt3: "Do you want to go back a few bars and analyze the volume profile? Do not worry, this profile will be recreated in real time. ",
+    linkTit: "Preguntas frecuentes",
+    url: "preguntas-frecuentes",
+
+    titb_1: "Preguntas frecuentes",
+
+    subb1: "1. ¿Necesito tener una licencia permanente de NinjaTrader 8 para usar OTM Trading? ",
+
+    txtb1: "No, no necesitas una licencia de por vida de NinjaTrader 8 para usar OTM Trading. Puedes usar la versión demo y tendrás un buen funcionamiento. ",
+
+    subb2: "2. ¿Cuál es el proceso para instalar y configurar el software en mi equipo? ",
+
+    txtb2: "Una vez que compres OTM Trading, verás un sencillo formulario en el que te pediremos que ingreses tus datos personales y el código Machine ID. Con esta información, haremos un proceso de licenciamiento para tu software y te enviaremos por correo electrónico OTM Trading con todas las instrucciones y materiales educativos necesarios para que puedas usarlo de manera efectiva.    ",
+
+    subb3: "3. ¿Qué tipo de Licencia obtengo después de la compra de OTM Trading?    ",
+
+    txtb3: "Obtienes una Licencia de por vida, no debes pagar más dinero después de adquirir el pack de OTM Trading, es un único pago. También tienes incluidas las futuras actualizaciones de forma gratuita.     ",
+
+    subb4: "4. ¿Hay un equipo de soporte técnico para resolver cualquier problema que pueda surgir?    ",
+
+    txtb4: "¡Claro que sí! Si tienes algún problema después de adquirir OTM Trading, no te preocupes. ¡Estamos aquí para ayudarte! Puedes contactarnos por correo electrónico o a través de WhatsApp para resolver cualquier duda o problema que tengas. Además, ¡también puedes programar una sesión remota con nosotros para solucionar cualquier problema en tiempo real!    ",
+
+
+    subb5: "5. ¿Cuáles son las opiniones y reseñas de otros usuarios que han utilizado OTM Trading?    ",
+
+    txlb_5: [
+      "Si quieres conocer lo que piensan otros traders sobre OTM Trading, solo tienes que hacer <link> clic aquí </link> verás cómo OTM les ha ayudado a mejorar su operativa. ",
+      "https://link.co",
+    ],
+
+    subb6: "6. ¿Qué tan precisos son los análisis y señales que brinda OTM Trading?    ",
+
+    txtb6: "OTM Trading ha demostrado ser una gran herramienta para tu operativa, puedes ver su rendimiento en el año 2022 en la pestaña 'Resultados'. ¡No te pierdas la oportunidad de mejorar tus operaciones con esta herramienta!  ",
+
+
+    subb7: "7. ¿Los indicadores sirven en cualquier temporalidad y tipo de gráfico?    ",
+
+    txtb7: "Sí, puedes configurar OTM Trading en cualquier temporalidad que desees y en cualquier tipo de gráfico que prefieras. Es muy versátil.    ",
+
+    
+    subb8: "8. ¿En qué tipo de mercados puedo usar OTM Trading?    ",
+
+    txtb8: "Con OTM Trading, puedes operar en una amplia variedad de instrumentos financieros en el mercado de futuros, como el SP500 (ES), Nasdaq (NQ), petróleo (CL), y futuros de divisas. Ten en cuenta que para algunos instrumentos, como el petróleo y las divisas, es necesario tener acceso a datos en tiempo real.    ",
+
+
+    subb9: "9. ¿Debo configurar OTM Trading desde cero para usarlo?    ",
+
+    txtb9: "No te preocupes, si configurar las opciones de OTM Trading te parece complicado, ¡te tenemos cubierto! En el manual de instalación que recibirás junto con OTM Trading, incluimos una plantilla gratuita que te permitirá crear gráficos con configuraciones predefinidas en cuestión de un solo clic. ¡Es súper fácil!    ",
+
+
+
+    subb10: "10. ¿Existe una comunidad de usuarios de OTM Trading con la que pueda interactuar y compartir experiencias?  ",
+
+    txlb10: [
+      "Después de adquirir OTM Trading, ¡tienes acceso a una comunidad de apoyo y recursos adicionales! Puedes unirte a nuestro canal privado de Telegram y servidor de Discord para recibir apoyo y compartir tus experiencias con otros usuarios. <link>¡Haz clic aquí para unirte ahora mismo!</link>  ",
+      "https://link.co",
+    ],
+
+
+    subb11: "11. ¿OTM Trading requiere de “tick replay” para su funcionamiento?    ",
+
+    txtb11: "OTM Trading no usa tick replay en su versión 2.5, ¡así que puedes usarlo sin preocuparte por eso!, no tendrás un software que ralentice tu computadora.  ",
+
+
+    subb12: "12. ¿OTM Trading me informa dónde entrar y dónde salir en mis operaciones?    ",
+
+    txtb12: "OTM Trading te brinda información con los diferentes indicadores, pero al final la decisión de cómo operar es tuya. No es un sistema de trading automático que haga operaciones por ti, sino que te da la información para que tú puedas tomar tus propias decisiones informadas. ",
+
+
+    subb13: "13. ¿Cuál es la mejor manera de usar OTM Trading?   ",
+
+    txlb13: [
+      " Si quieres obtener los mejores resultados con OTM Trading, es importante que tengas confirmación en todos los indicadores en la dirección que deseas operar. Si necesitas ayuda con OTM Trading, ¡no te preocupes! Tenemos vídeos educativos sobre las diferentes estrategias disponibles. Solo tienes que hacer <link> clic aquí </link>   para acceder a ellos y aprender a usar OTM Trading de la mejor manera.",
+      "https://link.co",
+    ],
+
+    subb14: "14. ¿Cuáles son los requerimientos mínimos de mi computadora para utilizar OTM Trading de manera óptima?    ",
+
+    txtb14: "No te preocupes, los requisitos para usar OTM Trading son sencillos. Son los mismos que piden para usar la plataforma NinjaTrader 8, y son fácilmente cumplibles en la mayoría de los equipos:  ",
+
+    tmnb1: "- Windows 8.1, Windows 10, Windows 11, Windows Server 2012 o posterior algo",
+    tmnb2: "- 1 Gigahercio (GHz) o más rápido. Procesador de 32 bit o 64 bit ",
+    tmnb3: "- 2GB RAM",
+    tmnb4: "- Sistema Microsoft. NET 4.8 (pre-instalado en la mayoría de PC's y también puede ser descargado en: Microsoft .NET Framework)    ",
+    tmnb5: "- Resolución de pantalla mínima 1024 x 768",
+    tmnb6: "- Compatibilidad con tarjeta de gráficos DirectX 10 es altamente recomendable  ",
+
+
+    subb15: "15. ¿Se puede realizar Replay Market con OTM Trading?    ",
+
+    txtb15: "¡Sí! Puedes repetir la experiencia de tener el mercado en vivo con OTM Trading utilizando la función Replay Market de NinjaTrader 8.    ",
+
+
+    subb16: "16. ¿Existe algún costo adicional o suscripciones requeridas después de la compra inicial?  ",
+
+    txtb16: "No te preocupes, después de adquirir OTM Trading, no existen costos adicionales ni suscripciones requeridas para su uso. ¡Estarás listo para comenzar a mejorar tus operaciones!    ",
+
+    subb17: "17. ¿Cómo se realiza la actualización de OTM Trading y cuánto cuesta?    ",
+
+    txtb17: "Después de comprar OTM Trading, no te preocupes por costos adicionales o suscripciones. Si hay una nueva versión disponible, te lo haremos saber por correo electrónico con las instrucciones para actualizar, ¡y no te costará nada extra!    ",
+
+
+    subb18: "18. ¿El software es intuitivo y fácil de usar para traders de todos los niveles de experiencia?    ",
+
+    txtb18: "No te preocupes, te enseñamos cómo instalar y configurar OTM Trading con nuestro manual de instrucciones fácil de seguir. Incluso si tienes conocimientos básicos en la plataforma NinjaTrader 8, lo podrás hacer sin problema. Además, te brindamos educación para que puedas sacar el máximo provecho a los indicadores.    ",
+
+    subb19: "19. ¿OTM Trading permite automatizar mis operaciones de trading?    ",
+
+    txtb19: "Lo siento, por ahora no es posible crear estrategias automatizadas con los indicadores de OTM Trading, pero nuestro equipo de expertos está trabajando constantemente en mejorar y expandir las funciones del software.    ",
+
+
+    subb20: "20. ¿Hay una versión demo disponible para probar OTM Trading antes de comprarlo?    ",
+
+    txtb20: "Lo sentimos, en este momento no tenemos una versión de prueba disponible, pero puedes programar una cita con uno de nuestros asesores haciendo clic aquí. ¡Será un placer ayudarte a solucionar tus dudas y mostrarte todo lo que OTM Trading puede ofrecerte!    ",
   },
   {
-    img: "./ind_06.gif",
-    tit: "System use",
-    linkTit: "System use",
-    url: "system-use",
-    txt0: "Have you ever wondered why the price consolidates more at some price levels than others? This is because some levels are preferred by large institutions so the price stays longer there, generating consolidations. While in the less preferred zones, the price moves vertically and faster. By using OTM Volume Profile you can easily determine this: ",
-    sub1: "Most traded levels",
-    imi1: "./ind_06.gif",
-    txt1: "Price levels where the price will consolidate, by Identifying the volume control center (VPOC) (2). Besides, two objective support and resistance levels such as the value area low (VAL) and high (VAH), (1). ",
-    sub2: "Less traded levels",
-    txt2: "Identify the least traded price levels of the session (low volume levels). These levels allow to detect possible big movements (3). ",
-    sub3: "Dynamic volume profile",
-    txt3: "Do you want to go back a few bars and analyze the volume profile? Do not worry, this profile will be recreated in real time. ",
+    linkTit: "Opiniones de usuarios",
+    url: "opiniones",
+
+    titb_1: "Opiniones de usuarios",
+
+    subb1: "Federico Verdejo ",
+    iinb: "./review/rev_fedver.jpeg",
+    txmb1: "“Entender que fuerza de volumen y de delta tiene cada swing, cada movimiento, ha afinado mucho dónde entrar y cuándo salir también”.",
+
+
+    subb2: "Gustavo Loiz ",
+    iinb2: "./review/rev_gusloi.jpeg",
+    txmb2: "“Estas herramientas que me permiten ver el mercado con rayos X, aumenté el porcentaje de efectividad de mis operaciones, mi operativa antes de OTM era un desastre y subjetiva, pero con las herramientas de OTM mi operativa cambió muchísimo”.",
+
+    subb3: "William Franco",
+    iinb3: "./review/rev_wilfra.jpeg",
+    txmb3: "“Desde que adquirí los indicadores de OTM mi operativa en el Trading cambió, mi operativa se volvió más sólida y robusta, no se necesita muy experimentado para poder usarlos”  ",
+
+
+    lnkb1:["https://www.quantower.com/blog","Testimonios"]  
   },
   {
-    img: "./ind_06.gif",
-    tit: "Signals",
-    linkTit: "System use",
-    url: "signals",
-    txt0: "Have you ever wondered why the price consolidates more at some price levels than others? This is because some levels are preferred by large institutions so the price stays longer there, generating consolidations. While in the less preferred zones, the price moves vertically and faster. By using OTM Volume Profile you can easily determine this: ",
-    sub1: "Most traded levels",
-    imi1: "./ind_06.gif",
-    txt1: "Price levels where the price will consolidate, by Identifying the volume control center (VPOC) (2). Besides, two objective support and resistance levels such as the value area low (VAL) and high (VAH), (1). ",
-    sub2: "Less traded levels",
-    txt2: "Identify the least traded price levels of the session (low volume levels). These levels allow to detect possible big movements (3). ",
-    sub3: "Dynamic volume profile",
-    txt3: "Do you want to go back a few bars and analyze the volume profile? Do not worry, this profile will be recreated in real time. ",
+    linkTit: "¿Hago el pago y luego?",
+    url: "pagos",
+
+    titb_1: "¿Hago el pago y luego?",
+
+    iinb: "./features/compra.jpg",
+
+
+    txtb1: "Una vez que hayas comprado OTM Trading, recibirás un formulario en el que deberás ingresar tus datos personales, como tu nombre, correo electrónico y código Machine ID. No te preocupes si no sabes cómo obtener el código Machine ID, ya que el formulario tiene una imagen tutorial para guiarte. Una vez que hayas completado el formulario, envíalo y ¡listo! Nosotros procesaremos tu licencia lo antes posible y te enviaremos un correo electrónico con todas las instrucciones necesarias para descargar, instalar y comenzar a utilizar OTM Trading. Además, también te proporcionaremos una lista de vídeos educativos recomendados para que puedas aprovechar al máximo la herramienta.",
+
+    txtb2: "Si necesitas ayuda con la financiación, puedes hacer clic aquí y contactarte con uno de nuestros asesores a través de WhatsApp para obtener información sobre los diferentes métodos de pago y opciones de financiación disponibles para comprar OTM Trading.",
+
+    txlb_3: [
+      "También puedes enviarnos tus dudas o preguntas a través del formulario de contacto haciendo <link> clic aquí </link>. Estaremos encantados de ayudarte en lo que necesites.  ",
+      "https://link.co",
+    ],
+
+
   },
 ];

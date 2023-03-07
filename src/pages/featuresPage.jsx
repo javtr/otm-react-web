@@ -40,7 +40,7 @@ const FeaturesPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
 
-    navigate(`/features/${text[card].url}`);
+    // navigate(`/features/${text[card].url}`);
 
   }, [card]);
 

@@ -2,15 +2,19 @@ import React, { useState, useEffect, useContext } from "react";
 import UserContext from "../../context/userContext";
 import { textEn, textEs } from "../../assets/text/featuresPage.js";
 import LanguageContext from "../../context/langContext.js";
-import { IndicatorsDataEn, IndicatorsDataEs } from "../../assets/info/IndicatorsData";
+import {
+  IndicatorsDataEn,
+  IndicatorsDataEs,
+} from "../../assets/info/IndicatorsData";
+import { Link, useNavigate } from "react-router-dom";
 
 const SideBar = () => {
   const { card, setCard } = useContext(UserContext);
   const { lang, setLang } = useContext(LanguageContext);
   const [text, setText] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-
     if (lang == "en") {
       setText(IndicatorsDataEn);
     } else if (lang == "es") {
@@ -18,34 +22,103 @@ const SideBar = () => {
     } else {
       setText(IndicatorsDataEn);
     }
-
   }, [lang]);
 
-  return (
 
-      text.length>0?
 
+  return text.length > 0 ? (
     <div className="featPage__aside">
       <h2 className="featPage__aside--title1">OTM Trading Como Sistema</h2>
-      <div onClick={()=>setCard(0)} className="featPage__aside--item item-trans">{text[0].linkTit}</div>
+
+      <Link
+        to={"/features/" + text[0].url}
+        className="featPage__aside--item item-trans"
+      >{text[0].linkTit}
+      </Link>
+
       <h2 className="featPage__aside--title1">Explicación Indicadores</h2>
-      <div onClick={()=>setCard(1)} className="featPage__aside--item item-trans">{text[1].linkTit}</div>
-      <div onClick={()=>setCard(2)} className="featPage__aside--item item-trans">{text[2].linkTit}</div>
-      <div onClick={()=>setCard(3)} className="featPage__aside--item item-trans">{text[3].linkTit}</div>
-      <div onClick={()=>setCard(4)} className="featPage__aside--item item-trans">{text[4].linkTit}</div>
-      <div onClick={()=>setCard(5)} className="featPage__aside--item item-trans">{text[5].linkTit}</div>
-      <div onClick={()=>setCard(6)} className="featPage__aside--item item-trans">{text[6].linkTit}</div>
-      <div onClick={()=>setCard(7)} className="featPage__aside--item item-trans">{text[7].linkTit}</div>
+
+      <Link
+        to={"/features/" + text[1].url}
+        className="featPage__aside--item item-trans"
+      >{text[1].linkTit}
+      </Link>
+
+      <Link
+        to={"/features/" + text[2].url}
+        className="featPage__aside--item item-trans"
+      >{text[2].linkTit}
+      </Link>
+
+      <Link
+        to={"/features/" + text[3].url}
+        className="featPage__aside--item item-trans"
+      >{text[3].linkTit}
+      </Link>
+
+      <Link
+        to={"/features/" + text[4].url}
+        className="featPage__aside--item item-trans"
+      >{text[4].linkTit}
+      </Link>
+
+      <Link
+        to={"/features/" + text[5].url}
+        className="featPage__aside--item item-trans"
+      >{text[5].linkTit}
+      </Link>
+
+      <Link
+        to={"/features/" + text[6].url}
+        className="featPage__aside--item item-trans"
+      >{text[6].linkTit}
+      </Link>
+
+      <Link
+        to={"/features/" + text[7].url}
+        className="featPage__aside--item item-trans"
+      >{text[7].linkTit}
+      </Link>
+
       <h2 className="featPage__aside--title1">Estrategias</h2>
-      <div onClick={()=>setCard(8)} className="featPage__aside--item item-trans">{text[8].linkTit}</div>
-      <div onClick={()=>setCard(9)} className="featPage__aside--item item-trans">{text[9].linkTit}</div>
-      <h2 className="featPage__aside--title1">¿Listo? Revisa esto para comenzar</h2>
-      <div onClick={()=>setCard(10)} className="featPage__aside--item item-trans">{text[10].linkTit}</div>
-      <div onClick={()=>setCard(11)} className="featPage__aside--item item-trans">{text[11].linkTit}</div>
-      <div onClick={()=>setCard(12)} className="featPage__aside--item item-trans">{text[12].linkTit}</div>
+
+      <Link
+        to={"/features/" + text[8].url}
+        className="featPage__aside--item item-trans"
+      >{text[8].linkTit}
+      </Link>
+
+      <Link
+        to={"/features/" + text[9].url}
+        className="featPage__aside--item item-trans"
+      >{text[9].linkTit}
+      </Link>
+
+      <h2 className="featPage__aside--title1">
+        ¿Listo? Revisa esto para comenzar
+      </h2>
+
+      <Link
+        to={"/features/" + text[10].url}
+        className="featPage__aside--item item-trans"
+      >{text[10].linkTit}
+      </Link>
+
+      <Link
+        to={"/features/" + text[11].url}
+        className="featPage__aside--item item-trans"
+      >{text[11].linkTit}
+      </Link>
+
+      <Link
+        to={"/features/" + text[12].url}
+        className="featPage__aside--item item-trans"
+      >{text[12].linkTit}
+      </Link>
+
     </div>
-      :
-      <></>
+  ) : (
+    <></>
   );
 };
 

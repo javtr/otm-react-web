@@ -97,6 +97,23 @@
     }
   }
 
+  &--txtMarginNext {
+    font-size: $txt-small;
+    font-weight: normal;
+    line-height: 1.5;
+    color: $gray;
+    text-align: left;
+    margin-left: 10px;
+
+    @include breakpoint-up(medium) {
+      padding: 0 30px 10px 30px;
+      margin-left: 20px;
+    }
+  }
+
+
+
+
   &--txtLink {
     font-size: $txt-small;
     font-weight: normal;

@@ -69,12 +69,24 @@
         color: $gray;
         text-align: right;
         margin-top:10px;
-        margin-right:10px;
+        margin-right:$p-txt;
         margin-bottom: 20px;
 
       }
 
-
+      &--txtMargin {
+        font-size: $txt-small;
+        font-weight: normal;
+        line-height: 1.5;
+        color: $gray;
+        text-align: left;
+        margin-left: 10px;
+    
+        @include breakpoint-up(medium) {
+          padding: 0 30px 30px 30px;
+          margin-left: 20px;
+        }
+      }
 
       &--tit {
         font-size: $txt-large-smh2;
@@ -92,7 +104,7 @@
         font-weight: bold;
         line-height: 1;
         color: $light;
-        margin: 0 15px;
+        margin: 0 $p-txt;
         margin-bottom: 30px;
 
       }
@@ -103,10 +115,47 @@
         line-height: 1.5;
         color: $gray;
         text-align: left;
-        margin: 0 15px;
+        margin: 0 $p-txt;
         margin-bottom: 50px;
-
       }
+
+      &--link {
+        font-size: $txt-small;
+        font-weight: normal;
+        line-height: 1.5;
+        text-align: center;
+        margin: 25px 0;
+    
+        a {
+          background-color: $primary;
+          color: $back;   
+          padding: 10px 70px;
+          border-radius: 25px;
+    
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+
+      &--txtLink {
+        font-size: $txt-small;
+        font-weight: normal;
+        line-height: 1.5;
+        color: $gray;
+        text-align: left;
+    
+        @include breakpoint-up(medium) {
+          padding: 0 $p-txt 30px $p-txt;
+        }
+    
+        & a {
+          color: $primary;
+        }
+      }
+
+
+
     }
   }
 }

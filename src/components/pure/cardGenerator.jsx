@@ -1,5 +1,6 @@
 import React from "react";
 const images = require.context("../../assets/img", true);
+const videos = require.context("../../assets/video", true);
 import { Link } from "react-router-dom";
 
 
@@ -10,6 +11,7 @@ export const CardGenerator = ({
   navegateTo,
   indexCard,
   index,
+  
 }) => {
   function retornoElementos() {
     switch (i.slice(0, 4)) {
@@ -26,9 +28,26 @@ export const CardGenerator = ({
       case "iinb":
         return (
           <div className="feature--imgInt">
-            <img src={images(data)}></img>
+            <img src={images(data)}
+            ></img>
           </div>
         );
+
+        //imagen interna
+        case "ivib":
+          return (
+            <div className="feature--imgInt">
+
+            <video  className="
+            testimony__modal--card--video" 
+            src={videos(data)} 
+            autoPlay={false}  
+            controls
+            />
+
+            </div>
+          );        
+
 
         //titulo
       case "titb":
@@ -129,6 +148,7 @@ export const CardGenerator = ({
 
   return retornoElementos();
 };
+
 
 
 function txtLink(data, index) {

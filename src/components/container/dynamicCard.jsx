@@ -31,6 +31,7 @@ const DynamicCard = () => {
     inCard = text.findIndex((objeto) => objeto.url === params.title);
   }
 
+
   return (
     <>
       {inCard >= 0 ? (
@@ -42,12 +43,14 @@ const DynamicCard = () => {
                   key={key}
                   i={key}
                   data={text[inCard][key]}
+                  // handlerModalReview = {handlerModalReview}
                 ></CardGenerator>
               );
             })}
           </div>
         </div>
       ) : (
+
         <div className="featPage__dyncard">
           <div className="featPage__dyncard--card">
             {Object.keys(text[0]).map((key, index) => {
@@ -61,7 +64,11 @@ const DynamicCard = () => {
             })}
           </div>
         </div>
+
       )}
+
+
+
     </>
   );
 };

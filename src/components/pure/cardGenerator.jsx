@@ -19,7 +19,7 @@ export const CardGenerator = ({
       //imagen principal
       case "imgb":
         return (
-          <div className="feature--img">
+          <div className="feature--img"          >
             <img src={images(data)}></img>
           </div>
         );

@@ -22,8 +22,8 @@ export default function Whatis({refProp}) {
   return (
     <div ref={refProp} className="what  global__cont">
       <div className="what__container">
-        <h2 className="global__tx-mdl  what__title">{text.what}</h2>
-        <h4 className="global__tx-sm  what__subTitle">{text.sub}</h4>
+        <h2 className="what__title">{text.what}</h2>
+        <h4 className="what__subTitle">{text.sub}</h4>
         <div className="what__video">
           <iframe
             src="https://www.youtube.com/embed/4V2KlR4u4HQ"
@@ -34,7 +34,7 @@ export default function Whatis({refProp}) {
           ></iframe>
         </div>
 
-        <h4 className="global__tx-sm what__subTitle2">{text.tit}</h4>
+        <h4 className="what__subTitle2">{text.tit}</h4>
 
         <div className="what__imagen">
           <img src={performace_01}></img>

@@ -3,7 +3,7 @@
     width: 95%;
     margin: 0 auto;
     padding: 10px;
-    background-color: $backLight;
+    // background-color: $backLight;
     border-radius: 45px;
     margin-bottom: 60px;
   }
@@ -123,6 +123,8 @@
 
     @include breakpoint-up(medium) {
       padding: 0 30px 30px 30px;
+      margin-left: 20px;
+
     }
 
     & a {

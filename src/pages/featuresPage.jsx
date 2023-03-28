@@ -6,7 +6,7 @@ import UserContext from "../context/userContext";
 import { IndicatorsDataEn, IndicatorsDataEs } from "../assets/info/IndicatorsData";
 import LanguageContext from "../context/langContext.js";
 import { useNavigate } from "react-router-dom";
-
+import { useRef } from "react";
 
 const FeaturesPage = () => {
   const [card, setCard] = useState(0);
@@ -14,8 +14,7 @@ const FeaturesPage = () => {
   const value = useMemo(() => ({ card, setCard }), [card]);
   const [text, setText] = useState(IndicatorsDataEn);
   const navigate = useNavigate();
-
-
+  const cardRef = useRef();
 
   useEffect(() => {
     if (lang == "en") {
@@ -28,30 +27,22 @@ const FeaturesPage = () => {
   }, [lang]);
 
 
-
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-
-  //   navigate(`/features/${text[card].url}`);
-
-  // }, []);
-
-
   useEffect(() => {
     window.scrollTo(0, 0)
 
-    // navigate(`/features/${text[card].url}`);
-
   }, [card]);
-
 
 
   return (
     <UserContext.Provider value={value}>
       <div className="featPage  global__cont">
         <div className="featPage__cont">
-          <SideBar></SideBar>
-          <DynamicCard></DynamicCard>
+          <SideBar
+          dynamicRef={cardRef}
+          ></SideBar>
+          <DynamicCard
+          cardRef={cardRef}
+          ></DynamicCard>
         </div>
         <BuyButtonFeat></BuyButtonFeat>
       </div>

@@ -8,29 +8,20 @@ export default function Feature({ feature, index }) {
 
   return (
     <div key={index} className="feature">
-
-
-
-
       <div className="feature__image">
-
-      <div className="feature__icons">
-        <div onClick={(e) => e.stopPropagation() } className="feature__icons--image">
-          <img onClick={()=>{}} src={next}></img>
+        <div className="feature__icons">
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="feature__icons--image"
+          >
+            <img onClick={() => {}} src={next}></img>
+          </div>
+          <div className="feature__icons--image">
+            <img src={magnif}></img>
+          </div>
         </div>
-        <div className="feature__icons--image">
-          <img src={magnif}></img>
-        </div>
-      </div>
 
-
-        <img src={images(feature.imgUrl)}>
-
-
-
-
-          
-        </img>
+        <img src={images(feature.imgUrl)}></img>
       </div>
       <div className="feature__title">{feature.title}</div>
     </div>

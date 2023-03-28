@@ -44,8 +44,8 @@ export default function Features() {
 
   return (
     <div  className="features global__cont" >
-      <h2 className="global__tx-mdl features__title">{text.tit}</h2>
-      <h3 className="global__tx-sm features__subTitle">{text.sub}</h3>
+      <h2 className="features__title">{text.tit}</h2>
+      <h3 className="features__subTitle">{text.sub}</h3>
 
       <div className="features__container ">
         {FeaturesDataEn.map((feature, index) => (

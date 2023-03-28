@@ -1,11 +1,31 @@
 .features {
   &__title {
-    margin-bottom: 20px;
+    color: $light;
+    font-size: $txt-xsmall;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 32px;
+
     text-align: center;
+
+    @include breakpoint-up(medium) {
+      margin-bottom: 10px;
+      font-size: $txt-large-smh2;
+    }
+    @include breakpoint-up(large) {
+    }
   }
 
   &__subTitle {
+    color: $light;
+    text-align: left;
     margin-bottom: 56px;
+    @include breakpoint-up(medium) {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+    @include breakpoint-up(large) {
+    }
   }
 
   &__container {
@@ -32,10 +52,9 @@
   margin-bottom: 50px;
   position: relative;
 
-  &__icons{
-    background-color: rgba($color: #000000, $alpha: 0.5);
-    height: 100px;
-    width: 200px;
+  &__icons {
+    height: 50%;
+    width: 50%;
     display: flex;
     position: absolute;
     left: 50%;
@@ -43,22 +62,23 @@
     transform: translate(-50%, -50%);
     opacity: 0;
 
-    
-
-    & div{
+    & div {
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 10px;
     }
 
-
-    &:hover{
+    &:hover {
       opacity: 1;
-    }  
+    }
 
+    &--image {
+      margin: 10px;
+      background-color: rgba($color: #000000, $alpha: 0.75);
+      border-radius: 20px;
+    }
   }
-
 
   &__image {
     width: 64%;
@@ -77,24 +97,21 @@
     color: $light;
   }
 
-  &:hover{
+  &:hover {
     animation-duration: 1.5s;
     animation-name: anim1;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(.08,.6,.69,1);
+    animation-timing-function: cubic-bezier(0.08, 0.6, 0.69, 1);
   }
-
-
 }
 
 @keyframes anim1 {
   from {
     transform: scale(1);
   }
-  50%{
+  50% {
     transform: scale(1.2);
   }
-
 
   to {
     transform: scale(1);

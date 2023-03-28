@@ -238,7 +238,7 @@ export const IndicatorsDataEn = [
       "5. What are the opinions and reviews of other users who have used OTM Trading?",
 
     txlb_5: [
-      "If you want to know what other traders think about OTM Trading, you just have to click here, and you'll see how OTM has helped them improve their operations.",
+      "If you want to know what other traders think about OTM Trading, you just have to <link> click here </link> and you'll see how OTM has helped them improve their operations.",
       "https://link.co",
     ],
 
@@ -266,7 +266,7 @@ export const IndicatorsDataEn = [
     subb10:
       "10. Is there a community of OTM Trading users that I can interact with and share experiences?",
     txlb10: [
-      "After purchasing OTM Trading, you have access to a support community and additional resources! You can join our private Telegram channel and Discord server to receive support and share your experiences with other users. Click here to join now!",
+      "After purchasing OTM Trading, you have access to a support community and additional resources! You can join our private Telegram channel and Discord server to receive support and share your experiences with other users. <link> Click here </link> to join now!",
       "https://link.co",
     ],
     subb11: "11. Does OTM Trading require 'tick replay' for its operation?",
@@ -277,7 +277,7 @@ export const IndicatorsDataEn = [
       "OTM Trading provides you with information from different indicators, but ultimately, the decision of how to trade is yours. It's not an automatic trading system that makes trades for you, but it gives you information so that you can make your own informed decisions.",
     subb13: "13. What is the best way to use OTM Trading?",
     txlb13: [
-      "If you want to get the best results with OTM Trading, it's important to have confirmation on all the indicators in the direction you want to trade. If you need help with OTM Trading, don't worry! We have educational videos on the different available strategies. Just click here to access them and learn how to use OTM Trading in the best way.",
+      "If you want to get the best results with OTM Trading, it's important to have confirmation on all the indicators in the direction you want to trade. If you need help with OTM Trading, don't worry! We have educational videos on the different available strategies. Just <link> click here </link> to access them and learn how to use OTM Trading in the best way.",
       "https://link.co",
     ],
     subb14:
@@ -315,19 +315,23 @@ export const IndicatorsDataEn = [
     txmb20:
       "We're sorry, we currently do not have a trial version available, but you can schedule an appointment with one of our advisors by clicking here. It will be a pleasure to help you solve your doubts and show you everything that OTM Trading can offer!",
   },
-  {"linkTit": "Do I pay first and then what?",
-  "url": "payments",
-  "titb_1": "Do I pay first and then what?",
-  "iinb": "./features/compra.jpg",
-  "txtb1": "Once you have purchased OTM Trading, you will receive a form where you will need to enter your personal information, such as your name, email, and Machine ID code. Don't worry if you don't know how to get the Machine ID code, as the form has a tutorial image to guide you. Once you have completed the form, submit it and that's it! We will process your license as soon as possible and send you an email with all the necessary instructions to download, install, and start using OTM Trading. Additionally, we will also provide you with a list of recommended educational videos so you can make the most of the tool.",
-  "txtb2": "If you need help with financing, you can click here and contact one of our advisors through WhatsApp to get information on the different payment methods and financing options available to purchase OTM Trading.",
-  "txlb_3": [
-  "You can also send us your questions or doubts through the contact form by clicking <link>here</link>. We will be happy to assist you with anything you need. ",
-  "https://link.co"
-  ]
+  {
+    linkTit: "I pay and then what?",
+    url: "payments",
+    titb_1: "Do I pay first and then what?",
+    iinb: "./features/compra.jpg",
+    txtb1:
+      "Once you have purchased OTM Trading, you will receive a form where you will need to enter your personal information, such as your name, email, and Machine ID code. Don't worry if you don't know how to get the Machine ID code, as the form has a tutorial image to guide you. Once you have completed the form, submit it and that's it! We will process your license as soon as possible and send you an email with all the necessary instructions to download, install, and start using OTM Trading. Additionally, we will also provide you with a list of recommended educational videos so you can make the most of the tool.",
+    txtb2:
+      "If you need help with financing, you can click here and contact one of our advisors through WhatsApp to get information on the different payment methods and financing options available to purchase OTM Trading.",
+    txlb_3: [
+      "You can also send us your questions or doubts through the contact form by clicking <link>here</link>. We will be happy to assist you with anything you need. ",
+      "https://link.co",
+    ],
   },
   {
-    },
+    url: "none",
+  }
 ];
 
 export const IndicatorsDataEs = [

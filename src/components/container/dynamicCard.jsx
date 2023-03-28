@@ -9,13 +9,16 @@ import UserContext from "../../context/userContext";
 import { textEn, textEs } from "../../assets/text/hero.js";
 import LanguageContext from "../../context/langContext.js";
 import { useParams } from "react-router-dom";
+import { useRef } from "react";
 
-const DynamicCard = () => {
+const DynamicCard = ({cardRef}) => {
   const { card, setCard } = useContext(UserContext);
   const { lang, setLang } = useContext(LanguageContext);
   const [text, setText] = useState(IndicatorsDataEn);
   const params = useParams();
   let inCard = -1;
+
+  
 
   useEffect(() => {
     if (lang == "en") {
@@ -31,11 +34,11 @@ const DynamicCard = () => {
     inCard = text.findIndex((objeto) => objeto.url === params.title);
   }
 
-
   return (
     <>
       {inCard >= 0 ? (
-        <div className="featPage__dyncard">
+        <div className="featPage__dyncard"
+         ref={cardRef}>
           <div className="featPage__dyncard--card">
             {Object.keys(text[inCard]).map((key, index) => {
               return (
@@ -43,15 +46,15 @@ const DynamicCard = () => {
                   key={key}
                   i={key}
                   data={text[inCard][key]}
-                  // handlerModalReview = {handlerModalReview}
                 ></CardGenerator>
               );
             })}
           </div>
         </div>
       ) : (
-
-        <div className="featPage__dyncard">
+        <div className="featPage__dyncard"
+         ref={cardRef}
+        >
           <div className="featPage__dyncard--card">
             {Object.keys(text[0]).map((key, index) => {
               return (
@@ -64,11 +67,7 @@ const DynamicCard = () => {
             })}
           </div>
         </div>
-
       )}
-
-
-
     </>
   );
 };

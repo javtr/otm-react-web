@@ -63,6 +63,15 @@ body {
   background-color: $primary;
   color: $back;
   font-size: $txt-small;
+
+
+
+
+  @include breakpoint-down(medium) {
+    margin: 0 auto;
+  }
+
+
 }
 
 .global__tx-lg {
@@ -105,7 +114,7 @@ body {
   max-width: $mx-w;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top:30px;
+  padding-top:60px;
 
   @include breakpoint-up(medium) {
     padding: 0 60px;

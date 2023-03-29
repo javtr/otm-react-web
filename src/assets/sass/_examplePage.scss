@@ -91,6 +91,9 @@
         color: $gray;
         text-align: left;
         margin-left: 10px;
+
+        padding: 0 25px 25px 25px;
+        
     
         @include breakpoint-up(medium) {
           padding: 0 30px 30px 30px;
@@ -108,6 +111,9 @@
         margin-top: 35px;
         margin-bottom: 30px;
 
+        padding: 0 25px 25px 25px;
+
+
       }
 
       &--sub {
@@ -118,6 +124,8 @@
         margin: 0 $p-txt;
         margin-bottom: 30px;
 
+        padding: 0 25px 25px 25px;
+        
       }
 
       &--txt {
@@ -127,6 +135,8 @@
         color: $gray;
         text-align: left;
 
+        padding: 0 25px 25px 25px;
+        
         @include breakpoint-up(medium) {
           padding: 0 $p-txt 30px $p-txt;
         }
@@ -161,6 +171,9 @@
         line-height: 28px;
         color: $gray;
         text-align: left;
+
+        padding: 0 25px 25px 25px;
+        
     
         @include breakpoint-up(medium) {
           padding: 0 $p-txt 30px $p-txt;

@@ -33,13 +33,13 @@ export const CardGenerator = ({
           </div>
         );
 
-        //imagen interna
+
+        //video interna
         case "ivib":
           return (
-            <div className="feature--imgInt">
+            <div className="feature--videoInt">
 
-            <video  className="
-            testimony__modal--card--video" 
+            <video  className="feature--videoInt--vid"
             src={videos(data)} 
             autoPlay={false}  
             controls

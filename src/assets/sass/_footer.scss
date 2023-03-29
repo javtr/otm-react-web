@@ -38,13 +38,14 @@
   &__text {
     font-size: $txt-13small;
     font-weight: normal;
-    line-height: 24px;
+    line-height: 20px;
     color: $gray;
     text-align: justify;
 
     margin-bottom: 47px;
 
     @include breakpoint-up(medium) {
+      line-height: 24px;
       font-size: $txt-xsmall;
       margin-bottom: 0;
     }

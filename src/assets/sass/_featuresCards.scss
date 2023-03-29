@@ -25,6 +25,7 @@
   }
 
   &--imgInt {
+
     display: flex;
     justify-content: center;
     position: relative;
@@ -34,8 +35,39 @@
 
     img {
       width: 80%;
+
+
+
     }
+
+
+
+
+
   }
+
+  &--videoInt {
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    &--vid {
+      width: 80%;
+
+
+
+    }
+
+
+
+
+
+  }
+
 
   &--tit {
 
@@ -46,7 +78,15 @@
     color: $light;
     text-align: center;
     margin-top: 35px;
-    margin-bottom: 30px;
+  
+
+    @include breakpoint-down(medium) {
+      padding: 0 25px 25px 25px;
+    }
+
+    @include breakpoint-up(medium) {
+      margin-bottom: 30px;
+    }
 
     &:hover {
       cursor: pointer;
@@ -65,6 +105,10 @@
     color: $gray;
     text-align: left;
 
+    @include breakpoint-down(medium) {
+      padding: 0 25px 25px 25px;
+    } 
+
     & > * {
       font-weight: 600;
     }
@@ -81,6 +125,10 @@
     color: $gray;
     text-align: left;
 
+    @include breakpoint-down(medium) {
+      padding: 0 25px 25px 25px;
+    }
+
     @include breakpoint-up(medium) {
       padding: 0 30px 30px 30px;
     }
@@ -93,6 +141,10 @@
     color: $gray;
     text-align: left;
     margin-left: 10px;
+
+    @include breakpoint-down(medium) {
+      padding: 0 25px 25px 25px;
+    }
 
     @include breakpoint-up(medium) {
       padding: 0 30px 30px 30px;
@@ -107,6 +159,10 @@
     color: $gray;
     text-align: left;
     margin-left: 10px;
+
+    @include breakpoint-down(medium) {
+      padding: 0 25px;
+    }    
 
     @include breakpoint-up(medium) {
       padding: 0 30px 10px 30px;
@@ -123,6 +179,10 @@
     line-height: 28px;
     color: $gray;
     text-align: left;
+
+    @include breakpoint-down(medium) {
+      padding: 0 25px 25px 25px;
+    }
 
     @include breakpoint-up(medium) {
       padding: 0 30px 30px 30px;
@@ -142,6 +202,10 @@
     color: $gray;
     text-align: left;
 
+    @include breakpoint-down(medium) {
+      padding: 0 25px 25px 25px;
+    } 
+
     display: list-item; /* This has to be "list-item"                                          */
     margin-left: calc(30px + 1em);
 
@@ -156,6 +220,11 @@
     line-height: 28px;
     color: $gray;
     text-align: left;
+
+    @include breakpoint-down(medium) {
+      padding: 0 25px 25px 25px;
+    }
+
 
     display: list-item; /* This has to be "list-item"                                          */
     margin-left: calc(30px + 1em);
@@ -194,11 +263,21 @@
     text-align: center;
     margin: 25px 0;
 
+
+
+
+
     a {
       background-color: $primary;
       color: $back;   
-      padding: 10px 70px;
+      padding: 10px 40px;
       border-radius: 25px;
+
+    @include breakpoint-up(medium) {
+      padding: 10px 70px;
+
+    }
+
 
       &:hover {
         font-weight: bold;

@@ -17,10 +17,16 @@
   }
 
   &__subTitle {
+
     color: $light;
-    text-align: left;
+    text-align: center;
     margin-bottom: 56px;
+
+
+
+
     @include breakpoint-up(medium) {
+      text-align: left;
       text-align: center;
       margin-bottom: 45px;
     }
@@ -81,16 +87,19 @@
   }
 
   &__image {
-    width: 64%;
+    width: 85%;
     margin: 27px;
 
     img {
       width: 100%;
     }
 
-    @include breakpoint-up(medium) {
+
+
+    @include breakpoint-up(large) {
       width: 70%;
     }
+
   }
 
   &__title {

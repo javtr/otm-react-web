@@ -2242,6 +2242,10 @@ body {
 .payment__content--buttons--paypal {
   margin-bottom: 70px;
 }
+.payment__content--buttons--paypal--img {
+  width: 100%;
+  height: 100%;
+}
 .payment__content--buttons p {
   color: #1EA69A;
   text-align: center;

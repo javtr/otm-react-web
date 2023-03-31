@@ -107,7 +107,7 @@ console.log(Products[params.id].key);
 
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
               <input type="hidden" name="cmd" value="_s-xclick"></input>
-              <input type="hidden" name="hosted_button_id" value={Products[params.id].key}></input>
+              <input type="hidden" name="encrypted" value={Products[params.id].key}></input>
               <input className="payment__content--buttons--paypal--img" type="image" src={paypal_button} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
               <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1"></img>
             </form>

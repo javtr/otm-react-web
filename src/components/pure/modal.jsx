@@ -57,7 +57,7 @@ export default function Modal({ cerrar, index }) {
 
                   <div className="modal--card--button ">
                     <button className=" global__btp "
-                    onClick={()=>navigate('/features')}
+                    onClick={()=>navigate(text[index].url)}
                     >Read more</button>
                   </div>
 

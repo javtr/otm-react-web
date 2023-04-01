@@ -10,6 +10,7 @@ export default function Features() {
   const [featureIndex, setFeatureIndex] = useState(0);
   const { lang, setLang } = useContext(LanguageContext);
   const [text, setText] = useState({});
+  
 
   useEffect(() => {
     if (lang == "en") {
@@ -20,7 +21,6 @@ export default function Features() {
       setText(textEn);
     }
   }, [lang]);
-
 
 
   function abrirModal(index) {

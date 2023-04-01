@@ -10,7 +10,7 @@ export const ExampleDataEn = [
 
     txt1: "OTM Trading allows you to have solid and easy-to-identify strategies, you just need to be disciplined and follow the requirements to take positions in the market.    ",
     txt2: "An important aspect in trading is the macro context of the market, which is basically analyzing the location of the operation in higher timeframes. If you don't know how to analyze the market context, don't worry! Here is a free context class so you can make the most of OTM Trading tools and achieve profitability in trading.    ",
-    lnk1: ["https://www.google.com/", "Context Class"],
+    lnk1: ["https://youtu.be/3bYOkPmgFRc", "Context Class"],
     txt3: "In the following images, you will find a series of explanations of trades made with OTM Trading. You can also watch the explanatory videos for each of the entries.    ",
   },
   {
@@ -106,7 +106,7 @@ export const ExampleDataEs = [
 
     txt1: "OTM Trading te permite tener estrategias sólidas y fáciles de identificar, tan solo debes ser disciplinado y seguir los requisitos para tomar posiciones en el mercado. ",
     txt2: "Un aspecto importante en el Trading es el contexto macro del mercado, esto es básicamente analizar la ubicación de la operación en temporalidades mayores. Si no sabes analizar el contexto de mercado, ¡no te preocupes!, aquí te dejamos una clase gratuita de contexto para que puedas aprovechar al máximo las herramientas de OTM Trading y así obtener la rentabilidad en el Trading. ",
-    lnk1: ["https://www.google.com/", "MasterClass"],
+    lnk1: ["https://youtu.be/3bYOkPmgFRc", "Clase de contexto"],
     txt3: "En las siguientes imágenes encontrarás una serie de explicaciones de operaciones realizadas con OTM Trading, puedes también ver los vídeos explicativos de cada una de las entradas. ",
   },
   {

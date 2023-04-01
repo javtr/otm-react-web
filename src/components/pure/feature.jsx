@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 const images = require.context("../../assets/img", true);
 import next from "../../assets/img/next_log.png";
 import magnif from "../../assets/img/magnif_logo.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Feature({ feature, index }) {
   useEffect(() => {}, []);
+  const navigate = useNavigate();
+
 
   return (
     <div key={index} className="feature">
@@ -14,7 +17,7 @@ export default function Feature({ feature, index }) {
             onClick={(e) => e.stopPropagation()}
             className="feature__icons--image"
           >
-            <img onClick={() => {}} src={next}></img>
+            <img onClick={() => {navigate(feature.url)}} src={next}></img>
           </div>
           <div className="feature__icons--image">
             <img src={magnif}></img>

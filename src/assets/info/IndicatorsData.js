@@ -31,7 +31,7 @@ export const IndicatorsDataEn = [
     txtb8:
       "Si quieres aprender aún más sobre OTM Trading y cómo puedes aprovecharlo al máximo, te invito a que te unas a la MasterClass. ¡Allí podrás ampliar todo lo que has aprendido y tener aún más herramientas para tener éxito en tus operaciones!",
 
-    lnkb1: ["https://www.quantower.com/blog", "MasterClass OTM"],
+    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "MasterClass OTM"],
   },
 
   //Explicación Indicadores
@@ -48,7 +48,7 @@ export const IndicatorsDataEn = [
       "2. Informative signals: OTM Delta Swing's algorithms detect anomalies, which means they allow you to detect events that are outside the norm and thus give you an advantage in the market. The algorithm detects 3 types of anomalies and shows us an informative signal at the end of the wave.",
     txtb1:
       "I recommend you watch the following video about the signals and types of anomalies detected by OTM Delta Swing so you can understand it better and get the most out of it:",
-    lnkb1: ["https://www.quantower.com/blog", "OTM Delta Swing"],
+    lnkb1: ["https://youtu.be/btzOQX3FNII", "OTM Delta Swing"],
   },
   {
     linkTit: "OTM Delta Micro",
@@ -63,7 +63,7 @@ export const IndicatorsDataEn = [
       "2. Institutional Delta: when we see a large 'green box' it means that there is a large number of buyers who want the price to go up, this is called 'Momentum'.",
     txtb1:
       "To use this indicator in the best way possible, it is important to understand some key concepts, but don't worry, they are very easy to understand! Additionally, we have a video where we explain everything:",
-    lnkb1: ["https://www.quantower.com/blog", "OTM Delta Micro"],
+    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Delta Micro"],
   },
   {
     linkTit: "OTM Delta Cumulative",
@@ -78,7 +78,7 @@ export const IndicatorsDataEn = [
       "2. Identifying defined trends: if we want to buy, it's important to observe a green graph that is increasing, indicating a constant pressure from buyers.",
     txtb1:
       "Depending on the type of strategy you have, there are some important aspects to consider with this indicator. Therefore, I invite you to learn more about OTM Cumulative Delta in the following video:",
-    lnkb1: ["https://www.quantower.com/blog", "OTM Cumulative Delta"],
+    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Cumulative Delta"],
   },
   {
     linkTit: "OTM Delta Bar",
@@ -99,9 +99,9 @@ export const IndicatorsDataEn = [
       "5. Volume + Delta: the bars displayed are of volume, and the color represents the result of the candle's delta. The intensity of the color depends on how big that delta value is relative to its volume.",
     txmb6:
       "6. Footer volume + delta: here you can see the numerical values of delta, volume, BID, ASK, among others.",
-    txtb1:
-      "The paid version includes all 6 different configurations, there is a free version that you can download that includes configuration #1 and #3. You can learn more and download the indicator on the following button.",
-    lnkb1: ["https://www.quantower.com/blog", "OTM Delta bar Free"],
+    // txtb1:
+    //   "The paid version includes all 6 different configurations, there is a free version that you can download that includes configuration #1 and #3. You can learn more and download the indicator on the following button.",
+    // lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Delta bar Free"],
   },
   {
     linkTit: "OTM Volumne Profile",
@@ -124,7 +124,7 @@ export const IndicatorsDataEn = [
 
     txtb1: "Learn more about OTM Volume Profile in the following video:",
 
-    lnkb1: ["https://www.quantower.com/blog", "OTM Volume Profile"],
+    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Volume Profile"],
   },
   {
     linkTit: "OTM VWAP",
@@ -141,7 +141,7 @@ export const IndicatorsDataEn = [
       "3. VWAP deviation 2: As the price advances with a clear direction, it is increasingly expanding and possibly on retracements it may not reach the central VWAP. Here, the deviations can serve as a reference for the location of our trades.",
     txmb4:
       "4. VWAP deviation 3: Once we observe that the price has reached deviation #3 of the VWAP, it means that the price is very extended and it is possible that very deep retracements or changes of direction will come later. We can use this deviation as an exit point for our trades.",
-    lnkb1: ["https://www.quantower.com/blog", "OTM VWAP"],
+    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM VWAP"],
   },
   {
     linkTit: "OTM Graphic Bar Timer",
@@ -158,7 +158,7 @@ export const IndicatorsDataEn = [
       "3. 75% remaining: the candle is still forming, and the information within it can change dramatically before it closes, so it's better to wait a bit.",
     txtb1:
       "This indicator helps you easily identify which stage the candle's construction is at, allowing you to wait for the proper confirmation before pulling the trigger.",
-    lnkb1: ["https://www.quantower.com/blog", "OTM Graphic Bar Timer"],
+    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Graphic Bar Timer"],
   },
   {
     linkTit: "Momentum",
@@ -179,9 +179,8 @@ export const IndicatorsDataEn = [
       "5. Low Volume Area: after the price has advanced, you should wait for the retracement in the low volume area that the volume profile leaves, this gives you a clear entry zone where you can support your position.",
     txtb1:
       "I hope this has helped you better understand the entry requirements in favor of the trend. If you want to learn more, don't hesitate to click on the button below to keep learning!",
-    lnkb1: ["https://www.quantower.com/blog", "Momentum Strategy"],
+    lnkb1: ["https://youtu.be/GnPat8QTfbM", "Momentum Strategy"],
   },
-
   {
     linkTit: "Reversals",
     url: "reversals-strategy",
@@ -201,7 +200,7 @@ export const IndicatorsDataEn = [
       "5. Positive accumulated delta (divergence): finally, the delta histogram must also be positive and opposite to the price movement, which confirms that there is an anomaly.",
     txtb1:
       "If these requirements are met, a trend reversal may be occurring and we may consider entering a long position. Learn more in the video we have prepared for you about this strategy.",
-    lnkb1: ["https://www.quantower.com/blog", "Reversals Strategy"],
+    lnkb1: ["https://youtu.be/6V-nMUkBjZI", "Reversals Strategy"],
   },
 
   //¿Listo? Revisa esto para comenzar
@@ -267,7 +266,7 @@ export const IndicatorsDataEn = [
       "10. Is there a community of OTM Trading users that I can interact with and share experiences?",
     txlb10: [
       "After purchasing OTM Trading, you have access to a support community and additional resources! You can join our private Telegram channel and Discord server to receive support and share your experiences with other users. <link> Click here </link> to join now!",
-      "https://link.co",
+      "https://t.me/comunidad3c",
     ],
     subb11: "11. Does OTM Trading require 'tick replay' for its operation?",
     txmb11:
@@ -325,8 +324,8 @@ export const IndicatorsDataEn = [
     txtb2:
       "If you need help with financing, you can click here and contact one of our advisors through WhatsApp to get information on the different payment methods and financing options available to purchase OTM Trading.",
     txlb_3: [
-      "You can also send us your questions or doubts through the contact form by clicking <link>here</link>. We will be happy to assist you with anything you need. ",
-      "https://link.co",
+      "You can also send us your questions or doubts by clicking <link>here</link>. We will be happy to assist you with anything you need. ",
+      "http://bit.ly/42VBmoV",
     ],
   },
   {
@@ -367,7 +366,7 @@ export const IndicatorsDataEs = [
     txtb8:
       "Si quieres aprender aún más sobre OTM Trading y cómo puedes aprovecharlo al máximo, te invito a que te unas a la MasterClass. ¡Allí podrás ampliar todo lo que has aprendido y tener aún más herramientas para tener éxito en tus operaciones!",
 
-    lnkb1: ["https://www.quantower.com/blog", "MasterClass OTM"],
+    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "MasterClass OTM"],
   },
 
   //Explicación Indicadores
@@ -390,7 +389,7 @@ export const IndicatorsDataEs = [
     txtb1:
       "Te recomiendo ver el siguiente video sobre las señales y los tipos de anomalías que detecta OTM Delta Swing para que puedas entenderlo mejor y obtener el máximo provecho:    ",
 
-    lnkb1: ["https://www.quantower.com/blog", "OTM Delta Swing"],
+    lnkb1: ["https://youtu.be/btzOQX3FNII", "OTM Delta Swing"],
   },
   {
     linkTit: "OTM Delta Micro",
@@ -411,7 +410,7 @@ export const IndicatorsDataEs = [
     txtb1:
       "Para utilizar este indicador de la mejor manera posible, es importante que entiendas algunos conceptos clave, pero no te preocupes, ¡son muy fáciles de entender! Además, tenemos un vídeo donde te lo explicamos todo:    ",
 
-    lnkb1: ["https://www.quantower.com/blog", "OTM Delta Micro"],
+    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Delta Micro"],
   },
   {
     linkTit: "OTM Delta Cumulative",
@@ -432,7 +431,7 @@ export const IndicatorsDataEs = [
     txtb1:
       "De acuerdo al tipo de estrategia que tengas, hay algunos aspectos importantes a tener en cuenta de este indicador, por tanto, te invito a que profundices más sobre OTM Cumulative Delta en el siguiente vídeo:  ",
 
-    lnkb1: ["https://www.quantower.com/blog", "OTM Cumulative Delta"],
+    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Cumulative Delta"],
   },
   {
     linkTit: "OTM Delta Bar",
@@ -462,10 +461,10 @@ export const IndicatorsDataEs = [
     txmb6:
       "6. Footer volumen + delta: aquí puedes ver los valores numéricos de delta, volumen, BID y ASK, entre otros. ",
 
-    txtb1:
-      "La versión de pago incluye las 6 diferentes configuraciones, hay una versión gratuita que puedes descargar que incluye la configuración #1 y #3. Puedes profundizar y descargar el indicador en el siguiente botón.     ",
+    // txtb1:
+    //   "La versión de pago incluye las 6 diferentes configuraciones, hay una versión gratuita que puedes descargar que incluye la configuración #1 y #3. Puedes profundizar y descargar el indicador en el siguiente botón.     ",
 
-    lnkb1: ["https://www.quantower.com/blog", "OTM Delta bar Free"],
+    // lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Delta bar Free"],
   },
   {
     linkTit: "OTM Volumne Profile",
@@ -488,7 +487,7 @@ export const IndicatorsDataEs = [
 
     txtb1: "Aprende más sobre OTM Volume Profile en el siguiente vídeo:    ",
 
-    lnkb1: ["https://www.quantower.com/blog", "OTM Volume Profile"],
+    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Volume Profile"],
   },
   {
     linkTit: "OTM VWAP",
@@ -512,7 +511,7 @@ export const IndicatorsDataEs = [
     txmb3:
       "4. VWAP desviación 3: Una vez que observamos que el precio ha llegado a la desviación #3 del VWAP, significa que el precio está muy extendido y es posible que luego vengan retrocesos muy profundos o cambios de dirección. Podemos usar esta desviación como punto de salida de nuestras operaciones.  ",
 
-    lnkb1: ["https://www.quantower.com/blog", "OTM VWAP"],
+    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM VWAP"],
   },
   {
     linkTit: "OTM Graphic Bar Timer",
@@ -536,7 +535,7 @@ export const IndicatorsDataEs = [
     txtb1:
       "Este indicador te ayuda a identificar fácilmente en qué etapa se encuentra la construcción de la vela, con esto esperas la confirmación adecuada para apretar el gatillo ",
 
-    lnkb1: ["https://www.quantower.com/blog", "OTM Graphic Bar Timer"],
+    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Graphic Bar Timer"],
   },
   {
     linkTit: "Momentum",
@@ -566,9 +565,8 @@ export const IndicatorsDataEs = [
     txtb1:
       "Espero que esto te haya ayudado a entender mejor los requisitos de entrada a favor de tendencia. ¡Si quieres aprender más, no dudes en hacer clic en el botón de abajo para seguir aprendiendo! ",
 
-    lnkb1: ["https://www.quantower.com/blog", "Estrategia Momentum"],
+    lnkb1: ["https://youtu.be/GnPat8QTfbM", "Estrategia Momentum"],
   },
-
   {
     linkTit: "Reversals",
     url: "estrategia-reversals",
@@ -597,7 +595,7 @@ export const IndicatorsDataEs = [
     txtb1:
       "Si se cumplen estos requisitos, es posible que se esté produciendo un cambio de tendencia y podríamos considerar entrar en una posición de compra. Aprende más en el video que preparamos para ti sobre esta Estrategia.  ",
 
-    lnkb1: ["https://www.quantower.com/blog", "Estrategia Reversals"],
+    lnkb1: ["https://youtu.be/6V-nMUkBjZI", "Estrategia Reversals"],
   },
 
   //¿Listo? Revisa esto para comenzar
@@ -666,7 +664,7 @@ export const IndicatorsDataEs = [
 
     txlb10: [
       "Después de adquirir OTM Trading, ¡tienes acceso a una comunidad de apoyo y recursos adicionales! Puedes unirte a nuestro canal privado de Telegram y servidor de Discord para recibir apoyo y compartir tus experiencias con otros usuarios. <link>¡Haz clic aquí para unirte ahora mismo!</link>  ",
-      "https://link.co",
+      "https://t.me/comunidad3c",
     ],
 
     subb11:
@@ -777,8 +775,8 @@ export const IndicatorsDataEs = [
       "Si necesitas ayuda con la financiación, puedes hacer clic aquí y contactarte con uno de nuestros asesores a través de WhatsApp para obtener información sobre los diferentes métodos de pago y opciones de financiación disponibles para comprar OTM Trading.",
 
     txlb_3: [
-      "También puedes enviarnos tus dudas o preguntas a través del formulario de contacto haciendo <link> clic aquí </link>. Estaremos encantados de ayudarte en lo que necesites.  ",
-      "https://link.co",
+      "También puedes enviarnos tus dudas o preguntas haciendo <link> clic aquí </link>. Estaremos encantados de ayudarte en lo que necesites. ",
+      "http://bit.ly/42VBmoV",
     ],
   },
 ];

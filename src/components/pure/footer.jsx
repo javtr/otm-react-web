@@ -27,10 +27,10 @@ export default function Footer() {
           <p className="footer__mail">info@otmtrading.com</p>
 
           <div className="footer__iconCont" >
-            <a href="https://example.com" target="_blank">
+            <a href="https://www.youtube.com/c/3CTradingCompany" target="_blank">
               <img src={youtube}></img>
             </a>
-            <a href="https://example.com" target="_blank">
+            <a href="https://t.me/comunidad3c" target="_blank">
               <img src={telegram}></img>
             </a>
           </div>

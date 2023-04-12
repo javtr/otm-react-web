@@ -3,7 +3,7 @@ import { ExampleDataEn,ExampleDataEs } from "../../assets/info/ExampleData";
 import CardGeneratorExp from "../pure/cardGeneratorExp";
 import LanguageContext from "../../context/langContext.js";
 
-const DynamicCardExp = () => {
+const DynamicCardExp = ({abrirModal}) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [text, setText] = useState(ExampleDataEn);
 
@@ -20,14 +20,16 @@ const DynamicCardExp = () => {
 
   return (
     <div className="examplePage__dyncard">
-      {text.map((indi, index) => (
-        <div key={index} className="examplePage__dyncard--card">
+      {text.map((indi, indexText) => (
+        <div key={indexText} className="examplePage__dyncard--card">
           {Object.keys(indi).map((key, index) => {
             return (
               <CardGeneratorExp
                 key={index}
+                index={indexText}
                 i={key}
                 data={indi[key]}
+                abrirModal={abrirModal}
               ></CardGeneratorExp>
             );
           })}

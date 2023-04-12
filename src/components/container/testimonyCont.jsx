@@ -58,6 +58,7 @@ export default function TestimonyCont() {
     enableScroll();
   }
 
+  
   function disableScroll() {
     document.body.classList.add("stop-scrolling");
   }

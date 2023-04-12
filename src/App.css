@@ -3076,4 +3076,80 @@ body {
   .feature__aside {
     width: 30%;
   }
+}
+
+.modalExamples {
+  display: flex;
+  flex-direction: column;
+}
+.modalExamples__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modalExamples__modal--container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modalExamples__modal--card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 180px;
+  background-color: rgb(4, 0, 28);
+  border-radius: 17px;
+}
+@media (min-width: 48em) {
+  .modalExamples__modal--card {
+    width: 480px;
+    height: 270px;
+  }
+}
+@media (min-width: 48em) {
+  .modalExamples__modal--card {
+    width: 600px;
+    height: 340px;
+  }
+}
+.modalExamples__modal--card--close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgb(244, 244, 244);
+  opacity: 0.7;
+  border-radius: 50%;
+  padding: 2px;
+  line-height: 0;
+}
+.modalExamples__modal--card--close img {
+  width: 25px;
+  opacity: 1;
+}
+.modalExamples__modal--card--video {
+  width: 320px;
+  height: 180px;
+}
+@media (min-width: 48em) {
+  .modalExamples__modal--card--video {
+    width: 480px;
+    height: 270px;
+  }
+}
+@media (min-width: 48em) {
+  .modalExamples__modal--card--video {
+    width: 600px;
+    height: 340px;
+  }
 }/*# sourceMappingURL=App.css.map */

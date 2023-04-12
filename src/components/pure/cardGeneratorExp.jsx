@@ -1,14 +1,16 @@
 import React from "react";
 const images = require.context("../../assets/img", true);
 
-const CardGeneratorExp = ({ i, data }) => {
+const CardGeneratorExp = ({ index,i, data,abrirModal }) => {
   
   function retornoElementos() {
     switch (i.slice(0, 3)) {
       case "img":
         return (
           <div className="examplePage__dyncard--card--img">
-            <img src={images(data)}></img>
+            <img src={images(data)}
+              onClick={()=>abrirModal(index)}
+            ></img>
           </div>
         );
 

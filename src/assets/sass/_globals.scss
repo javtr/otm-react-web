@@ -190,5 +190,27 @@ body {
 }
 
 
+.whats_button{
+
+ right: 103px !important;
+ bottom:40px !important;
+ width: 45px !important;
+ height: 45px !important;
+
+ &::after{
+  width: 45px !important;
+  height: 45px !important;
+   
+ }
+
+}
+
+.whats_div{
+
+  right: 10rem !important;
+  bottom:10rem !important;
+ 
+ }
+
 
 

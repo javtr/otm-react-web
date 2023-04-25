@@ -2,15 +2,11 @@ import React, { useState, useEffect, useContext } from "react";
 import ReactDOM from "react-dom";
 // const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
 import { Products } from "../../assets/info/products";
-import paypalImg from "../../assets/img/pay.png"
+import paypalImg from "../../assets/img/pay.png";
 import { textEn, textEs } from "../../assets/text/payment.js";
 import LanguageContext from "../../context/langContext.js";
 import { useParams } from "react-router-dom";
-import paypal_button from "../../assets/img/paypal_button.png"
-
-
-
-
+import paypal_button from "../../assets/img/paypal_button.png";
 
 export default function PaymentOrder({ productId }) {
   const { lang, setLang } = useContext(LanguageContext);
@@ -27,9 +23,6 @@ export default function PaymentOrder({ productId }) {
     }
   }, [lang]);
 
-
-
-  
   // const style = {
   //   layout: "vertical",
   //   color: "blue"
@@ -51,33 +44,23 @@ export default function PaymentOrder({ productId }) {
   //   return actions.order.capture();
   // };
 
-console.log(params.id);
+  console.log(params.id);
 
-console.log(Products[params.id].key);
-
-
+  console.log(Products[params.id].key);
 
   return (
     <div className="payment">
       <h3>{text.tit}</h3>
       <div className="payment__content">
-
-
         <div className="payment__content--logo">
-
-        <hr></hr>
-
+          <hr></hr>
 
           <div className="payment__content--logo--img">
-            <img src={paypalImg} ></img>
+            <img src={paypalImg}></img>
           </div>
           <div className="payment__content--logo--text">
-            <p>
-            {text.text1}
-            </p>
-            <p>
-            {text.text2}
-            </p>
+            <p>{text.text1}</p>
+            <p>{text.text2}</p>
           </div>
         </div>
 
@@ -88,7 +71,11 @@ console.log(Products[params.id].key);
           </div>
 
           <div className="payment__content--buttons--btnTeach">
-            <button>Credit card</button>
+            <a href={Products[params.id].linkTeack} target="_blank">
+              <div className="payment__content--buttons--btnTeach-container">
+                Credit card
+              </div>
+            </a>
           </div>
           <p>By teachable</p>
 
@@ -105,20 +92,36 @@ console.log(Products[params.id].key);
               onApprove={(data, actions) => onApprove(data, actions)}
             /> */}
 
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <form
+              action="https://www.paypal.com/cgi-bin/webscr"
+              method="post"
+              target="_top"
+            >
               <input type="hidden" name="cmd" value="_s-xclick"></input>
-              <input type="hidden" name="encrypted" value={Products[params.id].key}></input>
-              <input className="payment__content--buttons--paypal--img" type="image" src={paypal_button} border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></input>
-              <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1"></img>
+              <input
+                type="hidden"
+                name="encrypted"
+                value={Products[params.id].key}
+              ></input>
+              <input
+                className="payment__content--buttons--paypal--img"
+                type="image"
+                src={paypal_button}
+                border="0"
+                name="submit"
+                alt="PayPal - The safer, easier way to pay online!"
+              ></input>
+              <img
+                alt=""
+                border="0"
+                src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif"
+                width="1"
+                height="1"
+              ></img>
             </form>
-
-
 
             {/* boton paypal ------------------------------------ */}
           </div>
-
-
-
         </div>
       </div>
 

@@ -39,7 +39,7 @@
       flex-direction: column;
       width: 320px;
       height: 180px;
-    background-color: $back;
+      background-color: $back;
       border-radius: $modal-br-sm;
 
       @include breakpoint-up(medium) {

@@ -29,7 +29,7 @@ const DynamicCardExp = ({abrirModal}) => {
                 index={indexText}
                 i={key}
                 data={indi[key]}
-                abrirModal={abrirModal}
+                // abrirModal={abrirModal}
               ></CardGeneratorExp>
             );
           })}

@@ -4,7 +4,7 @@ export const IndicatorsDataEn = [
     linkTit: "How we use OTM Trading",
     url: "how-we-use-otm-trading",
 
-    imgb: "./features/operativa-crudo-es.gif",
+    imgb: "./features/operativa-crudo-en.gif",
     titb_1: "How we use OTM Trading",
     txtb0:
       "OTM Trading is a tool that helps you have clear and simple information about supply and demand. To make the most of it, it's best to synchronize all indicators and show the same information at the time of making a buying or selling decision.",
@@ -38,7 +38,7 @@ export const IndicatorsDataEn = [
   {
     linkTit: "OTM Delta Swing",
     url: "otm-delta-swing",
-    imgb: "./features/otm-delta-swing.jpg",
+    imgb: "./features/otm-delta-swing-en.jpg",
     titb_1: "OTM Delta Swing",
     txtb0:
       "This indicator provides you with valuable information about price wave movements:",
@@ -53,7 +53,7 @@ export const IndicatorsDataEn = [
   {
     linkTit: "OTM Delta Micro",
     url: "otm-delta-micro",
-    imgb: "./features/otm-delta-micro.jpg",
+    imgb: "./features/otm-delta-micro-en.jpg",
     titb_1: "OTM Delta Micro",
     txtb0:
       "When there is a great interest from buyers or sellers in moving the price in one direction, it can be easily identified with this indicator. With OTM Micro Delta you will be able to:",
@@ -68,7 +68,7 @@ export const IndicatorsDataEn = [
   {
     linkTit: "OTM Delta Cumulative",
     url: "otm-delta-cumulative",
-    imgb: "./features/otm-delta-cumulative.jpg",
+    imgb: "./features/otm-delta-cumulative-en.jpg",
     titb_1: "OTM Delta Cumulative",
     txtb0:
       "This indicator is a histogram, a histogram graphically displays the characteristics of a dataset, in this case summarizing the behavior of delta. Delta is a measure of the buying or selling strength in the market. Some practical applications are:",
@@ -83,7 +83,7 @@ export const IndicatorsDataEn = [
   {
     linkTit: "OTM Delta Bar",
     url: "otm-delta-bar",
-    imgb: "./features/otm-delta-bar.jpg",
+    imgb: "./features/otm-delta-bar-en.jpg",
     titb_1: "OTM Delta Bar",
     txtb0:
       "If you want to know the delta value of a bar in detail, OTM Delta Bar is a very useful and versatile tool that presents you with multiple options:",
@@ -107,7 +107,7 @@ export const IndicatorsDataEn = [
     linkTit: "OTM Volumne Profile",
     url: "otm-volume-profile",
 
-    imgb: "./features/otm-profile.jpg",
+    imgb: "./features/otm-profile-en.jpg",
     titb_1: "OTM Volume Profile",
 
     txtb0:
@@ -129,7 +129,7 @@ export const IndicatorsDataEn = [
   {
     linkTit: "OTM VWAP",
     url: "otm-wap",
-    imgb: "./features/otm-vwap.jpg",
+    imgb: "./features/otm-vwap-en.jpg",
     titb_1: "OTM VWAP",
     txtb0:
       "VWAP is a very useful indicator in trading and its calculation is quite simple. VWAP stands for 'Volume Weighted Average Price' and it is like a moving average that is constructed with the trading volume of the market. This indicator has several lines that can serve as a reference for our trades:",
@@ -146,7 +146,7 @@ export const IndicatorsDataEn = [
   {
     linkTit: "OTM Graphic Bar Timer",
     url: "otm-bar-timer",
-    imgb: "./features/otm-bar-timer.jpg",
+    imgb: "./features/otm-bar-timer-en.jpg",
     titb_1: "OTM Graphic Bar Timer",
     txtb0:
       "You may know the NinjaTrader Bar Timer indicator, which tells you how much time is left until a candle closes. This indicator works on the same principle, but displays the progress of the candle's construction using a color-coded bar.",
@@ -163,7 +163,7 @@ export const IndicatorsDataEn = [
   {
     linkTit: "Momentum",
     url: "momentum-strategy",
-    imgb: "./features/momentum.png",
+    imgb: "./features/momentum-en.png",
     titb_1: "(Momentum) in favor of the trend",
     txtb0:
       "Whenever possible, you should go in favor of the trend. Here are the requirements for a trend-following entry:",
@@ -184,7 +184,7 @@ export const IndicatorsDataEn = [
   {
     linkTit: "Reversals",
     url: "reversals-strategy",
-    imgb: "./features/reversal.png",
+    imgb: "./features/reversal-en.png",
     titb_1: "(Reversals) against the trend",
     txtb0:
       "Reversal or against-trend entries are a bit more difficult, but if you have the following requirements, you are more likely to succeed in your trades:",

@@ -42,7 +42,7 @@ const Home = () => {
       
       <BuyButton></BuyButton>
       <FloatingWhatsApp 
-      phoneNumber={573143195644}
+      phoneNumber={573113006826}
       accountName={"OTM Trading"}
       avatar={logoOtm}
       chatMessage={message}

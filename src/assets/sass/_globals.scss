@@ -193,15 +193,24 @@ body {
 .whats_button{
 
  right: 103px !important;
- bottom:40px !important;
+ bottom:38px !important;
  width: 45px !important;
  height: 45px !important;
+//  opacity: 0.7;
 
  &::after{
   width: 45px !important;
   height: 45px !important;
+  animation: styles-module__pulse__BJkE8 2.5s infinite !important;;
    
  }
+
+ &:hover{
+  // opacity: 1;
+
+
+ }
+
 
 }
 

@@ -7,8 +7,6 @@ import Advantages from "../components/pure/advantage";
 import Features from "../components/container/features";
 import TestimonyCont from "../components/container/testimonyCont";
 import LanguageContext from "../context/langContext.js";
-import FloatingWhatsApp from "react-floating-whatsapp";
-import logoOtm from "../assets/img/logoOtm.png";
 
 const Home = () => {
   const myRef = useRef(null);
@@ -36,23 +34,7 @@ const Home = () => {
       {lang == "es" ? <TestimonyCont></TestimonyCont> : <></>}
 
       <BuyButton></BuyButton>
-      <FloatingWhatsApp
-        phoneNumber={573113006826}
-        accountName={"OTM Trading"}
-        avatar={logoOtm}
-        chatMessage={message}
-        statusMessage={repliTime}
-        allowEsc = "true"
-        allowClickAway = "true"
-        className="whats_div"
-        styles={{
-          position: "fixed",
-          right: "103px",
-          bottom: "38px",
-          width: "45px",
-          height: "45px"
-        }}
-      ></FloatingWhatsApp>
+
 
       {/* <Footer></Footer> */}
     </div>

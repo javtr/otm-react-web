@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -19,8 +87,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -28,16 +105,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -126,14 +207,17 @@ body {
 
 .gl-goTop {
   color: rgb(97, 255, 189);
-  font-size: 30px;
+  font-size: 39px;
 }
 .gl-goTop--cont {
   background-color: rgb(43, 43, 43) !important;
   box-shadow: 0 0px 7px 7px rgba(1, 1, 1, 0.5) !important;
-  padding: 5px !important;
-  width: 50 !important;
-  height: 50 !important;
+  padding: 3px !important;
+  width: 45px !important;
+  height: 45px !important;
+  bottom: 85px !important;
+  right: 38px !important;
+  border-radius: 50px !important;
 }
 
 .btn-trans-pry {
@@ -178,20 +262,15 @@ body {
   }
 }
 
-.whats_button {
-  right: 103px !important;
-  bottom: 40px !important;
-  width: 45px !important;
-  height: 45px !important;
-}
-.whats_button::after {
-  width: 45px !important;
-  height: 45px !important;
-}
-
 .whats_div {
   right: 10rem !important;
   bottom: 10rem !important;
+  z-index: 10000;
+}
+
+.styles-module_whatsappButton__IWx9V::after {
+  height: 45px !important;
+  width: 45px !important;
 }
 
 .navbar {

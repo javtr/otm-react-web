@@ -1,53 +1,131 @@
 @import "./mixins";
 
 //reset ------------------
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	// font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  // font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /* End reset styles */
-
-
-
 
 body {
   background-color: $back;
@@ -64,14 +142,9 @@ body {
   color: $back;
   font-size: $txt-small;
 
-
-
-
   @include breakpoint-down(medium) {
     margin: 0 auto;
   }
-
-
 }
 
 .global__tx-lg {
@@ -114,7 +187,7 @@ body {
   max-width: $mx-w;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top:60px;
+  padding-top: 60px;
 
   @include breakpoint-up(medium) {
     padding: 0 60px;
@@ -147,14 +220,14 @@ body {
 
   &:hover {
     filter: drop-shadow(0px 5px 30px rgba(97, 255, 189, 0.45));
-	 transition: filter 0.25s ease-in;
+    transition: filter 0.25s ease-in;
   }
 }
 
-.link-before{
+.link-before {
   position: relative;
-      
-  &::before{
+
+  &::before {
     content: "";
     position: absolute;
     width: 0%;
@@ -162,16 +235,14 @@ body {
     background-color: $primary;
     bottom: 0;
     transition: width 0.3s ease;
-
   }
 
-  &:hover:before{
+  &:hover:before {
     width: 80%;
   }
 }
 
-
-.item-trans{
+.item-trans {
   transition: 0.4s ease;
 
   &:hover {
@@ -185,41 +256,28 @@ body {
     @include breakpoint-up(large) {
       transform: scale(1.15) translateX(23px);
     }
-
- }
+  }
 }
 
-
-.whats_button{
-
- right: 103px !important;
- bottom:38px !important;
- width: 45px !important;
- height: 45px !important;
-//  opacity: 0.7;
-
- &::after{
+.whats_button {
+  right: 103px !important;
+  bottom: 38px !important;
   width: 45px !important;
   height: 45px !important;
-  animation: styles-module__pulse__BJkE8 2.5s infinite !important;;
-   
- }
+  //  opacity: 0.7;
 
- &:hover{
-  // opacity: 1;
+  &::after {
+    width: 45px !important;
+    height: 45px !important;
+    animation: styles-module__pulse__BJkE8 2.5s infinite !important;
+  }
 
-
- }
-
-
+  &:hover {
+    // opacity: 1;
+  }
 }
 
-.whats_div{
-
+.whats_div {
   right: 10rem !important;
-  bottom:10rem !important;
- 
- }
-
-
-
+  bottom: 10rem !important;
+}

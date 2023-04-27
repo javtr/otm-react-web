@@ -2303,7 +2303,7 @@ body {
   height: 30px;
   display: flex;
   justify-content: center;
-  margin-bottom: 33px;
+  margin-bottom: 18px;
 }
 .payment__content--buttons--title hr {
   position: absolute;
@@ -2323,12 +2323,12 @@ body {
   justify-content: center;
 }
 .payment__content--buttons--btnTeach a {
-  width: 100%;
-  height: 50px;
+  width: 80%;
+  height: 70px;
   background-color: #1EA69A;
   margin: 0 auto;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 30px;
   font-style: italic;
   font-weight: bold;
   color: rgb(244, 244, 244);
@@ -2343,6 +2343,8 @@ body {
 }
 .payment__content--buttons--paypal {
   margin-bottom: 70px;
+  width: 80%;
+  margin: 0 auto;
 }
 .payment__content--buttons--paypal--img {
   width: 100%;
@@ -3254,4 +3256,58 @@ body {
     width: 600px;
     height: 340px;
   }
+}
+
+.error {
+  padding: 20px;
+}
+.error__logoOtm {
+  width: 150px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.error__logoOtm img {
+  width: 100%;
+}
+.error__logo404 {
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.error__logo404 img {
+  width: 100%;
+}
+.error__text {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: white;
+  max-width: 800px;
+  text-align: center;
+}
+.error__text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+.error__text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.error__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.error__button button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid;
+  border-radius: 20px;
+}
+.error__button button:hover {
+  color: rgb(4, 0, 28);
+  background-color: white;
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */

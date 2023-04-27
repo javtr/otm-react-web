@@ -13,6 +13,7 @@ import LicenceForm from "./components/pure/form/licenceForm";
 import LanguageContext from "../src/context/langContext";
 import Blog from "./pages/blog";
 import BlogCont from "./components/container/blogCont";
+import Error404 from "./components/pure/404";
 
 export default function App() {
   const [lang, setLang] = useState("");
@@ -54,6 +55,7 @@ export default function App() {
           </Route>
           <Route path="/order/:id" element={<Order></Order>}></Route>
           <Route path="/licence" element={<LicenceForm></LicenceForm>}></Route>
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </div>
     </LanguageContext.Provider>

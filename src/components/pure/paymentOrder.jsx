@@ -23,31 +23,6 @@ export default function PaymentOrder({ productId }) {
     }
   }, [lang]);
 
-  // const style = {
-  //   layout: "vertical",
-  //   color: "blue"
-  // };
-
-  // const createOrder = (data, actions) => {
-  //   return actions.order.create({
-  //     purchase_units: [
-  //       {
-  //         amount: {
-  //           value: "0.01",
-  //         },
-  //       },
-  //     ],
-  //   });
-  // };
-
-  // const onApprove = (data, actions) => {
-  //   return actions.order.capture();
-  // };
-
-  console.log(params.id);
-
-  console.log(Products[params.id].key);
-
   return (
     <div className="payment">
       <h3>{text.tit}</h3>
@@ -71,11 +46,15 @@ export default function PaymentOrder({ productId }) {
           </div>
 
           <div className="payment__content--buttons--btnTeach">
-            <a href={Products[params.id].linkTeack} target="_blank">
-              <div className="payment__content--buttons--btnTeach-container">
-                Credit card
-              </div>
-            </a>
+            {params.id ? (
+              <a href={Products[params.id].linkTeack} target="_blank">
+                <div className="payment__content--buttons--btnTeach-container">
+                  Credit card
+                </div>
+              </a>
+            ) : (
+              <></>
+            )}
           </div>
           <p>By teachable</p>
 
@@ -84,25 +63,23 @@ export default function PaymentOrder({ productId }) {
             <h4>Paypal</h4>
           </div>
           <div className="payment__content--buttons--paypal">
-            {/* boton paypal ------------------------------------ */}
-
-            {/* <PayPalButton
-              style={style}
-              createOrder={(data, actions) => createOrder(data, actions)}
-              onApprove={(data, actions) => onApprove(data, actions)}
-            /> */}
-
             <form
               action="https://www.paypal.com/cgi-bin/webscr"
               method="post"
               target="_top"
             >
               <input type="hidden" name="cmd" value="_s-xclick"></input>
-              <input
-                type="hidden"
-                name="encrypted"
-                value={Products[params.id].key}
-              ></input>
+
+              {params.id ? (
+                <input
+                  type="hidden"
+                  name="encrypted"
+                  value={Products[params.id].key}
+                ></input>
+              ) : (
+                <></>
+              )}
+
               <input
                 className="payment__content--buttons--paypal--img"
                 type="image"
@@ -119,14 +96,9 @@ export default function PaymentOrder({ productId }) {
                 height="1"
               ></img>
             </form>
-
-            {/* boton paypal ------------------------------------ */}
           </div>
         </div>
       </div>
-
-      {/* <div>{Products[productId].product}</div>
-      <div>{Products[productId].price}</div> */}
     </div>
   );
 }

@@ -29,7 +29,6 @@ const SideBar = ({ dynamicRef }) => {
 
   function handleClick() {
     if (dynamicRef) {
-      console.log("referencia");
       dynamicRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }

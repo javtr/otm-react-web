@@ -3,7 +3,6 @@ import { Products } from "../../assets/info/products";
 import { textEn, textEs } from "../../assets/text/payment.js";
 import LanguageContext from "../../context/langContext.js";
 
-
 export default function CardOrder({ productId }) {
   const todayDate = new Date().toISOString().slice(0, 10);
   const { lang, setLang } = useContext(LanguageContext);
@@ -19,7 +18,7 @@ export default function CardOrder({ productId }) {
     }
   }, [lang]);
 
-
+  console.log(productId);
 
   return (
     <div className="CardOrder">
@@ -31,7 +30,7 @@ export default function CardOrder({ productId }) {
         <div className="CardOrder__content--product">
           <div className="CardOrder__content--product--item CardOrder__content--product--it">
             <p>Item</p>
-            <div>{Products[productId].product}</div>
+            {productId ? <div>{Products[productId].product}</div> : <></>}
           </div>
           <div className="CardOrder__content--product--item CardOrder__content--product--lc">
             <p>Licence</p>
@@ -39,13 +38,25 @@ export default function CardOrder({ productId }) {
           </div>
           <div className="CardOrder__content--product--item CardOrder__content--product--pr">
             <p>Price</p>
-            <div>
-              <p>$ </p> {Products[productId].price}
-            </div>
+
+            {productId ? (
+              <div>
+                <p>$ </p> {Products[productId].price}
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
         <hr></hr>
-        <h4><p>Total: $ </p> {Products[productId].price + " "} <p>usd</p></h4>
+
+        {productId ? (
+          <h4>
+            <p>Total: $ </p> {Products[productId].price + " "} <p>usd</p>
+          </h4>
+        ) : (
+          <></>
+        )}
       </div>
 
       {/* <div>{Products[productId].product}</div>

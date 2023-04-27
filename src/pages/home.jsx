@@ -7,6 +7,7 @@ import Advantages from "../components/pure/advantage";
 import Features from "../components/container/features";
 import TestimonyCont from "../components/container/testimonyCont";
 import LanguageContext from "../context/langContext.js";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const myRef = useRef(null);
@@ -27,6 +28,11 @@ const Home = () => {
 
   return (
     <div className="body-home">
+      <Helmet>
+        <title>Analysis Software For Volume and Delta</title>
+        <meta name="description" content="Optimiza tu estrategia de trading en el mercado de futuros con OTM Trading, el software de indicadores técnicos especializado en volumen y delta que te brinda información precisa y confiable." />
+      </Helmet>
+
       <Hero scroll={executeScroll}></Hero>
       <Whatis refProp={myRef}></Whatis>
       <Features></Features>

@@ -5,6 +5,7 @@ import { BlogCardsPrevGenerator } from "../components/pure/blogCardGenerator.jsx
 import { useNavigate } from "react-router-dom";
 import telegram from "../assets/img/blog/telegrama.png";
 import discord from "../assets/img/blog/discord.png";
+import { Helmet } from "react-helmet";
 
 export default function Blog() {
   const { lang, setLang } = useContext(LanguageContext);
@@ -29,23 +30,31 @@ export default function Blog() {
 
   return (
     <div className="blogPage">
+      <Helmet>
+        <title>Analysis Software For Volume and Delta</title>
+        <meta
+          name="description"
+          content="Optimiza tu estrategia de trading en el mercado de futuros con OTM Trading, el software de indicadores técnicos especializado en volumen y delta que te brinda información precisa y confiable."
+        />
+      </Helmet>
+
       <h2 className="blogPage__title">OTM Blog</h2>
       <div className="blogPage__container">
         <div className="blogPage__cards">
           {text.map((card, i) => (
-              <div className="blogPage__cards--card" key={i}>
-                {Object.keys(card).map((key, index) => {
-                  return (
-                    <BlogCardsPrevGenerator
-                      key={index}
-                      i={key}
-                      data={card[key]}
-                      navegateTo={navegateTo}
-                      indexCard={i}
-                    ></BlogCardsPrevGenerator>
-                  );
-                })}
-              </div>
+            <div className="blogPage__cards--card" key={i}>
+              {Object.keys(card).map((key, index) => {
+                return (
+                  <BlogCardsPrevGenerator
+                    key={index}
+                    i={key}
+                    data={card[key]}
+                    navegateTo={navegateTo}
+                    indexCard={i}
+                  ></BlogCardsPrevGenerator>
+                );
+              })}
+            </div>
           ))}
         </div>
         <div className="blogPage__aside">

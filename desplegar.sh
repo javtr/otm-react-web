@@ -13,6 +13,7 @@ echo "========== Clean ==========="
 
 # copiar archivos
 cp -r ~/Desarrollo/nueva-otm-web/build/* ~/Desarrollo/OTM_Web_Build_Production
+cp -r ~/Desarrollo/nueva-otm-web/SEO/* ~/Desarrollo/OTM_Web_Build_Production
 echo "========== Copy ==========="
 
 # pushear archivos

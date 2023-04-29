@@ -26,7 +26,7 @@ export default function Whatis({refProp}) {
         <h4 className="what__subTitle">{text.sub}</h4>
         <div className="what__video">
           <iframe
-            src="https://www.youtube.com/embed/4V2KlR4u4HQ"
+            src={lang == "en"?"https://www.youtube.com/embed/4V2KlR4u4HQ":"https://www.youtube.com/embed/nIl9QHeYZRU"}
             title="OTM"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

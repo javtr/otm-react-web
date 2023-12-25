@@ -9,7 +9,7 @@ export default function Error404() {
   const navigate = useNavigate();
   const { lang, setLang } = useContext(LanguageContext);
   const handleGoBack = () => {
-    navigate(-1);
+    navigate("/");
   };
 
   return (

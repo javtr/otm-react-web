@@ -9,6 +9,7 @@ import {
   getBannedEmail,
   ValidateEmail,
 } from "../../../helpers/formValidation.js";
+import { Dna, TailSpin } from "react-loader-spinner";
 
 export default function ContactForm() {
   const { register, control, handleSubmit, watch } = useForm();
@@ -69,7 +70,7 @@ export default function ContactForm() {
   const sendEmail = (formData) => {
     let filtro = true;
 
-    console.log(formData);
+    // console.log(formData);
 
     //validaciones de email -----------------------------
     //validacion blacklist
@@ -85,18 +86,24 @@ export default function ContactForm() {
 
     if (filtro) {
       if (captcha) {
+        setMailState("sending");
+
+
         emailjs.send(service, template, formData, emailKey).then(
           (result) => {
-            console.log(result.text);
-            console.log("envio exitoso");
+            // console.log(result.text);
+            // console.log("envio exitoso");
             setMailState("succes");
           },
           (error) => {
-            console.log(error.text);
-            console.log("falla envio de mail");
+            // console.log(error.text);
+            // console.log("falla envio de mail");
             setMailState("fail");
           }
         );
+
+
+
       } else {
         console.log("falla el captcha");
       }
@@ -109,56 +116,84 @@ export default function ContactForm() {
 
   return (
     <div>
-      {mailState != "none" ? (
+      {mailState == "sending" && (
+        <div style={{ display: "flex", justifyContent: "center" }}>
+
+
+          <TailSpin
+            height="100"
+            width="100"
+            color="rgb(97, 255, 189)"
+            ariaLabel="tail-spin-loading"
+            radius="1"
+            wrapperStyle={{}}
+            wrapperClass=""
+            visible={true}
+          />
+
+          
+        </div>
+      )}
+
+      {mailState != "none" && mailState != "sending" ? (
         <div
           className={
-            mailState == "fail"
+            mailState == "fail" && mailState != "sending"
               ? "mensaje mensajeFail"
               : "mensaje mensajeSucces"
           }
         >
-          {mailState == "fail" ? text.fail : text.succes}
+          {mailState == "fail" && mailState != "sending"
+            ? text.fail
+            : text.succes}
         </div>
       ) : (
         <></>
       )}
-      <div className="formContact ">
-        <h2 className="formContact__title">{text.tit}</h2>
 
-        <form onSubmit={handleSubmit(sendEmail)}>
-          <div className="formContact__campo">
-            <h3>{text.name}:</h3>
-            <input {...register("name")} placeholder={text.nameE} type="text" />
-          </div>
+      {mailState == "none" && (
+        <div className="formContact ">
+          <h2 className="formContact__title">{text.tit}</h2>
 
-          <div className="formContact__campo">
-            <h3>{text.email}:</h3>
-            <input
-              {...register("email")}
-              placeholder={text.emailE}
-              type="text"
-            />
-          </div>
+          <form onSubmit={handleSubmit(sendEmail)}>
+            <div className="formContact__campo">
+              <h3>{text.name}:</h3>
+              <input
+                {...register("name")}
+                placeholder={text.nameE}
+                type="text"
+              />
+            </div>
 
-          <div className="formContact__campo">
-            <h3>{text.message}:</h3>
-            <textarea {...register("message")} placeholder={text.messageE} />
-          </div>
+            <div className="formContact__campo">
+              <h3>{text.email}:</h3>
+              <input
+                {...register("email")}
+                placeholder={text.emailE}
+                type="text"
+              />
+            </div>
 
-          <div className="formContact__recaptcha">
-            <ReCAPTCHA
-              sitekey={captchakey}
-              onChange={onChange}
-              size={window.innerWidth < 640 ? "compact" : "normal"}
-              theme="dark"
-            />
-          </div>
+            <div className="formContact__campo">
+              <h3>{text.message}:</h3>
+              <textarea {...register("message")} placeholder={text.messageE} />
+            </div>
 
-          <div className="formContact__boton">
-            <button type="submit">{text.btn}</button>
-          </div>
-        </form>
-      </div>
+            <div className="formContact__recaptcha">
+              <ReCAPTCHA
+                sitekey={captchakey}
+                onChange={onChange}
+                size={window.innerWidth < 640 ? "compact" : "normal"}
+                theme="dark"
+              />
+            </div>
+
+            <div className="formContact__boton">
+              <button type="submit">{text.btn}</button>
+            </div>
+          </form>
+        </div>
+      )}
     </div>
   );
 }

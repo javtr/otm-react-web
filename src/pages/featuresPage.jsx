@@ -17,6 +17,7 @@ import LanguageContext from "../context/langContext.js";
 import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
 import { Helmet } from "react-helmet";
+import { seoEn, seoEs } from "../assets/text/metas.js";
 
 const FeaturesPage = () => {
   const [card, setCard] = useState(0);
@@ -25,14 +26,18 @@ const FeaturesPage = () => {
   const [text, setText] = useState(IndicatorsDataEn);
   const navigate = useNavigate();
   const cardRef = useRef();
+  const [textSeo, setTextSeo] = useState({});
 
   useEffect(() => {
     if (lang == "en") {
       setText(IndicatorsDataEn);
+      setTextSeo(seoEn);
     } else if (lang == "es") {
       setText(IndicatorsDataEs);
+      setTextSeo(seoEs);
     } else {
       setText(IndicatorsDataEn);
+      setTextSeo(seoEn);
     }
   }, [lang]);
 
@@ -43,10 +48,10 @@ const FeaturesPage = () => {
   return (
     <UserContext.Provider value={value}>
       <Helmet>
-        <title>Analysis Software For Volume and Delta</title>
+        <title>{textSeo.homeTitle}</title>
         <meta
           name="description"
-          content="Optimiza tu estrategia de trading en el mercado de futuros con OTM Trading, el software de indicadores técnicos especializado en volumen y delta que te brinda información precisa y confiable."
+          content={textSeo.homeMeta}
         />
       </Helmet>
 

@@ -31,7 +31,7 @@ export const IndicatorsDataEn = [
     txtb8:
       "Si quieres aprender aún más sobre OTM Trading y cómo puedes aprovecharlo al máximo, te invito a que te unas a la MasterClass. ¡Allí podrás ampliar todo lo que has aprendido y tener aún más herramientas para tener éxito en tus operaciones!",
 
-    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "MasterClass OTM"],
+    lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
   },
 
   //Explicación Indicadores
@@ -48,7 +48,7 @@ export const IndicatorsDataEn = [
       "2. Informative signals: OTM Delta Swing's algorithms detect anomalies, which means they allow you to detect events that are outside the norm and thus give you an advantage in the market. The algorithm detects 3 types of anomalies and shows us an informative signal at the end of the wave.",
     txtb1:
       "I recommend you watch the following video about the signals and types of anomalies detected by OTM Delta Swing so you can understand it better and get the most out of it:",
-    lnkb1: ["https://youtu.be/btzOQX3FNII", "OTM Delta Swing"],
+    lnkb1: ["https://www.youtube.com/watch?v=AWTLJAKa2VI", "OTM Delta Swing"],
   },
   {
     linkTit: "OTM Delta Micro",
@@ -63,7 +63,7 @@ export const IndicatorsDataEn = [
       "2. Institutional Delta: when we see a large 'green box' it means that there is a large number of buyers who want the price to go up, this is called 'Momentum'.",
     txtb1:
       "To use this indicator in the best way possible, it is important to understand some key concepts, but don't worry, they are very easy to understand! Additionally, we have a video where we explain everything:",
-    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Delta Micro"],
+    lnkb1: ["https://www.youtube.com/watch?v=0LRXTXaFOko", "OTM Delta Micro"],
   },
   {
     linkTit: "OTM Delta Cumulative",
@@ -78,7 +78,7 @@ export const IndicatorsDataEn = [
       "2. Identifying defined trends: if we want to buy, it's important to observe a green graph that is increasing, indicating a constant pressure from buyers.",
     txtb1:
       "Depending on the type of strategy you have, there are some important aspects to consider with this indicator. Therefore, I invite you to learn more about OTM Cumulative Delta in the following video:",
-    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Cumulative Delta"],
+    lnkb1: ["https://www.youtube.com/watch?v=HJtZ3gJK1FE", "OTM Cumulative Delta"],
   },
   {
     linkTit: "OTM Delta Bar",
@@ -101,7 +101,7 @@ export const IndicatorsDataEn = [
       "6. Footer volume + delta: here you can see the numerical values of delta, volume, BID, ASK, among others.",
     // txtb1:
     //   "The paid version includes all 6 different configurations, there is a free version that you can download that includes configuration #1 and #3. You can learn more and download the indicator on the following button.",
-    // lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Delta bar Free"],
+    lnkb1: ["https://youtu.be/Z7nISubWyaw", "OTM Delta bar Free"],
   },
   {
     linkTit: "OTM Volumne Profile",
@@ -124,7 +124,7 @@ export const IndicatorsDataEn = [
 
     txtb1: "Learn more about OTM Volume Profile in the following video:",
 
-    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Volume Profile"],
+    lnkb1: ["https://youtu.be/yWkcqBqUkJ4", "OTM Volume Profile"],
   },
   {
     linkTit: "OTM VWAP",
@@ -141,7 +141,7 @@ export const IndicatorsDataEn = [
       "3. VWAP deviation 2: As the price advances with a clear direction, it is increasingly expanding and possibly on retracements it may not reach the central VWAP. Here, the deviations can serve as a reference for the location of our trades.",
     txmb4:
       "4. VWAP deviation 3: Once we observe that the price has reached deviation #3 of the VWAP, it means that the price is very extended and it is possible that very deep retracements or changes of direction will come later. We can use this deviation as an exit point for our trades.",
-    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM VWAP"],
+    lnkb1: ["https://youtu.be/_caBCZk4ZgI", "OTM VWAP"],
   },
   {
     linkTit: "OTM Graphic Bar Timer",
@@ -158,7 +158,7 @@ export const IndicatorsDataEn = [
       "3. 75% remaining: the candle is still forming, and the information within it can change dramatically before it closes, so it's better to wait a bit.",
     txtb1:
       "This indicator helps you easily identify which stage the candle's construction is at, allowing you to wait for the proper confirmation before pulling the trigger.",
-    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Graphic Bar Timer"],
+    lnkb1: ["https://youtu.be/xN0rmD1b1sM", "OTM Graphic Bar Timer"],
   },
   {
     linkTit: "Momentum",
@@ -179,7 +179,7 @@ export const IndicatorsDataEn = [
       "5. Low Volume Area: after the price has advanced, you should wait for the retracement in the low volume area that the volume profile leaves, this gives you a clear entry zone where you can support your position.",
     txtb1:
       "I hope this has helped you better understand the entry requirements in favor of the trend. If you want to learn more, don't hesitate to click on the button below to keep learning!",
-    lnkb1: ["https://youtu.be/GnPat8QTfbM", "Momentum Strategy"],
+    lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
   },
   {
     linkTit: "Reversals",
@@ -200,7 +200,7 @@ export const IndicatorsDataEn = [
       "5. Positive accumulated delta (divergence): finally, the delta histogram must also be positive and opposite to the price movement, which confirms that there is an anomaly.",
     txtb1:
       "If these requirements are met, a trend reversal may be occurring and we may consider entering a long position. Learn more in the video we have prepared for you about this strategy.",
-    lnkb1: ["https://youtu.be/6V-nMUkBjZI", "Reversals Strategy"],
+    lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
   },
 
   //¿Listo? Revisa esto para comenzar
@@ -236,10 +236,10 @@ export const IndicatorsDataEn = [
     subb5:
       "5. What are the opinions and reviews of other users who have used OTM Trading?",
 
-    txlb_5: [
-      "If you want to know what other traders think about OTM Trading, you just have to <link> click here </link> and you'll see how OTM has helped them improve their operations.",
-      "https://link.co",
-    ],
+    // txlb_5: [
+    //   "If you want to know what other traders think about OTM Trading, you just have to <link> click here </link> and you'll see how OTM has helped them improve their operations.",
+    //   "https://link.co",
+    // ],
 
     subb6:
       "6. How accurate are the analyses and signals provided by OTM Trading?",
@@ -277,7 +277,7 @@ export const IndicatorsDataEn = [
     subb13: "13. What is the best way to use OTM Trading?",
     txlb13: [
       "If you want to get the best results with OTM Trading, it's important to have confirmation on all the indicators in the direction you want to trade. If you need help with OTM Trading, don't worry! We have educational videos on the different available strategies. Just <link> click here </link> to access them and learn how to use OTM Trading in the best way.",
-      "https://link.co",
+      "https://www.otmtrading.com/features/momentum-strategy",
     ],
     subb14:
       "14. What are the minimum requirements for my computer to use OTM Trading optimally?",
@@ -366,7 +366,7 @@ export const IndicatorsDataEs = [
     txtb8:
       "Si quieres aprender aún más sobre OTM Trading y cómo puedes aprovecharlo al máximo, te invito a que te unas a la MasterClass. ¡Allí podrás ampliar todo lo que has aprendido y tener aún más herramientas para tener éxito en tus operaciones!",
 
-    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "MasterClass OTM"],
+    lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
   },
 
   //Explicación Indicadores
@@ -389,7 +389,7 @@ export const IndicatorsDataEs = [
     txtb1:
       "Te recomiendo ver el siguiente video sobre las señales y los tipos de anomalías que detecta OTM Delta Swing para que puedas entenderlo mejor y obtener el máximo provecho:    ",
 
-    lnkb1: ["https://youtu.be/btzOQX3FNII", "OTM Delta Swing"],
+    lnkb1: ["https://www.youtube.com/watch?v=AWTLJAKa2VI", "OTM Delta Swing"],
   },
   {
     linkTit: "OTM Delta Micro",
@@ -410,7 +410,7 @@ export const IndicatorsDataEs = [
     txtb1:
       "Para utilizar este indicador de la mejor manera posible, es importante que entiendas algunos conceptos clave, pero no te preocupes, ¡son muy fáciles de entender! Además, tenemos un vídeo donde te lo explicamos todo:    ",
 
-    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Delta Micro"],
+    lnkb1: ["https://www.youtube.com/watch?v=0LRXTXaFOko", "OTM Delta Micro"],
   },
   {
     linkTit: "OTM Delta Cumulative",
@@ -431,7 +431,7 @@ export const IndicatorsDataEs = [
     txtb1:
       "De acuerdo al tipo de estrategia que tengas, hay algunos aspectos importantes a tener en cuenta de este indicador, por tanto, te invito a que profundices más sobre OTM Cumulative Delta en el siguiente vídeo:  ",
 
-    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Cumulative Delta"],
+    lnkb1: ["https://www.youtube.com/watch?v=HJtZ3gJK1FE", "OTM Cumulative Delta"],
   },
   {
     linkTit: "OTM Delta Bar",
@@ -464,7 +464,7 @@ export const IndicatorsDataEs = [
     // txtb1:
     //   "La versión de pago incluye las 6 diferentes configuraciones, hay una versión gratuita que puedes descargar que incluye la configuración #1 y #3. Puedes profundizar y descargar el indicador en el siguiente botón.     ",
 
-    // lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Delta bar Free"],
+     lnkb1: ["https://youtu.be/Z7nISubWyaw", "OTM Delta bar"],
   },
   {
     linkTit: "OTM Volumne Profile",
@@ -487,7 +487,7 @@ export const IndicatorsDataEs = [
 
     txtb1: "Aprende más sobre OTM Volume Profile en el siguiente vídeo:    ",
 
-    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Volume Profile"],
+    lnkb1: ["https://youtu.be/yWkcqBqUkJ4", "OTM Volume Profile"],
   },
   {
     linkTit: "OTM VWAP",
@@ -511,7 +511,7 @@ export const IndicatorsDataEs = [
     txmb3:
       "4. VWAP desviación 3: Una vez que observamos que el precio ha llegado a la desviación #3 del VWAP, significa que el precio está muy extendido y es posible que luego vengan retrocesos muy profundos o cambios de dirección. Podemos usar esta desviación como punto de salida de nuestras operaciones.  ",
 
-    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM VWAP"],
+    lnkb1: ["https://youtu.be/_caBCZk4ZgI", "OTM VWAP"],
   },
   {
     linkTit: "OTM Graphic Bar Timer",
@@ -535,7 +535,7 @@ export const IndicatorsDataEs = [
     txtb1:
       "Este indicador te ayuda a identificar fácilmente en qué etapa se encuentra la construcción de la vela, con esto esperas la confirmación adecuada para apretar el gatillo ",
 
-    lnkb1: ["https://youtu.be/X0ipn3QuFF0", "OTM Graphic Bar Timer"],
+    lnkb1: ["https://youtu.be/xN0rmD1b1sM", "OTM Graphic Bar Timer"],
   },
   {
     linkTit: "Momentum",
@@ -565,7 +565,7 @@ export const IndicatorsDataEs = [
     txtb1:
       "Espero que esto te haya ayudado a entender mejor los requisitos de entrada a favor de tendencia. ¡Si quieres aprender más, no dudes en hacer clic en el botón de abajo para seguir aprendiendo! ",
 
-    lnkb1: ["https://youtu.be/GnPat8QTfbM", "Estrategia Momentum"],
+    lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
   },
   {
     linkTit: "Reversals",
@@ -593,9 +593,9 @@ export const IndicatorsDataEs = [
       "5. Delta acumulado positivo (divergencia): finalmente, el histograma delta también debe ser positivo y opuesto al movimiento del precio, lo que nos confirma que hay una anomalía.",
 
     txtb1:
-      "Si se cumplen estos requisitos, es posible que se esté produciendo un cambio de tendencia y podríamos considerar entrar en una posición de compra. Aprende más en el video que preparamos para ti sobre esta Estrategia.  ",
+      "Si se cumplen estos requisitos, es posible que se esté produciendo un cambio de tendencia y podríamos considerar entrar en una posición de compra. Aprende más en el video que preparamos para ti.  ",
 
-    lnkb1: ["https://youtu.be/6V-nMUkBjZI", "Estrategia Reversals"],
+    lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
   },
 
   //¿Listo? Revisa esto para comenzar
@@ -634,7 +634,7 @@ export const IndicatorsDataEs = [
 
     txlb_5: [
       "Si quieres conocer lo que piensan otros traders sobre OTM Trading, solo tienes que hacer <link> clic aquí </link> verás cómo OTM les ha ayudado a mejorar su operativa. ",
-      "https://link.co",
+      "https://www.otmtrading.com/features/preguntas-frecuentes",
     ],
 
     subb6:
@@ -683,7 +683,7 @@ export const IndicatorsDataEs = [
 
     txlb13: [
       " Si quieres obtener los mejores resultados con OTM Trading, es importante que tengas confirmación en todos los indicadores en la dirección que deseas operar. Si necesitas ayuda con OTM Trading, ¡no te preocupes! Tenemos vídeos educativos sobre las diferentes estrategias disponibles. Solo tienes que hacer <link> clic aquí </link>   para acceder a ellos y aprender a usar OTM Trading de la mejor manera.",
-      "https://link.co",
+      "https://www.otmtrading.com/features/estrategia-momentum",
     ],
 
     subb14:

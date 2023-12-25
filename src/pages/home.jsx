@@ -1,4 +1,4 @@
-import React, { useRef, useContext } from "react";
+import React, { useRef, useState, useContext, useEffect } from "react";
 import BuyButton from "../components/pure/buyButton";
 import Footer from "../components/pure/footer";
 import Hero from "../components/pure/hero";
@@ -8,29 +8,40 @@ import Features from "../components/container/features";
 import TestimonyCont from "../components/container/testimonyCont";
 import LanguageContext from "../context/langContext.js";
 import { Helmet } from "react-helmet";
+import { seoEn, seoEs } from "../assets/text/metas.js";
 
 const Home = () => {
   const myRef = useRef(null);
   const { lang, setLang } = useContext(LanguageContext);
+  const [textSeo, setTextSeo] = useState({});
+
   let repliTime = "";
   let message = "";
 
   const executeScroll = () => myRef.current.scrollIntoView();
   // const executeScroll = () => {console.log("chau");};
 
-  if (lang == "en") {
-    repliTime = "Typically replies within 1 hour";
-    message = "Hello there! 🤝 \nHow can we help?";
-  } else {
-    repliTime = "Normalmente responde en 1 hora";
-    message = "¡Hola! 🤝 \n¿En qué podemos ayudarte?";
-  }
+  useEffect(() => {
+    if (lang == "en") {
+      repliTime = "Typically replies within 1 hour";
+      message = "Hello there! 🤝 \nHow can we help?";
+      setTextSeo(seoEn);
+    } else {
+      repliTime = "Normalmente responde en 1 hora";
+      message = "¡Hola! 🤝 \n¿En qué podemos ayudarte?";
+      setTextSeo(seoEs);
+    }
+  }, [lang]);
 
   return (
     <div className="body-home">
+
       <Helmet>
-        <title>Analysis Software For Volume and Delta</title>
-        <meta name="description" content="Optimiza tu estrategia de trading en el mercado de futuros con OTM Trading, el software de indicadores técnicos especializado en volumen y delta que te brinda información precisa y confiable." />
+        <title>{textSeo.homeTitle}</title>
+        <meta
+          name="description"
+          content={textSeo.homeMeta}
+        />
       </Helmet>
 
       <Hero scroll={executeScroll}></Hero>
@@ -40,9 +51,6 @@ const Home = () => {
       {lang == "es" ? <TestimonyCont></TestimonyCont> : <></>}
 
       <BuyButton></BuyButton>
-
-
-      {/* <Footer></Footer> */}
     </div>
   );
 };

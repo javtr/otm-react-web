@@ -147,14 +147,22 @@
 
 
     &--price {
-      font-size: $txt-medium3;
+      font-size: 45px;
       font-weight: bold;
       line-height: 1;
       color: $light;
       text-align: center;
+      margin-bottom: 25px;
+
+
+    }
+
+    &--properties {
+      font-weight: normal;
+      line-height: 1;
+      color: $light;
+      text-align: center;
       margin-bottom: 50px;
-
-
 
       div {
         display: inline;
@@ -164,6 +172,7 @@
         line-height: 1;
         color: $gray;
         text-align: center;
+
       }
     }
 

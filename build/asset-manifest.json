@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fc613daa.css",
-    "main.js": "/static/js/main.f02ac0a7.js",
+    "main.css": "/static/css/main.bc412fb6.css",
+    "main.js": "/static/js/main.a3e8a455.js",
     "static/media/vecteezy_blue-background_AW1120.eps": "/static/media/vecteezy_blue-background_AW1120.3d705dc5bc0f3ae24363.eps",
     "static/media/operativa-crudo-es.gif": "/static/media/operativa-crudo-es.90e09cd83a863621b701.gif",
     "static/media/results_2022.gif": "/static/media/results_2022.f3e89527a7fa0d147241.gif",
@@ -129,13 +129,13 @@
     "static/media/indicatorIcon.svg": "/static/media/indicatorIcon.f240f4fda2b67f9a10f0.svg",
     "static/media/advantage1.svg": "/static/media/advantage1.5b868a138f840b91e6fb.svg",
     "static/media/check-svgrepo-com(1).svg": "/static/media/check-svgrepo-com(1).1b7256e8b779cbd0e116.svg",
-    "static/media/icons8-close.svg": "/static/media/icons8-close.918b1234f49b28de4f8720841fa5f8d2.svg",
     "index.html": "/index.html",
-    "main.fc613daa.css.map": "/static/css/main.fc613daa.css.map",
-    "main.f02ac0a7.js.map": "/static/js/main.f02ac0a7.js.map"
+    "static/media/icons8-close.svg": "/static/media/icons8-close.918b1234f49b28de4f8720841fa5f8d2.svg",
+    "main.bc412fb6.css.map": "/static/css/main.bc412fb6.css.map",
+    "main.a3e8a455.js.map": "/static/js/main.a3e8a455.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc613daa.css",
-    "static/js/main.f02ac0a7.js"
+    "static/css/main.bc412fb6.css",
+    "static/js/main.a3e8a455.js"
   ]
 }

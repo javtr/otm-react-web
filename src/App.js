@@ -14,6 +14,7 @@ import LanguageContext from "../src/context/langContext";
 import Blog from "./pages/blog";
 import BlogCont from "./components/container/blogCont";
 import Error404 from "./components/pure/404";
+import Test from "./components/pure/test";
 
 export default function App() {
   const [lang, setLang] = useState("");
@@ -50,6 +51,7 @@ export default function App() {
             <Route path="blog" element={<Blog></Blog>}></Route>
             <Route path="blog/:title" element={<BlogCont></BlogCont>}></Route>
             <Route path="buy" element={<BuyPage></BuyPage>}></Route>
+            <Route path="test" element={<Test ></Test>}></Route>
             <Route path="example" element={<ExamplePage></ExamplePage>}></Route>
             <Route path="contact" element={<ContactForm></ContactForm>}></Route>
           </Route>

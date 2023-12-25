@@ -276,14 +276,14 @@
       width: 33%;
       padding: 15px;
       flex: 1 0 auto;
-      min-height: 560px;
+      min-height: 550px;
       margin: 5px;
       max-width: 500px;
     }
 
     @include breakpoint-up(large) {
       padding: 30px;
-      min-height: 690px;
+      min-height: 565px;
       margin: 10px;
     }
 

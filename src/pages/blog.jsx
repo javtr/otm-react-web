@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import telegram from "../assets/img/blog/telegrama.png";
 import discord from "../assets/img/blog/discord.png";
 import { Helmet } from "react-helmet";
+import CardPrevBlog from "../components/pure/cardPrevBlog.jsx";
 
 export default function Blog() {
   const { lang, setLang } = useContext(LanguageContext);
@@ -28,6 +29,8 @@ export default function Blog() {
     navigate(title);
   }
 
+  let lastCard = text.length - 1;
+
   return (
     <div className="blogPage">
       <Helmet>
@@ -41,22 +44,21 @@ export default function Blog() {
       <h2 className="blogPage__title">OTM Blog</h2>
       <div className="blogPage__container">
         <div className="blogPage__cards">
-          {text.map((card, i) => (
-            <div className="blogPage__cards--card" key={i}>
-              {Object.keys(card).map((key, index) => {
-                return (
-                  <BlogCardsPrevGenerator
-                    key={index}
-                    i={key}
-                    data={card[key]}
-                    navegateTo={navegateTo}
-                    indexCard={i}
-                  ></BlogCardsPrevGenerator>
-                );
-              })}
-            </div>
-          ))}
+          <div className="blogPage__cards--card" key={lastCard}>
+            {Object.keys(text[lastCard]).map((key, index) => {
+              return (
+                <BlogCardsPrevGenerator
+                  key={index}
+                  i={key}
+                  data={text[lastCard][key]}
+                  navegateTo={navegateTo}
+                  indexCard={lastCard}
+                ></BlogCardsPrevGenerator>
+              );
+            })}
+          </div>
         </div>
+
         <div className="blogPage__aside">
           <a
             className="blogPage__aside--link"
@@ -83,6 +85,21 @@ export default function Blog() {
           </a>
         </div>
       </div>
+
+      <div className="blogPage__prev">
+            {text.map((card,i)=>(
+              <CardPrevBlog 
+              key={i}
+              index={i}
+              card={card}
+              ></CardPrevBlog>
+ 
+            ))}
+
+      </div>
+
+
+
     </div>
   );
 }

@@ -226,6 +226,7 @@ body {
 .btn-trans-pry:hover {
   filter: drop-shadow(0px 5px 30px rgba(97, 255, 189, 0.45));
   transition: filter 0.25s ease-in;
+  cursor: pointer;
 }
 
 .link-before {
@@ -716,7 +717,7 @@ body {
     width: 33%;
     padding: 15px;
     flex: 1 0 auto;
-    min-height: 560px;
+    min-height: 550px;
     margin: 5px;
     max-width: 500px;
   }
@@ -724,7 +725,7 @@ body {
 @media (min-width: 80em) {
   .advantages__advantage {
     padding: 30px;
-    min-height: 690px;
+    min-height: 565px;
     margin: 10px;
   }
 }
@@ -835,7 +836,7 @@ body {
 .buybutton__button {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 .buybutton__img {
   display: flex;
@@ -922,6 +923,7 @@ body {
 }
 .feature__icons:hover {
   opacity: 1;
+  cursor: pointer;
 }
 .feature__icons--image {
   margin: 10px;
@@ -1135,6 +1137,7 @@ body {
   border-radius: 50%;
   padding: 2px;
   line-height: 0;
+  cursor: pointer;
 }
 .modal--card--close img {
   width: 25px;
@@ -1152,6 +1155,7 @@ body {
   font-size: 16px;
   width: 100px;
   height: 25px;
+  cursor: pointer;
 }
 .modal--card--img {
   overflow: hidden;
@@ -1442,14 +1446,21 @@ body {
   text-align: center;
 }
 .buyPrimario__card--price {
-  font-size: 24px;
+  font-size: 45px;
   font-weight: bold;
+  line-height: 1;
+  color: rgb(244, 244, 244);
+  text-align: center;
+  margin-bottom: 25px;
+}
+.buyPrimario__card--properties {
+  font-weight: normal;
   line-height: 1;
   color: rgb(244, 244, 244);
   text-align: center;
   margin-bottom: 50px;
 }
-.buyPrimario__card--price div {
+.buyPrimario__card--properties div {
   display: inline;
   font-size: 24px;
   font-weight: normal;
@@ -1872,14 +1883,37 @@ body {
   color: rgb(4, 0, 28);
   font-size: 18px;
 }
+.formContact__sending {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  padding-top: 150px;
+}
+.formContact__sending p {
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+  animation: escalaInfinita 2s infinite;
+}
 
+@keyframes escalaInfinita {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .formLicenceLabel {
   color: rgb(255, 255, 255);
   background-color: #776edc;
   border-radius: 45px;
   margin: 0 auto;
   width: 90%;
-  margin-top: 50px;
+  margin-top: 20px;
   max-width: 800px;
   text-align: center;
   font-size: 20px;
@@ -1888,7 +1922,7 @@ body {
 }
 @media (min-width: 48em) {
   .formLicenceLabel {
-    margin-top: 85px;
+    margin-top: 55px;
     padding: 40px;
   }
 }
@@ -2067,6 +2101,31 @@ body {
   background-color: rgb(97, 255, 189);
   color: rgb(4, 0, 28);
   font-size: 18px;
+}
+.formLicence__langCont {
+  max-width: 1000px;
+  position: relative;
+  height: 40px;
+  margin: 0 auto;
+}
+.formLicence__langCont--button {
+  position: absolute;
+  right: 15px;
+  top: 23px;
+  color: White;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: 0px;
+}
+@media (min-width: 48em) {
+  .formLicence__langCont--button {
+    top: 30px;
+    right: 10%;
+  }
 }
 
 .orderPage {
@@ -2680,6 +2739,36 @@ body {
   background-color: rgb(114, 137, 218);
   margin-top: 30px;
 }
+.blogPage__prev {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 30px;
+}
+.blogPage__prev--card {
+  width: 300px;
+  height: 260px;
+  margin: 20px;
+  border-radius: 25px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.106);
+}
+.blogPage__prev--card:hover {
+  background-color: rgba(255, 255, 255, 0.056);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+.blogPage__prev--card img {
+  width: 100%;
+  border-radius: 15px;
+}
+.blogPage__prev--card h3 {
+  color: rgb(244, 244, 244);
+  font-size: 20px;
+  padding: 10px 10px;
+}
 
 .blogArt {
   max-width: 1440px;
@@ -2722,6 +2811,28 @@ body {
 .blogArt__card--img img {
   width: 100%;
   border-radius: 45px 45px 0 0;
+}
+.blogArt__card--video {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 40px 0;
+}
+.blogArt__card--video iframe {
+  width: 90%;
+  height: 250px;
+}
+@media (min-width: 48em) {
+  .blogArt__card--video iframe {
+    width: 85%;
+    height: 350px;
+  }
+}
+@media (min-width: 80em) {
+  .blogArt__card--video iframe {
+    width: 80%;
+    height: 450px;
+  }
 }
 .blogArt__card--imgInt {
   display: flex;
@@ -2771,7 +2882,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: rgb(172, 172, 181);
-  text-align: left;
+  text-align: justify;
 }
 @media (min-width: 48em) {
   .blogArt__card--txt {
@@ -2838,7 +2949,20 @@ body {
 }
 @media (min-width: 48em) {
   .blogArt__card--by {
-    padding: 0 30px 30px 30px;
+    padding: 0 30px 0px 30px;
+  }
+}
+.blogArt__card--date {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgb(172, 172, 181);
+  text-align: right;
+  margin-top: -30px;
+}
+@media (min-width: 48em) {
+  .blogArt__card--date {
+    padding: 0 30px 30px 0px;
   }
 }
 .blogArt__card--link {
@@ -2846,18 +2970,19 @@ body {
   font-weight: normal;
   line-height: 1.5;
   text-align: left;
-  margin: 0 15px;
+  margin: 0 30px;
   margin-bottom: 50px;
 }
 .blogArt__card--link a {
-  color: rgb(244, 244, 244);
-  border: 1px solid rgb(172, 172, 181);
   padding: 10px 20px;
   border-radius: 10px;
-  font-style: italic;
+  background-color: rgb(97, 255, 189);
+  color: rgb(4, 0, 28);
 }
 .blogArt__card--link a:hover {
-  font-weight: bold;
+  background-color: transparent;
+  color: rgb(97, 255, 189);
+  border: 1px solid rgb(97, 255, 189);
 }
 .blogArt__aside {
   width: 200px;

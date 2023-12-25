@@ -5,7 +5,7 @@ export const ExampleDataEn = [
 
     txl1: [
       "The above chart corresponds to the 2022 capital curve of Cristian C. Cuéllar, Trader and Co-Founder of OTM Trading. To obtain this performance curve, Cristian mainly used the Momentum strategy, click here if you don't know it yet.",
-      "https://link.co",
+      "https://youtu.be/GnPat8QTfbM",
     ],
 
     txt1: "OTM Trading allows you to have solid and easy-to-identify strategies, you just need to be disciplined and follow the requirements to take positions in the market.    ",
@@ -16,7 +16,7 @@ export const ExampleDataEn = [
   {
     img: "./results/23_02_22_en.png",
     tit: "Trade E-mini S&P $250 USD",
-    dat: "22/02/2023",
+    dat: "",
 
     txt0: "This short position gave us a profit of $250 dollars, the requirements are as follows:",
 
@@ -33,7 +33,7 @@ export const ExampleDataEn = [
   {
     img: "./results/23_02_23_en.png",
     tit: "Trade E-mini S&P $200 USD",
-    dat: "23/02/2023",
+    dat: "",
     txt0: "This short position yielded us a profit of $362 dollars, the requirements are as follows:",
 
     txm1: "1. Selling momentum: in the Microdelta, we see a large red box indicating strong selling momentum.    ",
@@ -49,7 +49,7 @@ export const ExampleDataEn = [
   {
     img: "./results/22_12_15_en.png",
     tit: "Trade E-mini S&P $362 USD",
-    dat: "15/12/2022",
+    dat: "",
     txt0: "This short position yielded us a profit of $362 dollars, the requirements are as follows:    ",
 
     txm1: "1. Selling momentum: in the Microdelta, we see a large red box indicating strong selling momentum.    ",
@@ -65,7 +65,7 @@ export const ExampleDataEn = [
   {
     img: "./results/22_12_14_en.png",
     tit: "Trade Crude Oil CL $310 USD",
-    dat: "14/12/2022",
+    dat: "",
     txt0: "This long operation left us with a profit of $310 dollars, the requirements are as follows:    ",
 
     txm1: "1. Buying momentum: in the Microdelta we see a large green box showing strong buying momentum.    ",
@@ -81,7 +81,7 @@ export const ExampleDataEn = [
   {
     img: "./results/22_12_12_en.png",
     tit: "Trade Crude Oil CL $360 USD",
-    dat: "12/12/2022",
+    dat: "",
     txt0: "This long operation left us with a profit of $360 dollars, and the requirements are as follows:    ",
 
     txm1: "1. Buying momentum: In the Microdelta, we see a large green box indicating significant buying momentum.    ",
@@ -101,7 +101,7 @@ export const ExampleDataEs = [
 
     txl1: [
       "La anterior gráfica corresponde a la curva de capital del año 2022 de Cristian C. Cuéllar, Trader y CoFundador de OTM Trading. Para obtener esta curva de rendimiento Cristian usó principalmente la estrategia de Momentum, haz <link> clic aquí </link>  si aún no la conoces.",
-      "https://link.co",
+      "https://youtu.be/GnPat8QTfbM",
     ],
 
     txt1: "OTM Trading te permite tener estrategias sólidas y fáciles de identificar, tan solo debes ser disciplinado y seguir los requisitos para tomar posiciones en el mercado. ",
@@ -112,7 +112,7 @@ export const ExampleDataEs = [
   {
     img: "./results/23_02_22_es.png",
     tit: "Operación E-mini S&P $250 USD",
-    dat: "22/02/2023",
+    dat: "",
     txt0: "Esta operación en corto nos dejó un beneficio de $ 250 dólares, los requisitos son los siguientes:",
 
     txm1: "1. Momentum de ventas: en el Microdelta vemos una gran caja roja que nos muestra un gran momentum por partes de los vendedores.",
@@ -128,7 +128,7 @@ export const ExampleDataEs = [
   {
     img: "./results/23_02_23_es.png",
     tit: "Operación E-mini S&P $200 USD",
-    dat: "23/02/2023",
+    dat: "",
     txt0: "Esta operación en corto nos dejó un beneficio de $ 250 dólares, los requisitos son los siguientes:",
 
     txm1: "1. Momentum de compras: en el Microdelta vemos una gran caja verde que nos muestra un gran momentum por partes de los compradores.    ",
@@ -144,7 +144,7 @@ export const ExampleDataEs = [
   {
     img: "./results/22_12_15_es.png",
     tit: "Operación E-mini S&P $362 USD",
-    dat: "15/12/2022",
+    dat: "",
     txt0: "Esta operación en corto nos dejó un beneficio de $ 362 dólares, los requisitos son los siguientes:",
 
     txm1: "1. Momentum de ventas: en el Microdelta vemos una gran caja roja que nos muestra un gran momentum por partes de los vendedores.    ",
@@ -160,7 +160,7 @@ export const ExampleDataEs = [
   {
     img: "./results/22_12_14_es.png",
     tit: "Operación Crudo CL $310 USD",
-    dat: "14/12/2022",
+    dat: "",
     txt0: "Esta operación en largo nos dejó un beneficio de $ 310 dólares, los requisitos son los siguientes:     ",
 
     txm1: "1. Momentum de compras: en el Microdelta vemos una gran caja verde que nos muestra un gran momentum por partes de los compradores.    ",
@@ -177,7 +177,7 @@ export const ExampleDataEs = [
   {
     img: "./results/22_12_12_es.png",
     tit: "Operación Crudo CL $360 USD",
-    dat: "12/12/2022",
+    dat: "",
     txt0: "Esta operación en largo nos dejó un beneficio de $ 360 dólares, los requisitos son los siguientes:     ",
 
     txm1: "1. Momentum de compras: en el Microdelta vemos una gran caja verde que nos muestra un gran momentum por partes de los compradores.    ",

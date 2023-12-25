@@ -4,7 +4,7 @@
   border-radius: 45px;
   margin: 0 auto;
   width: 90%;
-  margin-top: 50px;
+  margin-top: 20px;
   max-width: 800px;
 
   text-align: center;
@@ -13,7 +13,7 @@
   padding: 20px;
 
   @include breakpoint-up(medium) {
-    margin-top: 85px;
+    margin-top: 55px;
     padding: 40px;
   }
 }
@@ -58,10 +58,6 @@
     }
   }
 
-
-
-
-
   &__numeration {
     font-size: $txt-small;
     font-weight: normal;
@@ -100,7 +96,6 @@
       font-size: $txt-medium;
     }
   }
-
 
   &__idImage {
     width: 90%;
@@ -205,6 +200,33 @@
       background-color: $primary;
       color: $back;
       font-size: $txt-small;
+    }
+  }
+
+  &__langCont {
+
+    max-width: 1000px;
+    position: relative;
+    height: 40px;
+    margin: 0 auto;
+
+    &--button {
+      position: absolute;
+      right: 15px;
+      top: 23px;
+      color: White;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      background-size: 30px;
+      background-repeat: no-repeat;
+      background-position-x: 0px;
+      background-position-y: 0px;
+
+      @include breakpoint-up(medium) {
+        top: 30px;
+        right: 10%;
+      }
     }
   }
 }

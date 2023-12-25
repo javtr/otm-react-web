@@ -9,7 +9,7 @@ export const textEn =
     messageE:"...",
     btn:"Submit",
     fail:"The message could not be sent, if the problem persists contact info@otmtrading.com",
-    succes:"The message was successfully sent",
+    succes:"The message was sent successfully. We will contact you soon.",
 
   };
 
@@ -25,6 +25,6 @@ export const textEs =
     messageE:"...",
     btn:"Enviar",
     fail:"El mensaje no pudo ser enviado, si el problema persiste comunicarse con info@otmtrading.com",
-    succes:"El mensaje fue enviado exitosamente",
+    succes:"El mensaje fue enviado exitosamente. Pronto nos contactaremos contigo.",
 
   };

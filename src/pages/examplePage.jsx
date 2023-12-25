@@ -4,20 +4,30 @@ import { textEn, textEs } from "../assets/text/example";
 import LanguageContext from "../context/langContext.js";
 import ModalExamples from "../components/pure/modalExamples";
 import { Helmet } from "react-helmet";
+import { seoEn, seoEs } from "../assets/text/metas.js";
+
 
 export default function ExamplePage() {
   const { lang, setLang } = useContext(LanguageContext);
   const [text, setText] = useState({});
   const [indexContent, setIndexContent] = useState(0);
   const [abierto, setAbierto] = useState(false);
+  const [textSeo, setTextSeo] = useState({});
+
 
   useEffect(() => {
     if (lang == "en") {
       setText(textEn);
+      setTextSeo(seoEn);
+
     } else if (lang == "es") {
       setText(textEs);
+      setTextSeo(seoEs);
+
     } else {
       setText(textEn);
+      setTextSeo(seoEn);
+
     }
   }, [lang]);
 
@@ -43,10 +53,10 @@ export default function ExamplePage() {
   return (
     <div className="examplePage  global__cont">
       <Helmet>
-        <title>Analysis Software For Volume and Delta</title>
+        <title>{textSeo.homeTitle}</title>
         <meta
           name="description"
-          content="Optimiza tu estrategia de trading en el mercado de futuros con OTM Trading, el software de indicadores técnicos especializado en volumen y delta que te brinda información precisa y confiable."
+          content={textSeo.homeMeta}
         />
       </Helmet>
 

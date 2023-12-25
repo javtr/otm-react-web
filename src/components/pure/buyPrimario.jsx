@@ -51,8 +51,17 @@ const BuyPrimario = () => {
         </h3>
 
         <h3 className="buyPrimario__card--price">
-          $ {Products[0].price} <div>lifetime</div>{" "}
+          $ {Products[0].price}{" "}
         </h3>
+
+        <h4 className="buyPrimario__card--properties">
+          {
+            lang == "en"?
+            <div>One Time Purchase | Own it for Life <br/> + All Updates</div>
+            :
+            <div>Compra única | Tuyo de por vida <br/> + Todas las actualizaciones</div>}
+        </h4>
+
 
 
         <div className="buyPrimario__card--button ">

@@ -139,4 +139,38 @@
       font-size: $txt-small;
     }
   }
+
+
+  &__sending{
+    position:   relative;
+    height: 400px;
+    width: 100%;
+    // background-color:rgba(rgb(0, 0, 0), 0.9);
+    padding-top: 150px;
+
+    p{
+      color: aliceblue;
+      font-size: 2rem;
+      text-align: center;
+      animation: escalaInfinita 2s infinite;
+    }
+
+
+  }
+
+
+
+}
+
+
+@keyframes escalaInfinita {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

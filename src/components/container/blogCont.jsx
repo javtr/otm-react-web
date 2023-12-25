@@ -2,7 +2,7 @@ import React, { useEffect, useContext, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { BlogDataEs, BlogDataEn } from "../../assets/info/blog.js";
 import LanguageContext from "../../context/langContext.js";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import {
   BlogCardsGenerator,
@@ -12,17 +12,18 @@ import {
 export default function BlogCont() {
   const { lang, setLang } = useContext(LanguageContext);
   const [text, setText] = useState(BlogDataEn);
-  const [indexArt, setIndexArt] = useState(null);
   const params = useParams();
   let titleArt = params.title;
+  const [indexArt, setIndexArt] = useState(null);
   const navigate = useNavigate();
   const textRef = useRef();
+  const [indexUrl, setIndexUrl] = useState();
+  const location = useLocation();
+  const currentUrl = location;
+  const [titleUrl, setTitleUrl] = useState(params.title);
 
   useEffect(() => {
-    setIndexArt(text.findIndex((obj) => obj.url == titleArt));
-  }, []);
 
-  useEffect(() => {
     if (lang == "en") {
       textRef.current = {
         1: "Also in OTM",
@@ -36,19 +37,20 @@ export default function BlogCont() {
     } else {
       textRef.current = {
         1: "Also in OTM",
-      };      
+      };
       setText(BlogDataEn);
     }
   }, [lang]);
 
-  if (indexArt == -1) {
-    console.log(indexArt);
-    return <></>;
-  }
+
+  useEffect(() => {
+    setIndexArt(text.findIndex((obj) => obj.url == params.title));
+  }, [text,titleArt]);
+
 
   function navegateTo(index) {
     navigate(`/blog/${text[index]["url"]}`);
-    window.location.reload(true);
+    window.scrollTo(0, 0);
   }
 
   return (
@@ -69,7 +71,8 @@ export default function BlogCont() {
               })}
             </div>
           </div>
-          <h3 className="blog__sub" >{textRef.current[1]}</h3>
+          <h3 className="blog__sub">{textRef.current[1]}</h3>
+
           <div className="blogMin">
             <div className="blogMin__cont">
               {text.map((card, i) => (

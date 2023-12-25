@@ -2,15 +2,10 @@ import React from "react";
 const images = require.context("../../assets/img", true);
 import { Link } from "react-router-dom";
 
-
 // generador de previos
 export const BlogCardsPrevGenerator = ({ i, data, navegateTo, indexCard }) => {
-  
   function retornoElementos() {
-
     switch (i.slice(0, 4)) {
-
-
       case "imgp":
         return (
           <div
@@ -67,9 +62,6 @@ export const BlogCardsPrevGenerator = ({ i, data, navegateTo, indexCard }) => {
         }
 
         return <div className="blogPage__cards--card--key">{result}</div>;
-
-
-
     }
   }
 
@@ -96,6 +88,18 @@ export const BlogCardsGenerator = ({
         return (
           <div className="blogArt__card--imgInt">
             <img src={images(data)}></img>
+          </div>
+        );
+
+      case "vidb":
+        return (
+          <div className="blogArt__card--video">
+              <iframe
+                title="Video Player"
+                src={`https://www.youtube.com/embed/${data}`}
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
           </div>
         );
 
@@ -129,6 +133,13 @@ export const BlogCardsGenerator = ({
             <p>
               by <Link to="/">{data}</Link>
             </p>
+          </div>
+        );
+
+      case "date":
+        return (
+          <div className="blogArt__card--date">
+            <p>{data}</p>
           </div>
         );
 
@@ -172,7 +183,6 @@ export const BlogCardsGenerator = ({
   return retornoElementos();
 };
 
-
 function txtLink(data, index) {
   let parts = data[0].split("<");
   let result = [];
@@ -199,9 +209,7 @@ function txtLink(data, index) {
   return <p>{result}</p>;
 }
 
-
 // generador de minuaturas previos dentro del blog
-
 
 export const BlogMiniatureGenerator = ({
   i,
@@ -212,7 +220,6 @@ export const BlogMiniatureGenerator = ({
 }) => {
   function retornoElementos() {
     switch (i.slice(0, 4)) {
-
       case "imgp":
         return (
           <div
@@ -223,22 +230,17 @@ export const BlogMiniatureGenerator = ({
           </div>
         );
 
-        case "titp":
-          return (
-            <div
-              className="blogMin__cont--card--tit"
-              onClick={() => navegateTo(indexCard)}
-            >
-              <h3>{data}</h3>
-            </div>
-          );
-
-
-
-
+      case "titp":
+        return (
+          <div
+            className="blogMin__cont--card--tit"
+            onClick={() => navegateTo(indexCard)}
+          >
+            <h3>{data}</h3>
+          </div>
+        );
     }
   }
 
   return retornoElementos();
 };
-

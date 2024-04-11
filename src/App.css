@@ -215,8 +215,8 @@ body {
   padding: 3px !important;
   width: 45px !important;
   height: 45px !important;
-  bottom: 85px !important;
-  right: 38px !important;
+  bottom: 110px !important;
+  right: 44px !important;
   border-radius: 50px !important;
 }
 
@@ -2265,8 +2265,8 @@ body {
   .CardOrder__content hr {
     margin: 0 auto;
     width: 96%;
-    margin-top: 90px;
-    margin-bottom: 55px;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 }
 .CardOrder__content h4 {
@@ -2283,6 +2283,70 @@ body {
 @media (min-width: 48em) {
   .CardOrder__content h4 {
     margin-bottom: 55px;
+  }
+}
+.CardOrder__content--payment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.CardOrder__content--payment-button {
+  width: 100%;
+  height: 50px;
+  max-width: 400px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  background-color: rgb(97, 255, 189);
+  color: rgb(4, 0, 28);
+  font-size: 22px;
+  font-weight: 600;
+}
+@media (max-width: 47.9375em) {
+  .CardOrder__content--payment-button {
+    margin: 0 auto;
+  }
+}
+.CardOrder__content--payment-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 380px;
+  margin-bottom: 20px;
+}
+@media (max-width: 47.9375em) {
+  .CardOrder__content--payment-img {
+    width: 200px;
+  }
+}
+.CardOrder__content--payment-img img {
+  width: 80px;
+  height: 100%;
+}
+@media (max-width: 47.9375em) {
+  .CardOrder__content--payment-img img {
+    width: 40px;
+  }
+}
+.CardOrder__content--payment-img img:first-child {
+  width: 120px;
+  height: 100%;
+}
+@media (max-width: 47.9375em) {
+  .CardOrder__content--payment-img img:first-child {
+    width: 60px;
+  }
+}
+.CardOrder__content--payment-img img:last-child {
+  width: 90px;
+  height: 100%;
+}
+@media (max-width: 47.9375em) {
+  .CardOrder__content--payment-img img:last-child {
+    width: 45px;
   }
 }
 
@@ -2350,12 +2414,36 @@ body {
 }
 .payment__content--buttons {
   padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 @media (min-width: 48em) {
   .payment__content--buttons {
     width: 50%;
     padding: 0 25px;
   }
+}
+.payment__content--buttons--buttonLemon {
+  width: 100%;
+  height: 50px;
+  max-width: 250px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: rgb(97, 255, 189);
+  color: rgb(4, 0, 28);
+  font-size: 18px;
+}
+@media (max-width: 47.9375em) {
+  .payment__content--buttons--buttonLemon {
+    margin: 0 auto;
+  }
+}
+.payment__content--buttons--buttonLemon a {
+  color: black;
+  font-size: 22px;
+  font-weight: 500;
 }
 .payment__content--buttons--title {
   position: relative;
@@ -3435,4 +3523,210 @@ body {
   color: rgb(4, 0, 28);
   background-color: white;
   cursor: pointer;
+}
+
+.master {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 48em) {
+  .master {
+    padding: 0 60px;
+    padding-top: 70px;
+  }
+}
+@media (min-width: 80em) {
+  .master {
+    padding: 0 10%;
+    padding-top: 60px;
+  }
+}
+.master p {
+  font-size: 1rem;
+  color: yellow;
+  margin-bottom: 75px;
+  position: relative;
+  text-align: center;
+}
+@media (max-width: 47.9375em) {
+  .master p {
+    padding: 0 40px;
+  }
+}
+.master p::before {
+  content: "!";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: yellow;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  position: absolute;
+  left: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 47.9375em) {
+  .master p::before {
+    left: 10px;
+  }
+}
+.master h2 {
+  font-size: 2rem;
+  color: whitesmoke;
+  text-align: center;
+  background-color: #e90089;
+  display: inline;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+@media (max-width: 79.9375em) {
+  .master h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 47.9375em) {
+  .master h2 {
+    font-size: 1.4rem;
+  }
+}
+.master h4 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: whitesmoke;
+  display: inline;
+  padding: 0 90px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+@media (max-width: 79.9375em) {
+  .master h4 {
+    font-size: 1.6rem;
+    padding: 0 50px;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 47.9375em) {
+  .master h4 {
+    font-size: 1.2rem;
+    padding: 0 10px;
+    margin-bottom: 60px;
+  }
+}
+.master--video {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 24px;
+  margin: 0 auto;
+}
+@media (min-width: 48em) {
+  .master--video {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 80em) {
+  .master--video {
+    margin-bottom: 35px;
+  }
+}
+.master--video iframe {
+  width: 100%;
+  height: 48vw;
+  border-radius: 15px;
+}
+@media (min-width: 80em) {
+  .master--video iframe {
+    height: 447px;
+  }
+}
+.master--buttons {
+  width: 100%;
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+@media (max-width: 79.9375em) {
+  .master--buttons {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 47.9375em) {
+  .master--buttons {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+}
+.master--buttons button {
+  width: 80%;
+  height: 50px;
+  animation: jello-horizontal 5s ease-in-out infinite alternate both;
+}
+@media (max-width: 47.9375em) {
+  .master--buttons button {
+    margin-top: 40px;
+  }
+}
+.master--buttons button a {
+  border-radius: 40px;
+  padding: 20px 40px;
+  background-color: #e90089;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 0px 40px rgba(233, 0, 136, 0.5176470588);
+  transition: box-shadow 0.2s ease;
+}
+@media (max-width: 47.9375em) {
+  .master--buttons button a {
+    margin: 0 auto;
+  }
+}
+.master--buttons button a:hover {
+  box-shadow: 0px 0px 60px rgba(233, 0, 136, 0.78);
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  44% {
+    transform: scale3d(1, 1, 1);
+  }
+  46% {
+    transform: scale3d(1.1, 0.9, 1);
+  }
+  48% {
+    transform: scale3d(0.9, 1.1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  52% {
+    transform: scale3d(0.98, 1.02, 1);
+  }
+  54% {
+    transform: scale3d(1.02, 0.98, 1);
+  }
+  56% {
+    transform: scale3d(1, 1, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }/*# sourceMappingURL=App.css.map */

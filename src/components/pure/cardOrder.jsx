@@ -2,6 +2,10 @@ import React, { useState, useEffect, useContext } from "react";
 import { Products } from "../../assets/info/products";
 import { textEn, textEs } from "../../assets/text/payment.js";
 import LanguageContext from "../../context/langContext.js";
+import card from "../../assets/img/card.png";
+import visa from "../../assets/img/visa.png";
+import paypal from "../../assets/img/paypal.png";
+
 
 export default function CardOrder({ productId }) {
   const todayDate = new Date().toISOString().slice(0, 10);
@@ -17,8 +21,6 @@ export default function CardOrder({ productId }) {
       setText(textEn);
     }
   }, [lang]);
-
-  console.log(productId);
 
   return (
     <div className="CardOrder">
@@ -59,8 +61,31 @@ export default function CardOrder({ productId }) {
         )}
       </div>
 
-      {/* <div>{Products[productId].product}</div>
-      <div>{Products[productId].price}</div> */}
+      <div className="CardOrder__content--payment">
+
+        {productId ? (
+          <a
+            className="CardOrder__content--payment-button"
+            href={Products[productId].linkLemon}
+            target="_blank"
+          >
+            {text.button}
+          </a>
+        ) : (
+          <></>
+        )}
+
+          <div className="CardOrder__content--payment-img">
+          <img src={paypal}></img>
+          <img src={visa}></img>
+          <img src={card}></img>
+
+          </div>
+
+      </div>
+
+
+
     </div>
   );
 }

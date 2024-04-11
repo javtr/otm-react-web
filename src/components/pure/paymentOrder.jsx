@@ -40,65 +40,20 @@ export default function PaymentOrder({ productId }) {
         </div>
 
         <div className="payment__content--buttons">
-          <div className="payment__content--buttons--title">
-            <hr></hr>
-            <h4>Teachable</h4>
-          </div>
-
-          <div className="payment__content--buttons--btnTeach">
+          <div className="payment__content--buttons--buttonLemon">
             {params.id ? (
-              <a href={Products[params.id].linkTeack} target="_blank">
-                <div className="payment__content--buttons--btnTeach-container">
+              <a href={Products[params.id].linkLemon} target="_blank">
                   Credit card
-                </div>
               </a>
             ) : (
               <></>
             )}
           </div>
-          <p>By teachable</p>
-
-          <div className="payment__content--buttons--title">
-            <hr></hr>
-            <h4>Paypal</h4>
-          </div>
-          <div className="payment__content--buttons--paypal">
-            <form
-              action="https://www.paypal.com/cgi-bin/webscr"
-              method="post"
-              target="_top"
-            >
-              <input type="hidden" name="cmd" value="_s-xclick"></input>
-
-              {params.id ? (
-                <input
-                  type="hidden"
-                  name="encrypted"
-                  value={Products[params.id].key}
-                ></input>
-              ) : (
-                <></>
-              )}
-
-              <input
-                className="payment__content--buttons--paypal--img"
-                type="image"
-                src={paypal_button}
-                border="0"
-                name="submit"
-                alt="PayPal - The safer, easier way to pay online!"
-              ></input>
-              <img
-                alt=""
-                border="0"
-                src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif"
-                width="1"
-                height="1"
-              ></img>
-            </form>
-          </div>
         </div>
+
+
       </div>
+
     </div>
   );
 }

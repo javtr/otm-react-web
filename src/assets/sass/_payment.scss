@@ -137,8 +137,8 @@
       @include breakpoint-up(medium) {
         margin: 0 auto;
         width: 96%;
-        margin-top: 90px;
-        margin-bottom: 55px;
+        margin-top: 20px;
+        margin-bottom: 30px;
       }
     }
 
@@ -158,6 +158,87 @@
         margin-bottom: 55px;
       }
     }
+
+    &--payment{
+
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &-button{
+        width: 100%;
+        height: 50px;
+        max-width: 400px;
+        text-align: center;
+        line-height: 50px;
+        margin-bottom: 10px;
+
+
+        border-radius: 25px;
+        background-color: $primary;
+        color: $back;
+        font-size: 22px;
+        font-weight: 600;
+
+
+        @include breakpoint-down(medium) {
+          margin: 0 auto;
+        }
+
+      }
+
+      &-img{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 380px;
+        margin-bottom: 20px;
+
+        @include breakpoint-down(medium) {
+          width: 200px;
+        } 
+
+
+        img{
+          width: 80px;
+          height: 100%;
+
+          @include breakpoint-down(medium) {
+            width: 40px;
+          }          
+
+        }
+
+        img:first-child{
+          width: 120px;
+          height: 100%;
+
+          @include breakpoint-down(medium) {
+            width: 60px;
+          }             
+          
+        }
+
+        img:last-child{
+          width: 90px;
+          height: 100%;
+           
+          @include breakpoint-down(medium) {
+            width:45px;
+          }             
+
+
+        }
+
+      }
+
+
+    }
+
+
+
   }
 }
 
@@ -230,10 +311,38 @@
 
     &--buttons {
       padding: 0 15px;
+      display: flex;
+    justify-content: center;
+    align-content: center;
 
       @include breakpoint-up(medium) {
         width: 50%;
         padding: 0 25px;
+      }
+
+      &--buttonLemon {
+        width: 100%;
+        height: 50px;
+        max-width: 250px;
+        text-align: center;
+        line-height: 50px;
+
+
+        border-radius: 25px;
+
+        background-color: $primary;
+        color: $back;
+        font-size: $txt-small;
+
+        @include breakpoint-down(medium) {
+          margin: 0 auto;
+        }
+
+        a {
+          color: black;
+          font-size: 22px;
+          font-weight: 500;
+        }
       }
 
       &--title {
@@ -273,19 +382,15 @@
           font-weight: bold;
           color: $light;
           margin-bottom: 15px;
-
-
         }
 
-          &-container {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-
-
+        &-container {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
 
       &--paypal {

@@ -63,3 +63,16 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	font-weight: normal;
 }
+
+button,
+a {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}

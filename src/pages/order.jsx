@@ -20,7 +20,7 @@ export default function Order() {
           src={logo}></img>
       </div>
       <CardOrder productId={params.id}></CardOrder>
-      <PaymentOrder productId={params.id}></PaymentOrder>
+      {/* <PaymentOrder productId={params.id}></PaymentOrder> */}
     </div>
   );
 }

@@ -109,6 +109,8 @@ const NavBar = () => {
           <Link className="link-before" onClick={turnOffSideBar} to="contact">{content.link5}</Link>
         </div>
       </div>
+
+      
     </div>
   );
 };

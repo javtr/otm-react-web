@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc412fb6.css",
-    "main.js": "/static/js/main.a3e8a455.js",
+    "main.css": "/static/css/main.bf819078.css",
+    "main.js": "/static/js/main.88d1748a.js",
     "static/media/vecteezy_blue-background_AW1120.eps": "/static/media/vecteezy_blue-background_AW1120.3d705dc5bc0f3ae24363.eps",
     "static/media/operativa-crudo-es.gif": "/static/media/operativa-crudo-es.90e09cd83a863621b701.gif",
     "static/media/results_2022.gif": "/static/media/results_2022.f3e89527a7fa0d147241.gif",
@@ -111,12 +111,15 @@
     "static/media/pay.png": "/static/media/pay.3f9439c30878da487aad.png",
     "static/media/art1_min.png": "/static/media/art1_min.bccfc8b430b47ce52eeb.png",
     "static/media/logo_ninja.png": "/static/media/logo_ninja.9ef2c6a31d450a19defd.png",
+    "static/media/card.png": "/static/media/card.7255b8f772d0857561fb.png",
     "static/media/cumulative_icon.png": "/static/media/cumulative_icon.febb139dec04ea0e7123.png",
     "static/media/pack_mini.png": "/static/media/pack_mini.5b55c911fad2a8ba59a0.png",
     "static/media/404-error.png": "/static/media/404-error.f68d0842a22f4baed617.png",
+    "static/media/visa.png": "/static/media/visa.b9d988eca53a9e23b883.png",
     "static/media/art2_int.png": "/static/media/art2_int.97503627110ab9a07295.png",
     "static/media/discord.png": "/static/media/discord.5242f07b9d6256a61c2c.png",
     "static/media/telegrama.png": "/static/media/telegrama.6d4fb402a1836d62584b.png",
+    "static/media/paypal.png": "/static/media/paypal.ae62fa3dec7db39289ea.png",
     "static/media/youtube.png": "/static/media/youtube.0b7c86fba1fbc433f761.png",
     "static/media/micro_icon.png": "/static/media/micro_icon.54038f684e39f819e4ad.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
@@ -131,11 +134,11 @@
     "static/media/check-svgrepo-com(1).svg": "/static/media/check-svgrepo-com(1).1b7256e8b779cbd0e116.svg",
     "index.html": "/index.html",
     "static/media/icons8-close.svg": "/static/media/icons8-close.918b1234f49b28de4f8720841fa5f8d2.svg",
-    "main.bc412fb6.css.map": "/static/css/main.bc412fb6.css.map",
-    "main.a3e8a455.js.map": "/static/js/main.a3e8a455.js.map"
+    "main.bf819078.css.map": "/static/css/main.bf819078.css.map",
+    "main.88d1748a.js.map": "/static/js/main.88d1748a.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc412fb6.css",
-    "static/js/main.a3e8a455.js"
+    "static/css/main.bf819078.css",
+    "static/js/main.88d1748a.js"
   ]
 }

@@ -1,12 +1,16 @@
 .master {
   max-width: $mx-w;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0 20px;
   padding-top: 20px;
+  background-color: $backLight;
+
 
   @include breakpoint-up(medium) {
+    margin: 50px auto;
     padding: 0 60px;
     padding-top: 70px;
+
   }
 
   @include breakpoint-up(large) {
@@ -28,7 +32,8 @@
 
     @include breakpoint-down(medium) {
       padding: 0 40px;
-
+      margin-bottom: 50px;
+      margin-top: 20px;
     }
 
     @include breakpoint-down(large) {
@@ -99,7 +104,7 @@
     }
 
     @include breakpoint-down(medium) {
-      font-size: 1.2rem;
+      font-size: 1rem;
       padding: 0 10px;
       margin-bottom: 60px;
     }
@@ -110,11 +115,13 @@
   &--video {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     margin-bottom: 24px;
     margin: 0 auto;
 
+
     @include breakpoint-up(medium) {
+      width: 80%;
       margin-bottom: 30px;
     }
     @include breakpoint-up(large) {
@@ -136,7 +143,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 80px;
-
+    margin-bottom: 50px;
 
     @include breakpoint-down(large) {
       padding: 0 40px;
@@ -147,7 +154,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 0px;
+      margin-top: 30px;
       
 
 
@@ -161,10 +168,14 @@
       @include breakpoint-down(large) {
       }
       @include breakpoint-down(medium) {
-        margin-top: 40px;
+        margin-top: 20px;
       }
 
       a {
+        display: block;
+
+        width: 75%;
+        margin: 0 auto;
         border-radius: 40px;
         padding: 20px 40px;
 
@@ -177,6 +188,9 @@
 
         @include breakpoint-down(medium) {
           margin: 0 auto;
+          font-size: 0.8rem;
+          padding:15px 30px;
+          
         }
 
         &:hover {

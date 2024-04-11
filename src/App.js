@@ -51,13 +51,13 @@ export default function App() {
             <Route path="blog" element={<Blog></Blog>}></Route>
             <Route path="blog/:title" element={<BlogCont></BlogCont>}></Route>
             <Route path="buy" element={<BuyPage></BuyPage>}></Route>
-            <Route path="master" element={<Master ></Master>}></Route>
             <Route path="example" element={<ExamplePage></ExamplePage>}></Route>
             <Route path="contact" element={<ContactForm></ContactForm>}></Route>
           </Route>
           <Route path="/order/:id" element={<Order></Order>}></Route>
           <Route path="/licence" element={<LicenceForm></LicenceForm>}></Route>
           <Route path="*" element={<Error404 />} />
+          <Route path="master" element={<Master ></Master>}></Route>
         </Routes>
       </div>
     </LanguageContext.Provider>

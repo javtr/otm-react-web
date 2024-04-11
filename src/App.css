@@ -3527,9 +3527,10 @@ body {
 
 .master {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0 20px;
   padding-top: 20px;
+  background-color: rgb(21, 19, 43);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3537,6 +3538,7 @@ body {
 }
 @media (min-width: 48em) {
   .master {
+    margin: 50px auto;
     padding: 0 60px;
     padding-top: 70px;
   }
@@ -3557,6 +3559,8 @@ body {
 @media (max-width: 47.9375em) {
   .master p {
     padding: 0 40px;
+    margin-bottom: 50px;
+    margin-top: 20px;
   }
 }
 .master p::before {
@@ -3619,7 +3623,7 @@ body {
 }
 @media (max-width: 47.9375em) {
   .master h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0 10px;
     margin-bottom: 60px;
   }
@@ -3627,12 +3631,13 @@ body {
 .master--video {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   margin-bottom: 24px;
   margin: 0 auto;
 }
 @media (min-width: 48em) {
   .master--video {
+    width: 80%;
     margin-bottom: 30px;
   }
 }
@@ -3657,6 +3662,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin-top: 80px;
+  margin-bottom: 50px;
 }
 @media (max-width: 79.9375em) {
   .master--buttons {
@@ -3669,7 +3675,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 30px;
   }
 }
 .master--buttons button {
@@ -3679,10 +3685,13 @@ body {
 }
 @media (max-width: 47.9375em) {
   .master--buttons button {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 .master--buttons button a {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
   border-radius: 40px;
   padding: 20px 40px;
   background-color: #e90089;
@@ -3695,6 +3704,8 @@ body {
 @media (max-width: 47.9375em) {
   .master--buttons button a {
     margin: 0 auto;
+    font-size: 0.8rem;
+    padding: 15px 30px;
   }
 }
 .master--buttons button a:hover {

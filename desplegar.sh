@@ -22,5 +22,3 @@ git add .
 git commit -m "Build"
 git push origin master
 echo "========== Push ==========="
-
-read -n 1 -s -r -p "Presione cualquier tecla para salir..."

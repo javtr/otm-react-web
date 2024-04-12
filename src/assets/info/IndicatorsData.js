@@ -31,7 +31,7 @@ export const IndicatorsDataEn = [
     txtb8:
       "Si quieres aprender aún más sobre OTM Trading y cómo puedes aprovecharlo al máximo, te invito a que te unas a la MasterClass. ¡Allí podrás ampliar todo lo que has aprendido y tener aún más herramientas para tener éxito en tus operaciones!",
 
-    lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
+    lnkb1: ["https://otmtrading.lemonsqueezy.com/buy/bdf5bdcd-19d4-4437-9147-68cdd33a2574", "MasterClass OTM"],
   },
 
   //Explicación Indicadores
@@ -179,7 +179,7 @@ export const IndicatorsDataEn = [
       "5. Low Volume Area: after the price has advanced, you should wait for the retracement in the low volume area that the volume profile leaves, this gives you a clear entry zone where you can support your position.",
     txtb1:
       "I hope this has helped you better understand the entry requirements in favor of the trend. If you want to learn more, don't hesitate to click on the button below to keep learning!",
-    lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
+    lnkb1: ["https://otmtrading.lemonsqueezy.com/buy/bdf5bdcd-19d4-4437-9147-68cdd33a2574", "MasterClass OTM"],
   },
   {
     linkTit: "Reversals",
@@ -200,7 +200,7 @@ export const IndicatorsDataEn = [
       "5. Positive accumulated delta (divergence): finally, the delta histogram must also be positive and opposite to the price movement, which confirms that there is an anomaly.",
     txtb1:
       "If these requirements are met, a trend reversal may be occurring and we may consider entering a long position. Learn more in the video we have prepared for you about this strategy.",
-    lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
+    lnkb1: ["https://otmtrading.lemonsqueezy.com/buy/bdf5bdcd-19d4-4437-9147-68cdd33a2574", "MasterClass OTM"],
   },
 
   //¿Listo? Revisa esto para comenzar
@@ -366,7 +366,7 @@ export const IndicatorsDataEs = [
     txtb8:
       "Si quieres aprender aún más sobre OTM Trading y cómo puedes aprovecharlo al máximo, te invito a que te unas a la MasterClass. ¡Allí podrás ampliar todo lo que has aprendido y tener aún más herramientas para tener éxito en tus operaciones!",
 
-    lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
+    lnkb1: ["https://otmtrading.lemonsqueezy.com/buy/bdf5bdcd-19d4-4437-9147-68cdd33a2574", "MasterClass OTM"],
   },
 
   //Explicación Indicadores
@@ -565,7 +565,7 @@ export const IndicatorsDataEs = [
     txtb1:
       "Espero que esto te haya ayudado a entender mejor los requisitos de entrada a favor de tendencia. ¡Si quieres aprender más, no dudes en hacer clic en el botón de abajo para seguir aprendiendo! ",
 
-    lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
+    lnkb1: ["https://otmtrading.lemonsqueezy.com/buy/bdf5bdcd-19d4-4437-9147-68cdd33a2574", "MasterClass OTM"],
   },
   {
     linkTit: "Reversals",
@@ -595,7 +595,7 @@ export const IndicatorsDataEs = [
     txtb1:
       "Si se cumplen estos requisitos, es posible que se esté produciendo un cambio de tendencia y podríamos considerar entrar en una posición de compra. Aprende más en el video que preparamos para ti.  ",
 
-    lnkb1: ["https://www.subscribepage.com/masterclass-gratuito-oferta-y-demanda", "MasterClass OTM"],
+    lnkb1: ["https://otmtrading.lemonsqueezy.com/buy/bdf5bdcd-19d4-4437-9147-68cdd33a2574", "MasterClass OTM"],
   },
 
   //¿Listo? Revisa esto para comenzar

@@ -1,0 +1,34 @@
+@import "./variables.scss";
+
+.risk {
+  background-color: $secundaryDark;
+  display: flex;
+  justify-content: center;
+  color: $light;
+  font-size: $txt-small;
+
+  &__container {
+    max-width: $mx-w;
+    width: 100%;
+    padding: 90px $margen-lat 50px $margen-lat;
+    color: $lightGray;
+
+    @include breakpoint-down(large) {
+      padding: 50px 20px 30px 20px;
+    }
+
+    h2 {
+      text-align: left;
+      font-size: $txt-medium2;
+      margin-bottom: 10px;
+
+    }
+
+    p{
+      margin-bottom: 50px;
+      line-height: 1.5;
+    }
+
+
+  }
+}

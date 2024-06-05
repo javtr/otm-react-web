@@ -8,6 +8,8 @@ import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import FloatingWhatsApp from "react-floating-whatsapp";
 import logoOtm from "../assets/img/logoOtm.png";
 import LanguageContext from "../context/langContext.js";
+import CookieBanner from "../components/pure/CookieBanner.jsx";
+
 
 
 export default function layout() {
@@ -28,6 +30,8 @@ export default function layout() {
 
   return (
     <div className="layout">
+
+      <CookieBanner></CookieBanner>    
       <ScrollToTop
         className="gl-goTop--cont"
         smooth

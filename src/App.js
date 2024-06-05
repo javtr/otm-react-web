@@ -4,6 +4,7 @@ import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./pages/layout";
 import Home from "./pages/home";
+import Risk from "./pages/Risk";
 import FeaturesPage from "./pages/featuresPage";
 import BuyPage from "./pages/buyPage";
 import ExamplePage from "./pages/examplePage";
@@ -53,6 +54,7 @@ export default function App() {
             <Route path="buy" element={<BuyPage></BuyPage>}></Route>
             <Route path="example" element={<ExamplePage></ExamplePage>}></Route>
             <Route path="contact" element={<ContactForm></ContactForm>}></Route>
+            <Route path="risk" element={<Risk ></Risk>}></Route>
           </Route>
           <Route path="/order/:id" element={<Order></Order>}></Route>
           <Route path="/licence" element={<LicenceForm></LicenceForm>}></Route>

@@ -76,6 +76,10 @@ export default function TestimonyCont() {
 
       <h2 className='testimony__title'>User Reviews</h2>
 
+      <p className='testimony__risk'>Es posible que los testimonios que aparecen en este sitio web no son representativos de otros clientes, y no es garantía alguna de futuro rendimiento o éxito</p>
+
+
+
 
       {content.length > 0 ?
         <Carousel responsive={responsive}>

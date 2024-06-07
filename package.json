@@ -29,7 +29,7 @@
     "slider-pro-js": "^1.0.0",
     "write-file-p": "^1.0.8"
   },
-  "homepage": "http://otmtest234.000webhostapp.com/",
+  "homepage":"https://otmtrading.com",
   "scripts": {
     "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",

@@ -1,5 +1,6 @@
 export const textEn =
   {
+    dec:"Risk",
     link1:"OTM",
     link2:"How to use?",
     link3:"Pricing",
@@ -12,7 +13,7 @@ export const textEn =
 
 export const textEs =
   {
-    link1:"OTM",
+    dec:"Declaraciones",
     link2:"¿Como se usa?",
     link3:"Precios",
     link4:"Resultados",

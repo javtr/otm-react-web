@@ -17,13 +17,37 @@
     text-align: center;
 
     @include breakpoint-up(medium) {
-      margin-bottom: 45px;
+      margin-bottom: 10px;
       font-size: $txt-large-smh2;
     }
     @include breakpoint-up(large) {
     }
 
   }
+
+
+
+  &__risk {
+
+    color: $light;
+    font-size: $txt-12small;
+    font-weight: normal;
+    line-height: 1.2;
+
+    text-align: left;
+    margin-bottom: 40px;
+
+    @include breakpoint-up(medium) {
+      margin-bottom: 45px;
+      font-size: $txt-xxsmall;
+    }
+    @include breakpoint-up(large) {
+    }
+
+  }
+
+
+
 
   &__container {
     display: flex;

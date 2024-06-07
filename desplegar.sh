@@ -1,19 +1,19 @@
 #!/bin/bash
 
 # ejecutar run build
-cd ~/Desarrollo/nueva-otm-web
+cd ~/Desarrollo/otm-react-web
 npm run build
 echo "========== Build ==========="
 
 # limpiar la carpeta build
-cd ~/Desarrollo/OTM_Web_Build_Production
-find . -path './.git' -prune -o -mindepth 1 ! -name '.*' -delete
+cd ~/Desarrollo/otm-web-prod
+find . -mindepth 1 -name '.git' -prune -o ! -name '.*' -exec rm -rf {} +
 
 echo "========== Clean ==========="
 
 # copiar archivos
-cp -r ~/Desarrollo/nueva-otm-web/build/* ~/Desarrollo/OTM_Web_Build_Production
-cp -r ~/Desarrollo/nueva-otm-web/SEO/* ~/Desarrollo/OTM_Web_Build_Production
+cp -r ~/Desarrollo/otm-react-web/build/* ~/Desarrollo/otm-web-prod
+cp -r ~/Desarrollo/otm-react-web/SEO/* ~/Desarrollo/otm-web-prod
 
 HTACCESS_PATH="$HOME/Desarrollo/otm-web-prod/.htaccess"
 
@@ -36,8 +36,8 @@ echo "Archivo .htaccess creado en $HTACCESS_PATH"
 echo "========== Copy ==========="
 
 # pushear archivos
-cd ~/Desarrollo/OTM_Web_Build_Production
+cd ~/Desarrollo/otm-web-prod
 git add .
 git commit -m "Build"
-git push origin master
+git push origin main
 echo "========== Push ==========="

@@ -84,7 +84,7 @@ const NavBar = () => {
           <Link className="link-before" to="features">{content.link2}</Link>
           <Link className="link-before" to="buy">{content.link3}</Link>
           {/* <Link className="link-before" to="blog">{content.link6}</Link> */}
-          <Link className="link-before" to="example">{content.link4}</Link>
+          {/* <Link className="link-before" to="example">{content.link4}</Link> */}
           <Link className="link-before" to="contact">{content.link5}</Link>
         </div>
       </div>
@@ -107,7 +107,7 @@ const NavBar = () => {
           <Link className="link-before" onClick={turnOffSideBar} to="features">{content.link2}</Link>
           <Link className="link-before" onClick={turnOffSideBar} to="buy">{content.link3}</Link>
           {/* <Link className="link-before" onClick={turnOffSideBar} to="blog">{content.link6}</Link> */}
-          <Link className="link-before" onClick={turnOffSideBar} to="example">{content.link4}</Link>
+          {/* <Link className="link-before" onClick={turnOffSideBar} to="example">{content.link4}</Link> */}
           <Link className="link-before" onClick={turnOffSideBar} to="contact">{content.link5}</Link>
           <Link className="link-before" to="/risk">{content.dec}</Link>
         </div>

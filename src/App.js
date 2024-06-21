@@ -52,7 +52,7 @@ export default function App() {
             <Route path="blog" element={<Blog></Blog>}></Route>
             <Route path="blog/:title" element={<BlogCont></BlogCont>}></Route>
             <Route path="buy" element={<BuyPage></BuyPage>}></Route>
-            <Route path="example" element={<ExamplePage></ExamplePage>}></Route>
+            {/* <Route path="example" element={<ExamplePage></ExamplePage>}></Route> */}
             <Route path="contact" element={<ContactForm></ContactForm>}></Route>
             <Route path="risk" element={<Risk ></Risk>}></Route>
           </Route>

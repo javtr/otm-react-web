@@ -16,6 +16,7 @@ import LanguageContext from "../src/context/langContext";
 import Blog from "./pages/blog";
 import BlogCont from "./components/container/blogCont";
 import Error404 from "./components/pure/404";
+import InstalationPage from "./pages/InstalationPage";
 
 export default function App() {
   const [lang, setLang] = useState("");
@@ -55,6 +56,7 @@ export default function App() {
             {/* <Route path="example" element={<ExamplePage></ExamplePage>}></Route> */}
             <Route path="contact" element={<ContactForm></ContactForm>}></Route>
             <Route path="risk" element={<Risk ></Risk>}></Route>
+            <Route path="install" element={<InstalationPage ></InstalationPage>}></Route>
           </Route>
           <Route path="/order/:id" element={<Order></Order>}></Route>
           <Route path="/licence" element={<LicenceForm></LicenceForm>}></Route>

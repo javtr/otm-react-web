@@ -20,7 +20,6 @@ const InstalationPage = () => {
     <div className="installation">
       <h1 className="installation__tituloGen">{text.titg1}</h1>
       <h2 className="installation__titulo">{text.titg1_01}</h2>
-      <p className="installation__subTitulo"></p>
 
       <div className="installation__video">
         <iframe
@@ -49,7 +48,6 @@ const InstalationPage = () => {
       </div>
 
       <h2 className="installation__titulo">{text.titg1_03}</h2>
-      <p className="installation__subTitulo">{text.subg1_03}</p>
 
       <div className="installation__video">
         <iframe

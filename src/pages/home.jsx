@@ -2,6 +2,7 @@ import React, { useRef, useState, useContext, useEffect } from "react";
 import BuyButton from "../components/pure/buyButton";
 import Footer from "../components/pure/footer";
 import Hero from "../components/pure/hero";
+import BlackFriday from "../components/pure/blackfriday.jsx";
 import Whatis from "../components/pure/whatis";
 import Advantages from "../components/pure/advantage";
 import Features from "../components/container/features";
@@ -44,6 +45,7 @@ const Home = () => {
         />
       </Helmet>
 
+      <BlackFriday></BlackFriday>
       <Hero scroll={executeScroll}></Hero>
       <Whatis refProp={myRef}></Whatis>
       <Features></Features>

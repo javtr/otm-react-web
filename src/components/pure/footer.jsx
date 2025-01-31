@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
+import { Link } from "react-router-dom";
 import youtube from "../../assets/img/youtube.png";
 import telegram from "../../assets/img/telegrama.png";
+import Policies from "../../pages/policies.jsx";
 import LanguageContext from "../../context/langContext.js";
 import { textEn, textEs } from "../../assets/text/footer.js";
 
@@ -28,33 +30,9 @@ export default function Footer() {
 
       <div className="footer__container">
         <div className="footer__textContainer">
-
-          
-          {/* {lang === "en" ? (
-            <p className="footer__text">
-              Trading futures, forex and options contains considerable risk and
-              is not for all investors. An investor can potentially lose all or
-              more than the initial investment. Risk capital is money that can
-              be lost without jeopardizing financial security or lifestyle. Only
-              risk capital should be used for trading and only those with
-              sufficient risk capital should consider trading. Past performance
-              is not necessarily indicative of future results.
-            </p>
-          ) : (
-            <p className="footer__text">
-            El trading de futuros, forex y opciones conlleva un considerable riesgo y no es para todos los inversores. Un inversor potencialmente puede perder todo o más que la inversión inicial. El capital de riesgo es el dinero que se puede perder sin comprometer la seguridad financiera o el estilo de vida. Solo el capital de riesgo debe ser utilizado para el trading y solo aquellos con suficiente capital de riesgo deberían considerar el trading. El rendimiento pasado no es necesariamente indicativo de resultados futuros.
-            </p>
-          )} */}
-
-
         <p className="footer__text">{text.pr1}</p>
         <p className="footer__text">{text.pr2}</p>
         <p className="footer__text">{text.pr3}</p>
-
-
-
-
-
         </div>
 
         <div className="footer__mailContainer">
@@ -74,6 +52,7 @@ export default function Footer() {
               <img src={telegram}></img>
             </a>
           </div>
+          <Link className="footer__policies" to="/policies">{text.link4}</Link>
           <p className="footer__rights">© OTM Trading 2022</p>
         </div>
       </div>

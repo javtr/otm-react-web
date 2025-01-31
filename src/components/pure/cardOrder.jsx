@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import { Link } from "react-router-dom";
 import { Products } from "../../assets/info/products";
 import { textEn, textEs } from "../../assets/text/payment.js";
 import LanguageContext from "../../context/langContext.js";
@@ -82,6 +83,12 @@ export default function CardOrder({ productId }) {
 
           </div>
 
+      </div>
+
+
+      <div className="CardOrder__content--purchase">
+        <div className="CardOrder__content--purchase-text">{text.text3}</div>
+        <Link className="CardOrder__content--purchase-footer__policies" to="/policies">{text.text4}</Link>
       </div>
 
 

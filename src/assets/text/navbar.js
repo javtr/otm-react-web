@@ -14,6 +14,7 @@ export const textEn =
 export const textEs =
   {
     dec:"Declaraciones",
+    link1:"OTM",
     link2:"¿Como se usa?",
     link3:"Precios",
     link4:"Resultados",

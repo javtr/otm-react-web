@@ -45,7 +45,7 @@ const Home = () => {
         />
       </Helmet>
 
-      <BlackFriday></BlackFriday>
+      {/* <BlackFriday></BlackFriday> */}
       <Hero scroll={executeScroll}></Hero>
       <Whatis refProp={myRef}></Whatis>
       <Features></Features>

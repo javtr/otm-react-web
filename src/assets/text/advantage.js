@@ -3,7 +3,7 @@ export const textEn =
     tit:"Advantages",
     sub:"OTM Software will help you achieve operational consistency in your trading this way:",
     tit1:"Multiple confirmations",
-    p1:"Increase the consistency of your trades by using the confirmation of each indicator. With this data, you will never be distrustful or blind in the market again.",
+    p1:"Increase the consistency of your trades by using the confirmation of each indicator. With this data, you will never be distrustful or blind in the market again.n",
     tit2:"Easy to read",
     p2:"Look at the interaction between buyers and sellers in a simplified way. The indicators will allow you to focus only on the most relevant movements and volumes.",
     tit3:"Objective positions",

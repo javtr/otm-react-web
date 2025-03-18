@@ -1,23 +1,166 @@
-export const textEn =
-{
+export const textEn = {
   yearly: [
-    { name: "Basic", price: 390,price2:"499",pricetext:"/per month",pricesub:"basic indicators",button:"Buy", features: ["OTM Swing","OTM Micro","OTM VWAP","OTM Profile","OTM Delta Bar","OTM Cumulative Delta","OTM Bar Timmer"] },
-    { name: "Plus", price: 490,price2:"599",pricetext:"/per month",pricesub:"basic indicators",button:"Buy", features: ["OTM Swing","OTM Micro","OTM VWAP","OTM Profile","OTM Delta Bar","OTM Cumulative Delta","OTM Bar Timmer"] },
+    {
+      name: "Yearly",
+      price: 390,
+      price2: "499",
+      pricetext: "/per month",
+      pricesub: "Por año",
+      button: "Buy",
+      features: [
+        { text: "OTM Swing", icon: "✓" },
+        { text: "OTM Micro", icon: "✓" },
+        { text: "OTM VWAP", icon: "✓" },
+        { text: "OTM Profile", icon: "✓" },
+        { text: "OTM Delta Bar", icon: "✓" },
+        { text: "OTM Cumulative Delta", icon: "✖" },
+        { text: "OTM Bar Timmer", icon: "✖" },
+      ],
+      color1: "#2db0ff",
+      color2: "#6c63ff",
+    },
+    {
+      name: "Lifetime",
+      price: 490,
+      price2: "599",
+      pricetext: "/per month",
+      pricesub: "Por año",
+      button: "Buy",
+      features: [
+        { text: "OTM Swing", icon: "✓" },
+        { text: "OTM Micro", icon: "✓" },
+        { text: "OTM VWAP", icon: "✓" },
+        { text: "OTM Profile", icon: "✓" },
+        { text: "OTM Delta Bar", icon: "✓" },
+        { text: "OTM Cumulative Delta", icon: "✖" },
+        { text: "OTM Bar Timmer", icon: "✖" },
+      ],
+      color1: "#BF08E3",
+      color2: "#FF4ED6",
+    },
   ],
   lifetime: [
-    { name: "Basic", price: 790,price2:"899",pricetext:"/per year",pricesub:"basic indicators",button:"Buy", features: ["OTM Swing","OTM Micro","OTM VWAP","OTM Profile","OTM Delta Bar","OTM Cumulative Delta","OTM Bar Timmer"] },
-    { name: "Plus", price: 890,price2:"999",pricetext:"/per year",pricesub:"basic indicators",button:"Buy", features: ["OTM Swing","OTM Micro","OTM VWAP","OTM Profile","OTM Delta Bar","OTM Cumulative Delta","OTM Bar Timmer"] },
-  ]
-}
+    {
+      name: "Yearly",
+      price: 390,
+      price2: "499",
+      pricetext: "/per month",
+      pricesub: "Por año",
+      button: "Buy",
+      features: [
+        { text: "OTM Swing", icon: "✓" },
+        { text: "OTM Micro", icon: "✓" },
+        { text: "OTM VWAP", icon: "✓" },
+        { text: "OTM Profile", icon: "✓" },
+        { text: "OTM Delta Bar", icon: "✓" },
+        { text: "OTM Cumulative Delta", icon: "✖" },
+        { text: "OTM Bar Timmer", icon: "✖" },
+      ],
+      color1: "#2db0ff",
+      color2: "#6c63ff",
+    },
+    {
+      name: "Lifetime",
+      price: 490,
+      price2: "599",
+      pricetext: "/per month",
+      pricesub: "Por año",
+      button: "Buy",
+      features: [
+        { text: "OTM Swing", icon: "✓" },
+        { text: "OTM Micro", icon: "✓" },
+        { text: "OTM VWAP", icon: "✓" },
+        { text: "OTM Profile", icon: "✓" },
+        { text: "OTM Delta Bar", icon: "✓" },
+        { text: "OTM Cumulative Delta", icon: "✖" },
+        { text: "OTM Bar Timmer", icon: "✖" },
+      ],
+      color1: "#BF08E3",
+      color2: "#FF4ED6",
+    },
+  ],
 
-  export const textEs =
-  {
-    yearly: [
-      { name: "Básico", price: 390,price2:"499",pricetext:"/por mes",pricesub:"basic indicators",button:"Comprar", features: ["OTM Swing","OTM Micro","OTM VWAP","OTM Profile","OTM Delta Bar","OTM Cumulative Delta","OTM Bar Timmer"] },
-      { name: "Plus", price: 490,price2:"599",pricetext:"/por año",pricesub:"basic indicators",button:"Comprar", features: ["OTM Swing","OTM Micro","OTM VWAP","OTM Profile","OTM Delta Bar","OTM Cumulative Delta","OTM Bar Timmer"] },
-    ],
-    lifetime: [
-      { name: "Básico", price: 790,price2:"899",pricetext:"/por mes",pricesub:"basic indicators",button:"Comprar", features: ["OTM Swing","OTM Micro","OTM VWAP","OTM Profile","OTM Delta Bar","OTM Cumulative Delta","OTM Bar Timmer"] },
-      { name: "Plus", price: 890,price2:"999",pricetext:"/por año",pricesub:"basic indicators",button:"Comprar", features: ["OTM Swing","OTM Micro","OTM VWAP","OTM Profile","OTM Delta Bar","OTM Cumulative Delta","OTM Bar Timmer"] },
-    ]
-  }
+};
+
+export const textEs = {
+  yearly: [
+    {
+      name: "Básico",
+      price: 390,
+      price2: "499",
+      pricetext: "/por mes",
+      pricesub: "Por año",
+      button: "Comprar",
+      features: [
+        { text: "OTM Swing", icon: "✓" },
+        { text: "OTM Micro", icon: "✓" },
+        { text: "OTM VWAP", icon: "✓" },
+        { text: "OTM Profile", icon: "✓" },
+        { text: "OTM Delta Bar", icon: "✓" },
+        { text: "OTM Cumulative Delta", icon: "✖" },
+        { text: "OTM Bar Timmer", icon: "✖" },
+      ],
+      color1: "#2E94FE",
+      color2: "#3ED7FF",
+    },
+    {
+      name: "Plus",
+      price: 490,
+      price2: "599",
+      pricetext: "/por año",
+      pricesub: "Por año",
+      button: "Comprar",
+      features: [
+        { text: "OTM Swing", icon: "✓" },
+        { text: "OTM Micro", icon: "✓" },
+        { text: "OTM VWAP", icon: "✓" },
+        { text: "OTM Profile", icon: "✓" },
+        { text: "OTM Delta Bar", icon: "✓" },
+        { text: "OTM Cumulative Delta", icon: "✓" },
+        { text: "OTM Bar Timmer", icon: "✓" },
+      ],
+      color1: "#BF08E3",
+      color2: "#FF4ED6",
+    },
+  ],
+  lifetime: [
+    {
+      name: "Básico",
+      price: 790,
+      price2: "899",
+      pricetext: "/por mes",
+      pricesub: "Por año",
+      button: "Comprar",
+      features: [
+        { text: "OTM Swing", icon: "✓" },
+        { text: "OTM Micro", icon: "✓" },
+        { text: "OTM VWAP", icon: "✓" },
+        { text: "OTM Profile", icon: "✓" },
+        { text: "OTM Delta Bar", icon: "✓" },
+        { text: "OTM Cumulative Delta", icon: "✖" },
+        { text: "OTM Bar Timmer", icon: "✖" },
+      ],
+      color1: "#2E94FE",
+      color2: "#3ED7FF",
+    },
+    {
+      name: "Plus",
+      price: 890,
+      price2: "999",
+      pricetext: "/por año",
+      pricesub: "Por año",
+      button: "Comprar",
+      features: [
+        { text: "OTM Swing", icon: "✔" },
+        { text: "OTM Micro", icon: "✓" },
+        { text: "OTM VWAP", icon: "✓" },
+        { text: "OTM Profile", icon: "✓" },
+        { text: "OTM Delta Bar", icon: "✓" },
+        { text: "OTM Cumulative Delta", icon: "✓" },
+        { text: "OTM Bar Timmer", icon: "✓" },
+      ],
+      color1: "#BF08E3",
+      color2: "#FF4ED6",
+    },
+  ],
+};

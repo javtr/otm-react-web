@@ -8,6 +8,7 @@ import Risk from "./pages/Risk";
 import FeaturesPage from "./pages/featuresPage";
 import BuyPage from "./pages/buyPage";
 import ExamplePage from "./pages/examplePage";
+import BuyPageSuscription from "./pages/buyPageSuscription";
 import Master from "./pages/master";
 import ContactForm from "./components/pure/form/contactForm";
 import Order from "./pages/order";
@@ -53,7 +54,7 @@ export default function App() {
             <Route path="blog" element={<Blog></Blog>}></Route>
             <Route path="blog/:title" element={<BlogCont></BlogCont>}></Route>
             <Route path="buy" element={<BuyPage></BuyPage>}></Route>
-            {/* <Route path="example" element={<ExamplePage></ExamplePage>}></Route> */}
+            {/* <Route path="buy" element={<BuyPageSuscription></BuyPageSuscription>}></Route> */}
             <Route path="contact" element={<ContactForm></ContactForm>}></Route>
             <Route path="risk" element={<Risk ></Risk>}></Route>
             <Route path="policies" element={<Policies ></Policies>}></Route>

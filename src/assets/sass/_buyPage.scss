@@ -326,155 +326,196 @@
 
 // Suscripción y planes
 
-
-.separator {
-  border: none;
-  height:1px;
-  background: $gray; // Usa tu variable de color
-  margin: 10px 0;
-  width: 100%; // Opcional, ajusta el ancho
-}
-
-
 .subscription {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
-  color: $light;
+  color: #ffffff; // ✅ Color de texto independiente del degradado
 
-  // 🎛️ Switch para alternar entre mensual y anual
   &__switch-container {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2); // Fondo semi-transparente
+    background: rgba(255, 255, 255, 0.2);
     padding: 5px;
     border-radius: 30px;
-    backdrop-filter: blur(10px); // Efecto de desenfoque
+    backdrop-filter: blur(10px);
   }
 
   &__switch-option {
     padding: 10px 20px;
-    font-size: $txt-small;
+    font-size: 14px;
     font-weight: bold;
-    color: $lightGray;
+    color: #aaaaaa;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     border-radius: 30px;
 
     &--active {
       background: white;
-      color: $darkGray;
+      color: #333333;
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     }
   }
 
-  // 📦 Contenedor de las tarjetas de planes
+  // 🔥 Flexbox para alinear las tarjetas
   &__plans {
     display: flex;
-    gap: 2rem;
+    gap: 2rem; // Espacio entre tarjetas
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; // Para que las tarjetas se acomoden automáticamente
     margin-top: 50px;
+  }
 
-    &-card {
-      background: $backLight;
-      color: $light;
-      padding: 2rem;
-      border-radius: 15px;
-      width: 280px;
-      text-align: center;
-      // box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
-      transition: transform 0.3s ease-in-out;
-      border: 2px solid transparent;
+  .subscription__plans-card {
+    background: #292651;
+    padding: 1rem;
+    border-radius: 20px;
+    color: #ffffff; // ✅ Texto blanco independiente
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid transparent;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
 
-      &--name {
-        font-size: 34px;
-        text-align: center;
-        margin-top: 10px;
-        color: $primary;
-      }
+    &:hover {
+      transform: scale(1.05);
+      border-color: #6c63ff;
+    }
 
-      &--price {
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        margin-top: 35px;
+    // ✅ Fondo con SVG
+    .subscription__card-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      z-index: 0;
+      pointer-events: none;
 
-        &--value{
-          font-size: 34px;
-          text-align: start;
-      }
-
-        &--details {
-          display: flex;
-          flex-direction: column;
-          align-items: start;
-          margin-left: 10px;
-
-          &--price2 {
-            font-size: 16px;
-            text-align: start;
-            text-decoration: line-through;
-          }
-
-          &--subt {
-            font-size: 10px;
-            text-align: start;
-            margin-top: 6px;
-          }
-        }
-      }
-
-      &--subt {
-        font-size: 14px;
-        text-align: start;
-        margin-top: 20px;
-      }
-
-      &:hover {
-        transform: scale(1.05);
-        border-color: $primary;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-        margin-top: 40px;
-
-        li {
-          margin: 10px 0;
-          font-size: $txt-xsmall;
-          text-align: start;
-
-          &:before {
-            content: "✔️";
-            margin-right: 8px;
-          }
-        }
-      }
-
-      // 🎟️ Botón de suscripción
-      &--button {
-        background-color: $primary;
-        color: $back;
-        padding: 12px 18px;
-        border: none;
-        border-radius: 10px;
-        font-size: $txt-small;
-        cursor: pointer;
-        margin-top: 30px;
-        padding-left:70px;
-        padding-right:70px;
-        
-        font-weight: bold;
-        transition: background 0.3s ease;
-
-        &:hover {
-          background-color: $secundary;
-          color: $light;
-        }
+      .subscription__card-svg {
+        width: 100%;
+        height: 100%;
       }
     }
+
+    // ✅ Todo el contenido sobre el SVG
+    * {
+      position: relative;
+      z-index: 1;
+    }
+
+
+    &--price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+
+      &--circle {
+        width: 80px;           // Ajusta el tamaño según lo necesites
+        height: 80px;
+        border-radius: 50%;    // Esto crea el círculo
+        background: #ffffff;   // Color de fondo para el círculo (puedes cambiarlo)
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #333333;        // Color del texto dentro del círculo
+        font-size: 26px;       // Tamaño de fuente
+        font-weight: bold;
+        margin-bottom: 10px;   // Espacio entre el círculo y los detalles de precio
+        padding-top: 10px;
+      
+      }
+      &--details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+
+        &--price2 {
+          font-size: 14px;
+          text-decoration: line-through;
+          color: #b8b8b8;
+        }
+
+
+      }
+
+      
+    }
+
+    &--name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff; // ✅ Color independiente del SVG
+    }
+
+    &--subt {
+      font-size: 14px;
+      color: #cccccc;
+    }
+
+    // ✅ Lista de características
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+
+
+      li {
+        margin: 8px 0;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+
+        .feature-icon {
+          margin-right: 8px;
+          font-size: 16px;
+
+          &--success {
+            color: #00ff7f; // Color para el icono "✔️"
+          }
+
+          &--error {
+            color: #ff0000; // Color para el icono "X"
+          }
+        }
+    }
+
+      
+    }
+
+    //  Botón dinámico basado en `plan.color1`
+    &--button {
+      background-color: #6c63ff;
+      color: #ffffff;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #4b48c0;
+      }
+    }
+  }
+
+  // ✅ Separador
+  .separator {
+    border: none;
+    height: 1px;
+    background: #444444;
+    margin: 10px 0;
+    width: 100%;
   }
 }

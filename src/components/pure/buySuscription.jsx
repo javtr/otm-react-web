@@ -113,14 +113,23 @@ const BuySuscripcion = ({ isYearly, setIsYearly }) => {
               ))}
             </ul>
 
-            <button
-              className="subscription__plans-card--button"
-              style={{
-                backgroundColor: plan.color1, // ✅ Botón toma el color1 directamente
-              }}
-            >
-              {plan.button}
-            </button>
+            <div className="subscription__plans-card--actions">
+              <button
+                className="subscription__plans-card--button"
+                style={{ borderColor: plan.color1 }}
+              >
+                {plan.button}
+              </button>
+              {plan.payments && (
+                <div className="subscription__plans-card--payments">
+                  <hr></hr>
+                  <p className="subscription__plans-card--payments-subt" >{plan.paymentstext}</p>
+                  <button className="subscription__plans-card--payments-button">
+                    {plan.payments}
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         ))}
       </div>

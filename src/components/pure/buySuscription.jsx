@@ -114,19 +114,26 @@ const BuySuscripcion = ({ isYearly, setIsYearly }) => {
             </ul>
 
             <div className="subscription__plans-card--actions">
-              <button
-                className="subscription__plans-card--button"
-                style={{ borderColor: plan.color1 }}
-              >
-                {plan.button}
-              </button>
+              <a href={plan.url} target="_blank" rel="noopener noreferrer">
+                <button
+                  className="subscription__plans-card--button"
+                  style={{ borderColor: plan.color1 }}
+                >
+                  {plan.button}
+                </button>
+              </a>
               {plan.payments && (
                 <div className="subscription__plans-card--payments">
                   <hr></hr>
-                  <p className="subscription__plans-card--payments-subt" >{plan.paymentstext}</p>
+                  <p className="subscription__plans-card--payments-subt">
+                    {plan.paymentstext}
+                  </p>
+                  <a href={plan.urlpayments} target="_blank" rel="noopener noreferrer">
+
                   <button className="subscription__plans-card--payments-button">
                     {plan.payments}
                   </button>
+                  </a>
                 </div>
               )}
             </div>

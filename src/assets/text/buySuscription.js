@@ -2,6 +2,7 @@ export const textEn = {
   yearly: [
     {
       name: "Yearly",
+      url:"https://otmtrading.lemonsqueezy.com/buy/5bb2d4c4-7fa7-4ede-bb71-6ac369fa3d1d",
       price: 390,
       price2: "499",
       pricesub: "per year",
@@ -20,8 +21,8 @@ export const textEn = {
     },
     {
       name: "Lifetime",
-      price: 890,
-      price2: "999",
+      price: 790,
+      price2: "899",
       pricesub: "one time payment",
       button: "Buy",
       features: [
@@ -61,8 +62,8 @@ export const textEn = {
     },
     {
       name: "Lifetime",
-      price: 890,
-      price2: "999",
+      price: 790,
+      price2: "899",
       pricesub: "one time payment",
       button: "Buy",
       features: [
@@ -89,6 +90,7 @@ export const textEs = {
       name: "Básico",
       price: 390,
       price2: "499",
+      url:"https://otmtrading.lemonsqueezy.com/buy/5bb2d4c4-7fa7-4ede-bb71-6ac369fa3d1d",
       pricetext: "/por mes",
       pricesub: "Por año",
       button: "Comprar",
@@ -108,6 +110,7 @@ export const textEs = {
       name: "Plus",
       price: 490,
       price2: "599",
+      url:"https://otmtrading.lemonsqueezy.com/buy/34fba67b-8327-427e-83e1-96c9fcbb4a31",
       pricetext: "/por año",
       pricesub: "Por año",
       button: "Comprar",
@@ -132,6 +135,7 @@ export const textEs = {
       name: "Básico",
       price: 790,
       price2: "899",
+      url:"https://otmtrading.lemonsqueezy.com/buy/64b93029-8ffa-4a4b-b483-bbb18ffdc852",
       pricesub: "Pago único",
       button: "Comprar",
       features: [
@@ -152,6 +156,8 @@ export const textEs = {
       name: "Plus",
       price: 890,
       price2: "999",
+      url:"https://otmtrading.lemonsqueezy.com/buy/947dcb18-835f-4abe-b36d-5a781734e813",
+      urlpayments:"https://otmtrading.lemonsqueezy.com/buy/6c8a875d-8fc7-46c5-b412-7b7cabd3d1af",
       pricesub: "Pago único",
       button: "Comprar",
       features: [

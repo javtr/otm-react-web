@@ -10,7 +10,6 @@
     "@mui/material": "^5.10.7",
     "emailjs-com": "3.2.0",
     "leaflet": "^1.9.3",
-    "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-floating-whatsapp": "^4.0.5",
@@ -29,9 +28,9 @@
     "slider-pro-js": "^1.0.0",
     "write-file-p": "^1.0.8"
   },
-  "homepage":"https://otmtrading.com",
+  "homepage": "https://otmtrading.com",
   "scripts": {
-    "start": "BROWSER=none react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -47,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
   }
 }

@@ -30,7 +30,7 @@
     "slider-pro-js": "^1.0.0",
     "write-file-p": "^1.0.8"
   },
-  "homepage": "https://javtr.github.io/otm-react-web",
+  "homepage": "https://javtr.github.io/otm-react-web/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

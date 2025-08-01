@@ -87,6 +87,7 @@ const NavBar = () => {
           {/* <Link className="link-before" to="example">{content.link4}</Link> */}
           <Link className="link-before" to="contact">{content.link5}</Link>
         </div>
+        <Link className="navbar__cta" to="/buy">{lang === "en" ? "Get Started" : "Empieza Ahora"}</Link>
       </div>
 
       <div className="navbar__burguer" onClick={turnSideBar}>

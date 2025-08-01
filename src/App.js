@@ -19,6 +19,7 @@ import BlogCont from "./components/container/blogCont";
 import Error404 from "./components/pure/404";
 import InstalationPage from "./pages/InstalationPage";
 import Policies from "./pages/policies";
+import NewHome from "./pages/NewHome";
 
 export default function App() {
   const [lang, setLang] = useState("");
@@ -59,6 +60,7 @@ export default function App() {
             <Route path="risk" element={<Risk ></Risk>}></Route>
             <Route path="policies" element={<Policies ></Policies>}></Route>
             <Route path="install" element={<InstalationPage ></InstalationPage>}></Route>
+            <Route path="/new-home" element={<NewHome />}></Route>
           </Route>
           <Route path="/order/:id" element={<Order></Order>}></Route>
           <Route path="/licence" element={<LicenceForm></LicenceForm>}></Route>

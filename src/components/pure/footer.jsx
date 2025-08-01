@@ -53,7 +53,7 @@ export default function Footer() {
             </a>
           </div>
           <Link className="footer__policies" to="/policies">{text.link4}</Link>
-          <p className="footer__rights">© OTM Trading 2022</p>
+          <p className="footer__rights">© OTM Trading 2025</p>
         </div>
       </div>
     </div>

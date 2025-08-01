@@ -50,7 +50,7 @@ const Home = () => {
       <Hero scroll={executeScroll}></Hero>
       <Whatis refProp={myRef}></Whatis>
       <Features></Features>
-      <Products></Products>
+      {/* <Products></Products> */}
       <Advantages></Advantages>
       {lang == "es" ? <TestimonyCont></TestimonyCont> : <></>}
 

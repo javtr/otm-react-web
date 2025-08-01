@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/otm-react-web/static/css/main.8ea855a8.css",
-    "main.js": "/otm-react-web/static/js/main.baa1c07d.js",
+    "main.css": "/otm-react-web/static/css/main.9ea3a6f3.css",
+    "main.js": "/otm-react-web/static/js/main.af3bbc23.js",
     "static/media/vecteezy_blue-background_AW1120.eps": "/otm-react-web/static/media/vecteezy_blue-background_AW1120.3d705dc5bc0f3ae24363.eps",
     "static/media/Installation.mp4": "/otm-react-web/static/media/Installation.a721af07e641b68e1651.mp4",
     "static/media/operativa-crudo-es.gif": "/otm-react-web/static/media/operativa-crudo-es.90e09cd83a863621b701.gif",
@@ -14,6 +14,7 @@
     "static/media/ind_04.gif": "/otm-react-web/static/media/ind_04.3538a01b7f80551b498a.gif",
     "static/media/rev_gustavo_loiz.mp4": "/otm-react-web/static/media/rev_gustavo_loiz.79dcf1f57689bc4b2c14.mp4",
     "static/media/rev_federico_verd.mp4": "/otm-react-web/static/media/rev_federico_verd.c8950f8c69e812e90a53.mp4",
+    "static/media/chart02.png": "/otm-react-web/static/media/chart02.272bb0dadc5734837480.png",
     "static/media/background01.svg": "/otm-react-web/static/media/background01.65a6df9f78e3dfdbb906.svg",
     "static/media/OTM_DELTA_BAR.gif": "/otm-react-web/static/media/OTM_DELTA_BAR.a2cbca4e0df1810e9bdb.gif",
     "static/media/OTM_VWAP.gif": "/otm-react-web/static/media/OTM_VWAP.b6b603a723de5cad209a.gif",
@@ -136,11 +137,11 @@
     "static/media/check-svgrepo-com(1).svg": "/otm-react-web/static/media/check-svgrepo-com(1).1b7256e8b779cbd0e116.svg",
     "index.html": "/otm-react-web/index.html",
     "static/media/icons8-close.svg": "/otm-react-web/static/media/icons8-close.918b1234f49b28de4f8720841fa5f8d2.svg",
-    "main.8ea855a8.css.map": "/otm-react-web/static/css/main.8ea855a8.css.map",
-    "main.baa1c07d.js.map": "/otm-react-web/static/js/main.baa1c07d.js.map"
+    "main.9ea3a6f3.css.map": "/otm-react-web/static/css/main.9ea3a6f3.css.map",
+    "main.af3bbc23.js.map": "/otm-react-web/static/js/main.af3bbc23.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ea855a8.css",
-    "static/js/main.baa1c07d.js"
+    "static/css/main.9ea3a6f3.css",
+    "static/js/main.af3bbc23.js"
   ]
 }

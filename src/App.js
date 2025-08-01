@@ -64,8 +64,8 @@ export default function App() {
           </Route>
           <Route path="/order/:id" element={<Order></Order>}></Route>
           <Route path="/licence" element={<LicenceForm></LicenceForm>}></Route>
-          <Route path="*" element={<Error404 />} />
           <Route path="master" element={<Master ></Master>}></Route>
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </div>
     </LanguageContext.Provider>

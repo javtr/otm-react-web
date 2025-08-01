@@ -1,99 +1,145 @@
 @import "./mixins";
 
 .navbar {
-  position: relative;
+  position: sticky;
   top: 0;
-  height: 80px;
+  left: 0;
   width: 100%;
-  font-size: $txt-small;
-
+  height: 42px;
+  background: $back;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  z-index: 999;
   display: flex;
+  align-items: center;
   justify-content: center;
+  padding: 0;
 
-  background-color: $back;
-  z-index: 988;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+    height: 100%;
+  }
 
-  @include breakpoint-up(medium) {
-    height: 100px;
+  &__img {
+    width: 90px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 14px;
+    flex: 1;
+    margin: 0 0 0 24px;
+    font-size: $txt-xxsmall;
+    font-weight: 600;
+    text-transform: uppercase;
+    a {
+      color: $light;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: background 0.18s, color 0.18s;
+      &:hover {
+        background: $primary;
+        color: $back;
+      }
+    }
+  }
+
+  &__cta {
+    background: $primary;
+    color: $back;
+    font-weight: 700;
+    font-size: $txt-xxsmall;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin-left: 12px;
+    text-decoration: none;
+    transition: box-shadow 0.18s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    &:hover {
+      background: $primary;
+      color: $back;
+      box-shadow: 0 0 0 4px rgba(97,255,189,0.25), 0 2px 8px rgba(0,0,0,0.10);
+    }
   }
 
   &__lang {
     position: absolute;
-    right: 85px;
-    top: 23px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     color: White;
     width: 30px;
     height: 30px;
     border-radius: 15px;
     background-size: 30px;
     background-repeat: no-repeat;
-    background-position-x: 0px;
-    background-position-y: 0px;
-
-
-    @include breakpoint-up(medium) {
-      right: 17px;
-      top: 30px;
-      right: 15px;
-      
-
-    }
-
-
-  }
-
-  &__container {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    justify-content: space-between;
-    position: relative;
-  }
-
-  &__img {
-    width: 130px;
-    margin-left: 25px;
-    margin-top: 22px;
-    // z-index: 1000;
-
-    img {
-      width: 100%;
-    }
-
-    @include breakpoint-up(medium) {
-      margin-left: 33px;
-    }
-  }
-
-  &__links {
-    font-size: $txt-13small;
-    margin-top: 39px;
-    margin-right: 50px;
-    text-transform: uppercase;
-
-    :nth-child(n) {
-      padding: 10px;
-      color: $light;
-    }
-
-    @include breakpoint-down(medium) {
-      display: none;
-    }
+    background-position: center;
+    cursor: pointer;
+    /* Quitar borde y sombra */
+    border: none;
+    box-shadow: none;
   }
 
   &__burguer {
-    position: absolute;
-    right: 23px;
+    display: none;
+  }
 
-    @include breakpoint-down(medium) {
-      margin-top: 20px;
-      margin-right: 10px;
+  @media (max-width: 900px) {
+    &__container {
+      padding: 0 12px;
+    }
+    &__links {
+      gap: 10px;
+      font-size: $txt-xxsmall;
+    }
+    &__cta {
+      padding: 8px 16px;
+      font-size: $txt-xxsmall;
+    }
+  }
 
-      :nth-child(n) {
+  @media (max-width: 700px) {
+    height: 36px;
+    &__img {
+      width: 90px;
+    }
+    &__links {
+      display: none;
+    }
+    &__cta {
+      display: none;
+    }
+    &__burguer {
+      display: block;
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      div {
         background-color: $light;
-        height: 5px;
-        width: 35px;
-        margin: 5px;
+        height: 4px;
+        width: 28px;
+        margin: 4px 0;
+        border-radius: 2px;
       }
     }
   }

@@ -7,6 +7,7 @@ import Whatis from "../components/pure/whatis";
 import Advantages from "../components/pure/advantage";
 import Features from "../components/container/features";
 import TestimonyCont from "../components/container/testimonyCont";
+import Products from "../components/Products/Products";
 import LanguageContext from "../context/langContext.js";
 import { Helmet } from "react-helmet";
 import { seoEn, seoEs } from "../assets/text/metas.js";
@@ -49,6 +50,7 @@ const Home = () => {
       <Hero scroll={executeScroll}></Hero>
       <Whatis refProp={myRef}></Whatis>
       <Features></Features>
+      <Products></Products>
       <Advantages></Advantages>
       {lang == "es" ? <TestimonyCont></TestimonyCont> : <></>}
 

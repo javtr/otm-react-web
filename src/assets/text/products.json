@@ -1,0 +1,49 @@
+{
+  "title": "Featured Products / Indicator Suite",
+  "products": [
+    {
+      "id": 1,
+      "title": "OTM Delta Swing",
+      "image": "OTM_SWING.gif",
+      "description": "Indicador de swing para delta"
+    },
+    {
+      "id": 2,
+      "title": "OTM Delta Micro",
+      "image": "OTM_MICRO.gif",
+      "description": "Análisis micro de delta"
+    },
+    {
+      "id": 3,
+      "title": "OTM Delta Cumulative",
+      "image": "OTM_CUMULATIVE.gif",
+      "description": "Delta acumulativo en tiempo real"
+    },
+    {
+      "id": 4,
+      "title": "OTM Delta Bar",
+      "image": "OTM_DELTA_BAR.gif",
+      "description": "Delta por barra"
+    },
+    {
+      "id": 5,
+      "title": "OTM Volume Profile",
+      "image": "OTM_PROFILE.gif",
+      "description": "Perfil de volumen avanzado"
+    },
+    {
+      "id": 6,
+      "title": "OTM Vwap",
+      "image": "OTM_VWAP.gif",
+      "description": "VWAP optimizado"
+    }
+    ,
+    {
+      "id": 7,
+      "title": "OTM Algorithms",
+      "image": "OTM_VWAP.gif",
+      "description": "VWAP optimizado"
+    }
+
+  ]
+}

@@ -1,0 +1,397 @@
+// Estilos para la nueva página principal (NewHome)
+@import "variables";
+
+.new-home {
+  // background: $backLight;
+  color: $light;
+  font-family: 'Inter', Arial, sans-serif;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  padding-top: 24px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 480px;
+    height: 480px;
+    padding-top: 56px;
+    background: linear-gradient(120deg, rgba(26,24,53,0.55) 80%, rgba(4,0,28,0.55) 100%), url('../img/chart02.png') center center/cover no-repeat;
+    border-radius: 18px;
+    margin: 32px auto 24px auto;
+    max-width: 900px;
+    padding: 48px 32px 56px 32px;
+    text-align: center;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+    position: relative;
+    overflow: visible;
+    h1 {
+      font-size: $txt-xl;
+      font-weight: 800;
+      margin-bottom: 18px;
+      line-height: 1.1;
+      color: $light;
+    }
+    p {
+      font-size: $txt-medium2;
+      margin-bottom: 32px;
+      color: $lightGray;
+    }
+    button {
+      background: $blueMain;
+      color: $light;
+      font-weight: 700;
+      font-size: $txt-medium;
+      border: none;
+      border-radius: 12px;
+      padding: 14px 36px;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+      &:hover {
+        background: $blueMain;
+        color: $light;
+        box-shadow: 0 0 0 4px rgba(37,99,235,0.18), 0 2px 8px rgba(0,0,0,0.10);
+      }
+    }
+  }
+
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .hero h1 {
+    text-align: center;
+  }
+  .hero p {
+    font-size: $txt-xsmall;
+    margin-bottom: 32px;
+    color: $lightGray;
+    text-align: center;
+  }
+  .hero button {
+    background: $blueMain;
+    color: $light;
+    font-weight: 700;
+    font-size: $txt-medium;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 22px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    &:hover {
+      background: $blueMain;
+      color: $light;
+      box-shadow: 0 0 0 4px rgba(37,99,235,0.18), 0 2px 8px rgba(0,0,0,0.10);
+    }
+  }
+
+  .credibility {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 24px 0 32px 0;
+    span {
+      background: none;
+      color: $blueMain;
+      font-weight: 600;
+      border-radius: 0;
+      padding: 0;
+      font-size: $txt-xsmall;
+      box-shadow: none;
+    }
+  }
+
+  .value-prop {
+    margin-top: 70px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    border-radius: 0;
+    padding: 0 24px 32px 24px;
+    box-shadow: none;
+    h2 {
+      font-size: $txt-large;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: $light;
+    }
+    p {
+      font-size: inherit;
+      margin-bottom: 18px;
+      color: $lightGray;
+    }
+    ul {
+      margin-bottom: 18px;
+      li {
+        font-size: $txt-xsmall;
+        margin-bottom: 6px;
+        color: $light;
+      }
+    }
+    strong {
+      display: block;
+      font-size: $txt-medium2;
+      color: $light;
+      margin-top: 10px;
+    }
+  }
+
+  .pricing {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    h2 {
+      font-size: $txt-large;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: $light;
+      text-align: center;
+    }
+    .plans {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+      .plan {
+        background: $backExLight;
+        border-radius: 14px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+        padding: 32px 28px;
+        min-width: 260px;
+        max-width: 320px;
+        text-align: center;
+        h3 {
+          font-size: $txt-medium2;
+          color: $light;
+          font-weight: 700;
+          margin-bottom: 8px;
+        }
+        p {
+          font-size: $txt-large-sm;
+          font-weight: 800;
+          color: $light;
+          margin-bottom: 16px;
+        }
+        ul {
+          margin-bottom: 0;
+          li {
+            font-size: $txt-xsmall;
+            color: $lightGray;
+            margin-bottom: 6px;
+          }
+        }
+      }
+    }
+    > p {
+      text-align: center;
+      color: $lightGray;
+      font-size: $txt-xxsmall;
+    }
+  }
+
+  .indicators {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    h2 {
+      font-size: $txt-large;
+      color: $light;
+      font-weight: 700;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+      li {
+        background: $backExLight;
+        border-radius: 10px;
+        padding: 16px 22px;
+        color: $light;
+        font-size: $txt-xsmall;
+        min-width: 220px;
+        box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+      }
+    }
+  }
+
+  .testimonials {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    h2 {
+      font-size: $txt-large;
+      color: $light;
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    p {
+      color: $lightGray;
+      font-size: $txt-xxsmall;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    blockquote {
+      background: $backExLight;
+      border-left: 4px solid $blueMain;
+      margin: 0 auto 18px auto;
+      padding: 18px 24px;
+      border-radius: 10px;
+      color: $light;
+      font-size: $txt-xsmall;
+      max-width: 600px;
+    }
+  }
+
+  .education {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    h2 {
+      font-size: $txt-large;
+      color: $light;
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+      li {
+        background: $backExLight;
+        border-radius: 10px;
+        padding: 16px 22px;
+        color: $light;
+        font-size: $txt-xsmall;
+        min-width: 220px;
+        box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+        text-align: center;
+      }
+    }
+  }
+
+  .faq {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    h2 {
+      font-size: $txt-large;
+      color: $light;
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        background: $backExLight;
+        border-radius: 10px;
+        margin-bottom: 12px;
+        padding: 16px 22px;
+        color: $light;
+        font-size: $txt-xsmall;
+        box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+        strong {
+          color: $blueMain;
+        }
+      }
+    }
+  }
+
+  .cta-final {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    h2 {
+      font-size: $txt-large;
+      color: $light;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+    button {
+      background: $blueMain;
+      color: $light;
+      font-weight: 700;
+      font-size: $txt-medium;
+      border: none;
+      border-radius: 12px;
+      padding: 14px 36px;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+      &:hover {
+        background: $blueMain;
+        color: $light;
+        box-shadow: 0 0 0 4px rgba(37,99,235,0.18), 0 2px 8px rgba(0,0,0,0.10);
+      }
+    }
+  }
+
+  .footer {
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    padding: 32px 0 0 0;
+    border-top: 1px solid $darkGray;
+    text-align: center;
+    p {
+      color: $light;
+      font-size: $txt-xsmall;
+      margin-bottom: 8px;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      li {
+        color: $lightGray;
+        font-size: $txt-xxsmall;
+      }
+    }
+  }
+
+  .value-prop,
+  .pricing,
+  .indicators,
+  .testimonials,
+  .education,
+  .faq,
+  .cta-final,
+  .footer {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  @media (max-width: 700px) {
+    .hero, .value-prop, .pricing, .indicators, .testimonials, .education, .faq, .cta-final, .footer {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    .plans {
+      flex-direction: column;
+      gap: 18px;
+    }
+    .credibility {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+} 

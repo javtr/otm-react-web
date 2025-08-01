@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/otm-react-web/static/css/main.9ea3a6f3.css",
-    "main.js": "/otm-react-web/static/js/main.15de4f6a.js",
+    "main.js": "/otm-react-web/static/js/main.af3bbc23.js",
     "static/media/vecteezy_blue-background_AW1120.eps": "/otm-react-web/static/media/vecteezy_blue-background_AW1120.3d705dc5bc0f3ae24363.eps",
     "static/media/Installation.mp4": "/otm-react-web/static/media/Installation.a721af07e641b68e1651.mp4",
     "static/media/operativa-crudo-es.gif": "/otm-react-web/static/media/operativa-crudo-es.90e09cd83a863621b701.gif",
@@ -134,14 +134,14 @@
     "static/media/logoW.svg": "/otm-react-web/static/media/logoW.25e37906c206e7e94d7dc8ca7f45794e.svg",
     "static/media/indicatorIcon.svg": "/otm-react-web/static/media/indicatorIcon.f240f4fda2b67f9a10f0.svg",
     "static/media/advantage1.svg": "/otm-react-web/static/media/advantage1.5b868a138f840b91e6fb.svg",
-    "static/media/check-svgrepo-com(1).svg": "/otm-react-web/static/media/check-svgrepo-com(1).1b7256e8b779cbd0e116.svg",
     "index.html": "/otm-react-web/index.html",
+    "static/media/check-svgrepo-com(1).svg": "/otm-react-web/static/media/check-svgrepo-com(1).1b7256e8b779cbd0e116.svg",
     "static/media/icons8-close.svg": "/otm-react-web/static/media/icons8-close.918b1234f49b28de4f8720841fa5f8d2.svg",
     "main.9ea3a6f3.css.map": "/otm-react-web/static/css/main.9ea3a6f3.css.map",
-    "main.15de4f6a.js.map": "/otm-react-web/static/js/main.15de4f6a.js.map"
+    "main.af3bbc23.js.map": "/otm-react-web/static/js/main.af3bbc23.js.map"
   },
   "entrypoints": [
     "static/css/main.9ea3a6f3.css",
-    "static/js/main.15de4f6a.js"
+    "static/js/main.af3bbc23.js"
   ]
 }

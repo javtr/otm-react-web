@@ -8,6 +8,7 @@ export const textEn = {
       pricesub: "per year",
       button: "Buy",
       features: [
+        { text: "OTM Algorithms", icon: "✓" },
         { text: "OTM Swing", icon: "✓" },
         { text: "OTM Micro", icon: "✓" },
         { text: "OTM VWAP", icon: "✓" },
@@ -28,6 +29,7 @@ export const textEn = {
       pricesub: "one time payment",
       button: "Buy",
       features: [
+        { text: "OTM Algorithms", icon: "✓" },
         { text: "OTM Swing", icon: "✓" },
         { text: "OTM Micro", icon: "✓" },
         { text: "OTM VWAP", icon: "✓" },
@@ -52,6 +54,7 @@ export const textEn = {
       pricesub: "per year",
       button: "Buy",
       features: [
+        { text: "OTM Algorithms", icon: "✓" },
         { text: "OTM Swing", icon: "✓" },
         { text: "OTM Micro", icon: "✓" },
         { text: "OTM VWAP", icon: "✓" },
@@ -72,6 +75,7 @@ export const textEn = {
       pricesub: "one time payment",
       button: "Buy",
       features: [
+        { text: "OTM Algorithms", icon: "✓" },
         { text: "OTM Swing", icon: "✓" },
         { text: "OTM Micro", icon: "✓" },
         { text: "OTM VWAP", icon: "✓" },
@@ -100,6 +104,7 @@ export const textEs = {
       pricesub: "Por año",
       button: "Comprar",
       features: [
+        { text: "OTM Algorithms", icon: "✓" },
         { text: "OTM Swing", icon: "✓" },
         { text: "OTM Micro", icon: "✓" },
         { text: "OTM VWAP", icon: "✓" },
@@ -120,6 +125,7 @@ export const textEs = {
       pricesub: "Por año",
       button: "Comprar",
       features: [
+        { text: "OTM Algorithms", icon: "✓" },
         { text: "OTM Swing", icon: "✓" },
         { text: "OTM Micro", icon: "✓" },
         { text: "OTM VWAP", icon: "✓" },
@@ -145,6 +151,7 @@ export const textEs = {
       pricesub: "Pago único",
       button: "Comprar",
       features: [
+        { text: "OTM Algorithms", icon: "✓" },
         { text: "OTM Swing", icon: "✓" },
         { text: "OTM Micro", icon: "✓" },
         { text: "OTM VWAP", icon: "✓" },
@@ -167,6 +174,7 @@ export const textEs = {
       pricesub: "Pago único",
       button: "Comprar",
       features: [
+        { text: "OTM Algorithms", icon: "✓" },
         { text: "OTM Swing", icon: "✓" },
         { text: "OTM Micro", icon: "✓" },
         { text: "OTM VWAP", icon: "✓" },

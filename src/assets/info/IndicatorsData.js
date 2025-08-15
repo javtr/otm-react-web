@@ -35,6 +35,33 @@ export const IndicatorsDataEn = [
   },
 
   //Explicación Indicadores
+{
+  linkTit: "OTM Algorithms",
+  url: "otm-algorithms",
+
+  imgb: "./features/otm-algorithms2.png",
+  titb_1: "OTM Algorithms",
+
+  txtb0:
+    "This indicator integrates three powerful algorithms designed to analyze order flow and give you a clear view of the dominant market activity. Each one fulfills a specific role so you can detect opportunities with greater precision:",
+
+  txmb1:
+    "1. Delta Dominance: Identifies consecutive bars where delta took full control. This allows you to clearly recognize when one of the forces —buying or selling— completely dominates the price action.",
+
+  txmb2:
+    "2. Candle Detector: Highlights bars that meet a specific delta and volume criterion, filtering only those candles that show a statistically relevant pattern. This way, you can focus your attention on key moments without wasting time on insignificant signals.",
+
+  txmb3:
+    "3. Delta Aggressive: Displays sequences of consecutive bars with high delta, showing phases of strong aggressiveness from buyers or sellers. This is useful for detecting intense impulses that can anticipate breakouts or sharp trend changes.",
+
+  txtb1:
+    "With OTM Algorithms you get a versatile tool that combines three complementary approaches, giving you direct and objective information for your analysis.",
+
+  lnkb1: ["/buy", "Get Started"],
+},
+
+
+
   {
     linkTit: "OTM Delta Swing",
     url: "otm-delta-swing",
@@ -370,6 +397,34 @@ export const IndicatorsDataEs = [
   },
 
   //Explicación Indicadores
+
+  {
+    linkTit: "OTM Algorithms",
+    url: "otm-algorithms",
+
+    imgb: "./features/otm-algorithms2.png",
+    titb_1: "OTM Algorithms",
+
+    txtb0:
+      "Este indicador integra tres potentes algoritmos diseñados para analizar el flujo de órdenes y ofrecerte una visión clara de la actividad dominante en el mercado. Cada uno cumple un rol específico para que puedas detectar oportunidades con mayor precisión:",
+
+    txmb1:
+      "1. Delta Dominance: Identifica barras consecutivas en las que el delta tomó el control absoluto. Esto te permite reconocer con claridad cuándo una de las fuerzas —compradora o vendedora— domina por completo la acción del precio.",
+
+    txmb2:
+      "2. Candle Detector: Resalta barras que cumplen un criterio específico de delta y volumen, filtrando únicamente aquellas velas que muestran un patrón estadísticamente relevante. Así puedes centrar tu atención en los momentos clave sin perder tiempo en señales poco significativas.",
+
+    txmb2:
+      "3. Delta Aggressive: Muestra secuencias de barras consecutivas con delta elevado, evidenciando fases de fuerte agresividad por parte de compradores o vendedores. Esto es útil para detectar impulsos intensos que pueden anticipar rupturas o cambios bruscos en la tendencia.",
+
+
+
+    txtb1:
+      "Con OTM Algorithms obtienes una herramienta versátil que combina tres enfoques complementarios, dándote información directa y objetiva para tu análisis.",
+
+    lnkb1: ["/buy", "Comienza ya"],
+  },
+
   {
     linkTit: "OTM Delta Swing",
     url: "otm-delta-swing",
@@ -597,6 +652,9 @@ export const IndicatorsDataEs = [
 
     lnkb1: ["https://otmtrading.lemonsqueezy.com/buy/bdf5bdcd-19d4-4437-9147-68cdd33a2574", "MasterClass OTM"],
   },
+
+
+
 
   //¿Listo? Revisa esto para comenzar
   {

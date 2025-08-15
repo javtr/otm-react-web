@@ -48,7 +48,7 @@ const SideBar = ({ dynamicRef }) => {
       </Link>
 
       <h2 className="featPage__aside--title1">
-        {lang == "en" ? "Indicators Explanation" : "Explicación Indicadores"}
+        {lang == "en" ? "Indicators Explanation" : "Nuestros Indicadores"}
       </h2>
 
       <Link
@@ -107,10 +107,6 @@ const SideBar = ({ dynamicRef }) => {
         {text[7].linkTit}
       </Link>
 
-      <h2 className="featPage__aside--title1">
-        {lang == "en" ? "Strategies" : "Estrategias"}
-      </h2>
-
       <Link
         onClick={handleClick}
         to={"/features/" + text[8].url}
@@ -118,6 +114,11 @@ const SideBar = ({ dynamicRef }) => {
       >
         {text[8].linkTit}
       </Link>
+
+
+      <h2 className="featPage__aside--title1">
+        {lang == "en" ? "Strategies" : "Estrategias"}
+      </h2>
 
       <Link
         onClick={handleClick}
@@ -127,12 +128,6 @@ const SideBar = ({ dynamicRef }) => {
         {text[9].linkTit}
       </Link>
 
-      <h2 className="featPage__aside--title1">
-        {lang == "en"
-          ? "Are you ready? Check this to start"
-          : "¿Listo? Revisa esto para comenzar"}
-      </h2>
-
       <Link
         onClick={handleClick}
         to={"/features/" + text[10].url}
@@ -140,6 +135,12 @@ const SideBar = ({ dynamicRef }) => {
       >
         {text[10].linkTit}
       </Link>
+
+      <h2 className="featPage__aside--title1">
+        {lang == "en"
+          ? "Are you ready? Check this to start"
+          : "¿Listo? Revisa esto para comenzar"}
+      </h2>
 
       <Link
         onClick={handleClick}
@@ -155,6 +156,14 @@ const SideBar = ({ dynamicRef }) => {
         className="featPage__aside--item item-trans"
       >
         {text[12].linkTit}
+      </Link>
+
+      <Link
+        onClick={handleClick}
+        to={"/features/" + text[13].url}
+        className="featPage__aside--item item-trans"
+      >
+        {text[13].linkTit}
       </Link>
     </div>
   ) : (

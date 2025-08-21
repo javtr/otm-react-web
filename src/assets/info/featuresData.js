@@ -1,5 +1,24 @@
 export const FeaturesDataEn = [
   {
+    imgUrl: "./algo_icon.png",
+    title: "OTM Algorithms",
+    url:"/features/otm-algorithms/",
+
+    modalData: {
+      imgUrl: "./indicators/OTM_SWING.gif",
+      title: "OTM Algorithms",
+
+      title2: "Identify absolute market control",
+      paragraph2:
+        "Detect consecutive bars where buyers or sellers have total dominance, to trade with the prevailing force.",
+
+      title3: "Spot high-aggression phases",
+      paragraph3:
+        "Anticipate breakouts or sharp trend changes by identifying sequences with high delta and strong momentum.",
+    },
+  },
+
+  {
     imgUrl: "./swing_icon.png",
     title: "OTM Delta Swing",
     url:"/features/otm-delta-swing/",
@@ -101,6 +120,26 @@ export const FeaturesDataEn = [
 ];
 
 export const FeaturesDataEs = [
+  {
+    imgUrl: "./algo_icon.png",
+    title: "OTM Algorithms",
+    url:"/features/otm-algorithms/",
+
+    modalData: {
+      imgUrl: "./indicators/OTM_SWING.gif",
+      title: "OTM Algorithms",
+
+      title2: "Identifique el control absoluto del mercado",
+      paragraph2:
+        "Detecte barras consecutivas donde los compradores o vendedores tienen el dominio total, para operar con la fuerza dominante.",
+
+      title3: "Detecte fases de alta agresividad",
+      paragraph3:
+        "Anticipe rupturas o cambios bruscos de tendencia identificando secuencias con delta elevado y fuerte impulso.",
+    },
+  },
+
+
   {
     imgUrl: "./swing_icon.png",
     title: "OTM Delta Swing",

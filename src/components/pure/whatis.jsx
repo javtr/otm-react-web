@@ -3,7 +3,7 @@ import whatImg1 from "../../assets/img/otm_01.png";
 import whatImg2 from "../../assets/img/otm_02.png";
 import LanguageContext from "../../context/langContext.js";
 import { textEn, textEs } from "../../assets/text/whatIs";
-import performace_01 from "../../assets/img/performance_01.gif"
+import performace_01 from "../../assets/img/otm_live_02.gif"
 
 export default function Whatis({refProp}) {
   const { lang, setLang } = useContext(LanguageContext);

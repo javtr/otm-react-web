@@ -5,7 +5,7 @@ export const FeaturesDataEn = [
     url:"/features/otm-algorithms/",
 
     modalData: {
-      imgUrl: "./indicators/OTM_SWING.gif",
+      imgUrl: "./indicators/OTM_ALGORITHMS.gif",
       title: "OTM Algorithms",
 
       title2: "Identify absolute market control",
@@ -126,7 +126,7 @@ export const FeaturesDataEs = [
     url:"/features/otm-algorithms/",
 
     modalData: {
-      imgUrl: "./indicators/OTM_SWING.gif",
+      imgUrl: "./indicators/OTM_ALGORITHMS.gif",
       title: "OTM Algorithms",
 
       title2: "Identifique el control absoluto del mercado",

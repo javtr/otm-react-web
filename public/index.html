@@ -5,19 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
 
+    <!-- PayPal SDK -->
     <script
       defer
       src="https://www.paypal.com/sdk/js?client-id=AVcTD2Bf47MXHQdROnmhRRug9iUXmX6ylQfZV0KdcmiRj24gnbEVp_JfJJVQBlCpTdtVUgEx0rbZtPk1"
     ></script>
-    <!--
-      Notice the use of %PUBLIC_URL% in the tag above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,31 +23,31 @@
       name="ahrefs-site-verification"
       content="a88a5298f928881d802d2b0f5da9ba05d6be4ffa5c7b5c029c3f3def3c275360"
     />
+
+    <!-- Lemon Squeezy Affiliate Tracking -->
+    <script>
+      window.lemonSqueezyAffiliateConfig = { store: "otmtrading" };
+    </script>
+    <script src="https://lmsqueezy.com/affiliate.js" defer></script>
   </head>
+
   <body class="bodyStyle">
     <div id="root"></div>
+
+    <!-- SPA GitHub Pages redirect helper -->
     <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script checks to see if a redirect is present in the query string,
-      // converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...),
-      // which won't cause the browser to attempt to load the new url.
-      // When the single page app is loaded further down in this file,
-      // the correct url will be waiting in the browser's history for
-      // the single page app to route accordingly.
       (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
             return s.replace(/~and~/g, '&')
           }).join('?');
           window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
+            l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
       }(window.location))
     </script>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

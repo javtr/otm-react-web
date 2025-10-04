@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9124e88a.css",
-    "main.js": "/static/js/main.61da58ff.js",
+    "main.js": "/static/js/main.607e1736.js",
     "static/media/vecteezy_blue-background_AW1120.eps": "/static/media/vecteezy_blue-background_AW1120.3d705dc5bc0f3ae24363.eps",
     "static/media/Installation.mp4": "/static/media/Installation.a721af07e641b68e1651.mp4",
     "static/media/operativa-crudo-es.gif": "/static/media/operativa-crudo-es.90e09cd83a863621b701.gif",
@@ -13,6 +13,7 @@
     "static/media/rev_william_franc.mp4": "/static/media/rev_william_franc.b72d0212c426ad6a2851.mp4",
     "static/media/ind_04.gif": "/static/media/ind_04.3538a01b7f80551b498a.gif",
     "static/media/rev_gustavo_loiz.mp4": "/static/media/rev_gustavo_loiz.79dcf1f57689bc4b2c14.mp4",
+    "static/media/otm_live_02.gif": "/static/media/otm_live_02.cd86afecd24a8f949935.gif",
     "static/media/rev_federico_verd.mp4": "/static/media/rev_federico_verd.c8950f8c69e812e90a53.mp4",
     "static/media/background01.svg": "/static/media/background01.65a6df9f78e3dfdbb906.svg",
     "static/media/OTM_DELTA_BAR.gif": "/static/media/OTM_DELTA_BAR.a2cbca4e0df1810e9bdb.gif",
@@ -27,6 +28,7 @@
     "static/media/OTM_PROFILE.gif": "/static/media/OTM_PROFILE.69927f2a3cc9f4ecd31e.gif",
     "static/media/ex_05_03_02.png": "/static/media/ex_05_03_02.c897a50227037b01e3c8.png",
     "static/media/ex_15_04_cl3.png": "/static/media/ex_15_04_cl3.e0efcd0bf6d5cb4768df.png",
+    "static/media/OTM_ALGORITHMS.gif": "/static/media/OTM_ALGORITHMS.f47228edff75ef823951.gif",
     "static/media/ex_05_03.png": "/static/media/ex_05_03.7e332c66daa3d717d964.png",
     "static/media/ex_15_04_2021_es.png": "/static/media/ex_15_04_2021_es.606474966cab1c67bcd6.png",
     "static/media/ex_12_04_cl.png": "/static/media/ex_12_04_cl.fc7990342e9c5bcac888.png",
@@ -64,6 +66,7 @@
     "static/media/23_02_23_en_old.png": "/static/media/23_02_23_en_old.d1e514a107df027ccf47.png",
     "static/media/23_02_23_es_old.png": "/static/media/23_02_23_es_old.dc3dcc3aa1287c3f6e22.png",
     "static/media/mockup.png": "/static/media/mockup.ce7fab3a1d8caa145c8a.png",
+    "static/media/algo_icon.png": "/static/media/algo_icon.4bfae3992ab0f71495e3.png",
     "static/media/22_12_15_es.png": "/static/media/22_12_15_es.ae5feafd90c2671442e5.png",
     "static/media/23_02_22_en.png": "/static/media/23_02_22_en.1d0e1c4a810bdd1c1ea6.png",
     "static/media/23_02_22_es.png": "/static/media/23_02_22_es.2ec6ae53688b475b12a8.png",
@@ -112,8 +115,10 @@
     "static/media/momentum-en.png": "/static/media/momentum-en.c569dc250d41528c4754.png",
     "static/media/swing_icon.png": "/static/media/swing_icon.a286f93fbb9171a291c3.png",
     "static/media/logo_ninja.png": "/static/media/logo_ninja.77d619e29efb860e2ebc.png",
+    "static/media/otm-algorithms.png": "/static/media/otm-algorithms.3546ed75ccb01d1e2312.png",
     "static/media/art2_int.png": "/static/media/art2_int.97503627110ab9a07295.png",
     "static/media/pack_mini.png": "/static/media/pack_mini.065eb2495089c3a7ef0b.png",
+    "static/media/otm-algorithms2.png": "/static/media/otm-algorithms2.af3743f4a71b8705e954.png",
     "static/media/cumulative_icon.png": "/static/media/cumulative_icon.80b81d50770adc02ea3b.png",
     "static/media/micro_icon.png": "/static/media/micro_icon.54038f684e39f819e4ad.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
@@ -131,10 +136,10 @@
     "static/media/check-svgrepo-com(1).svg": "/static/media/check-svgrepo-com(1).1b7256e8b779cbd0e116.svg",
     "static/media/icons8-close.svg": "/static/media/icons8-close.918b1234f49b28de4f8720841fa5f8d2.svg",
     "main.9124e88a.css.map": "/static/css/main.9124e88a.css.map",
-    "main.61da58ff.js.map": "/static/js/main.61da58ff.js.map"
+    "main.607e1736.js.map": "/static/js/main.607e1736.js.map"
   },
   "entrypoints": [
     "static/css/main.9124e88a.css",
-    "static/js/main.61da58ff.js"
+    "static/js/main.607e1736.js"
   ]
 }

@@ -77,12 +77,11 @@ const NavBar = () => {
         ></div>
         
         <div className="navbar__links">
-
-
-        <Link to="/risk">{content.dec}</Link>
+          <Link to="/risk">{content.dec}</Link>
           <Link to="/">{content.link1}</Link>
           <Link to="features">{content.link2}</Link>
           <Link to="buy">{content.link3}</Link>
+          <Link to="free_indicators">{content.link7}</Link>
           {/* <Link className="link-before" to="blog">{content.link6}</Link> */}
           {/* <Link className="link-before" to="example">{content.link4}</Link> */}
           <Link to="contact">{content.link5}</Link>
@@ -103,10 +102,10 @@ const NavBar = () => {
         </div>
 
         <div className="sideBarLinks">
-          
-        <Link className="link-before" onClick={turnOffSideBar} to="/">{content.link1}</Link>
+          <Link className="link-before" onClick={turnOffSideBar} to="/">{content.link1}</Link>
           <Link className="link-before" onClick={turnOffSideBar} to="features">{content.link2}</Link>
           <Link className="link-before" onClick={turnOffSideBar} to="buy">{content.link3}</Link>
+          <Link className="link-before" onClick={turnOffSideBar} to="free_indicators">{content.link7}</Link>
           {/* <Link className="link-before" onClick={turnOffSideBar} to="blog">{content.link6}</Link> */}
           {/* <Link className="link-before" onClick={turnOffSideBar} to="example">{content.link4}</Link> */}
           <Link className="link-before" onClick={turnOffSideBar} to="contact">{content.link5}</Link>

@@ -1,0 +1,261 @@
+@import './mixins';
+@import './variables';
+
+.free-indicators {
+  width: 100%;
+  max-width: $mx-w;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: $light;
+  background-color: $back;
+
+  @include breakpoint-up(medium) {
+    padding: 2rem;
+  }
+
+  // Header
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+    padding: 0 1rem;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    h1 {
+      font-size: $txt-xl;
+      color: $primary;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      width: 100%;
+      text-align: center;
+
+      @include breakpoint-up(medium) {
+        font-size: $txt-xl;
+      }
+    }
+
+    p {
+      font-size: $txt-small;
+      color: $lightGray;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+
+      @include breakpoint-up(medium) {
+        font-size: $txt-medium;
+      }
+    }
+  }
+
+  // Pestañas
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+
+    .tab-button {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      border: 2px solid $primary;
+      background: transparent;
+      color: $primary;
+      font-size: $txt-xsmall;
+      font-weight: 600;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+
+      @include breakpoint-up(medium) {
+        font-size: $txt-small;
+      }
+
+      &:hover {
+        background: rgba($primary, 0.1);
+      }
+
+      &.active {
+        background: $primary;
+        color: $back;
+      }
+    }
+  }
+
+  // Contenido principal
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $backLight;
+    border-radius: 17px; // $modal-br-sm value
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    flex-direction: column;
+    border: 1px solid rgba($light, 0.1);
+
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+    }
+  }
+
+  // Vista previa del indicador
+  .indicator-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: $backExLight;
+    border-bottom: 1px solid rgba($light, 0.1);
+
+    @include breakpoint-up(medium) {
+      flex: 1;
+      border-right: 1px solid rgba($light, 0.1);
+      border-bottom: none;
+    }
+
+    .indicator-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba($light, 0.05);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  // Detalles del indicador
+  .indicator-details {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    flex: 1;
+    color: $light;
+    text-align: left;
+
+    h2 {
+      font-size: $txt-large;
+      color: $primary;
+      margin-bottom: 1.2rem;
+      font-weight: 700;
+
+      @include breakpoint-up(medium) {
+        font-size: $txt-large-smh2;
+      }
+    }
+
+    .description {
+      font-size: $txt-xsmall;
+      color: $lightGray;
+      line-height: 1.7;
+      margin-bottom: 1.8rem;
+
+      @include breakpoint-up(medium) {
+        font-size: $txt-small;
+      }
+    }
+
+    .features {
+      margin-bottom: 2.5rem;
+
+      h3 {
+        font-size: $txt-small;
+        color: $primary;
+        margin-bottom: 1.2rem;
+        font-weight: 600;
+
+        @include breakpoint-up(medium) {
+          font-size: $txt-medium;
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+
+        li {
+          position: relative;
+          padding-left: 2rem;
+          margin-bottom: 0.8rem;
+          line-height: 1.6;
+          color: $light;
+          font-size: $txt-xsmall;
+
+          @include breakpoint-up(medium) {
+            font-size: $txt-small;
+          }
+
+          &::before {
+            content: '✓';
+            color: $primary;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+
+    // Botón de descarga
+    .download-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: $primary;
+      color: $back;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: $txt-xsmall;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+
+      @include breakpoint-up(medium) {
+        width: auto;
+        padding: 1rem 3rem;
+        font-size: $txt-small;
+      }
+
+      &:hover {
+        background: lighten($primary, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba($primary, 0.3);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+
+      // Estilo cuando está deshabilitado
+      &:disabled {
+        background: $lightGray;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+      }
+    }
+  }
+}

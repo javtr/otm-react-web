@@ -14,7 +14,7 @@ export const FreeIndicatorsDataEn = [
       "Professional interface",
       "Full compatibility"
     ],
-    downloadLink: "/downloads/otm-deltabar-free.zip"
+    downloadLink: "https://otmtrading.lemonsqueezy.com/buy/c390bb14-4ebb-4c43-a173-b7b0a3b21a6e"
   },
   {
     id: 'vwap',
@@ -27,7 +27,7 @@ export const FreeIndicatorsDataEn = [
       "Professional design",
       "Easy to interpret"
     ],
-    downloadLink: "/downloads/otm-vwap-free.zip"
+    downloadLink: "https://otmtrading.lemonsqueezy.com/buy/e8c577fe-a88a-4829-841a-e77ca5ad8b0d"
   }
 ];
 
@@ -44,7 +44,7 @@ export const FreeIndicatorsDataEs = [
       "Interfaz profesional",
       "Compatibilidad total"
     ],
-    downloadLink: "/downloads/otm-deltabar-free.zip"
+    downloadLink: "https://otmtrading.lemonsqueezy.com/buy/c390bb14-4ebb-4c43-a173-b7b0a3b21a6e"
   },
   {
     id: 'vwap',
@@ -57,6 +57,6 @@ export const FreeIndicatorsDataEs = [
       "Diseño profesional",
       "Fácil de interpretar"
     ],
-    downloadLink: "/downloads/otm-vwap-free.zip"
+    downloadLink: "https://otmtrading.lemonsqueezy.com/buy/188d1410-ef7c-46e0-8a8c-f215f0888767"
   }
 ];

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9124e88a.css",
-    "main.js": "/static/js/main.607e1736.js",
+    "main.js": "/static/js/main.03fac62c.js",
     "static/media/vecteezy_blue-background_AW1120.eps": "/static/media/vecteezy_blue-background_AW1120.3d705dc5bc0f3ae24363.eps",
     "static/media/Installation.mp4": "/static/media/Installation.a721af07e641b68e1651.mp4",
     "static/media/operativa-crudo-es.gif": "/static/media/operativa-crudo-es.90e09cd83a863621b701.gif",
@@ -131,15 +131,15 @@
     "static/media/logoB.svg": "/static/media/logoB.6eefbad75e53f1fcf28b.svg",
     "static/media/logoW.svg": "/static/media/logoW.25e37906c206e7e94d7dc8ca7f45794e.svg",
     "static/media/indicatorIcon.svg": "/static/media/indicatorIcon.f240f4fda2b67f9a10f0.svg",
-    "static/media/advantage1.svg": "/static/media/advantage1.5b868a138f840b91e6fb.svg",
     "index.html": "/index.html",
+    "static/media/advantage1.svg": "/static/media/advantage1.5b868a138f840b91e6fb.svg",
     "static/media/check-svgrepo-com(1).svg": "/static/media/check-svgrepo-com(1).1b7256e8b779cbd0e116.svg",
     "static/media/icons8-close.svg": "/static/media/icons8-close.918b1234f49b28de4f8720841fa5f8d2.svg",
     "main.9124e88a.css.map": "/static/css/main.9124e88a.css.map",
-    "main.607e1736.js.map": "/static/js/main.607e1736.js.map"
+    "main.03fac62c.js.map": "/static/js/main.03fac62c.js.map"
   },
   "entrypoints": [
     "static/css/main.9124e88a.css",
-    "static/js/main.607e1736.js"
+    "static/js/main.03fac62c.js"
   ]
 }

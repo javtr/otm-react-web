@@ -7,7 +7,7 @@ export const textEn =
     link4:"Results",
     link5:"Contact us",
     link6:"Blog",
-
+    link7:"Free"
   };
 
 
@@ -20,4 +20,5 @@ export const textEs =
     link4:"Resultados",
     link5:"Contactanos",
     link6:"Blog",
+    link7:"Gratis"
   };

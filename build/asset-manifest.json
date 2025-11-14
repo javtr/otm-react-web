@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9124e88a.css",
-    "main.js": "/static/js/main.03fac62c.js",
+    "main.css": "/static/css/main.efe84905.css",
+    "main.js": "/static/js/main.8d4e7e6c.js",
     "static/media/vecteezy_blue-background_AW1120.eps": "/static/media/vecteezy_blue-background_AW1120.3d705dc5bc0f3ae24363.eps",
     "static/media/Installation.mp4": "/static/media/Installation.a721af07e641b68e1651.mp4",
     "static/media/operativa-crudo-es.gif": "/static/media/operativa-crudo-es.90e09cd83a863621b701.gif",
@@ -60,11 +60,13 @@
     "static/media/23_02_22_en_old.png": "/static/media/23_02_22_en_old.dfe81725214af8d51f11.png",
     "static/media/23_02_22_es_old.png": "/static/media/23_02_22_es_old.0a9e34e8438349683181.png",
     "static/media/otm-delta-bar-en.jpg": "/static/media/otm-delta-bar-en.9b20fa1f25956421d808.jpg",
+    "static/media/OTM_DELTA_BAR_FREE.jpg": "/static/media/OTM_DELTA_BAR_FREE.14fea626e155575bad35.jpg",
     "static/media/otm-delta-bar.jpg": "/static/media/otm-delta-bar.a2d5bdd7cc91dc33d572.jpg",
     "static/media/otm-delta-bar-free-en.jpg": "/static/media/otm-delta-bar-free-en.b22c665b950e3d8e5df7.jpg",
     "static/media/otm-delta-bar-free.jpg": "/static/media/otm-delta-bar-free.0a59362b4436c8fab369.jpg",
     "static/media/23_02_23_en_old.png": "/static/media/23_02_23_en_old.d1e514a107df027ccf47.png",
     "static/media/23_02_23_es_old.png": "/static/media/23_02_23_es_old.dc3dcc3aa1287c3f6e22.png",
+    "static/media/OTM_VWAP_FREE.jpg": "/static/media/OTM_VWAP_FREE.72be3f2d64f3eb65e9d3.jpg",
     "static/media/mockup.png": "/static/media/mockup.ce7fab3a1d8caa145c8a.png",
     "static/media/algo_icon.png": "/static/media/algo_icon.4bfae3992ab0f71495e3.png",
     "static/media/22_12_15_es.png": "/static/media/22_12_15_es.ae5feafd90c2671442e5.png",
@@ -135,11 +137,11 @@
     "static/media/advantage1.svg": "/static/media/advantage1.5b868a138f840b91e6fb.svg",
     "static/media/check-svgrepo-com(1).svg": "/static/media/check-svgrepo-com(1).1b7256e8b779cbd0e116.svg",
     "static/media/icons8-close.svg": "/static/media/icons8-close.918b1234f49b28de4f8720841fa5f8d2.svg",
-    "main.9124e88a.css.map": "/static/css/main.9124e88a.css.map",
-    "main.03fac62c.js.map": "/static/js/main.03fac62c.js.map"
+    "main.efe84905.css.map": "/static/css/main.efe84905.css.map",
+    "main.8d4e7e6c.js.map": "/static/js/main.8d4e7e6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9124e88a.css",
-    "static/js/main.03fac62c.js"
+    "static/css/main.efe84905.css",
+    "static/js/main.8d4e7e6c.js"
   ]
 }

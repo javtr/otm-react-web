@@ -9,6 +9,7 @@ import FloatingWhatsApp from "react-floating-whatsapp";
 import logoOtm from "../assets/img/logoOtm.png";
 import LanguageContext from "../context/langContext.js";
 import CookieBanner from "../components/pure/CookieBanner.jsx";
+import PromoBanner from "../components/promo/PromoBanner";
 
 
 
@@ -30,8 +31,8 @@ export default function layout() {
 
   return (
     <div className="layout">
-
-      <CookieBanner></CookieBanner>    
+      <CookieBanner />
+      <PromoBanner />
       <ScrollToTop
         className="gl-goTop--cont"
         smooth

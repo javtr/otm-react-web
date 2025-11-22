@@ -46,6 +46,19 @@ const styles = {
     fontSize: '10px',
     textTransform: 'uppercase',
     opacity: 0.8,
+  },
+  countdownWrapper: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+  },
+  countdownPrefix: {
+    fontSize: '12px',
+    fontWeight: '600',
+    letterSpacing: '0.5px',
+    textTransform: 'uppercase',
   }
 };
 
@@ -61,16 +74,18 @@ const BoltIcon = () => (
 // Textos en diferentes idiomas
 const texts = {
   en: {
-    title: 'Black Friday Deals',
-    subtitle: 'Pre-Sale 50% OFF!',
+    title: 'Black Friday',
+    subtitle: '30% OFF on annual & lifetime packs',
+    countdownPrefix: 'Starts in:',
     days: 'Days',
     hours: 'Hours',
     minutes: 'Minutes',
     seconds: 'Seconds'
   },
   es: {
-    title: 'Ofertas de Black Friday',
-    subtitle: '¡Pre-Venta 50% DESCUENTO!',
+    title: 'Black Friday',
+    subtitle: '¡30% DESCUENTO! en packs anuales y lifetime',
+    countdownPrefix: 'Inicia en:',
     days: 'Días',
     hours: 'Horas',
     minutes: 'Minutos',
@@ -89,7 +104,7 @@ const PromoBanner = () => {
   });
 
   const updateCountdown = useCallback(() => {
-    const targetDate = new Date('2025-11-29T00:00:00').getTime();
+    const targetDate = new Date('2025-11-23T00:00:00').getTime();
     const now = new Date().getTime();
     const distance = targetDate - now;
 
@@ -127,8 +142,10 @@ const PromoBanner = () => {
       <div style={styles.text}>
         {t.title} <BoltIcon /> {t.subtitle}
       </div>
-      
-      <div style={styles.countdownContainer}>
+
+      <div style={styles.countdownWrapper}>
+        <span style={styles.countdownPrefix}>{t.countdownPrefix}</span>
+        <div style={styles.countdownContainer}>
         <div style={styles.countdownItem}>
           <div style={styles.countdownNumber}>{timeLeft.days}</div>
           <div style={styles.countdownLabel}>{t.days}</div>
@@ -147,6 +164,7 @@ const PromoBanner = () => {
         <div style={styles.countdownItem}>
           <div style={styles.countdownNumber}>{timeLeft.seconds}</div>
           <div style={styles.countdownLabel}>{t.seconds}</div>
+        </div>
         </div>
       </div>
     </div>

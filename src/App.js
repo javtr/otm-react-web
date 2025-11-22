@@ -19,6 +19,7 @@ import InstalationPage from "./pages/InstalationPage";
 import Policies from "./pages/policies";
 import NewHome from "./pages/NewHome";
 import FreeIndicators from "./pages/freeIndicators";
+import ThreeCTrading from "./pages/ThreeCTrading";
 
 export default function App() {
   const [lang, setLang] = useState("");
@@ -95,6 +96,7 @@ export default function App() {
             <Route path="policies" element={<Policies />} />
             <Route path="install" element={<InstalationPage />} />
             <Route path="new-home" element={<NewHome />} />
+            <Route path="3ctrading" element={<ThreeCTrading />} />
             
             {/* Old URL for backward compatibility - redirect to first indicator */}
             <Route 

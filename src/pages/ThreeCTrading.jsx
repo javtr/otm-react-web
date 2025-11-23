@@ -14,7 +14,7 @@ const content = {
           {
             heading: "OTM Trading Anual PLUS",
             items: [
-              "Pack OTM Trading 1 año",
+              "Pack OTM Trading, 1 año",
               "Curso de videos prácticos estrategias continuaciones.",
               "Curso estrategia continuaciones",
             ],
@@ -22,7 +22,7 @@ const content = {
           {
             heading: "Logic Indicators Anual PLUS",
             items: [
-              "Pack Logic Indicators 1 año",
+              "Pack Logic Indicators, 1 año",
               "Curso Order Flow y estrategias de giros.",
               "Curso ejemplos en vivo giros con Order Flow.",
               "Curso Volume Profile Élite (Nuevo)",
@@ -34,9 +34,9 @@ const content = {
             heading: "3C Trading",
             items: [
               "Pack todos los cursos 3C Trading",
-              "Discord privado 1 año",
-              "Operativa en vivo Lunes a Viernes (Nuevo)",
-              "Reuniones semanales 1 año (Nuevo)",
+              "Discord privado, 1 año",
+              "Operativa en vivo Lunes a Viernes, 1 año (Nuevo)",
+              "Reuniones semanales, 1 año (Nuevo)",
             ],
           },
         ],
@@ -45,6 +45,12 @@ const content = {
           original: "$1128 USD USA EL CODIGO: BLACK30",
           note: "Pago anual",
         },
+        ctaOptions: [
+          {
+            label: "$790 USD",
+            url: "https://otmtrading.lemonsqueezy.com/buy/d8396234-71c0-4634-acb0-6a6a246f6159",
+          },
+        ],
       },
       {
         id: "lifetime",
@@ -57,7 +63,7 @@ const content = {
           {
             heading: "OTM Trading PLUS (Lifetime)",
             items: [
-              "Pack OTM Trading 1 año",
+              "Pack OTM Trading, Lifetime",
               "Curso de videos prácticos estrategias continuaciones.",
               "Curso estrategia continuaciones",
             ],
@@ -65,7 +71,7 @@ const content = {
           {
             heading: "Logic Indicators PLUS (Lifetime)",
             items: [
-              "Pack Logic Indicators 1 año",
+              "Pack Logic Indicators, Lifetime",
               "Curso Order Flow y estrategias de giros.",
               "Curso ejemplos en vivo giros con Order Flow.",
               "Curso Volume Profile Élite (Nuevo)",
@@ -77,9 +83,9 @@ const content = {
             heading: "3C Trading",
             items: [
               "Pack todos los cursos 3C Trading",
-              "Discord privado 1 año",
-              "Operativa en vivo Lunes a Viernes (Nuevo)",
-              "Reuniones semanales 1 año (Nuevo)",
+              "Discord privado, 1 año",
+              "Operativa en vivo Lunes a Viernes, 1 año (Nuevo)",
+              "Reuniones semanales, 1 año (Nuevo)",
             ],
           },
         ],
@@ -88,44 +94,54 @@ const content = {
           original: "$2358 USD USA EL CODIGO: BLACK30",
           note: "Único pago de por vida",
         },
+        ctaOptions: [
+          {
+            label: "$1650 USD",
+            url: "https://otmtrading.lemonsqueezy.com/buy/a0c316d2-717e-4e5e-b011-37f558488c8e",
+          },
+          {
+            label: "7 PAGOS DE $250",
+            url: "https://otmtrading.lemonsqueezy.com/buy/ed683b51-92cd-4947-ac7e-0088a3633998",
+          },
+        ],
       },
     ],
   },
   en: {
-    title: "3C TRADING ELITE PACK",
-    subtitle: "REVERSALS & CONTINUATIONS (OTM + LOGIC INDICATORS)",
+    title: "3C TRADING PACK ÉLITE",
+    subtitle: "GIROS Y CONTINUACIONES (OTM + LOGIC INDICATORS)",
     cards: [
       {
         id: "annual",
-        title: "ANNUAL ELITE",
+        title: "ÉLITE ANUAL",
         badge: null,
         sections: [
           {
-            heading: "OTM Trading Annual PLUS",
+            heading: "OTM Trading Anual PLUS",
             items: [
-              "OTM Trading pack 1 year",
-              "Practical video course on continuation strategies.",
-              "Continuation strategy course",
+              "Pack OTM Trading, 1 año",
+              "Curso de videos prácticos estrategias continuaciones.",
+              "Curso estrategia continuaciones",
             ],
           },
           {
-            heading: "Logic Indicators Annual PLUS",
+            heading: "Logic Indicators Anual PLUS",
             items: [
-              "Logic Indicators pack 1 year",
-              "Order Flow course and reversal strategies.",
-              "Live reversal sessions with Order Flow.",
-              "Volume Profile Elite course (New)",
-              "Swing Trading strategies with Volume Profile (New)",
-              "Strategies using Big Trades (New)",
+              "Pack Logic Indicators, 1 año",
+              "Curso Order Flow y estrategias de giros.",
+              "Curso ejemplos en vivo giros con Order Flow.",
+              "Curso Volume Profile Élite (Nuevo)",
+              "Curso estrategias de Swing Trading con Volume Profile (Nuevo)",
+              "Curso estrategias usando Big Trades (Nuevo)",
             ],
           },
           {
             heading: "3C Trading",
             items: [
-              "All 3C Trading courses pack",
-              "Private Discord 1 year",
-              "Live trading room 1 year (new)",
-              "Weekly meetings 1 year (new)",
+              "Pack todos los cursos 3C Trading",
+              "Discord privado, 1 año",
+              "Operativa en vivo Lunes a Viernes, 1 año (Nuevo)",
+              "Reuniones semanales, 1 año (Nuevo)",
             ],
           },
         ],
@@ -134,38 +150,48 @@ const content = {
           original: "$990 USD",
           note: "Annual payment",
         },
+        ctaOptions: [
+          {
+            label: "$790 USD",
+            url: "https://otmtrading.lemonsqueezy.com/buy/d8396234-71c0-4634-acb0-6a6a246f6159",
+          },
+        ],
       },
       {
         id: "lifetime",
         title: "ELITE LIFETIME",
-        badge: "6 PAYMENTS OF $275",
+        badge: [
+          "6 PAYMENTS OF $275",
+          "7 PAGOS DE $250",
+          "Códigos de descuento aplican solo a la primera cuota",
+        ],
         sections: [
           {
             heading: "OTM Trading PLUS (Lifetime)",
             items: [
-              "OTM Trading pack 1 year",
-              "Practical video course on continuation strategies.",
-              "Continuation strategy course",
+              "Pack OTM Trading, Lifetime",
+              "Curso de videos prácticos estrategias continuaciones.",
+              "Curso estrategia continuaciones",
             ],
           },
           {
             heading: "Logic Indicators PLUS (Lifetime)",
             items: [
-              "Logic Indicators pack 1 year",
-              "Order Flow course and reversal strategies.",
-              "Live reversal sessions with Order Flow.",
-              "Volume Profile Elite course (New)",
-              "Swing Trading strategies with Volume Profile (New)",
-              "Strategies using Big Trades (New)",
+              "Pack Logic Indicators, Lifetime",
+              "Curso Order Flow y estrategias de giros.",
+              "Curso ejemplos en vivo giros con Order Flow.",
+              "Curso Volume Profile Élite (Nuevo)",
+              "Curso estrategias de Swing Trading con Volume Profile (Nuevo)",
+              "Curso estrategias usando Big Trades (Nuevo)",
             ],
           },
           {
             heading: "3C Trading",
             items: [
-              "All 3C Trading courses pack",
-              "Private Discord 1 year",
-              "Live trading room 1 year (new)",
-              "Weekly meetings 1 year (new)",
+              "Pack todos los cursos 3C Trading",
+              "Discord privado, 1 año",
+              "Operativa en vivo Lunes a Viernes, 1 año (Nuevo)",
+              "Reuniones semanales, 1 año (Nuevo)",
             ],
           },
         ],
@@ -174,6 +200,16 @@ const content = {
           original: "$1950 USD",
           note: "One-time payment for life",
         },
+        ctaOptions: [
+          {
+            label: "$1650 USD",
+            url: "https://otmtrading.lemonsqueezy.com/buy/a0c316d2-717e-4e5e-b011-37f558488c8e",
+          },
+          {
+            label: "7 PAYMENTS OF $250",
+            url: "https://otmtrading.lemonsqueezy.com/buy/ed683b51-92cd-4947-ac7e-0088a3633998",
+          },
+        ],
       },
     ],
   },
@@ -257,9 +293,36 @@ const ThreeCTrading = () => {
               ))}
 
               <div className="threec-card__footer">
-                <button type="button" className="threec-card__cta">
-                  {card.pricing.current}
-                </button>
+                {card.ctaOptions?.length ? (
+                  <div className="threec-card__cta-group">
+                    {card.ctaOptions.slice(0, 1).map(({ label, url }) => (
+                      <a
+                        key={`${card.id}-${label}`}
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="threec-card__cta"
+                      >
+                        {label}
+                      </a>
+                    ))}
+                    {card.ctaOptions.slice(1).map(({ label, url }) => (
+                      <a
+                        key={`${card.id}-link-${label}`}
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="threec-card__link"
+                      >
+                        {label}
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <button type="button" className="threec-card__cta">
+                    {card.pricing.current}
+                  </button>
+                )}
                 {card.pricing.original && (
                   <p className="threec-card__original">{renderOriginalPrice(card.pricing.original)}</p>
                 )}

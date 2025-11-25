@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.490121a8.css",
-    "main.js": "/static/js/main.e61ad093.js",
+    "main.js": "/static/js/main.600e2219.js",
     "static/media/vecteezy_blue-background_AW1120.eps": "/static/media/vecteezy_blue-background_AW1120.3d705dc5bc0f3ae24363.eps",
     "static/media/Installation.mp4": "/static/media/Installation.a721af07e641b68e1651.mp4",
     "static/media/operativa-crudo-es.gif": "/static/media/operativa-crudo-es.90e09cd83a863621b701.gif",
@@ -138,10 +138,10 @@
     "static/media/check-svgrepo-com(1).svg": "/static/media/check-svgrepo-com(1).1b7256e8b779cbd0e116.svg",
     "static/media/icons8-close.svg": "/static/media/icons8-close.918b1234f49b28de4f8720841fa5f8d2.svg",
     "main.490121a8.css.map": "/static/css/main.490121a8.css.map",
-    "main.e61ad093.js.map": "/static/js/main.e61ad093.js.map"
+    "main.600e2219.js.map": "/static/js/main.600e2219.js.map"
   },
   "entrypoints": [
     "static/css/main.490121a8.css",
-    "static/js/main.e61ad093.js"
+    "static/js/main.600e2219.js"
   ]
 }

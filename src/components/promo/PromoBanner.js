@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect, useCallback } from 'react';
 import LanguageContext from '../../context/langContext';
 
 // Estilos en línea para evitar problemas con Material-UI
@@ -25,6 +25,44 @@ const styles = {
     fontWeight: 'bold',
     fontSize: '16px',
   },
+  countdownWrapper: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    fontWeight: 600,
+  },
+  countdownPrefix: {
+    fontSize: '12px',
+    letterSpacing: '0.5px',
+    textTransform: 'uppercase',
+  },
+  countdownContainer: {
+    display: 'flex',
+    gap: '10px',
+    alignItems: 'center',
+  },
+  countdownItem: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    minWidth: '45px',
+  },
+  countdownNumber: {
+    fontSize: '18px',
+    fontWeight: 'bold',
+    lineHeight: 1,
+  },
+  countdownLabel: {
+    fontSize: '10px',
+    textTransform: 'uppercase',
+    opacity: 0.8,
+  },
+  countdownDivider: {
+    fontSize: '18px',
+    fontWeight: 'bold',
+  },
   codeText: {
     fontSize: '13px',
     fontWeight: '600',
@@ -48,11 +86,21 @@ const texts = {
   en: {
     title: 'Black Friday',
     subtitle: '30% OFF on annual & lifetime packs',
+    countdownPrefix: 'Time left:',
+    days: 'Days',
+    hours: 'Hours',
+    minutes: 'Minutes',
+    seconds: 'Seconds',
     code: 'Use code: BLACK30'
   },
   es: {
     title: 'Black Friday',
     subtitle: '¡30% DESCUENTO! en packs anuales y lifetime',
+    countdownPrefix: 'Quedan:',
+    days: 'Días',
+    hours: 'Horas',
+    minutes: 'Minutos',
+    seconds: 'Segundos',
     code: 'Usa el código: BLACK30'
   }
 };
@@ -60,11 +108,70 @@ const texts = {
 const PromoBanner = () => {
   const { lang } = useContext(LanguageContext);
   const t = texts[lang] || texts['en']; // Por defecto inglés si no se encuentra el idioma
+  const [timeLeft, setTimeLeft] = useState({
+    days: '00',
+    hours: '00',
+    minutes: '00',
+    seconds: '00',
+  });
+
+  const updateCountdown = useCallback(() => {
+    const targetDate = new Date('2025-11-28T00:00:00').getTime();
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance <= 0) {
+      setTimeLeft({ days: '00', hours: '00', minutes: '00', seconds: '00' });
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    setTimeLeft({
+      days: days.toString().padStart(2, '0'),
+      hours: hours.toString().padStart(2, '0'),
+      minutes: minutes.toString().padStart(2, '0'),
+      seconds: seconds.toString().padStart(2, '0'),
+    });
+  }, []);
+
+  useEffect(() => {
+    updateCountdown();
+    const timer = setInterval(updateCountdown, 1000);
+    return () => clearInterval(timer);
+  }, [updateCountdown]);
 
   return (
     <div style={styles.banner}>
       <div style={styles.text}>
         {t.title} <BoltIcon /> {t.subtitle}
+      </div>
+      <div style={styles.countdownWrapper}>
+        <span style={styles.countdownPrefix}>{t.countdownPrefix}</span>
+        <div style={styles.countdownContainer}>
+          <div style={styles.countdownItem}>
+            <div style={styles.countdownNumber}>{timeLeft.days}</div>
+            <div style={styles.countdownLabel}>{t.days}</div>
+          </div>
+          <span style={styles.countdownDivider}>:</span>
+          <div style={styles.countdownItem}>
+            <div style={styles.countdownNumber}>{timeLeft.hours}</div>
+            <div style={styles.countdownLabel}>{t.hours}</div>
+          </div>
+          <span style={styles.countdownDivider}>:</span>
+          <div style={styles.countdownItem}>
+            <div style={styles.countdownNumber}>{timeLeft.minutes}</div>
+            <div style={styles.countdownLabel}>{t.minutes}</div>
+          </div>
+          <span style={styles.countdownDivider}>:</span>
+          <div style={styles.countdownItem}>
+            <div style={styles.countdownNumber}>{timeLeft.seconds}</div>
+            <div style={styles.countdownLabel}>{t.seconds}</div>
+          </div>
+        </div>
       </div>
       <span style={styles.codeText}>{t.code}</span>
     </div>

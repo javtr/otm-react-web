@@ -22,7 +22,15 @@ import FreeIndicators from "./pages/freeIndicators";
 import ThreeCTrading from "./pages/ThreeCTrading";
 
 export default function App() {
-  const [lang, setLang] = useState("");
+  const [lang, setLang] = useState(() => {
+    if (typeof window === "undefined") return "es";
+    const langStorage = localStorage.getItem("otm_lang");
+    if (langStorage === "en" || langStorage === "es") {
+      return langStorage;
+    }
+    localStorage.setItem("otm_lang", "es");
+    return "es";
+  });
   const value = useMemo(() => ({ lang, setLang }), [lang]);
 
   // Idioma
@@ -31,8 +39,8 @@ export default function App() {
     if (langStorage === "en" || langStorage === "es") {
       setLang(langStorage);
     } else {
-      localStorage.setItem("otm_lang", "en");
-      setLang("en");
+      localStorage.setItem("otm_lang", "es");
+      setLang("es");
     }
   }, []);
 
